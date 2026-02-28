@@ -322,4 +322,14 @@ export const designRules: DesignRule[] = [
     status: "approved",
     addedDate: "2026-02-28",
   },
+  {
+    id: "rel-006",
+    category: "reliability",
+    rule: "OTA firmware update infrastructure must have automated SSL certificate renewal. Expired certs silently break all field updates.",
+    reasoning: "Polyvance welder fleet lost OTA update capability when SSL certificate expired on the update server. Units reported connection errors but no clear indication of cert expiry. Required manual server-side renewal before any units could update.",
+    sourceProject: "Polyvance Plastic Welder (bugatti)",
+    severity: "must",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
 ];

@@ -168,8 +168,16 @@ export const componentNotes: ComponentNote[] = [
   {
     id: "cn-020",
     partNumber: "RPi-Zero-W",
-    note: "Raspberry Pi Zero W used as display controller in plastic welder (Bugatti variant). FCC ID: 2ABCB-RPI0W. 1024x600 IPS display via HDMI. BOM with display: ~$107 vs $49 for ESP32+7\" capacitive touch. Main risk: SD card corruption from power loss — expect ~5% annual failure rate without mitigation. Requires advance power-down circuit for reliable operation. Consider read-only rootfs with tmpfs overlays.",
+    note: "Raspberry Pi Zero W used as display controller in plastic welder (Bugatti variant). FCC ID: 2ABCB-RPI0W. 1024x600 IPS display via HDMI. BOM with display: ~$107 vs $49 for ESP32+7\" capacitive touch. Main risk: SD card corruption from power loss — expect ~5% annual failure rate without mitigation. Requires advance power-down circuit for reliable operation. Consider read-only rootfs with tmpfs overlays. Production touchscreen fallout ~10% (19/200 units).",
     type: "warning",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-021",
+    partNumber: "LD15-23B12R2",
+    note: "Mornsun 12V/1.25A board-mount AC-DC module. Needed UL test report (not just UL certificate) for Polyvance welder safety certification. UL test reports are harder to obtain than certificates — request early in design phase. Had to consider Vigortronix as pin-compatible second source due to availability concerns. Always qualify 2+ sources for safety-critical power supplies.",
+    type: "tip",
     status: "approved",
     addedDate: "2026-02-28",
   },
