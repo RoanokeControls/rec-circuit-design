@@ -71,4 +71,63 @@ export const componentNotes: ComponentNote[] = [
     status: "approved",
     addedDate: "2026-02-28",
   },
+
+  // ── Devon-REC / Nidek Battery Pack Notes (from Slack archive 2019-2025) ──
+
+  {
+    id: "cn-009",
+    partNumber: "BQ40Z60",
+    note: "1MHz synchronous buck charger with integrated fuel gauge. Internal FET temperature can reach 66°C+ during charging. A marginal IC can cause FET overheating — check BQ IC temp before replacing FETs. SREC file contains chemistry, parameters, AND lifetime data. Correct programming order: firmware first, then chemistry.",
+    type: "warning",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-010",
+    partNumber: "BQ40Z50",
+    note: "All hardware revisions (base, R1, R2, R3, R4) are the same silicon die. Upgrade between revisions by flashing firmware only. R4 firmware file is v4.02build79. Place the .BQZ file in BQStudio config folder for R4 to appear as device option. TI app note SLUAAE2 confirms hardware compatibility. This opens up supply chain significantly — accept any revision.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-011",
+    partNumber: "BQ294700",
+    note: "WARNING: Floating cell sense inputs when IC is powered WILL trigger fuse blow output and latch active. Route power supply for this IC through the final cell connection switch so it only powers on after all cells are present. For existing boards: open all dip switches, solder B- through B3 first, close dip switches, THEN solder B4. Verify FUSE flag in BQStudio before enabling. BQ294711 is a drop-in with wider threshold options.",
+    type: "warning",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-012",
+    partNumber: "BQ24610",
+    note: "600kHz synchronous buck battery charger. Good efficiency (~100% at 46W through-put). TS pin controls charge enable — must drive to ~1.8V (50% of 3.3V VREF) or use 10KΩ to GND. TS can't be left floating — needs explicit biasing. Eval board has no snubber populated — add RC snubber (10Ω + 2200pF) to output FETs for EMI compliance. Input voltage must be > battery voltage for charging to start.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-013",
+    partNumber: "BQ771605DPJR",
+    note: "External overvoltage detector with 3.85V per-cell trip point. Used alongside BQ40Z50/BQ40Z60 in battery pack designs as hardware safety backup. Set software COV threshold below 3.85V (recommend 3750mV) to ensure software catches overvoltage before this hardware detector fires.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-014",
+    partNumber: "INR18650MJ1",
+    note: "Samsung 18650 Li-ion cell used in Nidek O2 concentrator battery packs. TI Chemistry ID 0x2059. Be careful: TI auto-analysis sometimes mis-identifies as Panasonic 18650 if current calibration is off. Available in TI GAUGECHEM software Chemistry Version 997+.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-015",
+    partNumber: "EV2400",
+    note: "TI evaluation interface board for BQStudio communication with BQ fuel gauge ICs. BQStudio runs on Windows only and is prone to random reboots from Windows updates during long learning cycles. Disable automatic updates on the test machine. Use version 1.3.101+ with Chemistry version 997+. Headless machines need network access for remote monitoring.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
 ];
