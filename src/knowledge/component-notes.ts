@@ -130,4 +130,47 @@ export const componentNotes: ComponentNote[] = [
     status: "approved",
     addedDate: "2026-02-28",
   },
+
+  // ── Polyvance Plastic Welder Notes (from Slack archive 2019-2025) ──
+
+  {
+    id: "cn-016",
+    partNumber: "4118L-07P",
+    note: "Lin Engineering 4118L-07P bipolar stepper motor used for nitrogen flow control valve. 1.8°/step (200 steps/rev), 2000 steps for full valve range. Requires 300mA drive current. Must rewind-to-home on every power cycle — no absolute position feedback. Pair with MAC valve body for gas flow control. Hysteresis in valve means always approach setpoints from same direction.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-017",
+    partNumber: "PTS0603",
+    note: "Vishay PTS0603 platinum RTD thin-film sensor. Used for handle temperature measurement in plastic welder. Mount on small custom PCB (~8mm x 12mm) with JST PH connector for easy replacement. Better accuracy than NTC for temperature control loops. Use 4-wire measurement or Kelvin connection for precision; 2-wire acceptable for safety cutoff applications where ±2°C is sufficient.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-018",
+    partNumber: "IRM-05-5",
+    note: "Meanwell IRM-05-5 board-mount AC-DC module. 5V/1A output, 85-264VAC universal input, fully enclosed/potted. UL/CE certified. Smaller and cheaper than discrete transformer + regulator for low-power embedded systems. Pin-compatible IRM series covers 5V, 12V, 15V, 24V at 5-20W. Replaces traditional power supply approach in industrial controllers.",
+    type: "tip",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-019",
+    partNumber: "BTA12-600BW",
+    note: "Same TRIAC as BTA12-600BWRG but non-RoHS variant. UL listed under UL1557, file reference 81734, for Polyvance plastic welder applications. Used for heater element control with zero-crossing detection. Derate to 5A max (same rule as Carter-Hoffmann). Zero-crossing detection circuit must be routed away from shift register or other fast digital signals — capacitive coupling causes false triggering.",
+    type: "warning",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "cn-020",
+    partNumber: "RPi-Zero-W",
+    note: "Raspberry Pi Zero W used as display controller in plastic welder (Bugatti variant). FCC ID: 2ABCB-RPI0W. 1024x600 IPS display via HDMI. BOM with display: ~$107 vs $49 for ESP32+7\" capacitive touch. Main risk: SD card corruption from power loss — expect ~5% annual failure rate without mitigation. Requires advance power-down circuit for reliable operation. Consider read-only rootfs with tmpfs overlays.",
+    type: "warning",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
 ];
