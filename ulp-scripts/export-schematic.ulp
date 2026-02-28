@@ -1,0 +1,233 @@
+#usage "Export Schematic to JSON\n"
+       "Run this ULP with a schematic open in the Fusion Electronics Schematic Editor.\n"
+       "It exports all parts, nets, buses, attributes, and sheet info\n"
+       "to a JSON file for the rec-circuit-design MCP knowledge base.\n"
+       "\n"
+       "Usage: RUN export-schematic.ulp [output-directory]\n"
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+
+// Escape a string for JSON output
+string json_escape(string s) {
+    string result = "";
+    int i;
+    for (i = 0; s[i]; i++) {
+        if (s[i] == '\\')      result += "\\\\";
+        else if (s[i] == '"')  result += "\\\"";
+        else if (s[i] == '\n') result += "\\n";
+        else if (s[i] == '\r') result += "\\r";
+        else if (s[i] == '\t') result += "\\t";
+        else {
+            string c;
+            sprintf(c, "%c", s[i]);
+            result += c;
+        }
+    }
+    return result;
+}
+
+// ── Main ───────────────────────────────────────────────────────────────────
+
+string outputDir;
+string outputFile;
+int first;
+int firstInner;
+int firstL3;
+
+if (argc > 1) {
+    outputDir = argv[1];
+} else {
+    outputDir = dlgDirectory("Select Output Directory", "");
+    if (outputDir == "") exit(0);
+}
+
+schematic(SCH) {
+
+    // Build output filename from design name
+    string designName = filename(SCH.name);
+    // Strip .sch extension if present
+    int dotPos = strrchr(designName, '.');
+    if (dotPos >= 0) {
+        designName = strsub(designName, 0, dotPos);
+    }
+    outputFile = outputDir + "/" + designName + "_schematic.json";
+
+    output(outputFile) {
+        printf("{\n");
+        printf("  \"export_type\": \"schematic\",\n");
+        printf("  \"design_name\": \"%s\",\n", json_escape(designName));
+        printf("  \"filename\": \"%s\",\n", json_escape(SCH.name));
+
+        // ── Grid settings ─────────────────────────────────────────────
+        printf("  \"grid\": {\n");
+        printf("    \"distance\": %f,\n", SCH.grid.distance);
+        printf("    \"unit\": %d\n", SCH.grid.unit);
+        printf("  },\n");
+
+        // ── Count sheets ──────────────────────────────────────────────
+        int sheetCount = 0;
+        SCH.sheets(SH) { sheetCount++; }
+        printf("  \"sheet_count\": %d,\n", sheetCount);
+
+        // ── Global attributes ─────────────────────────────────────────
+        printf("  \"global_attributes\": {\n");
+        first = 1;
+        SCH.attributes(A) {
+            if (!first) printf(",\n");
+            first = 0;
+            printf("    \"%s\": \"%s\"", json_escape(A.name), json_escape(A.value));
+        }
+        if (!first) printf("\n");
+        printf("  },\n");
+
+        // ── Libraries used ────────────────────────────────────────────
+        printf("  \"libraries\": [\n");
+        first = 1;
+        SCH.libraries(L) {
+            if (!first) printf(",\n");
+            first = 0;
+            printf("    \"%s\"", json_escape(L.name));
+        }
+        if (!first) printf("\n");
+        printf("  ],\n");
+
+        // ── Parts (BOM) ──────────────────────────────────────────────
+        printf("  \"parts\": [\n");
+        first = 1;
+        SCH.parts(P) {
+            if (!first) printf(",\n");
+            first = 0;
+
+            printf("    {\n");
+            printf("      \"name\": \"%s\",\n", json_escape(P.name));
+            printf("      \"value\": \"%s\",\n", json_escape(P.value));
+            printf("      \"deviceset\": \"%s\",\n", json_escape(P.deviceset.name));
+            printf("      \"device\": \"%s\",\n", json_escape(P.device.name));
+
+            // Package may be empty if no footprint assigned
+            string pkgName = "";
+            if (P.device.footprint) pkgName = P.device.footprint.name;
+            printf("      \"package\": \"%s\",\n", json_escape(pkgName));
+
+            printf("      \"library\": \"%s\",\n", json_escape(P.deviceset.library));
+            printf("      \"technology\": \"%s\",\n", json_escape(P.device.technologies));
+            printf("      \"headline\": \"%s\",\n", json_escape(P.deviceset.headline));
+
+            // Part attributes
+            printf("      \"attributes\": {\n");
+            firstInner = 1;
+            P.attributes(A) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+                printf("        \"%s\": \"%s\"", json_escape(A.name), json_escape(A.value));
+            }
+            if (!firstInner) printf("\n");
+            printf("      }\n");
+
+            printf("    }");
+        }
+        if (!first) printf("\n");
+        printf("  ],\n");
+
+        // ── Sheets ───────────────────────────────────────────────────
+        printf("  \"sheets\": [\n");
+        first = 1;
+        SCH.sheets(SH) {
+            if (!first) printf(",\n");
+            first = 0;
+
+            printf("    {\n");
+            printf("      \"number\": %d,\n", SH.number);
+            printf("      \"name\": \"%s\",\n", json_escape(SH.name));
+            printf("      \"headline\": \"%s\",\n", json_escape(SH.headline));
+
+            // Parts on this sheet
+            printf("      \"parts\": [\n");
+            firstInner = 1;
+            SH.parts(P) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+                printf("        \"%s\"", json_escape(P.name));
+            }
+            if (!firstInner) printf("\n");
+            printf("      ],\n");
+
+            // Nets on this sheet
+            printf("      \"nets\": [\n");
+            firstInner = 1;
+            SH.nets(N) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+
+                printf("        {\n");
+                printf("          \"name\": \"%s\",\n", json_escape(N.name));
+                printf("          \"class_index\": %d,\n", N.class.number);
+                printf("          \"class_name\": \"%s\",\n", json_escape(N.class.name));
+
+                // Pin references on this net
+                printf("          \"pinrefs\": [\n");
+                firstL3 = 1;
+                N.segments(SEG) {
+                    SEG.pinrefs(PREF) {
+                        if (!firstL3) printf(",\n");
+                        firstL3 = 0;
+
+                        // Collect pad name(s) via modern contacts() loop
+                        string padNames = "";
+                        int firstPad = 1;
+                        PREF.pin.contacts(PC) {
+                            if (!firstPad) padNames += ",";
+                            firstPad = 0;
+                            padNames += PC.name;
+                        }
+
+                        printf("            {\n");
+                        printf("              \"part\": \"%s\",\n", json_escape(PREF.part.name));
+                        printf("              \"pin\": \"%s\",\n", json_escape(PREF.pin.name));
+                        printf("              \"gate\": \"%s\",\n", json_escape(PREF.instance.gate.name));
+                        printf("              \"pad\": \"%s\",\n", json_escape(padNames));
+                        printf("              \"x\": %d,\n", PREF.pin.x);
+                        printf("              \"y\": %d\n", PREF.pin.y);
+                        printf("            }");
+                    }
+                }
+                if (!firstL3) printf("\n");
+                printf("          ]\n");
+
+                printf("        }");
+            }
+            if (!firstInner) printf("\n");
+            printf("      ],\n");
+
+            // Buses on this sheet
+            printf("      \"buses\": [\n");
+            firstInner = 1;
+            SH.busses(BUS) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+                printf("        {\n");
+                printf("          \"name\": \"%s\",\n", json_escape(BUS.name));
+                printf("          \"members\": [\n");
+                firstL3 = 1;
+                BUS.members(M) {
+                    if (!firstL3) printf(",\n");
+                    firstL3 = 0;
+                    printf("            \"%s\"", json_escape(M.name));
+                }
+                if (!firstL3) printf("\n");
+                printf("          ]\n");
+                printf("        }");
+            }
+            if (!firstInner) printf("\n");
+            printf("      ]\n");
+
+            printf("    }");
+        }
+        if (!first) printf("\n");
+        printf("  ]\n");
+
+        printf("}\n");
+    }
+
+    dlgMessageBox("Schematic exported to:\n" + outputFile);
+}

@@ -1,0 +1,279 @@
+#usage "Export Board/Layout to JSON\n"
+       "Run this ULP with a board open in the Fusion Electronics Board Editor.\n"
+       "It exports all elements, signals, routing, vias, polygons, holes,\n"
+       "net classes, layers, and board outline to a JSON file\n"
+       "for the rec-circuit-design MCP knowledge base.\n"
+       "\n"
+       "Usage: RUN export-board.ulp [output-directory]\n"
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+
+// Escape a string for JSON output
+string json_escape(string s) {
+    string result = "";
+    int i;
+    for (i = 0; s[i]; i++) {
+        if (s[i] == '\\')      result += "\\\\";
+        else if (s[i] == '"')  result += "\\\"";
+        else if (s[i] == '\n') result += "\\n";
+        else if (s[i] == '\r') result += "\\r";
+        else if (s[i] == '\t') result += "\\t";
+        else {
+            string c;
+            sprintf(c, "%c", s[i]);
+            result += c;
+        }
+    }
+    return result;
+}
+
+// Convert internal units to mm (Eagle/Fusion internal unit is 1/320000 inch)
+real u2mm(int v) {
+    return v / 320000.0 * 25.4;
+}
+
+// ── Main ───────────────────────────────────────────────────────────────────
+
+string outputDir;
+string outputFile;
+int first;
+int firstInner;
+int firstL3;
+
+if (argc > 1) {
+    outputDir = argv[1];
+} else {
+    outputDir = dlgDirectory("Select Output Directory", "");
+    if (outputDir == "") exit(0);
+}
+
+board(B) {
+
+    // Build output filename from design name
+    string designName = filename(B.name);
+    // Strip .brd extension if present
+    int dotPos = strrchr(designName, '.');
+    if (dotPos >= 0) {
+        designName = strsub(designName, 0, dotPos);
+    }
+    outputFile = outputDir + "/" + designName + "_board.json";
+
+    output(outputFile) {
+        printf("{\n");
+        printf("  \"export_type\": \"board\",\n");
+        printf("  \"design_name\": \"%s\",\n", json_escape(designName));
+        printf("  \"filename\": \"%s\",\n", json_escape(B.name));
+
+        // ── Grid settings ─────────────────────────────────────────────
+        printf("  \"grid\": {\n");
+        printf("    \"distance\": %f,\n", B.grid.distance);
+        printf("    \"unit\": %d\n", B.grid.unit);
+        printf("  },\n");
+
+        // ── Board outline (Dimension layer = 20) ──────────────────────
+        printf("  \"board_outline\": [\n");
+        first = 1;
+        B.wires(W) {
+            if (W.layer == 20) {
+                if (!first) printf(",\n");
+                first = 0;
+                printf("    {\"x1\": %f, \"y1\": %f, \"x2\": %f, \"y2\": %f, \"width\": %f}",
+                    u2mm(W.x1), u2mm(W.y1), u2mm(W.x2), u2mm(W.y2), u2mm(W.width));
+            }
+        }
+        if (!first) printf("\n");
+        printf("  ],\n");
+
+        // Bounding area
+        printf("  \"area\": {\n");
+        printf("    \"x1\": %f,\n", u2mm(B.area.x1));
+        printf("    \"y1\": %f,\n", u2mm(B.area.y1));
+        printf("    \"x2\": %f,\n", u2mm(B.area.x2));
+        printf("    \"y2\": %f\n", u2mm(B.area.y2));
+        printf("  },\n");
+
+        // ── Layers ────────────────────────────────────────────────────
+        printf("  \"layers\": [\n");
+        first = 1;
+        B.layers(LY) {
+            if (LY.used) {
+                if (!first) printf(",\n");
+                first = 0;
+                printf("    {\"number\": %d, \"name\": \"%s\", \"visible\": %d, \"color\": %d}",
+                    LY.number, json_escape(LY.name), LY.visible, LY.color);
+            }
+        }
+        if (!first) printf("\n");
+        printf("  ],\n");
+
+        // ── Net classes ───────────────────────────────────────────────
+        printf("  \"net_classes\": [\n");
+        first = 1;
+        B.classes(CL) {
+            if (!first) printf(",\n");
+            first = 0;
+            printf("    {\n");
+            printf("      \"number\": %d,\n", CL.number);
+            printf("      \"name\": \"%s\",\n", json_escape(CL.name));
+            printf("      \"width\": %f,\n", u2mm(CL.width));
+            printf("      \"drill\": %f,\n", u2mm(CL.drill));
+            printf("      \"clearance\": %f\n", u2mm(CL.clearance));
+            printf("    }");
+        }
+        if (!first) printf("\n");
+        printf("  ],\n");
+
+        // ── Elements (placed components) ──────────────────────────────
+        printf("  \"elements\": [\n");
+        first = 1;
+        B.elements(E) {
+            if (!first) printf(",\n");
+            first = 0;
+
+            printf("    {\n");
+            printf("      \"name\": \"%s\",\n", json_escape(E.name));
+            printf("      \"value\": \"%s\",\n", json_escape(E.value));
+
+            string pkgName = "";
+            if (E.package) pkgName = E.package.name;
+            printf("      \"package\": \"%s\",\n", json_escape(pkgName));
+
+            string libName = "";
+            if (E.package) libName = E.package.library;
+            printf("      \"library\": \"%s\",\n", json_escape(libName));
+
+            printf("      \"x\": %f,\n", u2mm(E.x));
+            printf("      \"y\": %f,\n", u2mm(E.y));
+            printf("      \"angle\": %f,\n", E.angle);
+            printf("      \"mirror\": %d,\n", E.mirror);
+
+            // Determine SMD vs through-hole
+            int isSMD = 0;
+            E.package.contacts(C) {
+                if (C.smd) isSMD = 1;
+            }
+            printf("      \"smd\": %d,\n", isSMD);
+
+            // Element attributes
+            printf("      \"attributes\": {\n");
+            firstInner = 1;
+            E.attributes(A) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+                printf("        \"%s\": \"%s\"", json_escape(A.name), json_escape(A.value));
+            }
+            if (!firstInner) printf("\n");
+            printf("      }\n");
+
+            printf("    }");
+        }
+        if (!first) printf("\n");
+        printf("  ],\n");
+
+        // ── Signals (routed nets) ─────────────────────────────────────
+        printf("  \"signals\": [\n");
+        first = 1;
+        B.signals(S) {
+            if (!first) printf(",\n");
+            first = 0;
+
+            printf("    {\n");
+            printf("      \"name\": \"%s\",\n", json_escape(S.name));
+            printf("      \"class_index\": %d,\n", S.class.number);
+            printf("      \"class_name\": \"%s\",\n", json_escape(S.class.name));
+            printf("      \"airwiresHidden\": %d,\n", S.airwireshidden);
+
+            // Contact references (component pad connections)
+            printf("      \"contactrefs\": [\n");
+            firstInner = 1;
+            S.contactrefs(CR) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+                printf("        {\"element\": \"%s\", \"pad\": \"%s\"}",
+                    json_escape(CR.element.name), json_escape(CR.contact.name));
+            }
+            if (!firstInner) printf("\n");
+            printf("      ],\n");
+
+            // Wires (traces)
+            printf("      \"wires\": [\n");
+            firstInner = 1;
+            S.wires(W) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+                printf("        {\"x1\": %f, \"y1\": %f, \"x2\": %f, \"y2\": %f, \"width\": %f, \"layer\": %d, \"style\": %d}",
+                    u2mm(W.x1), u2mm(W.y1), u2mm(W.x2), u2mm(W.y2),
+                    u2mm(W.width), W.layer, W.style);
+            }
+            if (!firstInner) printf("\n");
+            printf("      ],\n");
+
+            // Vias
+            printf("      \"vias\": [\n");
+            firstInner = 1;
+            S.vias(V) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+                printf("        {\"x\": %f, \"y\": %f, \"drill\": %f, \"diameter_top\": %f, \"diameter_bottom\": %f, \"shape\": %d, \"start\": %d, \"end\": %d}",
+                    u2mm(V.x), u2mm(V.y), u2mm(V.drill),
+                    u2mm(V.diameter[1]), u2mm(V.diameter[16]),
+                    V.shape[1], V.start, V.end);
+            }
+            if (!firstInner) printf("\n");
+            printf("      ],\n");
+
+            // Polygons (copper pours)
+            printf("      \"polygons\": [\n");
+            firstInner = 1;
+            S.polypours(PO) {
+                if (!firstInner) printf(",\n");
+                firstInner = 0;
+
+                printf("        {\n");
+                printf("          \"width\": %f,\n", u2mm(PO.width));
+                printf("          \"layer\": %d,\n", PO.layer);
+                printf("          \"isolate\": %f,\n", u2mm(PO.isolate));
+                printf("          \"rank\": %d,\n", PO.rank);
+                printf("          \"orphans\": %d,\n", PO.orphans);
+                printf("          \"thermals\": %d,\n", PO.thermals);
+                printf("          \"pour\": %d,\n", PO.pour);
+
+                // Polygon outline vertices
+                printf("          \"vertices\": [\n");
+                firstL3 = 1;
+                PO.wires(PW) {
+                    if (!firstL3) printf(",\n");
+                    firstL3 = 0;
+                    printf("            {\"x1\": %f, \"y1\": %f, \"x2\": %f, \"y2\": %f}",
+                        u2mm(PW.x1), u2mm(PW.y1), u2mm(PW.x2), u2mm(PW.y2));
+                }
+                if (!firstL3) printf("\n");
+                printf("          ]\n");
+
+                printf("        }");
+            }
+            if (!firstInner) printf("\n");
+            printf("      ]\n");
+
+            printf("    }");
+        }
+        if (!first) printf("\n");
+        printf("  ],\n");
+
+        // ── Holes (non-via drill holes) ───────────────────────────────
+        printf("  \"holes\": [\n");
+        first = 1;
+        B.holes(H) {
+            if (!first) printf(",\n");
+            first = 0;
+            printf("    {\"x\": %f, \"y\": %f, \"drill\": %f}",
+                u2mm(H.x), u2mm(H.y), u2mm(H.drill));
+        }
+        if (!first) printf("\n");
+        printf("  ]\n");
+
+        printf("}\n");
+    }
+
+    dlgMessageBox("Board exported to:\n" + outputFile);
+}

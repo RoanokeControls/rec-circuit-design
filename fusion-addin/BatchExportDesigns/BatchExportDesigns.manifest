@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "a1b2c3d4-e5f6-7890-abcd-batch-export",
+  "author": "Steve Hall",
+  "description": {
+    "": "Batch export all Electronics designs in a Fusion 360 cloud project to JSON. Read-only — no designs are modified."
+  },
+  "version": "1.0.0",
+  "runOnStartup": false,
+  "supportedOS": "windows|mac"
+}
