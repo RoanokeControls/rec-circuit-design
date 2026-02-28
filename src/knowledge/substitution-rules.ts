@@ -26,5 +26,39 @@ export const substitutionRules: SubstitutionRule[] = [
     addedDate: "2026-02-28",
   },
 
-  // TODO: Add verified substitutions as you validate them
+  // ── Carter-Hoffmann TRIAC Substitutions (from Slack archive) ──
+
+  {
+    id: "sub-003",
+    originalPart: "BTA12-600BWRG",
+    substitutePart: "BTA12-700BWRG",
+    conditions: "Same package and pinout. Higher voltage rating (700V vs 600V). Verified drop-in replacement for M-Series triac boards.",
+    verified: true,
+    verifiedOn: "Carter-Hoffmann M-Series",
+    limitations: "Requires UL file update when substituting. Derate to 5A max in production.",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "sub-004",
+    originalPart: "BTA12-600BWRG",
+    substitutePart: "BTA12-800BWRG",
+    conditions: "Same package and pinout. Higher voltage rating (800V vs 600V). Verified drop-in replacement for M-Series triac boards.",
+    verified: true,
+    verifiedOn: "Carter-Hoffmann M-Series",
+    limitations: "Requires UL file update when substituting. Derate to 5A max in production.",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
+  {
+    id: "sub-005",
+    originalPart: "CH340G",
+    substitutePart: "CH340C",
+    conditions: "Crystal-less variant — eliminates external 12MHz crystal. Same USB-serial functionality, easier layout for small boards.",
+    verified: true,
+    verifiedOn: "REC internal",
+    limitations: "Internal oscillator slightly less accurate than crystal — acceptable for UART communication, not for precision timing.",
+    status: "approved",
+    addedDate: "2026-02-28",
+  },
 ];
