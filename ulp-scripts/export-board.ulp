@@ -27,10 +27,7 @@ string json_escape(string s) {
     return result;
 }
 
-// Convert internal units to mm (Eagle/Fusion internal unit is 1/320000 inch)
-real u2mm(int v) {
-    return v / 320000.0 * 25.4;
-}
+// Coordinates use ULP built-in u2mm() for mm conversion
 
 // ── Main ───────────────────────────────────────────────────────────────────
 
@@ -225,7 +222,7 @@ board(B) {
             // Polygons (copper pours)
             printf("      \"polygons\": [\n");
             firstInner = 1;
-            S.polypours(PO) {
+            S.polyPours(PO) {
                 if (!firstInner) printf(",\n");
                 firstInner = 0;
 
@@ -236,7 +233,6 @@ board(B) {
                 printf("          \"rank\": %d,\n", PO.rank);
                 printf("          \"orphans\": %d,\n", PO.orphans);
                 printf("          \"thermals\": %d,\n", PO.thermals);
-                printf("          \"pour\": %d,\n", PO.pour);
 
                 // Polygon outline vertices
                 printf("          \"vertices\": [\n");

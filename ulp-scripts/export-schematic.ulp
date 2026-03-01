@@ -138,16 +138,16 @@ schematic(SCH) {
 
             printf("    {\n");
             printf("      \"number\": %d,\n", SH.number);
-            printf("      \"name\": \"%s\",\n", json_escape(SH.name));
+            printf("      \"description\": \"%s\",\n", json_escape(SH.description));
             printf("      \"headline\": \"%s\",\n", json_escape(SH.headline));
 
-            // Parts on this sheet
+            // Parts on this sheet (via instances)
             printf("      \"parts\": [\n");
             firstInner = 1;
-            SH.parts(P) {
+            SH.instances(I) {
                 if (!firstInner) printf(",\n");
                 firstInner = 0;
-                printf("        \"%s\"", json_escape(P.name));
+                printf("        \"%s\"", json_escape(I.name));
             }
             if (!firstInner) printf("\n");
             printf("      ],\n");
@@ -205,18 +205,7 @@ schematic(SCH) {
             SH.busses(BUS) {
                 if (!firstInner) printf(",\n");
                 firstInner = 0;
-                printf("        {\n");
-                printf("          \"name\": \"%s\",\n", json_escape(BUS.name));
-                printf("          \"members\": [\n");
-                firstL3 = 1;
-                BUS.members(M) {
-                    if (!firstL3) printf(",\n");
-                    firstL3 = 0;
-                    printf("            \"%s\"", json_escape(M.name));
-                }
-                if (!firstL3) printf("\n");
-                printf("          ]\n");
-                printf("        }");
+                printf("        \"%s\"", json_escape(BUS.name));
             }
             if (!firstInner) printf("\n");
             printf("      ]\n");
