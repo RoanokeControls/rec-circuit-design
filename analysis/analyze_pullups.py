@@ -13,6 +13,7 @@ import math
 import os
 import re
 from collections import defaultdict
+from schematic_helpers import load_schematic_for_board, build_pin_net_map, infer_bus_type_from_pins
 
 BOARD_DIR = os.path.join(os.path.dirname(__file__), "..", "aps-export-output")
 OUTPUT = os.path.join(os.path.dirname(__file__), "pullup_patterns.json")
@@ -88,6 +89,8 @@ def analyze():
         "designs": set(),
     })
 
+    schematic_hits = 0
+
     for bpath in boards:
         with open(bpath) as f:
             board = json.load(f)
@@ -98,6 +101,17 @@ def analyze():
 
         if not elements or not signals:
             continue
+
+        # Load matching schematic for pin-level bus type inference
+        schematic = load_schematic_for_board(bpath)
+        pin_net_map = build_pin_net_map(schematic) if schematic else {}
+        if schematic:
+            schematic_hits += 1
+
+        # Build reverse map: net_name -> list of (part, pin)
+        net_to_pins = defaultdict(list)
+        for (part, pin), net in pin_net_map.items():
+            net_to_pins[net].append((part, pin))
 
         elem_map = {e["name"]: e for e in elements}
         elem_nets = defaultdict(set)
@@ -132,8 +146,21 @@ def analyze():
             if not signal_nets:
                 continue  # No signal net — likely just a load
 
-            # Infer bus type from signal net names
-            bus_type = infer_bus_type(signal_nets)
+            # Try schematic pin names first for bus type (more accurate)
+            bus_type = None
+            if schematic:
+                for snet in signal_nets:
+                    for part, pin in net_to_pins.get(snet, []):
+                        inferred = infer_bus_type_from_pins(part, pin, schematic)
+                        if inferred:
+                            bus_type = inferred
+                            break
+                    if bus_type:
+                        break
+
+            # Fallback: infer from net names
+            if not bus_type:
+                bus_type = infer_bus_type(signal_nets)
 
             key = (bus_type, r_value)
             pullup_stats[key]["occurrences"] += 1
@@ -219,6 +246,7 @@ def analyze():
     print(f"  Pull-up combinations: {len(pullup_stats)}")
     print(f"  Patterns (≥2 occurrences): {len(patterns)}")
     print(f"  Total pull-ups: {sum(s['occurrences'] for s in pullup_stats.values())}")
+    print(f"  Schematics cross-referenced: {schematic_hits}")
     print(f"  Output: {OUTPUT}")
     return result
 

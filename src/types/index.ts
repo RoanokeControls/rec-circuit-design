@@ -362,6 +362,7 @@ export interface McuProfile {
   programmingInterface: string;
   usbBridge: string | null;
   commonPairings: string[];
+  busInterfaces?: Record<string, number>;
   sourceDesigns: string[];
 }
 
@@ -403,6 +404,206 @@ export interface SilkscreenConvention {
   value: string;
   layer?: number;
   occurrences: number;
+}
+
+// ── Extended Mined Knowledge ──
+
+export interface PicAdDesign {
+  design: string;
+  partNumber: string;
+  elementName: string;
+  totalPins: number;
+  pinSummary: Record<string, number>;
+  allPins?: { pin: string; net: string; function: string; detail: string | null; connectedParts?: string[] }[];
+  analogPins: { pin: string; net: string; function: string; detail: string | null; connectedParts?: string[] }[];
+  digitalOutputs: { pin: string; net: string; function: string; detail: string | null; connectedParts?: string[] }[];
+  communications: { pin: string; net: string; function: string; detail: string | null; connectedParts?: string[] }[];
+}
+
+export interface TriacDeepDesign {
+  design: string;
+  triacCount: number;
+  mcuCount?: number;
+  triacModels: string[];
+  circuits: {
+    triac: string;
+    triacRef: string;
+    gateNet: string | null;
+    loadNet?: string | null;
+    lineNet?: string | null;
+    gateComponents: { name: string; value: string; role: string }[];
+    snubbers: { name: string; value: string }[];
+    optos: { name: string; value: string }[];
+    driveMcu: string | null;
+    drivePin: string | null;
+  }[];
+  optos: { name: string; value: string }[];
+  snubberCaps: { name: string; value: string }[];
+  diodes?: { name: string; value: string }[];
+  inductors?: { name: string; value: string }[];
+  varistors: { name: string; value: string }[];
+  fuses: { name: string; value: string }[];
+}
+
+export interface DisplayDesign {
+  design: string;
+  displays: {
+    type: string;
+    value: string;
+    ref: string;
+    interface: string;
+    driveMcu: string | null;
+    connectedNets: number;
+  }[];
+  drivers: { name: string; value: string; type: string }[];
+  contrastPots: { name: string; value: string }[];
+  backlightComponents?: unknown[];
+  mcuCount?: number;
+}
+
+export interface PowerCapacityBoard {
+  design: string;
+  regulators: {
+    name: string;
+    part: string;
+    currentMa: number | null;
+    topology: string;
+    outputVoltage: string | null;
+  }[];
+  totalSupplyCapacityMa: number;
+  loads: Record<string, number>;
+  estimatedLoadMa: number;
+  headroomMa: number | null;
+  componentCount: number;
+}
+
+export interface RelayDesign {
+  design: string;
+  relayCount: number;
+  solenoidCount?: number;
+  motorCount?: number;
+  relays: {
+    relay: string;
+    value: string;
+    driverChain: { type: string; value?: string; mcu?: string; pin?: string | null }[];
+    hasFlyback: boolean;
+  }[];
+  driverICs: { name: string; value: string }[];
+  transistors?: { name: string; value: string }[];
+  flybackDiodes?: { name: string; value: string }[];
+}
+
+export interface CommInterfaceDesign {
+  design: string;
+  interfaceCount?: number;
+  interfaces: {
+    type: string;
+    part: string;
+    ref: string;
+    pins?: { pin: string; net: string }[];
+    biasResistors?: { name: string; value: string; net: string }[];
+    esdProtection: { name: string; value: string; net: string }[];
+    termination: { name: string; value: string; net: string }[];
+  }[];
+  mcus: { name: string; value: string }[];
+}
+
+export interface SensorDesign {
+  design: string;
+  sensorCount?: number;
+  sensors: { name: string; value: string; type: string; net?: string }[];
+  optoInputs: { name: string; value: string }[];
+  opamps: { name: string; value: string }[];
+  voltageRefs: { name: string; value: string }[];
+  mcuConnections: {
+    sensor: string;
+    sensorType: string;
+    mcuPin: string;
+    net: string;
+    mcu: string;
+  }[];
+}
+
+export interface LedDesign {
+  design: string;
+  ledCount: number;
+  leds: {
+    ref: string;
+    value: string;
+    color: string;
+    limitingResistors: { name: string; value: string }[];
+    mcuDrive: { mcu: string; pin: string } | null;
+  }[];
+  drivers: { name: string; value: string }[];
+}
+
+export interface ProtectionDesign {
+  design: string;
+  tvsDiodes: {
+    ref: string;
+    value: string;
+    protectedSignal: string;
+    distanceToConnectorMm: number | null;
+    nearestConnector: string | null;
+  }[];
+  zeners: { name: string; value: string }[];
+  varistors: { name: string; value: string }[];
+  fuses: { name: string; value: string }[];
+  polarityProtection: { name: string; value: string; type: string }[];
+}
+
+export interface TestPointDesign {
+  design: string;
+  testPointCount?: number;
+  testPoints: { name: string; net: string; category: string }[];
+  debugHeaders: { name: string; value: string; type: string; nets: string[] }[];
+  icspConnectors: { name: string; value: string; nets: string[]; pinCount: number }[];
+}
+
+export interface BoardSummary {
+  design: string;
+  dimensions: { widthMm: number; heightMm: number };
+  areaMm2: number;
+  componentCount: number;
+  densityPartsCm2: number;
+  copperLayers: number;
+  smdCount: number;
+  thtCount: number;
+  smdRatio: number;
+  signalNets: number;
+  mcuFamilies: string[];
+  mcuCount: number;
+  regulators: string[];
+  hasTriacs: boolean;
+  hasRelays: boolean;
+  hasDisplay: boolean;
+  hasSensors: boolean;
+  commInterfaces: string[];
+  ledCount: number;
+  totalIoPins: number;
+  complexity: number;
+  hasSchematic: boolean;
+  componentTypes: Record<string, number>;
+}
+
+export interface ProgrammingInterface {
+  id: string;
+  name: string;
+  type: "pogo" | "tag-connect" | "icsp" | "swd" | "jtag" | "uart-boot";
+  mcuFamilies: string[];
+  pinCount: number;
+  pitch?: number;
+  pins: {
+    pin: number;
+    function: string;
+    mcuPin: string;
+    notes?: string;
+  }[];
+  footprint?: string;
+  libraryFile?: string;
+  description: string;
+  protocol: string;
+  notes?: string;
 }
 
 // ── Eagle SCR Generation ──

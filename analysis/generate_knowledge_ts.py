@@ -362,9 +362,200 @@ def generate_silkscreen():
     )
 
 
+def generate_pic_ad():
+    """Generate mined-pic-ad.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "pic_ad_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-pic-ad.ts")
+    content = 'import { PicAdDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const picAdDesigns: PicAdDesign[] = {json_to_ts_value(data['pic_designs'])};\n\n"
+    content += f"export const picAdSummary = {json_to_ts_value(data['summary'])};\n\n"
+    content += f"export const analogSourceTypes = {json_to_ts_value(data.get('analog_source_types', {}))};\n\n"
+    content += f"export const pinFunctionDistribution = {json_to_ts_value(data.get('pin_function_distribution', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['pic_designs'])} PIC designs)")
+
+
+def generate_triacs_deep():
+    """Generate mined-triacs.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "triac_deep_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-triacs.ts")
+    content = 'import { TriacDeepDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const triacDesigns: TriacDeepDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const triacModels = {json_to_ts_value(data.get('triac_models', {}))};\n\n"
+    content += f"export const optoModels = {json_to_ts_value(data.get('opto_models', {}))};\n\n"
+    content += f"export const snubberCapValues = {json_to_ts_value(data.get('snubber_cap_values', {}))};\n\n"
+    content += f"export const gateResistorValues = {json_to_ts_value(data.get('gate_resistor_values', {}))};\n\n"
+    content += f"export const mcuDriveParts = {json_to_ts_value(data.get('mcu_drive_parts', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} triac designs)")
+
+
+def generate_displays():
+    """Generate mined-displays.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "display_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-displays.ts")
+    content = 'import { DisplayDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const displayDesigns: DisplayDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const displayTypes = {json_to_ts_value(data.get('display_types', {}))};\n\n"
+    content += f"export const displayDriverTypes = {json_to_ts_value(data.get('driver_types', {}))};\n\n"
+    content += f"export const displayInterfaceTypes = {json_to_ts_value(data.get('interface_types', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} display designs)")
+
+
+def generate_power_capacity():
+    """Generate mined-power-capacity.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "power_capacity_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-power-capacity.ts")
+    content = 'import { PowerCapacityBoard } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const powerCapacityBoards: PowerCapacityBoard[] = {json_to_ts_value(data['boards'])};\n\n"
+    content += f"export const powerCapacitySummary = {json_to_ts_value(data['summary'])};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['boards'])} boards)")
+
+
+def generate_relays():
+    """Generate mined-relays.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "relay_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-relays.ts")
+    content = 'import { RelayDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const relayDesigns: RelayDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const relayTypes = {json_to_ts_value(data.get('relay_types', {}))};\n\n"
+    content += f"export const relayDriverICs = {json_to_ts_value(data.get('driver_ics', {}))};\n\n"
+    content += f"export const relayCoilVoltages = {json_to_ts_value(data.get('coil_voltages', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} relay designs)")
+
+
+def generate_comm_interfaces():
+    """Generate mined-comm-interfaces.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "comm_interface_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-comm-interfaces.ts")
+    content = 'import { CommInterfaceDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const commInterfaceDesigns: CommInterfaceDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const commInterfaceTypes = {json_to_ts_value(data.get('interface_types', {}))};\n\n"
+    content += f"export const commTransceiverParts = {json_to_ts_value(data.get('transceiver_parts', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} comm designs)")
+
+
+def generate_sensors():
+    """Generate mined-sensors.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "sensor_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-sensors.ts")
+    content = 'import { SensorDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const sensorDesigns: SensorDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const sensorTypes = {json_to_ts_value(data.get('sensor_types', {}))};\n\n"
+    content += f"export const conditioningComponents = {json_to_ts_value(data.get('conditioning_components', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} sensor designs)")
+
+
+def generate_leds():
+    """Generate mined-leds.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "led_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-leds.ts")
+    content = 'import { LedDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const ledDesigns: LedDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const ledColorDistribution = {json_to_ts_value(data.get('color_distribution', {}))};\n\n"
+    content += f"export const ledCurrentLimitingResistors = {json_to_ts_value(data.get('current_limiting_resistors', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} LED designs)")
+
+
+def generate_protection_mined():
+    """Generate mined-protection.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "protection_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-protection.ts")
+    content = 'import { ProtectionDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const protectionDesigns: ProtectionDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const protectionTypes = {json_to_ts_value(data.get('protection_types', {}))};\n\n"
+    content += f"export const tvsToConnectorDistance = {json_to_ts_value(data.get('tvs_to_connector_distance', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} protection designs)")
+
+
+def generate_testpoints():
+    """Generate mined-testpoints.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "testpoint_patterns.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-testpoints.ts")
+    content = 'import { TestPointDesign } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const testPointDesigns: TestPointDesign[] = {json_to_ts_value(data['designs'])};\n\n"
+    content += f"export const testPointCategories = {json_to_ts_value(data.get('testpoint_categories', {}))};\n\n"
+    content += f"export const debugHeaders = {json_to_ts_value(data.get('debug_headers', {}))};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['designs'])} testpoint designs)")
+
+
+def generate_board_summary():
+    """Generate mined-board-summary.ts."""
+    with open(os.path.join(ANALYSIS_DIR, "board_summary.json")) as f:
+        data = json.load(f)
+
+    filepath = os.path.join(KNOWLEDGE_DIR, "mined-board-summary.ts")
+    content = 'import { BoardSummary } from "../types/index.js";\n\n'
+    content += "// Auto-generated from analysis pipeline — do not edit manually\n\n"
+    content += f"export const boardSummaries: BoardSummary[] = {json_to_ts_value(data['boards'])};\n\n"
+    content += f"export const boardSummarySummary = {json_to_ts_value(data['summary'])};\n"
+
+    with open(filepath, "w") as f:
+        f.write(content)
+    print(f"  Wrote {filepath} ({len(data['boards'])} board summaries)")
+
+
 def update_barrel_export():
-    """Update src/knowledge/index.ts with new mined exports."""
-    new_exports = [
+    """Update src/knowledge/index.ts with all mined exports."""
+    all_exports = [
         'export { minedDecoupling } from "./mined-decoupling.js";',
         'export { minedPowerSupplies, triacCircuits, emcComponents, fuseRatings } from "./mined-power-supplies.js";',
         'export { mcuProfiles, mcuFamilySummary } from "./mined-mcus.js";',
@@ -372,24 +563,36 @@ def update_barrel_export():
         'export { minedRouting } from "./mined-routing.js";',
         'export { minedPlacement } from "./mined-placement.js";',
         'export { minedSilkscreen } from "./mined-silkscreen.js";',
+        'export { picAdDesigns, picAdSummary, analogSourceTypes, pinFunctionDistribution } from "./mined-pic-ad.js";',
+        'export { triacDesigns, triacModels, optoModels, snubberCapValues, gateResistorValues, mcuDriveParts } from "./mined-triacs.js";',
+        'export { displayDesigns, displayTypes, displayDriverTypes, displayInterfaceTypes } from "./mined-displays.js";',
+        'export { powerCapacityBoards, powerCapacitySummary } from "./mined-power-capacity.js";',
+        'export { relayDesigns, relayTypes, relayDriverICs, relayCoilVoltages } from "./mined-relays.js";',
+        'export { commInterfaceDesigns, commInterfaceTypes, commTransceiverParts } from "./mined-comm-interfaces.js";',
+        'export { sensorDesigns, sensorTypes, conditioningComponents } from "./mined-sensors.js";',
+        'export { ledDesigns, ledColorDistribution, ledCurrentLimitingResistors } from "./mined-leds.js";',
+        'export { protectionDesigns, protectionTypes, tvsToConnectorDistance } from "./mined-protection.js";',
+        'export { testPointDesigns, testPointCategories, debugHeaders } from "./mined-testpoints.js";',
+        'export { boardSummaries, boardSummarySummary } from "./mined-board-summary.js";',
+        'export { programmingInterfaces } from "./mined-programming.js";',
     ]
 
     with open(BARREL_FILE) as f:
         content = f.read()
 
-    # Check if already added
-    if "mined-decoupling" in content:
-        print("  Barrel exports already present — skipping update")
-        return
+    # Remove old mined exports section and rebuild
+    marker = "// ── Mined Design Knowledge ──"
+    if marker in content:
+        content = content[:content.index(marker)]
 
-    content += "\n// ── Mined Design Knowledge ──\n"
-    for exp in new_exports:
+    content += marker + "\n"
+    for exp in all_exports:
         content += exp + "\n"
 
     with open(BARREL_FILE, "w") as f:
         f.write(content)
 
-    print(f"  Updated {BARREL_FILE} with {len(new_exports)} new exports")
+    print(f"  Updated {BARREL_FILE} with {len(all_exports)} mined exports")
 
 
 def main():
@@ -403,6 +606,17 @@ def main():
     generate_routing()
     generate_placement()
     generate_silkscreen()
+    generate_pic_ad()
+    generate_triacs_deep()
+    generate_displays()
+    generate_power_capacity()
+    generate_relays()
+    generate_comm_interfaces()
+    generate_sensors()
+    generate_leds()
+    generate_protection_mined()
+    generate_testpoints()
+    generate_board_summary()
     update_barrel_export()
 
     print()

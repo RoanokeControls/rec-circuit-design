@@ -271,147 +271,6 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-ncp1117st33t3gsot-223",
-      icValue: "NCP1117ST33T3GSOT-223",
-      icCategory: "regulator",
-      occurrences: 34,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.1UF_0603_10%_16V"
-          ],
-          medianDistanceMm: 82.33,
-          p25Mm: 44.32,
-          p75Mm: 115.94,
-          count: 216
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 32.21,
-          p25Mm: 17.13,
-          p75Mm: 48.84,
-          count: 177
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 37.53,
-          p25Mm: 24.13,
-          p75Mm: 56.54,
-          count: 76
-        },
-        {
-          role: "bypass",
-          preferredValue: "2.2UF_0603",
-          values: [
-            "2.2UF_0603"
-          ],
-          medianDistanceMm: 105.99,
-          p25Mm: 73.1,
-          p75Mm: 126.03,
-          count: 59
-        },
-        {
-          role: "bypass",
-          preferredValue: "12PF_0603",
-          values: [
-            "12PF_0603"
-          ],
-          medianDistanceMm: 83.34,
-          p25Mm: 77.22,
-          p75Mm: 91.05,
-          count: 42
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 12.7,
-          p25Mm: 5.84,
-          p75Mm: 32.37,
-          count: 41
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
-          values: [
-            "100UF_1206_6.3V1206"
-          ],
-          medianDistanceMm: 4.93,
-          p25Mm: 3.21,
-          p75Mm: 39.53,
-          count: 31
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_25V_ALE",
-          values: [
-            "100UF_25V_ALE"
-          ],
-          medianDistanceMm: 7.3,
-          p25Mm: 4.83,
-          p75Mm: 8.48,
-          count: 26
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0805",
-          values: [
-            "0.1UF_0805"
-          ],
-          medianDistanceMm: 12.04,
-          p25Mm: 10.61,
-          p75Mm: 17.73,
-          count: 22
-        },
-        {
-          role: "bypass",
-          preferredValue: "100NF_0805",
-          values: [
-            "100NF_0805"
-          ],
-          medianDistanceMm: 77.96,
-          p25Mm: 66.14,
-          p75Mm: 83.89,
-          count: 18
-        }
-      ],
-      designRule: "Caps for NCP1117ST33T3GSOT-223 tend to be distant (48.21mm median) — consider closer placement",
-      sourceDesigns: [
-        "12_in_CD_Tmr_Ctrl_Small",
-        "12_inch_CD_Timer_Control",
-        "All-In-One_Schematic_IO_Board",
-        "All-In-One_Schematic_IO_Board_w_ESP32",
-        "Alpha_Digit",
-        "Alpha_Digit_PIK",
-        "Alpha_sign_control",
-        "Alpha_sign_control_PIK",
-        "Astrodyne_chevy_replacement",
-        "Astrodyne_chevy_replacement_BBU",
-        "CarterHoffmann485DisplayAlternate",
-        "Clamshell_Grill",
-        "Clamshell_Grill_PIK",
-        "FGLF0788-01_PIK",
-        "LCD_Control",
-        "Livewell Schematic",
-        "NuvoLiteBrick_PCB",
-        "NuvoLite_PCB",
-        "NuvoLite_PCB_PIK_Bottom",
-        "NuvoLite_PCB_PIK_Top"
-      ]
-    },
-    {
       id: "decoupling-moc3063sr2m",
       icValue: "MOC3063SR2M",
       icCategory: "driver",
@@ -521,6 +380,147 @@ export const minedDecoupling: DecouplingPattern[] = [
         "PCBLF0804-4_PIK",
         "Southbend_RTD_control",
         "TouchMZ_In_Out_Board"
+      ]
+    },
+    {
+      id: "decoupling-ncp1117st33t3g",
+      icValue: "NCP1117ST33T3G",
+      icCategory: "regulator",
+      occurrences: 27,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 62.74,
+          p25Mm: 30.68,
+          p75Mm: 99.04,
+          count: 205
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 30.71,
+          p25Mm: 16.42,
+          p75Mm: 50.77,
+          count: 97
+        },
+        {
+          role: "bypass",
+          preferredValue: "2.2UF_0603",
+          values: [
+            "2.2UF_0603"
+          ],
+          medianDistanceMm: 115.35,
+          p25Mm: 81.01,
+          p75Mm: 136.22,
+          count: 43
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 34.76,
+          p25Mm: 15.18,
+          p75Mm: 47.71,
+          count: 35
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 6.1,
+          p25Mm: 5.31,
+          p75Mm: 29.38,
+          count: 31
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1206_10%_25V",
+          values: [
+            "10UF_1206_10%_25V"
+          ],
+          medianDistanceMm: 49.13,
+          p25Mm: 14.05,
+          p75Mm: 71.24,
+          count: 25
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 7.94,
+          p25Mm: 4.2,
+          p75Mm: 36.91,
+          count: 19
+        },
+        {
+          role: "bypass",
+          preferredValue: "12PF_0603",
+          values: [
+            "12PF_0603"
+          ],
+          medianDistanceMm: 89.49,
+          p25Mm: 39.86,
+          p75Mm: 132.48,
+          count: 18
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_25V_ALE",
+          values: [
+            "100UF_25V_ALE"
+          ],
+          medianDistanceMm: 7.3,
+          p25Mm: 4.95,
+          p75Mm: 7.85,
+          count: 17
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0805",
+          values: [
+            "0.1UF_0805"
+          ],
+          medianDistanceMm: 25.14,
+          p25Mm: 17.73,
+          p75Mm: 47.68,
+          count: 17
+        }
+      ],
+      designRule: "Caps for NCP1117ST33T3G tend to be distant (45.51mm median) — consider closer placement",
+      sourceDesigns: [
+        "12_in_CD_Tmr_Ctrl_Small",
+        "12_inch_CD_Timer_Control",
+        "All-In-One_Schematic_IO_Board",
+        "All-In-One_Schematic_IO_Board_w_ESP32",
+        "Alpha_Digit",
+        "Alpha_sign_control",
+        "Astrodyne_chevy_replacement",
+        "Astrodyne_chevy_replacement_BBU",
+        "CarterHoffmann485DisplayAlternate",
+        "Chevy_Test_IC",
+        "Clamshell_Grill",
+        "Derived2DPCB_fixoptolocators v1",
+        "HDMI_Display",
+        "LCD_Control",
+        "Livewell Schematic",
+        "Operator_Display",
+        "PCBLF0759_PIK",
+        "Pitts_LCD_Faceplate",
+        "Quantum_NXP_Programmer",
+        "RG0026_Adapter"
       ]
     },
     {
@@ -642,17 +642,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 6
         },
         {
-          role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 72.11,
-          p25Mm: 72.11,
-          p75Mm: 72.11,
-          count: 3
-        },
-        {
           role: "bulk",
           preferredValue: "1000UF_50V_RAD",
           values: [
@@ -661,6 +650,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 33.77,
           p25Mm: 33.57,
           p75Mm: 33.77,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 72.11,
+          p25Mm: 72.11,
+          p75Mm: 72.11,
           count: 3
         },
         {
@@ -713,17 +713,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "100NF_0805",
-          values: [
-            "100NF_0805"
-          ],
-          medianDistanceMm: 63.87,
-          p25Mm: 54.87,
-          p75Mm: 72.53,
-          count: 36
-        },
-        {
-          role: "bypass",
           preferredValue: "0.1UF_50V_0603",
           values: [
             "0.1UF_50V_0603"
@@ -731,6 +720,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 37.46,
           p25Mm: 26.47,
           p75Mm: 43.89,
+          count: 36
+        },
+        {
+          role: "bypass",
+          preferredValue: "100NF_0805",
+          values: [
+            "100NF_0805"
+          ],
+          medianDistanceMm: 63.87,
+          p25Mm: 54.87,
+          p75Mm: 72.53,
           count: 36
         },
         {
@@ -957,43 +957,21 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-irm-02-5mean_well_irm-02-5_0_0",
-      icValue: "IRM-02-5MEAN_WELL_IRM-02-5_0_0",
+      id: "decoupling-ncp1117st33t3gsot-223",
+      icValue: "NCP1117ST33T3GSOT-223",
       icCategory: "regulator",
       occurrences: 14,
       caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 40.84,
-          p25Mm: 31.19,
-          p75Mm: 60.31,
-          count: 77
-        },
         {
           role: "bypass",
           preferredValue: "0.1UF_0603_5%_50V",
           values: [
             "0.1UF_0603_5%_50V"
           ],
-          medianDistanceMm: 43.45,
-          p25Mm: 37.89,
-          p75Mm: 64.23,
-          count: 48
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_25V_ALE",
-          values: [
-            "100UF_25V_ALE"
-          ],
-          medianDistanceMm: 12.84,
-          p25Mm: 8.37,
-          p75Mm: 30.96,
-          count: 28
+          medianDistanceMm: 33.78,
+          p25Mm: 17.13,
+          p75Mm: 43.94,
+          count: 84
         },
         {
           role: "bypass",
@@ -1001,21 +979,32 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "0.1UF_0603_10%_16V"
           ],
-          medianDistanceMm: 44.8,
-          p25Mm: 29.51,
-          p75Mm: 54.06,
-          count: 21
+          medianDistanceMm: 59.63,
+          p25Mm: 31.46,
+          p75Mm: 103.73,
+          count: 75
         },
         {
           role: "bypass",
-          preferredValue: "100NF_0805",
+          preferredValue: "0.1UF_50V_0603",
           values: [
-            "100NF_0805"
+            "0.1UF_50V_0603"
           ],
-          medianDistanceMm: 90.88,
-          p25Mm: 79.02,
-          p75Mm: 96.81,
-          count: 18
+          medianDistanceMm: 44.97,
+          p25Mm: 27.89,
+          p75Mm: 66.13,
+          count: 41
+        },
+        {
+          role: "bypass",
+          preferredValue: "12PF_0603",
+          values: [
+            "12PF_0603"
+          ],
+          medianDistanceMm: 78.23,
+          p25Mm: 72.18,
+          p75Mm: 85.07,
+          count: 32
         },
         {
           role: "bypass",
@@ -1023,68 +1012,21 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "0.1UF_0805"
           ],
-          medianDistanceMm: 32.89,
-          p25Mm: 19.53,
-          p75Mm: 32.89,
-          count: 6
+          medianDistanceMm: 12.04,
+          p25Mm: 10.61,
+          p75Mm: 15.56,
+          count: 18
         },
         {
           role: "bulk",
-          preferredValue: "100UF_35V_ALE",
+          preferredValue: "100UF_1206_6.3V1206",
           values: [
-            "100UF_35V_ALE"
+            "100UF_1206_6.3V1206"
           ],
-          medianDistanceMm: 15.86,
-          p25Mm: 8.82,
-          p75Mm: 15.86,
-          count: 6
-        }
-      ],
-      designRule: "Caps for IRM-02-5MEAN_WELL_IRM-02-5_0_0 tend to be distant (41.47mm median) — consider closer placement",
-      sourceDesigns: [
-        "Astrodyne_chevy_replacement",
-        "Astrodyne_chevy_replacement_BBU",
-        "BGW_Fan_Control",
-        "BGW_Fan_Control_PIK",
-        "Clamshell_Grill",
-        "Clamshell_Grill_PIK",
-        "PCBLF0714-1_PIK",
-        "PCBLF0752-0_PIK",
-        "PCBLF0804-2_PIK",
-        "PCBLF0804-4_PIK",
-        "Southbend_RTD_control",
-        "ZLF0053",
-        "ZLF0053_PIK",
-        "ZLF0053_v44_PIK"
-      ]
-    },
-    {
-      id: "decoupling-pic18f26k226sp",
-      icValue: "PIC18F26K226SP",
-      icCategory: "mcu",
-      occurrences: 12,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 14.98,
-          p25Mm: 8.12,
-          p75Mm: 19.16,
-          count: 80
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.1UF_0603_10%_16V"
-          ],
-          medianDistanceMm: 23.0,
-          p25Mm: 7.37,
-          p75Mm: 87.3,
-          count: 78
+          medianDistanceMm: 4.86,
+          p25Mm: 3.16,
+          p75Mm: 39.53,
+          count: 16
         },
         {
           role: "bypass",
@@ -1092,9 +1034,9 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "2.2UF_0603"
           ],
-          medianDistanceMm: 86.23,
-          p25Mm: 74.01,
-          p75Mm: 102.4,
+          medianDistanceMm: 98.29,
+          p25Mm: 42.41,
+          p75Mm: 115.67,
           count: 16
         },
         {
@@ -1103,43 +1045,21 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "100UF_35V_ALE"
           ],
-          medianDistanceMm: 38.67,
-          p25Mm: 33.2,
-          p75Mm: 63.94,
-          count: 14
+          medianDistanceMm: 79.37,
+          p25Mm: 5.84,
+          p75Mm: 91.56,
+          count: 10
         },
         {
           role: "bulk",
-          preferredValue: "22UF_1206_10V1206",
+          preferredValue: "100UF_25V_ALE",
           values: [
-            "22UF_1206_10V1206"
+            "100UF_25V_ALE"
           ],
-          medianDistanceMm: 9.4,
-          p25Mm: 8.54,
-          p75Mm: 10.49,
-          count: 11
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
-          values: [
-            "100UF_1206_6.3V1206"
-          ],
-          medianDistanceMm: 28.96,
-          p25Mm: 27.43,
-          p75Mm: 32.87,
+          medianDistanceMm: 5.35,
+          p25Mm: 4.83,
+          p75Mm: 8.48,
           count: 9
-        },
-        {
-          role: "bypass",
-          preferredValue: "12PF_0603",
-          values: [
-            "12PF_0603"
-          ],
-          medianDistanceMm: 96.29,
-          p25Mm: 92.89,
-          p75Mm: 96.29,
-          count: 4
         },
         {
           role: "bypass",
@@ -1147,48 +1067,27 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "10NF_0805"
           ],
-          medianDistanceMm: 62.37,
-          p25Mm: 62.37,
-          p75Mm: 62.37,
-          count: 3
-        },
-        {
-          role: "bulk",
-          preferredValue: "1000UF_50V_RAD",
-          values: [
-            "1000UF_50V_RAD"
-          ],
-          medianDistanceMm: 24.02,
-          p25Mm: 23.76,
-          p75Mm: 24.02,
-          count: 3
-        },
-        {
-          role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
-          values: [
-            "10UF_1206_10%_25V"
-          ],
-          medianDistanceMm: 58.42,
-          p25Mm: 58.42,
-          p75Mm: 58.42,
-          count: 1
+          medianDistanceMm: 94.45,
+          p25Mm: 89.09,
+          p75Mm: 94.45,
+          count: 8
         }
       ],
-      designRule: "Caps for PIC18F26K226SP tend to be distant (19.17mm median) — consider closer placement",
+      designRule: "Caps for NCP1117ST33T3GSOT-223 tend to be distant (43.94mm median) — consider closer placement",
       sourceDesigns: [
-        "12_in_CD_Tmr_Ctrl_Small",
-        "All-In-One_Schematic_IO_Board",
-        "All-In-One_Schematic_IO_Board_w_ESP32",
-        "Alpha_sign_control",
+        "Alpha_Digit_PIK",
         "Alpha_sign_control_PIK",
-        "FGLF0623-03_PIK",
-        "FGLF0623_Triac_Board",
-        "FGLF0623_Triac_Board_Original",
+        "Clamshell_Grill_PIK",
         "FGLF0788-01_PIK",
-        "ZLF0053",
-        "ZLF0053_PIK",
-        "ZLF0053_v44_PIK"
+        "NuvoLiteBrick_PCB",
+        "NuvoLite_PCB",
+        "NuvoLite_PCB_PIK_Bottom",
+        "NuvoLite_PCB_PIK_Top",
+        "Operator_Display_PIK",
+        "PCBLF0706-1_PIK",
+        "PCBLF0714-1_PIK",
+        "PCBLF0752-0_PIK",
+        "PCBLF0827-0_PIK"
       ]
     },
     {
@@ -1730,135 +1629,6 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-mc7805ctgmc7805",
-      icValue: "MC7805CTGMC7805",
-      icCategory: "regulator",
-      occurrences: 10,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 35.55,
-          p25Mm: 9.03,
-          p75Mm: 55.45,
-          count: 48
-        },
-        {
-          role: "bypass",
-          preferredValue: "12PF_0603",
-          values: [
-            "12PF_0603"
-          ],
-          medianDistanceMm: 88.68,
-          p25Mm: 81.84,
-          p75Mm: 94.03,
-          count: 28
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 76.34,
-          p25Mm: 36.49,
-          p75Mm: 86.19,
-          count: 24
-        },
-        {
-          role: "bulk",
-          preferredValue: "10UF_1210",
-          values: [
-            "10UF_1210"
-          ],
-          medianDistanceMm: 15.15,
-          p25Mm: 10.6,
-          p75Mm: 170.09,
-          count: 18
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 16.13,
-          p25Mm: 8.89,
-          p75Mm: 169.73,
-          count: 18
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0805",
-          values: [
-            "0.1UF_0805"
-          ],
-          medianDistanceMm: 10.16,
-          p25Mm: 4.16,
-          p75Mm: 10.42,
-          count: 16
-        },
-        {
-          role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 103.22,
-          p25Mm: 47.75,
-          p75Mm: 108.43,
-          count: 11
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V1206",
-          values: [
-            "22UF_1206_10V1206"
-          ],
-          medianDistanceMm: 25.68,
-          p25Mm: 4.2,
-          p75Mm: 38.73,
-          count: 9
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V",
-          values: [
-            "22UF_1206_10V"
-          ],
-          medianDistanceMm: 16.45,
-          p25Mm: 4.08,
-          p75Mm: 16.45,
-          count: 8
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_0805",
-          values: [
-            "4.7UF_0805"
-          ],
-          medianDistanceMm: 97.16,
-          p25Mm: 84.24,
-          p75Mm: 97.16,
-          count: 8
-        }
-      ],
-      designRule: "Caps for MC7805CTGMC7805 tend to be distant (46.69mm median) — consider closer placement",
-      sourceDesigns: [
-        "Auto_Test_Circuit",
-        "FGLF0623-03_PIK",
-        "FGLF0623_Triac_Board",
-        "FGLF0623_Triac_Board_Original",
-        "NuvoLiteBrick_PCB",
-        "NuvoLite_PCB",
-        "NuvoLite_PCB_PIK_Bottom",
-        "NuvoLite_PCB_PIK_Top"
-      ]
-    },
-    {
       id: "decoupling-sa56-21srwa",
       icValue: "SA56-21SRWA",
       icCategory: "other",
@@ -1991,6 +1761,28 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "1UF_0805_20%",
+          values: [
+            "1UF_0805_20%"
+          ],
+          medianDistanceMm: 39.28,
+          p25Mm: 31.22,
+          p75Mm: 90.56,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "18pF",
+          values: [
+            "18pF"
+          ],
+          medianDistanceMm: 49.9,
+          p25Mm: 43.26,
+          p75Mm: 106.0,
+          count: 12
+        },
+        {
+          role: "bypass",
           preferredValue: "3300PF_1206",
           values: [
             "3300PF_1206"
@@ -1998,28 +1790,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 111.16,
           p25Mm: 52.32,
           p75Mm: 121.0,
-          count: 12
-        },
-        {
-          role: "bypass",
-          preferredValue: "2200PF_0603",
-          values: [
-            "2200PF_0603"
-          ],
-          medianDistanceMm: 113.49,
-          p25Mm: 57.95,
-          p75Mm: 123.54,
-          count: 12
-        },
-        {
-          role: "bulk",
-          preferredValue: "2200UF_50V_RAD",
-          values: [
-            "2200UF_50V_RAD"
-          ],
-          medianDistanceMm: 110.19,
-          p25Mm: 45.95,
-          p75Mm: 122.36,
           count: 12
         }
       ],
@@ -2034,7 +1804,7 @@ export const minedDecoupling: DecouplingPattern[] = [
       id: "decoupling-lmv331idckrdck5-m",
       icValue: "LMV331IDCKRDCK5-M",
       icCategory: "other",
-      occurrences: 10,
+      occurrences: 9,
       caps: [
         {
           role: "bypass",
@@ -2042,10 +1812,10 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "0.1UF_0805"
           ],
-          medianDistanceMm: 31.08,
+          medianDistanceMm: 32.8,
           p25Mm: 20.73,
           p75Mm: 50.92,
-          count: 76
+          count: 52
         },
         {
           role: "bypass",
@@ -2078,18 +1848,7 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 52.04,
           p25Mm: 49.69,
           p75Mm: 54.63,
-          count: 12
-        },
-        {
-          role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 25.9,
-          p25Mm: 11.23,
-          p75Mm: 33.01,
-          count: 9
+          count: 8
         },
         {
           role: "bulk",
@@ -2101,6 +1860,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           p25Mm: 7.34,
           p75Mm: 10.96,
           count: 7
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 25.9,
+          p25Mm: 11.23,
+          p75Mm: 33.01,
+          count: 6
         },
         {
           role: "bulk",
@@ -2122,12 +1892,11 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 21.65,
           p25Mm: 21.65,
           p75Mm: 21.65,
-          count: 3
+          count: 2
         }
       ],
       designRule: "Caps for LMV331IDCKRDCK5-M tend to be distant (30.11mm median) — consider closer placement",
       sourceDesigns: [
-        "Main_Board",
         "Main_Board_PIK",
         "Main_Board_test_stand",
         "NuvoLiteBrick_PCB",
@@ -2137,125 +1906,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         "PCBLF0648-3",
         "PCBLF0648-3_PIK",
         "PCBLF0648-3_gerber_experiment"
-      ]
-    },
-    {
-      id: "decoupling-pic24fj64ga30664",
-      icValue: "PIC24FJ64GA30664",
-      icCategory: "other",
-      occurrences: 9,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.1UF_0603_10%_16V"
-          ],
-          medianDistanceMm: 9.27,
-          p25Mm: 3.38,
-          p75Mm: 24.32,
-          count: 188
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V1206",
-          values: [
-            "22UF_1206_10V1206"
-          ],
-          medianDistanceMm: 10.7,
-          p25Mm: 1.68,
-          p75Mm: 13.59,
-          count: 22
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
-          values: [
-            "100UF_1206_6.3V1206"
-          ],
-          medianDistanceMm: 44.74,
-          p25Mm: 11.09,
-          p75Mm: 44.74,
-          count: 15
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 71.32,
-          p25Mm: 63.63,
-          p75Mm: 79.05,
-          count: 8
-        }
-      ],
-      designRule: "Bypass caps for PIC24FJ64GA30664 typically 5-15mm away (median: 10.7mm)",
-      sourceDesigns: [
-        "All-In-One_Schematic",
-        "Bottom",
-        "PCBLF0658-1",
-        "PCBLF0658-1_PIK",
-        "PCBLF0658-1_Panel",
-        "ProSmoker_PK100"
-      ]
-    },
-    {
-      id: "decoupling-mcp6061-e-snmicrochip_mcp6061-e-sn_0_2",
-      icValue: "MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2",
-      icCategory: "other",
-      occurrences: 9,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0805",
-          values: [
-            "0.1UF_0805"
-          ],
-          medianDistanceMm: 38.81,
-          p25Mm: 20.83,
-          p75Mm: 53.58,
-          count: 216
-        },
-        {
-          role: "bulk",
-          preferredValue: "470  µF ",
-          values: [
-            "470  µF "
-          ],
-          medianDistanceMm: 52.77,
-          p25Mm: 47.88,
-          p75Mm: 58.68,
-          count: 36
-        },
-        {
-          role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 25.11,
-          p25Mm: 6.03,
-          p75Mm: 30.49,
-          count: 27
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 24.84,
-          p25Mm: 21.25,
-          p75Mm: 36.16,
-          count: 9
-        }
-      ],
-      designRule: "Caps for MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2 tend to be distant (38.81mm median) — consider closer placement",
-      sourceDesigns: [
-        "Main_Board",
-        "Main_Board_PIK",
-        "Main_Board_test_stand"
       ]
     },
     {
@@ -2299,6 +1949,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "4.7UF_50V_RAD",
+          values: [
+            "4.7UF_50V_RAD"
+          ],
+          medianDistanceMm: 50.65,
+          p25Mm: 41.82,
+          p75Mm: 51.34,
+          count: 6
+        },
+        {
+          role: "bypass",
           preferredValue: "100PF_50V_AXIALWIDE",
           values: [
             "100PF_50V_AXIALWIDE"
@@ -2320,17 +1981,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 6
         },
         {
-          role: "bypass",
-          preferredValue: "4.7UF_50V_RAD",
-          values: [
-            "4.7UF_50V_RAD"
-          ],
-          medianDistanceMm: 50.65,
-          p25Mm: 41.82,
-          p75Mm: 51.34,
-          count: 6
-        },
-        {
           role: "bulk",
           preferredValue: "100UF_35V_RAD",
           values: [
@@ -2349,8 +1999,8 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-ltv-847ltv-847_lto",
-      icValue: "LTV-847LTV-847_LTO",
+      id: "decoupling-ltv-847",
+      icValue: "LTV-847",
       icCategory: "other",
       occurrences: 8,
       caps: [
@@ -2366,17 +2016,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 48
         },
         {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 137.89,
-          p25Mm: 116.56,
-          p75Mm: 160.43,
-          count: 48
-        },
-        {
           role: "bulk",
           preferredValue: "100UF_35V_ALE",
           values: [
@@ -2386,51 +2025,84 @@ export const minedDecoupling: DecouplingPattern[] = [
           p25Mm: 126.49,
           p75Mm: 168.1,
           count: 48
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 137.89,
+          p25Mm: 116.56,
+          p75Mm: 160.43,
+          count: 48
         }
       ],
-      designRule: "Caps for LTV-847LTV-847_LTO tend to be distant (141.35mm median) — consider closer placement",
+      designRule: "Caps for LTV-847 tend to be distant (141.35mm median) — consider closer placement",
       sourceDesigns: [
         "Auto_Test_Circuit"
       ]
     },
     {
-      id: "decoupling-soic127p1032x265-16n",
-      icValue: "SOIC127P1032X265-16N",
-      icCategory: "other",
+      id: "decoupling-irm-02-5mean_well_irm-02-5_0_0",
+      icValue: "IRM-02-5MEAN_WELL_IRM-02-5_0_0",
+      icCategory: "regulator",
       occurrences: 8,
       caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 36.86,
+          p25Mm: 31.19,
+          p75Mm: 55.75,
+          count: 41
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 44.6,
+          p25Mm: 37.89,
+          p75Mm: 89.62,
+          count: 31
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_25V_ALE",
+          values: [
+            "100UF_25V_ALE"
+          ],
+          medianDistanceMm: 12.84,
+          p25Mm: 8.37,
+          p75Mm: 30.96,
+          count: 15
+        },
         {
           role: "bypass",
           preferredValue: "0.1UF_0603_10%_16V",
           values: [
             "0.1UF_0603_10%_16V"
           ],
-          medianDistanceMm: 19.24,
-          p25Mm: 10.0,
-          p75Mm: 23.78,
-          count: 161
+          medianDistanceMm: 47.26,
+          p25Mm: 29.51,
+          p75Mm: 54.06,
+          count: 14
         },
         {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V1206",
+          role: "bypass",
+          preferredValue: "100NF_0805",
           values: [
-            "22UF_1206_10V1206"
+            "100NF_0805"
           ],
-          medianDistanceMm: 20.49,
-          p25Mm: 5.25,
-          p75Mm: 24.88,
-          count: 20
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
-          values: [
-            "100UF_1206_6.3V1206"
-          ],
-          medianDistanceMm: 23.27,
-          p25Mm: 23.27,
-          p75Mm: 30.12,
-          count: 13
+          medianDistanceMm: 90.88,
+          p25Mm: 79.02,
+          p75Mm: 96.81,
+          count: 6
         },
         {
           role: "bulk",
@@ -2438,19 +2110,33 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "100UF_35V_ALE"
           ],
-          medianDistanceMm: 50.41,
-          p25Mm: 40.61,
-          p75Mm: 58.24,
-          count: 5
+          medianDistanceMm: 15.86,
+          p25Mm: 8.82,
+          p75Mm: 15.86,
+          count: 4
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0805",
+          values: [
+            "0.1UF_0805"
+          ],
+          medianDistanceMm: 32.89,
+          p25Mm: 19.53,
+          p75Mm: 32.89,
+          count: 2
         }
       ],
-      designRule: "Caps for SOIC127P1032X265-16N tend to be distant (20.49mm median) — consider closer placement",
+      designRule: "Caps for IRM-02-5MEAN_WELL_IRM-02-5_0_0 tend to be distant (40.84mm median) — consider closer placement",
       sourceDesigns: [
-        "Bottom",
-        "PCBLF0658-1",
-        "PCBLF0658-1_PIK",
-        "PCBLF0658-1_Panel",
-        "ProSmoker_PK100"
+        "BGW_Fan_Control_PIK",
+        "Clamshell_Grill_PIK",
+        "PCBLF0714-1_PIK",
+        "PCBLF0752-0_PIK",
+        "PCBLF0804-2_PIK",
+        "PCBLF0804-4_PIK",
+        "ZLF0053_PIK",
+        "ZLF0053_v44_PIK"
       ]
     },
     {
@@ -2593,17 +2279,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 8
         },
         {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V",
-          values: [
-            "22UF_1206_10V"
-          ],
-          medianDistanceMm: 50.64,
-          p25Mm: 38.69,
-          p75Mm: 50.64,
-          count: 8
-        },
-        {
           role: "bypass",
           preferredValue: "4.7UF_0805",
           values: [
@@ -2612,6 +2287,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 32.31,
           p25Mm: 15.23,
           p75Mm: 32.31,
+          count: 8
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V",
+          values: [
+            "22UF_1206_10V"
+          ],
+          medianDistanceMm: 50.64,
+          p25Mm: 38.69,
+          p75Mm: 50.64,
           count: 8
         }
       ],
@@ -2689,17 +2375,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 16
         },
         {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V",
-          values: [
-            "22UF_1206_10V"
-          ],
-          medianDistanceMm: 24.22,
-          p25Mm: 17.3,
-          p75Mm: 24.93,
-          count: 16
-        },
-        {
           role: "bypass",
           preferredValue: "4.7UF_0805",
           values: [
@@ -2708,6 +2383,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 63.52,
           p25Mm: 52.69,
           p75Mm: 68.56,
+          count: 16
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V",
+          values: [
+            "22UF_1206_10V"
+          ],
+          medianDistanceMm: 24.22,
+          p25Mm: 17.3,
+          p75Mm: 24.93,
           count: 16
         },
         {
@@ -2722,14 +2408,14 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 8
         },
         {
-          role: "bypass",
-          preferredValue: "2200PF_0603",
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
           values: [
-            "2200PF_0603"
+            "100UF_1206_6.3V1206"
           ],
-          medianDistanceMm: 38.94,
-          p25Mm: 26.69,
-          p75Mm: 38.94,
+          medianDistanceMm: 18.28,
+          p25Mm: 14.14,
+          p75Mm: 18.28,
           count: 8
         },
         {
@@ -2788,9 +2474,9 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-ncp1117st33t3g",
-      icValue: "NCP1117ST33T3G",
-      icCategory: "regulator",
+      id: "decoupling-pic18f26k22",
+      icValue: "PIC18F26K22",
+      icCategory: "mcu",
       occurrences: 7,
       caps: [
         {
@@ -2799,54 +2485,43 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "0.1UF_0603_10%_16V"
           ],
-          medianDistanceMm: 32.92,
-          p25Mm: 12.94,
-          p75Mm: 57.83,
+          medianDistanceMm: 31.41,
+          p25Mm: 14.17,
+          p75Mm: 90.14,
           count: 64
         },
         {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 14.98,
+          p25Mm: 7.62,
+          p75Mm: 19.16,
+          count: 42
+        },
+        {
+          role: "bypass",
+          preferredValue: "2.2UF_0603",
+          values: [
+            "2.2UF_0603"
+          ],
+          medianDistanceMm: 86.23,
+          p25Mm: 74.01,
+          p75Mm: 102.4,
+          count: 16
+        },
+        {
           role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
+          preferredValue: "100UF_35V_ALE",
           values: [
-            "10UF_1206_10%_25V"
+            "100UF_35V_ALE"
           ],
-          medianDistanceMm: 38.7,
-          p25Mm: 4.66,
-          p75Mm: 62.42,
-          count: 20
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0805",
-          values: [
-            "0.1UF_0805"
-          ],
-          medianDistanceMm: 26.93,
-          p25Mm: 18.32,
-          p75Mm: 62.4,
-          count: 13
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 51.69,
-          p25Mm: 27.23,
-          p75Mm: 54.06,
-          count: 12
-        },
-        {
-          role: "bypass",
-          preferredValue: "12PF_0603",
-          values: [
-            "12PF_0603"
-          ],
-          medianDistanceMm: 39.86,
-          p25Mm: 36.25,
-          p75Mm: 41.01,
-          count: 8
+          medianDistanceMm: 55.65,
+          p25Mm: 35.54,
+          p75Mm: 63.94,
+          count: 10
         },
         {
           role: "bulk",
@@ -2854,65 +2529,194 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "22UF_1206_10V1206"
           ],
-          medianDistanceMm: 2.88,
-          p25Mm: 2.23,
-          p75Mm: 43.1,
-          count: 6
+          medianDistanceMm: 10.49,
+          p25Mm: 9.4,
+          p75Mm: 48.58,
+          count: 8
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 28.96,
+          p25Mm: 27.43,
+          p75Mm: 32.87,
+          count: 5
         },
         {
           role: "bypass",
-          preferredValue: "22PF_0603",
+          preferredValue: "12PF_0603",
           values: [
-            "22PF_0603"
+            "12PF_0603"
           ],
-          medianDistanceMm: 38.53,
-          p25Mm: 38.36,
-          p75Mm: 38.53,
-          count: 6
-        },
-        {
-          role: "bypass",
-          preferredValue: "1000PF_0603",
-          values: [
-            "1000PF_0603"
-          ],
-          medianDistanceMm: 43.26,
-          p25Mm: 41.59,
-          p75Mm: 45.51,
-          count: 6
-        },
-        {
-          role: "bypass",
-          preferredValue: "12PF_0402",
-          values: [
-            "12PF_0402"
-          ],
-          medianDistanceMm: 65.59,
-          p25Mm: 65.58,
-          p75Mm: 65.59,
+          medianDistanceMm: 96.29,
+          p25Mm: 92.89,
+          p75Mm: 96.29,
           count: 4
         },
         {
           role: "bulk",
-          preferredValue: "22UF_10V1206",
+          preferredValue: "1000UF_50V_RAD",
           values: [
-            "22UF_10V1206"
+            "1000UF_50V_RAD"
           ],
-          medianDistanceMm: 8.36,
-          p25Mm: 5.82,
-          p75Mm: 53.31,
-          count: 4
+          medianDistanceMm: 24.02,
+          p25Mm: 23.76,
+          p75Mm: 24.02,
+          count: 2
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 62.37,
+          p25Mm: 62.37,
+          p75Mm: 62.37,
+          count: 2
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1206_10%_25V",
+          values: [
+            "10UF_1206_10%_25V"
+          ],
+          medianDistanceMm: 58.42,
+          p25Mm: 58.42,
+          p75Mm: 58.42,
+          count: 1
         }
       ],
-      designRule: "Caps for NCP1117ST33T3G tend to be distant (36.75mm median) — consider closer placement",
+      designRule: "Caps for PIC18F26K22 tend to be distant (24.64mm median) — consider closer placement",
       sourceDesigns: [
-        "Chevy_Test_IC",
-        "Derived2DPCB_fixoptolocators v1",
-        "HDMI_Display",
-        "PCBLF0759_PIK",
-        "Quantum_NXP_Programmer",
-        "RG0026_Adapter",
-        "atsamd21_only"
+        "12_in_CD_Tmr_Ctrl_Small",
+        "All-In-One_Schematic_IO_Board",
+        "All-In-One_Schematic_IO_Board_w_ESP32",
+        "Alpha_sign_control",
+        "FGLF0623_Triac_Board",
+        "FGLF0623_Triac_Board_Original",
+        "ZLF0053"
+      ]
+    },
+    {
+      id: "decoupling-soic127p1032x265-16n",
+      icValue: "SOIC127P1032X265-16N",
+      icCategory: "other",
+      occurrences: 7,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 19.24,
+          p25Mm: 10.0,
+          p75Mm: 23.78,
+          count: 144
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 20.49,
+          p25Mm: 5.25,
+          p75Mm: 24.88,
+          count: 19
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 30.12,
+          p25Mm: 23.27,
+          p75Mm: 30.12,
+          count: 12
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 58.24,
+          p25Mm: 50.41,
+          p75Mm: 66.08,
+          count: 3
+        }
+      ],
+      designRule: "Caps for SOIC127P1032X265-16N tend to be distant (19.97mm median) — consider closer placement",
+      sourceDesigns: [
+        "Bottom",
+        "PCBLF0658-1",
+        "PCBLF0658-1_PIK",
+        "PCBLF0658-1_Panel"
+      ]
+    },
+    {
+      id: "decoupling-pic24fj64ga30664",
+      icValue: "PIC24FJ64GA30664",
+      icCategory: "other",
+      occurrences: 7,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 7.93,
+          p25Mm: 2.86,
+          p75Mm: 22.14,
+          count: 144
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 10.7,
+          p25Mm: 1.68,
+          p75Mm: 13.59,
+          count: 19
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 44.74,
+          p25Mm: 11.09,
+          p75Mm: 44.74,
+          count: 12
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 71.32,
+          p25Mm: 63.63,
+          p75Mm: 79.05,
+          count: 3
+        }
+      ],
+      designRule: "Bypass caps for PIC24FJ64GA30664 typically 5-15mm away (median: 9.82mm)",
+      sourceDesigns: [
+        "Bottom",
+        "PCBLF0658-1",
+        "PCBLF0658-1_PIK",
+        "PCBLF0658-1_Panel"
       ]
     },
     {
@@ -2955,17 +2759,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 7
         },
         {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V",
-          values: [
-            "22UF_1206_10V"
-          ],
-          medianDistanceMm: 85.46,
-          p25Mm: 85.46,
-          p75Mm: 85.46,
-          count: 4
-        },
-        {
           role: "bypass",
           preferredValue: "0.1UF_0805",
           values: [
@@ -2974,6 +2767,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 86.92,
           p25Mm: 86.92,
           p75Mm: 86.92,
+          count: 4
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V",
+          values: [
+            "22UF_1206_10V"
+          ],
+          medianDistanceMm: 85.46,
+          p25Mm: 85.46,
+          p75Mm: 85.46,
           count: 4
         }
       ],
@@ -3094,14 +2898,14 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 4
         },
         {
-          role: "bypass",
-          preferredValue: "2200PF_0603",
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
           values: [
-            "2200PF_0603"
+            "100UF_1206_6.3V1206"
           ],
-          medianDistanceMm: 50.4,
-          p25Mm: 50.4,
-          p75Mm: 50.4,
+          medianDistanceMm: 59.47,
+          p25Mm: 59.47,
+          p75Mm: 59.47,
           count: 4
         }
       ],
@@ -3349,43 +3153,21 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-pcf85063att-ajtssop8",
-      icValue: "PCF85063ATT/AJTSSOP8",
-      icCategory: "other",
+      id: "decoupling-irm-02-5",
+      icValue: "IRM-02-5",
+      icCategory: "regulator",
       occurrences: 6,
       caps: [
         {
           role: "bypass",
-          preferredValue: "0.1UF_0603_10%_16V",
+          preferredValue: "0.1UF_50V_0603",
           values: [
-            "0.1UF_0603_10%_16V"
+            "0.1UF_50V_0603"
           ],
-          medianDistanceMm: 48.24,
-          p25Mm: 34.34,
-          p75Mm: 110.63,
-          count: 90
-        },
-        {
-          role: "bypass",
-          preferredValue: "2.2UF_0603",
-          values: [
-            "2.2UF_0603"
-          ],
-          medianDistanceMm: 40.82,
-          p25Mm: 35.69,
-          p75Mm: 44.12,
-          count: 24
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 131.63,
-          p25Mm: 116.3,
-          p75Mm: 157.76,
-          count: 17
+          medianDistanceMm: 43.39,
+          p25Mm: 31.19,
+          p75Mm: 60.31,
+          count: 36
         },
         {
           role: "bypass",
@@ -3393,75 +3175,75 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "0.1UF_0603_5%_50V"
           ],
-          medianDistanceMm: 69.35,
-          p25Mm: 13.93,
-          p75Mm: 69.95,
-          count: 9
+          medianDistanceMm: 42.25,
+          p25Mm: 23.95,
+          p75Mm: 53.0,
+          count: 17
         },
         {
           role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
+          preferredValue: "100UF_25V_ALE",
           values: [
-            "100UF_1206_6.3V1206"
+            "100UF_25V_ALE"
           ],
-          medianDistanceMm: 44.01,
-          p25Mm: 34.49,
-          p75Mm: 68.67,
-          count: 8
+          medianDistanceMm: 9.89,
+          p25Mm: 8.37,
+          p75Mm: 19.48,
+          count: 13
         },
         {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V1206",
+          role: "bypass",
+          preferredValue: "100NF_0805",
           values: [
-            "22UF_1206_10V1206"
+            "100NF_0805"
           ],
-          medianDistanceMm: 54.52,
-          p25Mm: 47.73,
-          p75Mm: 158.67,
+          medianDistanceMm: 90.88,
+          p25Mm: 79.02,
+          p75Mm: 96.81,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 44.8,
+          p25Mm: 29.51,
+          p75Mm: 54.06,
           count: 7
         },
         {
           role: "bypass",
-          preferredValue: "12PF_0603",
+          preferredValue: "0.1UF_0805",
           values: [
-            "12PF_0603"
+            "0.1UF_0805"
           ],
-          medianDistanceMm: 55.7,
-          p25Mm: 42.99,
-          p75Mm: 57.17,
-          count: 6
-        },
-        {
-          role: "bypass",
-          preferredValue: "1F_2.7V_RAD",
-          values: [
-            "1F_2.7V_RAD"
-          ],
-          medianDistanceMm: 23.61,
-          p25Mm: 9.42,
-          p75Mm: 28.17,
-          count: 6
+          medianDistanceMm: 32.89,
+          p25Mm: 19.53,
+          p75Mm: 32.89,
+          count: 4
         },
         {
           role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
+          preferredValue: "100UF_35V_ALE",
           values: [
-            "10UF_1206_10%_25V"
+            "100UF_35V_ALE"
           ],
-          medianDistanceMm: 47.46,
-          p25Mm: 38.53,
-          p75Mm: 47.46,
-          count: 4
+          medianDistanceMm: 15.86,
+          p25Mm: 8.82,
+          p75Mm: 15.86,
+          count: 2
         }
       ],
-      designRule: "Caps for PCF85063ATT/AJTSSOP8 tend to be distant (47.46mm median) — consider closer placement",
+      designRule: "Caps for IRM-02-5 tend to be distant (41.47mm median) — consider closer placement",
       sourceDesigns: [
-        "All-In-One_Schematic_IO_Board_w_ESP32",
-        "LCD_Control",
-        "PCBLF0717-1_PIK",
-        "PCBLF0827-0_PIK",
-        "PCB_Connectware",
-        "Pitts_LCD_Faceplate"
+        "Astrodyne_chevy_replacement",
+        "Astrodyne_chevy_replacement_BBU",
+        "BGW_Fan_Control",
+        "Clamshell_Grill",
+        "Southbend_RTD_control",
+        "ZLF0053"
       ]
     },
     {
@@ -3472,17 +3254,6 @@ export const minedDecoupling: DecouplingPattern[] = [
       caps: [
         {
           role: "bypass",
-          preferredValue: "100NF_0805",
-          values: [
-            "100NF_0805"
-          ],
-          medianDistanceMm: 25.81,
-          p25Mm: 7.1,
-          p75Mm: 42.82,
-          count: 36
-        },
-        {
-          role: "bypass",
           preferredValue: "0.1UF_50V_0603",
           values: [
             "0.1UF_50V_0603"
@@ -3490,6 +3261,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 28.97,
           p25Mm: 13.72,
           p75Mm: 40.62,
+          count: 36
+        },
+        {
+          role: "bypass",
+          preferredValue: "100NF_0805",
+          values: [
+            "100NF_0805"
+          ],
+          medianDistanceMm: 25.81,
+          p25Mm: 7.1,
+          p75Mm: 42.82,
           count: 36
         },
         {
@@ -3505,17 +3287,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 68.8,
-          p25Mm: 37.43,
-          p75Mm: 87.47,
-          count: 12
-        },
-        {
-          role: "bypass",
           preferredValue: "0.1UF_0805",
           values: [
             "0.1UF_0805"
@@ -3523,6 +3294,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 59.28,
           p25Mm: 29.13,
           p75Mm: 73.79,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 68.8,
+          p25Mm: 37.43,
+          p75Mm: 87.47,
           count: 12
         }
       ],
@@ -3661,8 +3443,8 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-r-78e5.0-0.5recom_r-78e5.0-1.0_0_0",
-      icValue: "R-78E5.0-0.5RECOM_R-78E5.0-1.0_0_0",
+      id: "decoupling-mcp6061-e-snmicrochip_mcp6061-e-sn_0_2",
+      icValue: "MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2",
       icCategory: "other",
       occurrences: 6,
       caps: [
@@ -3672,9 +3454,9 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "0.1UF_0805"
           ],
-          medianDistanceMm: 39.33,
-          p25Mm: 22.32,
-          p75Mm: 50.59,
+          medianDistanceMm: 38.81,
+          p25Mm: 20.83,
+          p75Mm: 53.58,
           count: 144
         },
         {
@@ -3683,9 +3465,9 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "470  µF "
           ],
-          medianDistanceMm: 15.33,
-          p25Mm: 10.27,
-          p75Mm: 20.68,
+          medianDistanceMm: 52.77,
+          p25Mm: 47.88,
+          p75Mm: 58.68,
           count: 24
         },
         {
@@ -3694,21 +3476,10 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "10NF_0805"
           ],
-          medianDistanceMm: 55.77,
-          p25Mm: 52.16,
-          p75Mm: 60.39,
+          medianDistanceMm: 25.11,
+          p25Mm: 6.03,
+          p75Mm: 30.49,
           count: 18
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0603_10%_25V",
-          values: [
-            "1UF_0603_10%_25V"
-          ],
-          medianDistanceMm: 38.42,
-          p25Mm: 22.96,
-          p75Mm: 38.42,
-          count: 6
         },
         {
           role: "bulk",
@@ -3716,15 +3487,14 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "100UF_35V_ALE"
           ],
-          medianDistanceMm: 21.39,
-          p25Mm: 21.17,
-          p75Mm: 21.39,
+          medianDistanceMm: 24.84,
+          p25Mm: 21.25,
+          p75Mm: 36.16,
           count: 6
         }
       ],
-      designRule: "Caps for R-78E5.0-0.5RECOM_R-78E5.0-1.0_0_0 tend to be distant (38.82mm median) — consider closer placement",
+      designRule: "Caps for MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2 tend to be distant (38.81mm median) — consider closer placement",
       sourceDesigns: [
-        "Main_Board",
         "Main_Board_PIK",
         "Main_Board_test_stand"
       ]
@@ -3857,6 +3627,179 @@ export const minedDecoupling: DecouplingPattern[] = [
         "ZLF0053",
         "ZLF0053_PIK",
         "ZLF0053_v44_PIK"
+      ]
+    },
+    {
+      id: "decoupling-pic18f26k226sp",
+      icValue: "PIC18F26K226SP",
+      icCategory: "mcu",
+      occurrences: 5,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 15.01,
+          p25Mm: 8.62,
+          p75Mm: 18.74,
+          count: 38
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 7.37,
+          p25Mm: 4.49,
+          p75Mm: 21.46,
+          count: 14
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 28.96,
+          p25Mm: 27.43,
+          p75Mm: 33.02,
+          count: 4
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 33.2,
+          p25Mm: 32.19,
+          p75Mm: 33.2,
+          count: 4
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 9.4,
+          p25Mm: 8.54,
+          p75Mm: 10.49,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "1000UF_50V_RAD",
+          values: [
+            "1000UF_50V_RAD"
+          ],
+          medianDistanceMm: 24.02,
+          p25Mm: 24.02,
+          p75Mm: 24.02,
+          count: 1
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 62.37,
+          p25Mm: 62.37,
+          p75Mm: 62.37,
+          count: 1
+        }
+      ],
+      designRule: "Caps for PIC18F26K226SP tend to be distant (15.01mm median) — consider closer placement",
+      sourceDesigns: [
+        "Alpha_sign_control_PIK",
+        "FGLF0623-03_PIK",
+        "FGLF0788-01_PIK",
+        "ZLF0053_PIK",
+        "ZLF0053_v44_PIK"
+      ]
+    },
+    {
+      id: "decoupling-mc7805ctg",
+      icValue: "MC7805CTG",
+      icCategory: "regulator",
+      occurrences: 5,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 19.19,
+          p25Mm: 8.4,
+          p75Mm: 161.68,
+          count: 30
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1210",
+          values: [
+            "10UF_1210"
+          ],
+          medianDistanceMm: 15.15,
+          p25Mm: 10.6,
+          p75Mm: 170.09,
+          count: 18
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 16.13,
+          p25Mm: 8.89,
+          p75Mm: 169.73,
+          count: 18
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 25.68,
+          p25Mm: 4.2,
+          p75Mm: 38.73,
+          count: 6
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 47.75,
+          p25Mm: 47.75,
+          p75Mm: 47.75,
+          count: 2
+        },
+        {
+          role: "bulk",
+          preferredValue: "1000UF_50V_RAD",
+          values: [
+            "1000UF_50V_RAD"
+          ],
+          medianDistanceMm: 9.43,
+          p25Mm: 9.15,
+          p75Mm: 9.43,
+          count: 2
+        }
+      ],
+      designRule: "Caps for MC7805CTG tend to be distant (18.3mm median) — consider closer placement",
+      sourceDesigns: [
+        "Auto_Test_Circuit",
+        "FGLF0623_Triac_Board",
+        "FGLF0623_Triac_Board_Original"
       ]
     },
     {
@@ -4136,6 +4079,132 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
+      id: "decoupling-mc7805ctgmc7805",
+      icValue: "MC7805CTGMC7805",
+      icCategory: "regulator",
+      occurrences: 5,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "12PF_0603",
+          values: [
+            "12PF_0603"
+          ],
+          medianDistanceMm: 88.68,
+          p25Mm: 81.84,
+          p75Mm: 94.03,
+          count: 28
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 76.34,
+          p25Mm: 36.49,
+          p75Mm: 86.19,
+          count: 24
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 48.44,
+          p25Mm: 35.55,
+          p75Mm: 48.47,
+          count: 18
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0805",
+          values: [
+            "0.1UF_0805"
+          ],
+          medianDistanceMm: 10.16,
+          p25Mm: 4.16,
+          p75Mm: 10.42,
+          count: 16
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 103.22,
+          p25Mm: 103.22,
+          p75Mm: 108.43,
+          count: 9
+        },
+        {
+          role: "bypass",
+          preferredValue: "4.7UF_0805",
+          values: [
+            "4.7UF_0805"
+          ],
+          medianDistanceMm: 97.16,
+          p25Mm: 84.24,
+          p75Mm: 97.16,
+          count: 8
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V",
+          values: [
+            "22UF_1206_10V"
+          ],
+          medianDistanceMm: 16.45,
+          p25Mm: 4.08,
+          p75Mm: 16.45,
+          count: 8
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 19.27,
+          p25Mm: 19.27,
+          p75Mm: 19.27,
+          count: 4
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 46.69,
+          p25Mm: 46.69,
+          p75Mm: 46.69,
+          count: 4
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.33F-5.5V-SUPERCAP",
+          values: [
+            "0.33F-5.5V-SUPERCAP"
+          ],
+          medianDistanceMm: 8.78,
+          p25Mm: 8.78,
+          p75Mm: 8.78,
+          count: 4
+        }
+      ],
+      designRule: "Caps for MC7805CTGMC7805 tend to be distant (48.47mm median) — consider closer placement",
+      sourceDesigns: [
+        "FGLF0623-03_PIK",
+        "NuvoLiteBrick_PCB",
+        "NuvoLite_PCB",
+        "NuvoLite_PCB_PIK_Bottom",
+        "NuvoLite_PCB_PIK_Top"
+      ]
+    },
+    {
       id: "decoupling-sn74hct240n",
       icValue: "SN74HCT240N",
       icCategory: "interface",
@@ -4176,6 +4245,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "4.7UF_50V_RAD",
+          values: [
+            "4.7UF_50V_RAD"
+          ],
+          medianDistanceMm: 117.6,
+          p25Mm: 95.19,
+          p75Mm: 129.07,
+          count: 4
+        },
+        {
+          role: "bypass",
           preferredValue: "100PF_50V_AXIALWIDE",
           values: [
             "100PF_50V_AXIALWIDE"
@@ -4194,17 +4274,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 80.62,
           p25Mm: 48.96,
           p75Mm: 93.36,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_50V_RAD",
-          values: [
-            "4.7UF_50V_RAD"
-          ],
-          medianDistanceMm: 117.6,
-          p25Mm: 95.19,
-          p75Mm: 129.07,
           count: 4
         }
       ],
@@ -4343,6 +4412,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "1.5PF_0402",
+          values: [
+            "1.5PF_0402"
+          ],
+          medianDistanceMm: 107.33,
+          p25Mm: 86.94,
+          p75Mm: 107.33,
+          count: 4
+        },
+        {
+          role: "bypass",
           preferredValue: "1000PF_0402",
           values: [
             "1000PF_0402"
@@ -4350,17 +4430,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 108.55,
           p25Mm: 88.67,
           p75Mm: 108.55,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "1PF_0402",
-          values: [
-            "1PF_0402"
-          ],
-          medianDistanceMm: 106.73,
-          p25Mm: 86.48,
-          p75Mm: 106.73,
           count: 4
         },
         {
@@ -4382,8 +4451,8 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-tps22993rlwrrlw0020a",
-      icValue: "TPS22993RLWRRLW0020A",
+      id: "decoupling-tps22993rlwr",
+      icValue: "TPS22993RLWR",
       icCategory: "other",
       occurrences: 4,
       caps: [
@@ -4432,9 +4501,77 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 4
         }
       ],
-      designRule: "Caps for TPS22993RLWRRLW0020A tend to be distant (37.66mm median) — consider closer placement",
+      designRule: "Caps for TPS22993RLWR tend to be distant (37.66mm median) — consider closer placement",
       sourceDesigns: [
         "Field Updater"
+      ]
+    },
+    {
+      id: "decoupling-r-78e5.0-0.5recom_r-78e5.0-1.0_0_0",
+      icValue: "R-78E5.0-0.5RECOM_R-78E5.0-1.0_0_0",
+      icCategory: "other",
+      occurrences: 4,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0805",
+          values: [
+            "0.1UF_0805"
+          ],
+          medianDistanceMm: 39.33,
+          p25Mm: 22.32,
+          p75Mm: 50.59,
+          count: 96
+        },
+        {
+          role: "bulk",
+          preferredValue: "470  µF ",
+          values: [
+            "470  µF "
+          ],
+          medianDistanceMm: 15.33,
+          p25Mm: 10.27,
+          p75Mm: 20.68,
+          count: 16
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 55.77,
+          p25Mm: 52.16,
+          p75Mm: 60.39,
+          count: 12
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 21.39,
+          p25Mm: 21.17,
+          p75Mm: 21.39,
+          count: 4
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603_10%_25V",
+          values: [
+            "1UF_0603_10%_25V"
+          ],
+          medianDistanceMm: 38.42,
+          p25Mm: 22.96,
+          p75Mm: 38.42,
+          count: 4
+        }
+      ],
+      designRule: "Caps for R-78E5.0-0.5RECOM_R-78E5.0-1.0_0_0 tend to be distant (38.82mm median) — consider closer placement",
+      sourceDesigns: [
+        "Main_Board_PIK",
+        "Main_Board_test_stand"
       ]
     },
     {
@@ -4493,17 +4630,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "22UF_1206_25V",
-          values: [
-            "22UF_1206_25V"
-          ],
-          medianDistanceMm: 24.11,
-          p25Mm: 17.12,
-          p75Mm: 25.93,
-          count: 16
-        },
-        {
-          role: "bulk",
           preferredValue: "100UF_25V_ALE",
           values: [
             "100UF_25V_ALE"
@@ -4511,6 +4637,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 37.06,
           p25Mm: 20.36,
           p75Mm: 62.09,
+          count: 16
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_25V",
+          values: [
+            "22UF_1206_25V"
+          ],
+          medianDistanceMm: 24.11,
+          p25Mm: 17.12,
+          p75Mm: 25.93,
           count: 16
         },
         {
@@ -4537,6 +4674,28 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "1UF_0805_20%",
+          values: [
+            "1UF_0805_20%"
+          ],
+          medianDistanceMm: 126.97,
+          p25Mm: 118.63,
+          p75Mm: 139.92,
+          count: 8
+        },
+        {
+          role: "bypass",
+          preferredValue: "18pF",
+          values: [
+            "18pF"
+          ],
+          medianDistanceMm: 141.55,
+          p25Mm: 122.05,
+          p75Mm: 142.87,
+          count: 8
+        },
+        {
+          role: "bypass",
           preferredValue: "3300PF_1206",
           values: [
             "3300PF_1206"
@@ -4544,17 +4703,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 15.61,
           p25Mm: 2.17,
           p75Mm: 23.76,
-          count: 8
-        },
-        {
-          role: "bypass",
-          preferredValue: "2200PF_0603",
-          values: [
-            "2200PF_0603"
-          ],
-          medianDistanceMm: 12.33,
-          p25Mm: 5.32,
-          p75Mm: 25.93,
           count: 8
         },
         {
@@ -4566,17 +4714,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 28.29,
           p25Mm: 23.89,
           p75Mm: 31.89,
-          count: 8
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0805_20%",
-          values: [
-            "1UF_0805_20%"
-          ],
-          medianDistanceMm: 126.97,
-          p25Mm: 118.63,
-          p75Mm: 139.92,
           count: 8
         },
         {
@@ -4595,6 +4732,119 @@ export const minedDecoupling: DecouplingPattern[] = [
       sourceDesigns: [
         "TiltAudio_RE",
         "TiltAudio_RE_recovery"
+      ]
+    },
+    {
+      id: "decoupling-pcf85063att-aj",
+      icValue: "PCF85063ATT/AJ",
+      icCategory: "other",
+      occurrences: 3,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 51.98,
+          p25Mm: 43.2,
+          p75Mm: 113.57,
+          count: 50
+        },
+        {
+          role: "bypass",
+          preferredValue: "2.2UF_0603",
+          values: [
+            "2.2UF_0603"
+          ],
+          medianDistanceMm: 42.8,
+          p25Mm: 38.18,
+          p75Mm: 57.79,
+          count: 16
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 157.76,
+          p25Mm: 116.3,
+          p75Mm: 158.3,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 69.95,
+          p25Mm: 13.93,
+          p75Mm: 98.05,
+          count: 6
+        },
+        {
+          role: "bypass",
+          preferredValue: "12PF_0603",
+          values: [
+            "12PF_0603"
+          ],
+          medianDistanceMm: 57.17,
+          p25Mm: 55.7,
+          p75Mm: 57.17,
+          count: 4
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1206_10%_25V",
+          values: [
+            "10UF_1206_10%_25V"
+          ],
+          medianDistanceMm: 47.46,
+          p25Mm: 38.53,
+          p75Mm: 47.46,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1F_2.7V_RAD",
+          values: [
+            "1F_2.7V_RAD"
+          ],
+          medianDistanceMm: 9.42,
+          p25Mm: 9.42,
+          p75Mm: 23.61,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 68.67,
+          p25Mm: 68.67,
+          p75Mm: 99.33,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 158.67,
+          p25Mm: 158.67,
+          p75Mm: 158.67,
+          count: 2
+        }
+      ],
+      designRule: "Caps for PCF85063ATT/AJ tend to be distant (57.17mm median) — consider closer placement",
+      sourceDesigns: [
+        "All-In-One_Schematic_IO_Board_w_ESP32",
+        "LCD_Control",
+        "Pitts_LCD_Faceplate"
       ]
     },
     {
@@ -4696,6 +4946,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "4.7UF_50V_RAD",
+          values: [
+            "4.7UF_50V_RAD"
+          ],
+          medianDistanceMm: 223.91,
+          p25Mm: 87.44,
+          p75Mm: 227.56,
+          count: 3
+        },
+        {
+          role: "bypass",
           preferredValue: "100PF_50V_AXIALWIDE",
           values: [
             "100PF_50V_AXIALWIDE"
@@ -4714,17 +4975,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 87.14,
           p25Mm: 66.4,
           p75Mm: 107.09,
-          count: 3
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_50V_RAD",
-          values: [
-            "4.7UF_50V_RAD"
-          ],
-          medianDistanceMm: 223.91,
-          p25Mm: 87.44,
-          p75Mm: 227.56,
           count: 3
         }
       ],
@@ -4763,17 +5013,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1000PF_0603",
-          values: [
-            "1000PF_0603"
-          ],
-          medianDistanceMm: 3.07,
-          p25Mm: 3.07,
-          p75Mm: 4.14,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "1UF_0603_10%_25V",
           values: [
             "1UF_0603_10%_25V"
@@ -4781,6 +5020,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 2.99,
           p25Mm: 2.06,
           p75Mm: 2.99,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1000PF_0603",
+          values: [
+            "1000PF_0603"
+          ],
+          medianDistanceMm: 3.07,
+          p25Mm: 3.07,
+          p75Mm: 4.14,
           count: 3
         },
         {
@@ -4911,17 +5161,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 9
         },
         {
-          role: "bypass",
-          preferredValue: "1UF_0603_10%_25V",
-          values: [
-            "1UF_0603_10%_25V"
-          ],
-          medianDistanceMm: 3.91,
-          p25Mm: 3.91,
-          p75Mm: 3.91,
-          count: 3
-        },
-        {
           role: "bulk",
           preferredValue: "100UF_35V_ALE",
           values: [
@@ -4930,6 +5169,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 8.35,
           p25Mm: 8.35,
           p75Mm: 8.35,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603_10%_25V",
+          values: [
+            "1UF_0603_10%_25V"
+          ],
+          medianDistanceMm: 3.91,
+          p25Mm: 3.91,
+          p75Mm: 3.91,
           count: 3
         }
       ],
@@ -5115,6 +5365,62 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
+      id: "decoupling-mcp6061-e-sn",
+      icValue: "MCP6061-E-SN",
+      icCategory: "other",
+      occurrences: 3,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0805",
+          values: [
+            "0.1UF_0805"
+          ],
+          medianDistanceMm: 38.81,
+          p25Mm: 20.83,
+          p75Mm: 53.58,
+          count: 72
+        },
+        {
+          role: "bulk",
+          preferredValue: "470  µF ",
+          values: [
+            "470  µF "
+          ],
+          medianDistanceMm: 52.77,
+          p25Mm: 47.88,
+          p75Mm: 58.68,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 25.11,
+          p25Mm: 6.03,
+          p75Mm: 30.49,
+          count: 9
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 24.84,
+          p25Mm: 21.25,
+          p75Mm: 36.16,
+          count: 3
+        }
+      ],
+      designRule: "Caps for MCP6061-E-SN tend to be distant (38.81mm median) — consider closer placement",
+      sourceDesigns: [
+        "Main_Board"
+      ]
+    },
+    {
       id: "decoupling-stm32f103rct6lqfp-64-m",
       icValue: "STM32F103RCT6LQFP-64-M",
       icCategory: "mcu",
@@ -5202,17 +5508,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 1.77,
-          p25Mm: 1.77,
-          p75Mm: 1.77,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "1UF_0603",
           values: [
             "1UF_0603"
@@ -5220,6 +5515,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 33.49,
           p25Mm: 33.49,
           p75Mm: 33.49,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 1.77,
+          p25Mm: 1.77,
+          p75Mm: 1.77,
           count: 3
         }
       ],
@@ -5340,17 +5646,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 11.94,
-          p25Mm: 11.94,
-          p75Mm: 11.94,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "1UF_0603",
           values: [
             "1UF_0603"
@@ -5358,6 +5653,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 19.53,
           p25Mm: 19.53,
           p75Mm: 19.53,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 11.94,
+          p25Mm: 11.94,
+          p75Mm: 11.94,
           count: 3
         }
       ],
@@ -5431,17 +5737,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 32.36,
-          p25Mm: 32.36,
-          p75Mm: 32.36,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "1UF_0603",
           values: [
             "1UF_0603"
@@ -5449,6 +5744,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 2.47,
           p25Mm: 2.47,
           p75Mm: 2.47,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 32.36,
+          p25Mm: 32.36,
+          p75Mm: 32.36,
           count: 3
         }
       ],
@@ -5522,17 +5828,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 43.65,
-          p25Mm: 43.65,
-          p75Mm: 43.65,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "1UF_0603",
           values: [
             "1UF_0603"
@@ -5540,6 +5835,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 13.48,
           p25Mm: 13.48,
           p75Mm: 13.48,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 43.65,
+          p25Mm: 43.65,
+          p75Mm: 43.65,
           count: 3
         }
       ],
@@ -5613,17 +5919,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 43.47,
-          p25Mm: 43.47,
-          p75Mm: 43.47,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "1UF_0603",
           values: [
             "1UF_0603"
@@ -5631,6 +5926,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 16.36,
           p25Mm: 16.36,
           p75Mm: 16.36,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 43.47,
+          p25Mm: 43.47,
+          p75Mm: 43.47,
           count: 3
         }
       ],
@@ -5642,8 +5948,121 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-74hct04n",
-      icValue: "74HCT04N",
+      id: "decoupling-pcf85063att-ajtssop8",
+      icValue: "PCF85063ATT/AJTSSOP8",
+      icCategory: "other",
+      occurrences: 3,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 43.12,
+          p25Mm: 29.73,
+          p75Mm: 68.85,
+          count: 40
+        },
+        {
+          role: "bypass",
+          preferredValue: "2.2UF_0603",
+          values: [
+            "2.2UF_0603"
+          ],
+          medianDistanceMm: 27.11,
+          p25Mm: 24.71,
+          p75Mm: 42.2,
+          count: 8
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 47.73,
+          p25Mm: 47.73,
+          p75Mm: 54.52,
+          count: 5
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 34.49,
+          p25Mm: 27.6,
+          p75Mm: 44.01,
+          count: 5
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 128.37,
+          p25Mm: 58.26,
+          p75Mm: 142.38,
+          count: 5
+        },
+        {
+          role: "bypass",
+          preferredValue: "1F_2.7V_RAD",
+          values: [
+            "1F_2.7V_RAD"
+          ],
+          medianDistanceMm: 28.17,
+          p25Mm: 3.76,
+          p75Mm: 28.17,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V"
+          ],
+          medianDistanceMm: 36.26,
+          p25Mm: 6.05,
+          p75Mm: 69.35,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "12PF_0603",
+          values: [
+            "12PF_0603"
+          ],
+          medianDistanceMm: 42.99,
+          p25Mm: 41.32,
+          p75Mm: 42.99,
+          count: 2
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1206_10%_25V",
+          values: [
+            "10UF_1206_10%_25V"
+          ],
+          medianDistanceMm: 34.7,
+          p25Mm: 34.7,
+          p75Mm: 34.7,
+          count: 1
+        }
+      ],
+      designRule: "Caps for PCF85063ATT/AJTSSOP8 tend to be distant (41.64mm median) — consider closer placement",
+      sourceDesigns: [
+        "PCBLF0717-1_PIK",
+        "PCBLF0827-0_PIK",
+        "PCB_Connectware"
+      ]
+    },
+    {
+      id: "decoupling-74hct04",
+      icValue: "74HCT04",
       icCategory: "other",
       occurrences: 3,
       caps: [
@@ -5659,14 +6078,14 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 24
         }
       ],
-      designRule: "Caps for 74HCT04N tend to be distant (41.34mm median) — consider closer placement",
+      designRule: "Caps for 74HCT04 tend to be distant (41.34mm median) — consider closer placement",
       sourceDesigns: [
         "Williams_Sys_11_Master"
       ]
     },
     {
-      id: "decoupling-sn74als541texas_instruments_sn74als541_0",
-      icValue: "SN74ALS541TEXAS_INSTRUMENTS_SN74ALS541_0_0",
+      id: "decoupling-sn74als541",
+      icValue: "SN74ALS541",
       icCategory: "interface",
       occurrences: 3,
       caps: [
@@ -5682,7 +6101,7 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 24
         }
       ],
-      designRule: "Caps for SN74ALS541TEXAS_INSTRUMENTS_SN74ALS541_0_0 tend to be distant (82.83mm median) — consider closer placement",
+      designRule: "Caps for SN74ALS541 tend to be distant (82.83mm median) — consider closer placement",
       sourceDesigns: [
         "Williams_Sys_11_Master"
       ]
@@ -5723,8 +6142,8 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-ld1117s50ctrsot-223",
-      icValue: "LD1117S50CTRSOT-223",
+      id: "decoupling-ld1117s50ctr",
+      icValue: "LD1117S50CTR",
       icCategory: "other",
       occurrences: 2,
       caps: [
@@ -5751,10 +6170,67 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 6
         }
       ],
-      designRule: "Bypass caps for LD1117S50CTRSOT-223 typically 5-15mm away (median: 10.34mm)",
+      designRule: "Bypass caps for LD1117S50CTR typically 5-15mm away (median: 10.34mm)",
       sourceDesigns: [
         "30in_segment_driver",
         "SMT_Control_Board"
+      ]
+    },
+    {
+      id: "decoupling-pic24fj64ga306",
+      icValue: "PIC24FJ64GA306",
+      icCategory: "other",
+      occurrences: 2,
+      caps: [
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.1UF_0603_10%_16V"
+          ],
+          medianDistanceMm: 15.54,
+          p25Mm: 5.22,
+          p75Mm: 29.18,
+          count: 44
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 63.63,
+          p25Mm: 24.23,
+          p75Mm: 71.32,
+          count: 5
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 8.52,
+          p25Mm: 5.07,
+          p75Mm: 38.65,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_1206_6.3V1206",
+          values: [
+            "100UF_1206_6.3V1206"
+          ],
+          medianDistanceMm: 75.6,
+          p25Mm: 19.32,
+          p75Mm: 88.3,
+          count: 3
+        }
+      ],
+      designRule: "Caps for PIC24FJ64GA306 tend to be distant (17.82mm median) — consider closer placement",
+      sourceDesigns: [
+        "All-In-One_Schematic",
+        "ProSmoker_PK100"
       ]
     },
     {
@@ -5844,41 +6320,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         }
       ],
       designRule: "Caps for SN74HC175DR tend to be distant (45.81mm median) — consider closer placement",
-      sourceDesigns: [
-        "Astrodyne_replacement",
-        "PCBLF0739-0_PIK"
-      ]
-    },
-    {
-      id: "decoupling-max6970aae+21-0056c_16_mxm-m",
-      icValue: "MAX6970AAE+21-0056C_16_MXM-M",
-      icCategory: "other",
-      occurrences: 2,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 41.49,
-          p25Mm: 2.69,
-          p75Mm: 41.49,
-          count: 4
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
-          values: [
-            "100UF_1206_6.3V1206"
-          ],
-          medianDistanceMm: 22.97,
-          p25Mm: 22.97,
-          p75Mm: 22.97,
-          count: 2
-        }
-      ],
-      designRule: "Caps for MAX6970AAE+21-0056C_16_MXM-M tend to be distant (22.97mm median) — consider closer placement",
       sourceDesigns: [
         "Astrodyne_replacement",
         "PCBLF0739-0_PIK"
@@ -5982,6 +6423,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "4.7UF_50V_RAD",
+          values: [
+            "4.7UF_50V_RAD"
+          ],
+          medianDistanceMm: 87.84,
+          p25Mm: 82.87,
+          p75Mm: 87.84,
+          count: 2
+        },
+        {
+          role: "bypass",
           preferredValue: "100PF_50V_AXIALWIDE",
           values: [
             "100PF_50V_AXIALWIDE"
@@ -6000,17 +6452,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 58.62,
           p25Mm: 51.66,
           p75Mm: 58.62,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_50V_RAD",
-          values: [
-            "4.7UF_50V_RAD"
-          ],
-          medianDistanceMm: 87.84,
-          p25Mm: 82.87,
-          p75Mm: 87.84,
           count: 2
         }
       ],
@@ -6060,6 +6501,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "4.7UF_50V_RAD",
+          values: [
+            "4.7UF_50V_RAD"
+          ],
+          medianDistanceMm: 193.8,
+          p25Mm: 123.75,
+          p75Mm: 193.8,
+          count: 2
+        },
+        {
+          role: "bypass",
           preferredValue: "100PF_50V_AXIALWIDE",
           values: [
             "100PF_50V_AXIALWIDE"
@@ -6079,158 +6531,11 @@ export const minedDecoupling: DecouplingPattern[] = [
           p25Mm: 24.77,
           p75Mm: 99.28,
           count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_50V_RAD",
-          values: [
-            "4.7UF_50V_RAD"
-          ],
-          medianDistanceMm: 193.8,
-          p25Mm: 123.75,
-          p75Mm: 193.8,
-          count: 2
         }
       ],
       designRule: "Caps for CD74HCT14E tend to be distant (126.84mm median) — consider closer placement",
       sourceDesigns: [
         "CPU-95"
-      ]
-    },
-    {
-      id: "decoupling-st3485ebdrstmicroelectronics_st3485ebdr_",
-      icValue: "ST3485EBDRSTMICROELECTRONICS_ST3485EBDR_0_0",
-      icCategory: "other",
-      occurrences: 2,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 39.69,
-          p25Mm: 16.67,
-          p75Mm: 71.06,
-          count: 16
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 19.95,
-          p25Mm: 16.8,
-          p75Mm: 20.94,
-          count: 5
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603",
-          values: [
-            "0.1UF_0603"
-          ],
-          medianDistanceMm: 180.21,
-          p25Mm: 179.73,
-          p75Mm: 180.3,
-          count: 5
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_25V_ALE",
-          values: [
-            "100UF_25V_ALE"
-          ],
-          medianDistanceMm: 35.64,
-          p25Mm: 20.52,
-          p75Mm: 35.97,
-          count: 3
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_25V",
-          values: [
-            "22UF_1206_25V"
-          ],
-          medianDistanceMm: 45.64,
-          p25Mm: 37.62,
-          p75Mm: 45.64,
-          count: 2
-        }
-      ],
-      designRule: "Caps for ST3485EBDRSTMICROELECTRONICS_ST3485EBDR_0_0 tend to be distant (37.62mm median) — consider closer placement",
-      sourceDesigns: [
-        "CarterHoffmann485DisplayAlternate",
-        "PCBLF0714-1_PIK"
-      ]
-    },
-    {
-      id: "decoupling-is31fl3196a-qfls2-tris31fl3196a-qfls2-tr",
-      icValue: "IS31FL3196A-QFLS2-TRIS31FL3196A-QFLS2-TR_ISI-L",
-      icCategory: "other",
-      occurrences: 2,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.1UF_0603_10%_16V"
-          ],
-          medianDistanceMm: 20.51,
-          p25Mm: 16.18,
-          p75Mm: 27.59,
-          count: 42
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V1206",
-          values: [
-            "22UF_1206_10V1206"
-          ],
-          medianDistanceMm: 53.25,
-          p25Mm: 41.44,
-          p75Mm: 53.25,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "1000PF_0603",
-          values: [
-            "1000PF_0603"
-          ],
-          medianDistanceMm: 45.29,
-          p25Mm: 45.29,
-          p75Mm: 45.29,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0603_10%_25V",
-          values: [
-            "1UF_0603_10%_25V"
-          ],
-          medianDistanceMm: 48.5,
-          p25Mm: 48.5,
-          p75Mm: 48.5,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.022UF_0603",
-          values: [
-            "0.022UF_0603"
-          ],
-          medianDistanceMm: 49.28,
-          p25Mm: 49.28,
-          p75Mm: 49.28,
-          count: 2
-        }
-      ],
-      designRule: "Caps for IS31FL3196A-QFLS2-TRIS31FL3196A-QFLS2-TR_ISI-L tend to be distant (23.02mm median) — consider closer placement",
-      sourceDesigns: [
-        "DC-DC_IO_expansion_board",
-        "PCBLF0738-0_PIK"
       ]
     },
     {
@@ -6263,13 +6568,13 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1000PF_0603",
+          preferredValue: "0.022UF_0603",
           values: [
-            "1000PF_0603"
+            "0.022UF_0603"
           ],
-          medianDistanceMm: 42.67,
-          p25Mm: 42.67,
-          p75Mm: 42.67,
+          medianDistanceMm: 40.96,
+          p25Mm: 40.96,
+          p75Mm: 40.96,
           count: 2
         },
         {
@@ -6285,13 +6590,13 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "0.022UF_0603",
+          preferredValue: "1000PF_0603",
           values: [
-            "0.022UF_0603"
+            "1000PF_0603"
           ],
-          medianDistanceMm: 40.96,
-          p25Mm: 40.96,
-          p75Mm: 40.96,
+          medianDistanceMm: 42.67,
+          p25Mm: 42.67,
+          p75Mm: 42.67,
           count: 2
         }
       ],
@@ -6386,6 +6691,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "1.5PF_0402",
+          values: [
+            "1.5PF_0402"
+          ],
+          medianDistanceMm: 28.46,
+          p25Mm: 28.46,
+          p75Mm: 28.46,
+          count: 2
+        },
+        {
+          role: "bypass",
           preferredValue: "1000PF_0402",
           values: [
             "1000PF_0402"
@@ -6393,17 +6709,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 29.77,
           p25Mm: 29.77,
           p75Mm: 29.77,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "1PF_0402",
-          values: [
-            "1PF_0402"
-          ],
-          medianDistanceMm: 27.8,
-          p25Mm: 27.8,
-          p75Mm: 27.8,
           count: 2
         },
         {
@@ -6509,6 +6814,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "1.5PF_0402",
+          values: [
+            "1.5PF_0402"
+          ],
+          medianDistanceMm: 5.5,
+          p25Mm: 5.5,
+          p75Mm: 5.5,
+          count: 2
+        },
+        {
+          role: "bypass",
           preferredValue: "1000PF_0402",
           values: [
             "1000PF_0402"
@@ -6516,17 +6832,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 1.28,
           p25Mm: 1.28,
           p75Mm: 1.28,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "1PF_0402",
-          values: [
-            "1PF_0402"
-          ],
-          medianDistanceMm: 3.75,
-          p25Mm: 3.75,
-          p75Mm: 3.75,
           count: 2
         },
         {
@@ -6548,9 +6853,9 @@ export const minedDecoupling: DecouplingPattern[] = [
       ]
     },
     {
-      id: "decoupling-irm-10-12mean_well_irm-10-12_0_0",
-      icValue: "IRM-10-12MEAN_WELL_IRM-10-12_0_0",
-      icCategory: "regulator",
+      id: "decoupling-r-78e5.0-0.5",
+      icValue: "R-78E5.0-0.5",
+      icCategory: "other",
       occurrences: 2,
       caps: [
         {
@@ -6559,76 +6864,21 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "0.1UF_0805"
           ],
-          medianDistanceMm: 51.82,
-          p25Mm: 36.79,
-          p75Mm: 71.36,
-          count: 17
-        },
-        {
-          role: "bypass",
-          preferredValue: "12PF_0603",
-          values: [
-            "12PF_0603"
-          ],
-          medianDistanceMm: 115.43,
-          p25Mm: 108.66,
-          p75Mm: 120.79,
-          count: 7
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 103.12,
-          p25Mm: 62.91,
-          p75Mm: 112.96,
-          count: 6
+          medianDistanceMm: 39.33,
+          p25Mm: 22.32,
+          p75Mm: 50.59,
+          count: 48
         },
         {
           role: "bulk",
-          preferredValue: "220UF_16V",
+          preferredValue: "470  µF ",
           values: [
-            "220UF_16V"
+            "470  µF "
           ],
-          medianDistanceMm: 32.07,
-          p25Mm: 20.16,
-          p75Mm: 37.32,
-          count: 5
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_10V1206",
-          values: [
-            "22UF_10V1206"
-          ],
-          medianDistanceMm: 60.5,
-          p25Mm: 49.98,
-          p75Mm: 109.24,
-          count: 4
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_10V",
-          values: [
-            "22UF_1206_10V"
-          ],
-          medianDistanceMm: 28.94,
-          p25Mm: 24.91,
-          p75Mm: 40.87,
-          count: 3
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V"
-          ],
-          medianDistanceMm: 75.1,
-          p25Mm: 74.18,
-          p75Mm: 81.81,
-          count: 3
+          medianDistanceMm: 15.33,
+          p25Mm: 10.27,
+          p75Mm: 20.68,
+          count: 8
         },
         {
           role: "bypass",
@@ -6636,130 +6886,37 @@ export const minedDecoupling: DecouplingPattern[] = [
           values: [
             "10NF_0805"
           ],
-          medianDistanceMm: 127.28,
-          p25Mm: 121.72,
-          p75Mm: 127.28,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_0805",
-          values: [
-            "4.7UF_0805"
-          ],
-          medianDistanceMm: 119.15,
-          p25Mm: 111.01,
-          p75Mm: 119.15,
-          count: 2
+          medianDistanceMm: 55.77,
+          p25Mm: 52.16,
+          p75Mm: 60.39,
+          count: 6
         },
         {
           role: "bulk",
-          preferredValue: "22UF_1206_25V",
+          preferredValue: "100UF_35V_ALE",
           values: [
-            "22UF_1206_25V"
+            "100UF_35V_ALE"
           ],
-          medianDistanceMm: 5.42,
-          p25Mm: 5.42,
-          p75Mm: 5.42,
-          count: 1
-        }
-      ],
-      designRule: "Caps for IRM-10-12MEAN_WELL_IRM-10-12_0_0 tend to be distant (66.07mm median) — consider closer placement",
-      sourceDesigns: [
-        "HDMI_Display",
-        "NuvoLiteBrick_PCB"
-      ]
-    },
-    {
-      id: "decoupling-st_microelectronics_vl6180xv0nr-1st_micr",
-      icValue: "ST_MICROELECTRONICS_VL6180XV0NR-1ST_MICROELECTRONICS_VL6180XV0NR-1_0_0",
-      icCategory: "other",
-      occurrences: 2,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.1UF_0603_10%_16V"
-          ],
-          medianDistanceMm: 2.92,
-          p25Mm: 1.47,
-          p75Mm: 2.92,
-          count: 4
+          medianDistanceMm: 21.39,
+          p25Mm: 21.17,
+          p75Mm: 21.39,
+          count: 2
         },
         {
           role: "bypass",
-          preferredValue: "1UF_0603",
+          preferredValue: "1UF_0603_10%_25V",
           values: [
-            "1UF_0603"
+            "1UF_0603_10%_25V"
           ],
-          medianDistanceMm: 4.74,
-          p25Mm: 2.74,
-          p75Mm: 4.74,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_0805_16V",
-          values: [
-            "4.7UF_0805_16V"
-          ],
-          medianDistanceMm: 1.39,
-          p25Mm: 1.39,
-          p75Mm: 1.39,
+          medianDistanceMm: 38.42,
+          p25Mm: 22.96,
+          p75Mm: 38.42,
           count: 2
         }
       ],
-      designRule: "Place bypass caps within 5mm of ST_MICROELECTRONICS_VL6180XV0NR-1ST_MICROELECTRONICS_VL6180XV0NR-1_0_0 (current median: 2.74mm)",
+      designRule: "Caps for R-78E5.0-0.5 tend to be distant (38.82mm median) — consider closer placement",
       sourceDesigns: [
-        "Handle_Sensor",
-        "PCBLF0690-1_Panel"
-      ]
-    },
-    {
-      id: "decoupling-microchip_mic5504-2_8ym5-trmicrochip_mic",
-      icValue: "MICROCHIP_MIC5504-2_8YM5-TRMICROCHIP_MIC5504-2_8YM5-TR_0_2",
-      icCategory: "other",
-      occurrences: 2,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.1UF_0603_10%_16V"
-          ],
-          medianDistanceMm: 4.57,
-          p25Mm: 3.32,
-          p75Mm: 4.57,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 3.32,
-          p25Mm: 1.71,
-          p75Mm: 3.32,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "4.7UF_0805_16V",
-          values: [
-            "4.7UF_0805_16V"
-          ],
-          medianDistanceMm: 2.22,
-          p25Mm: 2.22,
-          p75Mm: 2.22,
-          count: 2
-        }
-      ],
-      designRule: "Place bypass caps within 5mm of MICROCHIP_MIC5504-2_8YM5-TRMICROCHIP_MIC5504-2_8YM5-TR_0_2 (current median: 3.32mm)",
-      sourceDesigns: [
-        "Handle_Sensor",
-        "PCBLF0690-1_Panel"
+        "Main_Board"
       ]
     },
     {
@@ -7082,175 +7239,6 @@ export const minedDecoupling: DecouplingPattern[] = [
       sourceDesigns: [
         "Noah 2.0 Beta Layout",
         "PCBLF0742-0_PIK_TOP"
-      ]
-    },
-    {
-      id: "decoupling-tpsm33625rdnrrdn0011a-mfg",
-      icValue: "TPSM33625RDNRRDN0011A-MFG",
-      icCategory: "other",
-      occurrences: 2,
-      caps: [
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_25V",
-          values: [
-            "22UF_1206_25V"
-          ],
-          medianDistanceMm: 8.54,
-          p25Mm: 6.25,
-          p75Mm: 8.54,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0805",
-          values: [
-            "0.1UF_0805"
-          ],
-          medianDistanceMm: 5.97,
-          p25Mm: 5.97,
-          p75Mm: 5.97,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 1.9,
-          p25Mm: 1.9,
-          p75Mm: 1.9,
-          count: 2
-        }
-      ],
-      designRule: "Bypass caps for TPSM33625RDNRRDN0011A-MFG typically 5-15mm away (median: 6.25mm)",
-      sourceDesigns: [
-        "PCBLF0828-0_PIK",
-        "SpraysafeRegulator"
-      ]
-    },
-    {
-      id: "decoupling-stm32f411rct6lqfp64-10x10mm",
-      icValue: "STM32F411RCT6LQFP64-10X10MM",
-      icCategory: "mcu",
-      occurrences: 2,
-      caps: [
-        {
-          role: "bypass",
-          preferredValue: "0.1UF_0805",
-          values: [
-            "0.1UF_0805"
-          ],
-          medianDistanceMm: 87.35,
-          p25Mm: 3.79,
-          p75Mm: 120.88,
-          count: 36
-        },
-        {
-          role: "bulk",
-          preferredValue: "22UF_1206_25V",
-          values: [
-            "22UF_1206_25V"
-          ],
-          medianDistanceMm: 123.18,
-          p25Mm: 104.54,
-          p75Mm: 125.67,
-          count: 8
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_25V_ALE",
-          values: [
-            "100UF_25V_ALE"
-          ],
-          medianDistanceMm: 153.1,
-          p25Mm: 129.31,
-          p75Mm: 153.78,
-          count: 8
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 109.37,
-          p25Mm: 107.6,
-          p75Mm: 131.19,
-          count: 6
-        },
-        {
-          role: "bypass",
-          preferredValue: "2.2UF_0805_10%_50V",
-          values: [
-            "2.2UF_0805_10%_50V"
-          ],
-          medianDistanceMm: 130.02,
-          p25Mm: 109.58,
-          p75Mm: 130.02,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "3300PF_1206",
-          values: [
-            "3300PF_1206"
-          ],
-          medianDistanceMm: 133.0,
-          p25Mm: 112.08,
-          p75Mm: 133.0,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "2200PF_0603",
-          values: [
-            "2200PF_0603"
-          ],
-          medianDistanceMm: 133.74,
-          p25Mm: 112.81,
-          p75Mm: 133.74,
-          count: 4
-        },
-        {
-          role: "bulk",
-          preferredValue: "2200UF_50V_RAD",
-          values: [
-            "2200UF_50V_RAD"
-          ],
-          medianDistanceMm: 139.17,
-          p25Mm: 122.11,
-          p75Mm: 139.17,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0805_20%",
-          values: [
-            "1UF_0805_20%"
-          ],
-          medianDistanceMm: 5.68,
-          p25Mm: 3.14,
-          p75Mm: 5.68,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "150PF_0805",
-          values: [
-            "150PF_0805"
-          ],
-          medianDistanceMm: 131.7,
-          p25Mm: 111.21,
-          p75Mm: 131.7,
-          count: 4
-        }
-      ],
-      designRule: "Caps for STM32F411RCT6LQFP64-10X10MM tend to be distant (109.37mm median) — consider closer placement",
-      sourceDesigns: [
-        "TiltAudio_RE",
-        "TiltAudio_RE_recovery"
       ]
     },
     {

@@ -7,9 +7,9 @@ export const minedPullups: PullupPattern[] = [
       id: "pullup-general-10k_0603",
       busType: "general",
       resistorValue: "10K_0603",
-      occurrences: 238,
-      medianDistanceToMcuMm: 25.75,
-      placementNote: "near peripheral",
+      occurrences: 228,
+      medianDistanceToMcuMm: 16.91,
+      placementNote: "moderate distance from MCU",
       powerNet: "+3.3V",
       sourceDesigns: [
         "12_in_CD_Tmr_Ctrl_Small",
@@ -82,10 +82,22 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
+      id: "pullup-general-10k_axial",
+      busType: "general",
+      resistorValue: "10K_AXIAL",
+      occurrences: 26,
+      medianDistanceToMcuMm: 0,
+      placementNote: "no MCU distance data",
+      powerNet: "VCC",
+      sourceDesigns: [
+        "CPU-95"
+      ]
+    },
+    {
       id: "pullup-general-1m_0603_1%",
       busType: "general",
       resistorValue: "1M_0603_1%",
-      occurrences: 28,
+      occurrences: 25,
       medianDistanceToMcuMm: 11.57,
       placementNote: "moderate distance from MCU",
       powerNet: "+3.3V",
@@ -94,29 +106,15 @@ export const minedPullups: PullupPattern[] = [
         "All-In-One_Schematic_IO_Board_w_ESP32",
         "DC-DC_IO_expansion_board",
         "Derived2DPCB_fixoptolocators v1",
-        "LCD_Control",
         "Livewell Schematic",
         "PCB Design Kairos Control",
         "PCBLF0717-1_PIK",
         "PCBLF0738-0_PIK",
         "PCBLF0827-0_PIK",
         "PCB_Connectware",
-        "Pitts_LCD_Faceplate",
         "UM0017PCB",
         "UM0017PCB_2nd_Round",
         "atsamd21_only"
-      ]
-    },
-    {
-      id: "pullup-general-10k_axial",
-      busType: "general",
-      resistorValue: "10K_AXIAL",
-      occurrences: 27,
-      medianDistanceToMcuMm: 0,
-      placementNote: "no MCU distance data",
-      powerNet: "VCC",
-      sourceDesigns: [
-        "CPU-95"
       ]
     },
     {
@@ -146,56 +144,6 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
-      id: "pullup-general-1k_0603",
-      busType: "general",
-      resistorValue: "1K_0603",
-      occurrences: 22,
-      medianDistanceToMcuMm: 12.72,
-      placementNote: "moderate distance from MCU",
-      powerNet: "+5V",
-      sourceDesigns: [
-        "12_in_CD_Tmr_Ctrl_Small",
-        "12_inch_CD_Timer_Control",
-        "Alpha_sign_control",
-        "Alpha_sign_control_PIK",
-        "FGLF0788-01_PIK",
-        "Main_Board",
-        "Main_Board_PIK",
-        "Main_Board_test_stand",
-        "PCBLF0648-3",
-        "PCBLF0648-3_PIK",
-        "PCBLF0648-3_gerber_experiment",
-        "PCBLF0706-1_PIK",
-        "TouchMZ_In_Out_Board"
-      ]
-    },
-    {
-      id: "pullup-chip-select-10k_0603",
-      busType: "chip-select",
-      resistorValue: "10K_0603",
-      occurrences: 21,
-      medianDistanceToMcuMm: 11.83,
-      placementNote: "moderate distance from MCU",
-      powerNet: "+3.3V",
-      sourceDesigns: [
-        "All-In-One_Schematic",
-        "All-In-One_Schematic_IO_Board_w_ESP32",
-        "Bottom",
-        "LCD_Control",
-        "NuvoLiteBrick_PCB",
-        "NuvoLite_PCB",
-        "NuvoLite_PCB_PIK_Bottom",
-        "NuvoLite_PCB_PIK_Top",
-        "PCBLF0658-1",
-        "PCBLF0658-1_PIK",
-        "PCBLF0658-1_Panel",
-        "PCBLF0660-7",
-        "PCBLF0660-7_PIK",
-        "PCBLF0759_PIK",
-        "PCBLF0827-0_PIK"
-      ]
-    },
-    {
       id: "pullup-general-jumper_0805_2.5a",
       busType: "general",
       resistorValue: "JUMPER_0805_2.5A",
@@ -218,6 +166,26 @@ export const minedPullups: PullupPattern[] = [
         "PCB_Connectware",
         "Pico_LCD_PCB",
         "Pico_LCD_PCB_PIK",
+        "Quantum_NXP_Programmer"
+      ]
+    },
+    {
+      id: "pullup-i2c-10k_0603",
+      busType: "i2c",
+      resistorValue: "10K_0603",
+      occurrences: 19,
+      medianDistanceToMcuMm: 32.1,
+      placementNote: "near peripheral",
+      powerNet: "+3.3V",
+      sourceDesigns: [
+        "Handle_Sensor",
+        "NuvoLiteBrick_PCB",
+        "NuvoLite_PCB",
+        "NuvoLite_PCB_PIK_Bottom",
+        "NuvoLite_PCB_PIK_Top",
+        "PCBLF0690-1_Panel",
+        "PCBLF0759_PIK",
+        "ProSmoker_PK100",
         "Quantum_NXP_Programmer"
       ]
     },
@@ -248,27 +216,6 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
-      id: "pullup-i2c-100k_0603",
-      busType: "i2c",
-      resistorValue: "100K_0603",
-      occurrences: 18,
-      medianDistanceToMcuMm: 31.05,
-      placementNote: "near peripheral",
-      powerNet: "+3.3V",
-      sourceDesigns: [
-        "All-In-One_Schematic",
-        "All-In-One_Schematic_IO_Board_w_ESP32",
-        "LCD_Control",
-        "PCBLF0660-7",
-        "PCBLF0660-7_PIK",
-        "PCBLF0717-1_PIK",
-        "PCBLF0827-0_PIK",
-        "PCB_Connectware",
-        "Pitts_LCD_Faceplate",
-        "TOP"
-      ]
-    },
-    {
       id: "pullup-general-6.34k_0805",
       busType: "general",
       resistorValue: "6.34K_0805",
@@ -284,10 +231,74 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
+      id: "pullup-i2c-100k_0603",
+      busType: "i2c",
+      resistorValue: "100K_0603",
+      occurrences: 17,
+      medianDistanceToMcuMm: 31.05,
+      placementNote: "near peripheral",
+      powerNet: "+3.3V",
+      sourceDesigns: [
+        "All-In-One_Schematic_IO_Board_w_ESP32",
+        "LCD_Control",
+        "PCBLF0660-7",
+        "PCBLF0660-7_PIK",
+        "PCBLF0717-1_PIK",
+        "PCBLF0827-0_PIK",
+        "PCB_Connectware",
+        "Pitts_LCD_Faceplate",
+        "TOP"
+      ]
+    },
+    {
+      id: "pullup-general-1k_0603",
+      busType: "general",
+      resistorValue: "1K_0603",
+      occurrences: 17,
+      medianDistanceToMcuMm: 11.65,
+      placementNote: "moderate distance from MCU",
+      powerNet: "+5V",
+      sourceDesigns: [
+        "Alpha_sign_control_PIK",
+        "FGLF0788-01_PIK",
+        "Main_Board",
+        "Main_Board_PIK",
+        "Main_Board_test_stand",
+        "PCBLF0648-3",
+        "PCBLF0648-3_PIK",
+        "PCBLF0648-3_gerber_experiment",
+        "PCBLF0706-1_PIK"
+      ]
+    },
+    {
+      id: "pullup-chip-select-10k_0603",
+      busType: "chip-select",
+      resistorValue: "10K_0603",
+      occurrences: 16,
+      medianDistanceToMcuMm: 11.83,
+      placementNote: "moderate distance from MCU",
+      powerNet: "+3.3V",
+      sourceDesigns: [
+        "Bottom",
+        "NuvoLiteBrick_PCB",
+        "NuvoLite_PCB",
+        "NuvoLite_PCB_PIK_Bottom",
+        "NuvoLite_PCB_PIK_Top",
+        "PCBLF0658-1",
+        "PCBLF0658-1_PIK",
+        "PCBLF0658-1_Panel",
+        "PCBLF0660-7",
+        "PCBLF0660-7_PIK",
+        "PCBLF0759_PIK",
+        "PCBLF0827-0_PIK",
+        "Quantum_NXP_Programmer"
+      ]
+    },
+    {
       id: "pullup-general-100k_0603",
       busType: "general",
       resistorValue: "100K_0603",
-      occurrences: 16,
+      occurrences: 15,
       medianDistanceToMcuMm: 55.86,
       placementNote: "near peripheral",
       powerNet: "+3.3V",
@@ -300,25 +311,6 @@ export const minedPullups: PullupPattern[] = [
         "Pico_LCD_PCB_PIK",
         "SMBus_Auto-Disconnect",
         "atsamd21_only"
-      ]
-    },
-    {
-      id: "pullup-i2c-10k_0603",
-      busType: "i2c",
-      resistorValue: "10K_0603",
-      occurrences: 16,
-      medianDistanceToMcuMm: 32.1,
-      placementNote: "near peripheral",
-      powerNet: "+3.3V",
-      sourceDesigns: [
-        "Handle_Sensor",
-        "NuvoLiteBrick_PCB",
-        "NuvoLite_PCB",
-        "NuvoLite_PCB_PIK_Bottom",
-        "NuvoLite_PCB_PIK_Top",
-        "PCBLF0690-1_Panel",
-        "PCBLF0759_PIK",
-        "Quantum_NXP_Programmer"
       ]
     },
     {
@@ -379,6 +371,24 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
+      id: "pullup-spi-10k_0603",
+      busType: "spi",
+      resistorValue: "10K_0603",
+      occurrences: 12,
+      medianDistanceToMcuMm: 30.49,
+      placementNote: "near peripheral",
+      powerNet: "+3.3V",
+      sourceDesigns: [
+        "All-In-One_Schematic",
+        "All-In-One_Schematic_IO_Board_w_ESP32",
+        "Astrodyne_chevy_replacement",
+        "Astrodyne_chevy_replacement_BBU",
+        "LCD_Control",
+        "Pitts_LCD_Faceplate",
+        "ProSmoker_PK100"
+      ]
+    },
+    {
       id: "pullup-general-jumper_0805",
       busType: "general",
       resistorValue: "JUMPER_0805",
@@ -413,37 +423,6 @@ export const minedPullups: PullupPattern[] = [
         "PCB_Connectware",
         "Pico_LCD_PCB",
         "Pico_LCD_PCB_PIK"
-      ]
-    },
-    {
-      id: "pullup-general-jumper_0603_1/10w",
-      busType: "general",
-      resistorValue: "JUMPER_0603_1/10W",
-      occurrences: 9,
-      medianDistanceToMcuMm: 65.21,
-      placementNote: "near peripheral",
-      powerNet: "+3.3V",
-      sourceDesigns: [
-        "All-In-One_Schematic",
-        "RG0026_replacement",
-        "TOP"
-      ]
-    },
-    {
-      id: "pullup-general-3306f-1-103",
-      busType: "general",
-      resistorValue: "3306F-1-103",
-      occurrences: 9,
-      medianDistanceToMcuMm: 33.92,
-      placementNote: "near peripheral",
-      powerNet: "+5V",
-      sourceDesigns: [
-        "AllInOne test board",
-        "BGW_Fan_Control",
-        "BGW_Fan_Control_PIK",
-        "PCBLF0804-2_PIK",
-        "PCBLF0804-4_PIK",
-        "Southbend_RTD_control"
       ]
     },
     {
@@ -497,18 +476,19 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
-      id: "pullup-general-2.7k_0603",
+      id: "pullup-general-3306f-1-103",
       busType: "general",
-      resistorValue: "2.7K_0603",
+      resistorValue: "3306F-1-103",
       occurrences: 8,
-      medianDistanceToMcuMm: 0,
-      placementNote: "no MCU distance data",
-      powerNet: "+12V",
+      medianDistanceToMcuMm: 33.92,
+      placementNote: "near peripheral",
+      powerNet: "+3.3V",
       sourceDesigns: [
-        "12_inch_CD_Timer_Control",
-        "DC-DC_IO_expansion_board",
-        "PCBLF0738-0_PIK",
-        "SMT_Control_Board"
+        "AllInOne test board",
+        "BGW_Fan_Control_PIK",
+        "PCBLF0804-2_PIK",
+        "PCBLF0804-4_PIK",
+        "Southbend_RTD_control"
       ]
     },
     {
@@ -559,6 +539,21 @@ export const minedPullups: PullupPattern[] = [
         "PCBLF0658-1_Panel",
         "PCBLF0759_PIK",
         "Quantum_NXP_Programmer"
+      ]
+    },
+    {
+      id: "pullup-general-2.7k_0603",
+      busType: "general",
+      resistorValue: "2.7K_0603",
+      occurrences: 7,
+      medianDistanceToMcuMm: 0,
+      placementNote: "no MCU distance data",
+      powerNet: "+12V",
+      sourceDesigns: [
+        "12_inch_CD_Timer_Control",
+        "DC-DC_IO_expansion_board",
+        "PCBLF0738-0_PIK",
+        "SMT_Control_Board"
       ]
     },
     {
@@ -665,6 +660,22 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
+      id: "pullup-reset-1k_0603",
+      busType: "reset",
+      resistorValue: "1K_0603",
+      occurrences: 5,
+      medianDistanceToMcuMm: 15.19,
+      placementNote: "moderate distance from MCU",
+      powerNet: "+3.3V",
+      sourceDesigns: [
+        "12_in_CD_Tmr_Ctrl_Small",
+        "12_inch_CD_Timer_Control",
+        "Alpha_sign_control",
+        "Main_Board",
+        "TouchMZ_In_Out_Board"
+      ]
+    },
+    {
       id: "pullup-chip-select-10k_0805_1%",
       busType: "chip-select",
       resistorValue: "10K_0805_1%",
@@ -695,22 +706,6 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
-      id: "pullup-general-4.7k_0603",
-      busType: "general",
-      resistorValue: "4.7K_0603",
-      occurrences: 5,
-      medianDistanceToMcuMm: 0,
-      placementNote: "no MCU distance data",
-      powerNet: "VCC",
-      sourceDesigns: [
-        "Handle_Sensor",
-        "PCBLF0690-1_Panel",
-        "PCBLF0717-1_PIK",
-        "PCB_Connectware",
-        "TouchMZ_In_Out_Board"
-      ]
-    },
-    {
       id: "pullup-general-53.6k_0603",
       busType: "general",
       resistorValue: "53.6K_0603",
@@ -727,6 +722,19 @@ export const minedPullups: PullupPattern[] = [
       ]
     },
     {
+      id: "pullup-general-jumper_0603_1/10w",
+      busType: "general",
+      resistorValue: "JUMPER_0603_1/10W",
+      occurrences: 5,
+      medianDistanceToMcuMm: 0,
+      placementNote: "no MCU distance data",
+      powerNet: "+3.3V",
+      sourceDesigns: [
+        "RG0026_replacement",
+        "TOP"
+      ]
+    },
+    {
       id: "pullup-general-100k_axial",
       busType: "general",
       resistorValue: "100K_AXIAL",
@@ -737,6 +745,18 @@ export const minedPullups: PullupPattern[] = [
       sourceDesigns: [
         "7_Switch_Opto",
         "PBB080"
+      ]
+    },
+    {
+      id: "pullup-spi-jumper_0603_1/10w",
+      busType: "spi",
+      resistorValue: "JUMPER_0603_1/10W",
+      occurrences: 4,
+      medianDistanceToMcuMm: 65.21,
+      placementNote: "near peripheral",
+      powerNet: "+3.3V",
+      sourceDesigns: [
+        "All-In-One_Schematic"
       ]
     },
     {
@@ -752,6 +772,21 @@ export const minedPullups: PullupPattern[] = [
         "ESP32_LCD_PCB",
         "Pico_LCD_PCB",
         "Pico_LCD_PCB_PIK"
+      ]
+    },
+    {
+      id: "pullup-general-4.7k_0603",
+      busType: "general",
+      resistorValue: "4.7K_0603",
+      occurrences: 4,
+      medianDistanceToMcuMm: 0,
+      placementNote: "no MCU distance data",
+      powerNet: "VCC",
+      sourceDesigns: [
+        "Handle_Sensor",
+        "PCBLF0690-1_Panel",
+        "PCBLF0717-1_PIK",
+        "PCB_Connectware"
       ]
     },
     {
@@ -865,6 +900,20 @@ export const minedPullups: PullupPattern[] = [
         "12_in_CD_Tmr_Ctrl_Small",
         "12_inch_CD_Timer_Control",
         "PCBLF0706-1_PIK"
+      ]
+    },
+    {
+      id: "pullup-interrupt-1m_0603_1%",
+      busType: "interrupt",
+      resistorValue: "1M_0603_1%",
+      occurrences: 3,
+      medianDistanceToMcuMm: 0,
+      placementNote: "no MCU distance data",
+      powerNet: "+3.3V_ESP",
+      sourceDesigns: [
+        "All-In-One_Schematic_IO_Board_w_ESP32",
+        "LCD_Control",
+        "Pitts_LCD_Faceplate"
       ]
     },
     {

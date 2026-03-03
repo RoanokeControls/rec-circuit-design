@@ -13,6 +13,7 @@ import math
 import os
 import re
 from collections import defaultdict
+from schematic_helpers import load_schematic_for_board, build_part_info_map, classify_regulator_pins
 
 BOARD_DIR = os.path.join(os.path.dirname(__file__), "..", "aps-export-output")
 SCHEM_DIR = BOARD_DIR
@@ -103,17 +104,22 @@ def analyze():
                 elem_nets[e_name].add(net_name)
                 net_elements[net_name].add(e_name)
 
+        # Load matching schematic for pin-level analysis
+        schematic = load_schematic_for_board(bpath)
+        part_info = build_part_info_map(schematic) if schematic else {}
+
         # Find regulators
         for elem in elements:
             e_value = elem.get("value", "")
             e_package = elem.get("package", "")
             e_name = elem["name"]
-            search_str = f"{e_value} {e_package}"
+            # Also check schematic deviceset for more precise identification
+            sch_info = part_info.get(e_name, {})
+            deviceset = sch_info.get("deviceset", "")
+            search_str = f"{e_value} {e_package} {deviceset}"
 
             for pattern, topology in REGULATOR_PATTERNS:
                 if pattern.search(search_str):
-                    reg_key = pattern.pattern.replace("\\d+", "X").replace("\\d{2}", "XX")
-                    # Use actual matched value as key
                     m = pattern.search(search_str)
                     reg_key = m.group(0) if m else search_str[:20]
 
@@ -121,17 +127,23 @@ def analyze():
                     regulator_stats[reg_key]["occurrences"] += 1
                     regulator_stats[reg_key]["designs"].add(design)
 
-                    # Trace nets
-                    nets = elem_nets.get(e_name, set())
-                    for n in nets:
-                        if POWER_NET_RE.match(n):
-                            # Determine if input or output by voltage comparison
+                    # Use schematic pin names to separate input vs output nets
+                    if schematic:
+                        pin_class = classify_regulator_pins(e_name, schematic)
+                        for n in pin_class["input_nets"]:
                             regulator_stats[reg_key]["input_nets"][n] += 1
+                        for n in pin_class["output_nets"]:
                             regulator_stats[reg_key]["output_nets"][n] += 1
-                        elif GND_NET_RE.match(n):
-                            pass  # GND connection expected
+                    else:
+                        # Fallback: all power nets go to both (imprecise)
+                        nets = elem_nets.get(e_name, set())
+                        for n in nets:
+                            if POWER_NET_RE.match(n):
+                                regulator_stats[reg_key]["input_nets"][n] += 1
+                                regulator_stats[reg_key]["output_nets"][n] += 1
 
                     # Find supporting components on same nets
+                    nets = elem_nets.get(e_name, set())
                     for net_name in nets:
                         for connected in net_elements[net_name]:
                             if connected == e_name:
@@ -141,9 +153,16 @@ def analyze():
                                 continue
                             cp = ref_prefix(connected)
                             if cp in ("C", "L", "D", "R"):
+                                # Classify cap role using pin info when available
+                                role = cp
+                                if cp == "C" and schematic:
+                                    if net_name in (classify_regulator_pins(e_name, schematic).get("input_nets", [])):
+                                        role = "input_cap"
+                                    elif net_name in (classify_regulator_pins(e_name, schematic).get("output_nets", [])):
+                                        role = "output_cap"
                                 regulator_stats[reg_key]["supporting_components"].append({
                                     "ref": connected,
-                                    "type": cp,
+                                    "type": role,
                                     "value": ce.get("value", ""),
                                     "net": net_name,
                                     "design": design,

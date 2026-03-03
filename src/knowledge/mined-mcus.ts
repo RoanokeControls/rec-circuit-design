@@ -42,6 +42,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "ICSP",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [
         "PIC18F26",
         "RP2040",
@@ -104,6 +105,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "SPI-PROG",
       usbBridge: "FT232RL-REEL",
+      busInterfaces: {},
       commonPairings: [
         "ESP32-WROVER",
         "PIC18F26",
@@ -164,6 +166,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "SPI-PROG",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [],
       sourceDesigns: [
         "Astrodyne_chevy_replacement",
@@ -230,6 +233,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "JTAG",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [],
       sourceDesigns: [
         "ESP32_LCD_Design_Touch",
@@ -276,8 +280,13 @@ export const mcuProfiles: McuProfile[] = [
         pullupValue: "",
         capValue: ""
       },
-      programmingInterface: "USB",
+      programmingInterface: "SWD",
       usbBridge: null,
+      busInterfaces: {
+        i2c: 3,
+        spi: 3,
+        usb_native: 3
+      },
       commonPairings: [
         "PIC18F26",
         "ESP32-WROVER"
@@ -289,6 +298,64 @@ export const mcuProfiles: McuProfile[] = [
         "PCBLF0827-0_PIK",
         "Pico_LCD_PCB",
         "Pico_LCD_PCB_PIK"
+      ]
+    },
+    {
+      id: "mcu-atmega328",
+      family: "AVR/SAM",
+      partNumber: "ATMEGA328",
+      occurrences: 6,
+      voltage: "5V",
+      crystals: [
+        {
+          value: "1K",
+          count: 2
+        },
+        {
+          value: "16MHz",
+          count: 1
+        }
+      ],
+      decouplingCaps: [
+        {
+          value: "0.1UF_50V_0603",
+          count: 15
+        },
+        {
+          value: "100UF_25V_ALE",
+          count: 10
+        },
+        {
+          value: "0.1UF_0603_5%_50V",
+          count: 5
+        },
+        {
+          value: "1uF",
+          count: 3
+        },
+        {
+          value: "4,7uF_16V",
+          count: 1
+        }
+      ],
+      resetCircuit: {
+        pullupValue: "10K_0603",
+        capValue: "0.1UF_50V_0603"
+      },
+      programmingInterface: "SPI-PROG",
+      usbBridge: "FT232RL",
+      busInterfaces: {
+        i2c: 3,
+        spi: 3
+      },
+      commonPairings: [],
+      sourceDesigns: [
+        "BGW_Fan_Control",
+        "BGW_Fan_Control_PIK",
+        "NanoV3.3",
+        "PCBLF0804-2_PIK",
+        "PCBLF0804-4_PIK",
+        "Southbend_RTD_control"
       ]
     },
     {
@@ -315,6 +382,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "SWD",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [
         "STM32F103"
       ],
@@ -322,42 +390,6 @@ export const mcuProfiles: McuProfile[] = [
         "PCBLF0648-3",
         "PCBLF0648-3_PIK",
         "PCBLF0648-3_gerber_experiment"
-      ]
-    },
-    {
-      id: "mcu-atmega328",
-      family: "AVR/SAM",
-      partNumber: "ATMEGA328",
-      occurrences: 5,
-      voltage: "5V",
-      crystals: [],
-      decouplingCaps: [
-        {
-          value: "0.1UF_50V_0603",
-          count: 15
-        },
-        {
-          value: "100UF_25V_ALE",
-          count: 10
-        },
-        {
-          value: "0.1UF_0603_5%_50V",
-          count: 5
-        }
-      ],
-      resetCircuit: {
-        pullupValue: "10K_0603",
-        capValue: "0.1UF_50V_0603"
-      },
-      programmingInterface: "SPI-PROG",
-      usbBridge: null,
-      commonPairings: [],
-      sourceDesigns: [
-        "BGW_Fan_Control",
-        "BGW_Fan_Control_PIK",
-        "PCBLF0804-2_PIK",
-        "PCBLF0804-4_PIK",
-        "Southbend_RTD_control"
       ]
     },
     {
@@ -387,6 +419,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "SWD",
       usbBridge: "CH340C",
+      busInterfaces: {},
       commonPairings: [
         "ESP32"
       ],
@@ -418,8 +451,9 @@ export const mcuProfiles: McuProfile[] = [
         pullupValue: "100^_0603",
         capValue: ""
       },
-      programmingInterface: "unknown",
+      programmingInterface: "ICSP",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [],
       sourceDesigns: [
         "Main_Board",
@@ -463,6 +497,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "SWD",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [
         "NRF51822"
       ],
@@ -502,6 +537,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "unknown",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [
         "ATSAMD21"
       ],
@@ -519,11 +555,11 @@ export const mcuProfiles: McuProfile[] = [
       crystals: [],
       decouplingCaps: [
         {
-          value: "0.1UF_0805",
+          value: "22UF_10V1206",
           count: 3
         },
         {
-          value: "22UF_10V1206",
+          value: "0.1UF_0805",
           count: 3
         },
         {
@@ -539,8 +575,9 @@ export const mcuProfiles: McuProfile[] = [
         pullupValue: "",
         capValue: ""
       },
-      programmingInterface: "SWD",
+      programmingInterface: "unknown",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [],
       sourceDesigns: [
         "HDMI_Display",
@@ -570,6 +607,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "JTAG",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [],
       sourceDesigns: [
         "Noah 2.0 Beta Layout",
@@ -601,8 +639,9 @@ export const mcuProfiles: McuProfile[] = [
         pullupValue: "10K_0805_1%",
         capValue: "0.1UF_0805"
       },
-      programmingInterface: "SWD",
+      programmingInterface: "unknown",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [],
       sourceDesigns: [
         "TiltAudio_RE",
@@ -623,6 +662,7 @@ export const mcuProfiles: McuProfile[] = [
       },
       programmingInterface: "unknown",
       usbBridge: null,
+      busInterfaces: {},
       commonPairings: [],
       sourceDesigns: [
         "CapSense"
@@ -649,8 +689,13 @@ export const mcuProfiles: McuProfile[] = [
         pullupValue: "",
         capValue: ""
       },
-      programmingInterface: "unknown",
+      programmingInterface: "ICSP",
       usbBridge: "FT232RL-REEL",
+      busInterfaces: {
+        i2c: 1,
+        spi: 1,
+        uart: 1
+      },
       commonPairings: [],
       sourceDesigns: [
         "TouchMZ_In_Out_Board"
@@ -686,7 +731,7 @@ export const mcuFamilySummary: Record<string, { instances: number; uniqueParts: 
       ]
     },
     "AVR/SAM": {
-      instances: 7,
+      instances: 8,
       uniqueParts: [
         "ATMEGA328",
         "ATSAMD21"

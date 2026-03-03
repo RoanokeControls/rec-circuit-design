@@ -25,6 +25,20 @@ import { registerLookupRoutingPractice } from "./lookup-routing-practice.js";
 import { registerCheckPlacementDensity } from "./check-placement-density.js";
 import { registerLookupBoardConvention } from "./lookup-board-convention.js";
 
+// ── Extended Mined Knowledge Tools ──
+import { registerLookupPicConnections } from "./lookup-pic-connections.js";
+import { registerLookupTriacCircuit } from "./lookup-triac-circuit.js";
+import { registerLookupDisplayCircuit } from "./lookup-display-circuit.js";
+import { registerLookupPowerCapacity } from "./lookup-power-capacity.js";
+import { registerLookupRelayCircuit } from "./lookup-relay-circuit.js";
+import { registerLookupCommInterface } from "./lookup-comm-interface.js";
+import { registerLookupSensorCircuit } from "./lookup-sensor-circuit.js";
+import { registerLookupLedCircuit } from "./lookup-led-circuit.js";
+import { registerLookupProtectionCircuit } from "./lookup-protection-circuit.js";
+import { registerLookupTestpoints } from "./lookup-testpoints.js";
+import { registerLookupBoardDesign } from "./lookup-board-design.js";
+import { registerLookupProgrammingInterface } from "./lookup-programming-interface.js";
+
 // ── Knowledge Input Tools (for engineers on the floor) ──
 import { registerAddLessonLearned } from "./add-lesson-learned.js";
 import { registerAddDesignRule } from "./add-design-rule.js";
@@ -50,7 +64,7 @@ export function registerAllTools(server: McpServer) {
   registerGenerateSchematicScript(server);
   registerGenerateBom(server);
 
-  // Mined Knowledge (7)
+  // Mined Knowledge — Core (7)
   registerLookupDecouplingPattern(server);
   registerLookupPowerTopology(server);
   registerLookupMcuProfile(server);
@@ -58,6 +72,20 @@ export function registerAllTools(server: McpServer) {
   registerLookupRoutingPractice(server);
   registerCheckPlacementDensity(server);
   registerLookupBoardConvention(server);
+
+  // Mined Knowledge — Extended (12)
+  registerLookupPicConnections(server);
+  registerLookupTriacCircuit(server);
+  registerLookupDisplayCircuit(server);
+  registerLookupPowerCapacity(server);
+  registerLookupRelayCircuit(server);
+  registerLookupCommInterface(server);
+  registerLookupSensorCircuit(server);
+  registerLookupLedCircuit(server);
+  registerLookupProtectionCircuit(server);
+  registerLookupTestpoints(server);
+  registerLookupBoardDesign(server);
+  registerLookupProgrammingInterface(server);
 
   // Knowledge Input (6)
   registerAddLessonLearned(server);

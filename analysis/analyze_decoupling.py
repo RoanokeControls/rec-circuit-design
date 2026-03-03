@@ -14,6 +14,7 @@ import os
 import re
 import sys
 from collections import defaultdict
+from schematic_helpers import load_schematic_for_board, build_part_info_map
 
 BOARD_DIR = os.path.join(os.path.dirname(__file__), "..", "aps-export-output")
 OUTPUT = os.path.join(os.path.dirname(__file__), "decoupling_patterns.json")
@@ -139,6 +140,8 @@ def analyze():
         "designs": set(),
     })
 
+    schematic_hits = 0
+
     for bpath in boards:
         with open(bpath) as f:
             board = json.load(f)
@@ -149,6 +152,12 @@ def analyze():
 
         if not elements or not signals:
             continue
+
+        # Load matching schematic for better IC identification
+        schematic = load_schematic_for_board(bpath)
+        part_info = build_part_info_map(schematic) if schematic else {}
+        if schematic:
+            schematic_hits += 1
 
         # Build lookup: element name -> element data
         elem_map = {e["name"]: e for e in elements}
@@ -172,7 +181,10 @@ def analyze():
             if prefix not in IC_PREFIXES:
                 continue
 
-            ic_value = elem.get("value", "") or elem.get("package", "")
+            # Use schematic deviceset for cleaner IC name when available
+            sch_info = part_info.get(e_name, {})
+            deviceset = sch_info.get("deviceset", "")
+            ic_value = deviceset or elem.get("value", "") or elem.get("package", "")
             if not ic_value:
                 continue
 
@@ -317,6 +329,7 @@ def analyze():
     print(f"  ICs with decoupling: {len(ic_stats)}")
     print(f"  Patterns (≥2 occurrences): {len(patterns)}")
     print(f"  Total IC-cap pairs: {len(all_dists)}")
+    print(f"  Schematics cross-referenced: {schematic_hits}")
     print(f"  Output: {OUTPUT}")
     return result
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run all analysis scripts and validate outputs.
 
-Orchestrates the 8 analysis scripts, validates JSON output structure,
+Orchestrates the 17 analysis scripts, validates JSON output structure,
 and reports summary statistics.
 """
 
@@ -21,6 +21,17 @@ from analyze_ground_routing import analyze as analyze_ground_routing
 from analyze_placement import analyze as analyze_placement
 from analyze_silkscreen import analyze as analyze_silkscreen
 from analyze_connectors import analyze as analyze_connectors
+from analyze_pic_ad import analyze as analyze_pic_ad
+from analyze_triacs_deep import analyze as analyze_triacs_deep
+from analyze_displays import analyze as analyze_displays
+from analyze_power_capacity import analyze as analyze_power_capacity
+from analyze_relays import analyze as analyze_relays
+from analyze_comm_interfaces import analyze as analyze_comm_interfaces
+from analyze_sensors import analyze as analyze_sensors
+from analyze_leds import analyze as analyze_leds
+from analyze_protection import analyze as analyze_protection
+from analyze_testpoints import analyze as analyze_testpoints
+from analyze_board_summary import analyze as analyze_board_summary
 
 ANALYSIS_DIR = os.path.dirname(__file__)
 
@@ -64,6 +75,28 @@ def run_all():
          "silkscreen_patterns.json", ["summary", "layer_summaries", "font_usage"]),
         ("8. Connector Patterns", analyze_connectors,
          "connector_patterns.json", ["summary", "connector_types"]),
+        ("9. PIC A/D Connections", analyze_pic_ad,
+         "pic_ad_patterns.json", ["summary", "pic_designs"]),
+        ("10. Triac Deep Analysis", analyze_triacs_deep,
+         "triac_deep_patterns.json", ["summary", "designs"]),
+        ("11. Display Circuits", analyze_displays,
+         "display_patterns.json", ["summary", "designs"]),
+        ("12. Power Capacity", analyze_power_capacity,
+         "power_capacity_patterns.json", ["summary", "boards"]),
+        ("13. Relay/Driver Circuits", analyze_relays,
+         "relay_patterns.json", ["summary", "designs"]),
+        ("14. Communication Interfaces", analyze_comm_interfaces,
+         "comm_interface_patterns.json", ["summary", "designs"]),
+        ("15. Sensor Circuits", analyze_sensors,
+         "sensor_patterns.json", ["summary", "designs"]),
+        ("16. LED Circuits", analyze_leds,
+         "led_patterns.json", ["summary", "designs"]),
+        ("17. Protection Circuits", analyze_protection,
+         "protection_patterns.json", ["summary", "designs"]),
+        ("18. Test Points", analyze_testpoints,
+         "testpoint_patterns.json", ["summary", "designs"]),
+        ("19. Board Summary", analyze_board_summary,
+         "board_summary.json", ["summary", "boards"]),
     ]
 
     results = {}

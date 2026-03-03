@@ -4,6 +4,8 @@
 Catalogs MCU families, crystals, decoupling, reset circuits,
 USB bridges, programming interfaces, voltage domains.
 
+Cross-references schematic data for pin-level interface identification.
+
 Output: analysis/mcu_patterns.json
 """
 
@@ -13,6 +15,7 @@ import math
 import os
 import re
 from collections import defaultdict
+from schematic_helpers import load_schematic_for_board, build_part_info_map, classify_mcu_pins
 
 BOARD_DIR = os.path.join(os.path.dirname(__file__), "..", "aps-export-output")
 SCHEM_DIR = BOARD_DIR
@@ -95,8 +98,11 @@ def analyze():
         "level_shifters": defaultdict(int),
         "voltage": [],
         "paired_mcus": defaultdict(int),
+        "bus_interfaces": defaultdict(int),
         "designs": set(),
     })
+
+    schematic_hits = 0
 
     for bpath in boards:
         with open(bpath) as f:
@@ -108,6 +114,12 @@ def analyze():
 
         if not elements:
             continue
+
+        # Load matching schematic for pin-level analysis
+        schematic = load_schematic_for_board(bpath)
+        part_info = build_part_info_map(schematic) if schematic else {}
+        if schematic:
+            schematic_hits += 1
 
         elem_map = {e["name"]: e for e in elements}
         elem_nets = defaultdict(set)
@@ -123,11 +135,18 @@ def analyze():
         # Find MCUs
         mcus_in_design = []
         for elem in elements:
-            search = f"{elem.get('value', '')} {elem.get('package', '')}"
+            # Try schematic deviceset first (more precise part number)
+            sch_info = part_info.get(elem["name"], {})
+            deviceset = sch_info.get("deviceset", "")
+            search = f"{elem.get('value', '')} {elem.get('package', '')} {deviceset}"
             for pattern, family in MCU_PATTERNS:
                 if pattern.search(search):
                     m = pattern.search(search)
-                    part_number = m.group(0)
+                    # Prefer deviceset for part number if it matched there
+                    if deviceset and pattern.search(deviceset):
+                        part_number = pattern.search(deviceset).group(0)
+                    else:
+                        part_number = m.group(0)
                     mcus_in_design.append((elem, part_number, family))
                     break
 
@@ -156,13 +175,30 @@ def analyze():
             mcu_nets = elem_nets.get(mcu_elem["name"], set())
             profile["voltage"].append(detect_voltage(mcu_nets))
 
-            # Programming interface
-            all_nets = set()
-            for n in mcu_nets:
-                all_nets.add(n)
-            for prog_type, pattern in PROG_NETS.items():
-                if any(pattern.search(n) for n in all_nets):
-                    profile["prog_interfaces"][prog_type] += 1
+            # Programming interface — use schematic pin names if available
+            if schematic:
+                mcu_pins = classify_mcu_pins(mcu_elem["name"], schematic)
+                if mcu_pins["programming"]:
+                    prog_types_found = set(p["type"] for p in mcu_pins["programming"])
+                    for pt in prog_types_found:
+                        profile["prog_interfaces"][pt] += 1
+                # Bus interfaces from schematic pins
+                if mcu_pins["i2c"]:
+                    profile["bus_interfaces"]["i2c"] += 1
+                if mcu_pins["spi"]:
+                    profile["bus_interfaces"]["spi"] += 1
+                if mcu_pins["uart"]:
+                    profile["bus_interfaces"]["uart"] += 1
+                if mcu_pins["usb"]:
+                    profile["bus_interfaces"]["usb_native"] += 1
+            else:
+                # Fallback: infer from net names
+                all_nets = set()
+                for n in mcu_nets:
+                    all_nets.add(n)
+                for prog_type, pattern in PROG_NETS.items():
+                    if any(pattern.search(n) for n in all_nets):
+                        profile["prog_interfaces"][prog_type] += 1
 
             # Find caps on same power nets (decoupling)
             power_nets = {n for n in mcu_nets if POWER_NET_RE.match(n)}
@@ -249,6 +285,11 @@ def analyze():
         # Pairings
         pairings = [k for k, v in sorted(data["paired_mcus"].items(), key=lambda x: -x[1])[:5]]
 
+        # Bus interfaces
+        bus_ifaces = {}
+        for iface, count in sorted(data["bus_interfaces"].items(), key=lambda x: -x[1]):
+            bus_ifaces[iface] = count
+
         profiles.append({
             "id": f"mcu-{part_number.lower().replace(' ', '-').replace('/', '-')[:40]}",
             "family": data["family"],
@@ -260,6 +301,7 @@ def analyze():
             "resetCircuit": reset_circuit if reset_circuit else {"pullupValue": "", "capValue": ""},
             "programmingInterface": prog,
             "usbBridge": usb_bridge,
+            "busInterfaces": bus_ifaces if bus_ifaces else {},
             "commonPairings": pairings,
             "sourceDesigns": sorted(data["designs"])[:20],
         })
@@ -291,6 +333,7 @@ def analyze():
     print(f"  MCU types: {len(mcu_profiles)}")
     print(f"  Total instances: {sum(d['occurrences'] for d in mcu_profiles.values())}")
     print(f"  Families: {dict((k, v['count']) for k, v in family_summary.items())}")
+    print(f"  Schematics cross-referenced: {schematic_hits}")
     print(f"  Output: {OUTPUT}")
     return result
 
