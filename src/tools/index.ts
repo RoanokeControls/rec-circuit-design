@@ -16,6 +16,15 @@ import { registerOptimizeForInventory } from "./optimize-for-inventory.js";
 import { registerGenerateSchematicScript } from "./generate-schematic-script.js";
 import { registerGenerateBom } from "./generate-bom.js";
 
+// ── Mined Knowledge Tools ──
+import { registerLookupDecouplingPattern } from "./lookup-decoupling-pattern.js";
+import { registerLookupPowerTopology } from "./lookup-power-topology.js";
+import { registerLookupMcuProfile } from "./lookup-mcu-profile.js";
+import { registerLookupPullupPractice } from "./lookup-pullup-practice.js";
+import { registerLookupRoutingPractice } from "./lookup-routing-practice.js";
+import { registerCheckPlacementDensity } from "./check-placement-density.js";
+import { registerLookupBoardConvention } from "./lookup-board-convention.js";
+
 // ── Knowledge Input Tools (for engineers on the floor) ──
 import { registerAddLessonLearned } from "./add-lesson-learned.js";
 import { registerAddDesignRule } from "./add-design-rule.js";
@@ -40,6 +49,15 @@ export function registerAllTools(server: McpServer) {
   // Generation (2)
   registerGenerateSchematicScript(server);
   registerGenerateBom(server);
+
+  // Mined Knowledge (7)
+  registerLookupDecouplingPattern(server);
+  registerLookupPowerTopology(server);
+  registerLookupMcuProfile(server);
+  registerLookupPullupPractice(server);
+  registerLookupRoutingPractice(server);
+  registerCheckPlacementDensity(server);
+  registerLookupBoardConvention(server);
 
   // Knowledge Input (6)
   registerAddLessonLearned(server);

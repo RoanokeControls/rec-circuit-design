@@ -299,8 +299,9 @@ def parse_board(xml_str, design_name):
                 "clearance": float(cl.get("clearance", "0")),
             })
 
-    # Build package SMD lookup
+    # Build package lookup: SMD flag + pad definitions
     pkg_smd_lookup = {}  # (library, package) -> bool
+    pkg_pads_lookup = {}  # (library, package) -> list of pad dicts
     libs_elem = board.find("libraries")
     if libs_elem is not None:
         for lib in libs_elem.findall("library"):
@@ -312,6 +313,27 @@ def parse_board(xml_str, design_name):
                 pkg_name = pkg.get("name", "")
                 has_smd = len(pkg.findall("smd")) > 0
                 pkg_smd_lookup[(lib_name, pkg_name)] = has_smd
+                # Collect pad definitions for distance calculations
+                pads = []
+                for smd in pkg.findall("smd"):
+                    pads.append({
+                        "name": smd.get("name", ""),
+                        "type": "smd",
+                        "x": float(smd.get("x", "0")),
+                        "y": float(smd.get("y", "0")),
+                        "dx": float(smd.get("dx", "0")),
+                        "dy": float(smd.get("dy", "0")),
+                        "layer": int(smd.get("layer", "1")),
+                    })
+                for pad in pkg.findall("pad"):
+                    pads.append({
+                        "name": pad.get("name", ""),
+                        "type": "through-hole",
+                        "x": float(pad.get("x", "0")),
+                        "y": float(pad.get("y", "0")),
+                        "drill": float(pad.get("drill", "0")),
+                    })
+                pkg_pads_lookup[(lib_name, pkg_name)] = pads
 
     # Elements (components on board)
     elements = []
@@ -325,6 +347,12 @@ def parse_board(xml_str, design_name):
 
             is_smd = 1 if pkg_smd_lookup.get(
                 (e_library, e_package), False) else 0
+
+            # Populate flag (DNP detection)
+            populate = 0 if elem.get("populate") == "no" else 1
+
+            # Smashed flag (manually-placed text)
+            smashed = 1 if elem.get("smashed") == "yes" else 0
 
             # Element attributes
             elem_attrs = {}
@@ -343,7 +371,10 @@ def parse_board(xml_str, design_name):
             except ValueError:
                 angle = 0.0
 
-            elements.append({
+            # Resolve pad definitions from package library
+            pads = pkg_pads_lookup.get((e_library, e_package), [])
+
+            elem_dict = {
                 "name": e_name,
                 "value": e_value,
                 "package": e_package,
@@ -353,8 +384,13 @@ def parse_board(xml_str, design_name):
                 "angle": angle,
                 "mirror": mirror,
                 "smd": is_smd,
+                "populate": populate,
+                "smashed": smashed,
                 "attributes": elem_attrs,
-            })
+            }
+            if pads:
+                elem_dict["pads"] = pads
+            elements.append(elem_dict)
 
     # Signals (nets with routing)
     signals = []
@@ -385,11 +421,15 @@ def parse_board(xml_str, design_name):
 
             vias = []
             for via in sig.findall("via"):
-                vias.append({
+                via_dict = {
                     "x": float(via.get("x", "0")),
                     "y": float(via.get("y", "0")),
                     "drill": float(via.get("drill", "0")),
-                })
+                }
+                extent = via.get("extent", "")
+                if extent:
+                    via_dict["extent"] = extent
+                vias.append(via_dict)
 
             polygons = []
             for poly in sig.findall("polygon"):
@@ -445,7 +485,7 @@ def parse_board(xml_str, design_name):
             "y2": round(max(all_y), 2),
         }
 
-    # Holes
+    # Holes (legacy location — also captured in plain_elements below)
     holes = []
     if plain is not None:
         for hole in plain.findall("hole"):
@@ -454,6 +494,71 @@ def parse_board(xml_str, design_name):
                 "y": float(hole.get("y", "0")),
                 "drill": float(hole.get("drill", "0")),
             })
+
+    # Texts on silkscreen/documentation layers
+    # Layers: 21=tPlace, 22=bPlace, 25=tNames, 26=bNames, 51=tDocu, 52=bDocu
+    silk_layers = {"21", "22", "25", "26", "51", "52"}
+    texts = []
+    if plain is not None:
+        for text in plain.findall("text"):
+            layer = text.get("layer", "")
+            if layer in silk_layers:
+                content = text.text or ""
+                rot_str = text.get("rot", "R0")
+                angle_str = rot_str.replace("R", "").replace("M", "").replace("S", "")
+                try:
+                    t_angle = float(angle_str) if angle_str else 0.0
+                except ValueError:
+                    t_angle = 0.0
+                texts.append({
+                    "content": content.strip(),
+                    "x": float(text.get("x", "0")),
+                    "y": float(text.get("y", "0")),
+                    "size": float(text.get("size", "1.27")),
+                    "layer": int(layer),
+                    "font": text.get("font", "proportional"),
+                    "angle": t_angle,
+                    "align": text.get("align", "bottom-left"),
+                })
+
+    # Plain elements: circles, rectangles, holes (mounting holes, fiducials, keepouts)
+    plain_elements = []
+    if plain is not None:
+        for circle in plain.findall("circle"):
+            plain_elements.append({
+                "type": "circle",
+                "x": float(circle.get("x", "0")),
+                "y": float(circle.get("y", "0")),
+                "radius": float(circle.get("radius", "0")),
+                "width": float(circle.get("width", "0")),
+                "layer": int(circle.get("layer", "0")),
+            })
+        for rect in plain.findall("rectangle"):
+            plain_elements.append({
+                "type": "rectangle",
+                "x1": float(rect.get("x1", "0")),
+                "y1": float(rect.get("y1", "0")),
+                "x2": float(rect.get("x2", "0")),
+                "y2": float(rect.get("y2", "0")),
+                "layer": int(rect.get("layer", "0")),
+            })
+        for hole in plain.findall("hole"):
+            plain_elements.append({
+                "type": "hole",
+                "x": float(hole.get("x", "0")),
+                "y": float(hole.get("y", "0")),
+                "drill": float(hole.get("drill", "0")),
+            })
+
+    # Design rules
+    design_rules = {}
+    rules_elem = board.find("designrules")
+    if rules_elem is not None:
+        for param in rules_elem.findall("param"):
+            p_name = param.get("name", "")
+            p_value = param.get("value", "")
+            if p_name:
+                design_rules[p_name] = p_value
 
     return {
         "export_type": "board",
@@ -467,6 +572,9 @@ def parse_board(xml_str, design_name):
         "elements": elements,
         "signals": signals,
         "holes": holes,
+        "texts": texts,
+        "plain_elements": plain_elements,
+        "design_rules": design_rules,
     }
 
 

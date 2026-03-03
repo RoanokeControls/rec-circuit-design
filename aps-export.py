@@ -320,8 +320,13 @@ def list_top_folders(access_token, hub_id, project_id):
 
 
 def list_folder_contents(access_token, project_id, folder_id):
-    """List contents of a folder (items + subfolders), with pagination."""
+    """List contents of a folder (items + subfolders), with pagination.
+
+    Returns (items, version_map) where version_map maps item IDs to their
+    tip version metadata from the 'included' array.
+    """
     items = []
+    version_map = {}
     url = APS_BASE + "/data/v1/projects/{}/folders/{}/contents".format(
         project_id, folder_id)
 
@@ -337,22 +342,48 @@ def list_folder_contents(access_token, project_id, folder_id):
                 "type": entry_type,
                 "name": name,
             })
+
+        # Build version map from included data (tip versions)
+        for inc in data.get("included", []):
+            if inc.get("type") == "versions":
+                attrs = inc.get("attributes", {})
+                fname = attrs.get("name", "")
+                mime = attrs.get("mimeType", "")
+                # Map the item lineage ID to the version info
+                item_rel = (inc.get("relationships", {})
+                            .get("item", {}).get("data", {}))
+                item_id = item_rel.get("id", "")
+                if item_id:
+                    version_map[item_id] = {
+                        "filename": fname,
+                        "mimeType": mime,
+                    }
+
         # Handle pagination
         url = data.get("links", {}).get("next", {})
         if isinstance(url, dict):
             url = url.get("href")
 
-    return items
+    return items, version_map
 
 
 def find_electronics_recursive(access_token, project_id, folder_id,
                                 folder_path="", name_filter=None):
     """Recursively find .fsch/.fbrd items in a folder tree.
 
+    Identifies electronics files by checking the tip version filename and
+    mime type from the included data in the folder contents response.
+
     Returns list of dicts with id, name, extension, folder_path.
     """
+    ELECTRONICS_MIMES = {
+        "application/vnd.autodesk.fusionsch": "fsch",
+        "application/vnd.autodesk.fusionbrd": "fbrd",
+    }
+
     results = []
-    contents = list_folder_contents(access_token, project_id, folder_id)
+    contents, version_map = list_folder_contents(
+        access_token, project_id, folder_id)
 
     for entry in contents:
         if entry["type"] == "folders":
@@ -363,18 +394,28 @@ def find_electronics_recursive(access_token, project_id, folder_id,
                 sub_path, name_filter))
 
         elif entry["type"] == "items":
-            name = entry["name"]
-            if name.endswith(".fsch") or name.endswith(".fbrd"):
-                if name_filter and name_filter.lower() not in name.lower():
-                    continue
-                ext = name[-4:]  # .fsch or .fbrd (but these are 5 chars)
-                if name.endswith(".fsch"):
+            display_name = entry["name"]
+            item_id = entry["id"]
+
+            # Check version info from included data
+            ver_info = version_map.get(item_id, {})
+            fname = ver_info.get("filename", "")
+            mime = ver_info.get("mimeType", "")
+
+            # Detect electronics by mime type or filename extension
+            ext = ELECTRONICS_MIMES.get(mime)
+            if not ext:
+                if fname.endswith(".fsch"):
                     ext = "fsch"
-                elif name.endswith(".fbrd"):
+                elif fname.endswith(".fbrd"):
                     ext = "fbrd"
+
+            if ext:
+                if name_filter and name_filter.lower() not in display_name.lower():
+                    continue
                 results.append({
-                    "id": entry["id"],
-                    "name": name,
+                    "id": item_id,
+                    "name": display_name,
                     "ext": ext,
                     "folder": folder_path,
                 })
@@ -525,15 +566,10 @@ def group_designs(electronics_files):
     designs = {}
 
     for item in electronics_files:
-        name = item["name"]
-        # Strip extension
-        if name.endswith(".fsch"):
-            base = name[:-5]
-            ext = "fsch"
-        elif name.endswith(".fbrd"):
-            base = name[:-5]
-            ext = "fbrd"
-        else:
+        base = item["name"]  # display name (no extension)
+        ext = item.get("ext", "")
+
+        if ext not in ("fsch", "fbrd"):
             continue
 
         if base not in designs:
@@ -655,6 +691,9 @@ def main():
     parser.add_argument(
         "--filter", default=None,
         help="Only export designs matching this name substring")
+    parser.add_argument(
+        "--list-only", action="store_true",
+        help="List hubs/projects/designs without downloading")
     args = parser.parse_args()
 
     # Check credentials
@@ -755,6 +794,10 @@ def main():
                 break
         print("  {} [{}|{}]{}".format(name, sch, brd, folder))
     print()
+
+    if args.list_only:
+        print("(--list-only mode, skipping download/export)")
+        sys.exit(0)
 
     # Load REC library
     rec_lib = load_rec_library()

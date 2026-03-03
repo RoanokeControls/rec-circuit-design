@@ -300,6 +300,111 @@ export interface VendorPreference {
   leadTime?: string;
 }
 
+// ── Mined Design Knowledge ──
+
+export interface DecouplingPattern {
+  id: string;
+  icValue: string;
+  icCategory: "regulator" | "mcu" | "interface" | "driver" | "other";
+  occurrences: number;
+  caps: {
+    role: string;
+    preferredValue: string;
+    values: string[];
+    medianDistanceMm: number;
+    p25Mm: number;
+    p75Mm: number;
+    count: number;
+  }[];
+  designRule: string;
+  sourceDesigns: string[];
+}
+
+export interface MinedPowerSupply {
+  id: string;
+  regulator: string;
+  topology: "ldo" | "buck" | "boost" | "ac-dc" | "linear";
+  occurrences: number;
+  inputNets: Record<string, number>;
+  outputNets: Record<string, number>;
+  components: {
+    role: string;
+    preferredValue: string;
+    values: string[];
+    count: number;
+  }[];
+  sourceDesigns: string[];
+}
+
+export interface TriacCircuit {
+  design: string;
+  triacs: { name: string; value: string }[];
+  optos: { name: string; value: string }[];
+  snubber_caps: number;
+}
+
+export interface EmcComponent {
+  type: string;
+  count: number;
+  values: Record<string, number>;
+  designCount: number;
+}
+
+export interface McuProfile {
+  id: string;
+  family: string;
+  partNumber: string;
+  occurrences: number;
+  voltage: string;
+  crystals: { value: string; count: number }[];
+  decouplingCaps: { value: string; count: number }[];
+  resetCircuit: { pullupValue: string; capValue: string };
+  programmingInterface: string;
+  usbBridge: string | null;
+  commonPairings: string[];
+  sourceDesigns: string[];
+}
+
+export interface PullupPattern {
+  id: string;
+  busType: string;
+  resistorValue: string;
+  occurrences: number;
+  medianDistanceToMcuMm: number;
+  placementNote: string;
+  powerNet: string;
+  sourceDesigns: string[];
+}
+
+export interface RoutingPractice {
+  id: string;
+  category: "trace-width" | "via-stitching" | "net-class" | "layer-usage";
+  netName: string;
+  description: string;
+  metric: number;
+  unit: string;
+  sampleSize: number;
+  percentiles?: { p25: number; p50: number; p75: number; p90: number };
+}
+
+export interface PlacementConvention {
+  id: string;
+  category: "density" | "connector-edge" | "mounting-hole" | "spacing" | "adapter";
+  description: string;
+  metric: number;
+  unit: string;
+  sampleSize: number;
+}
+
+export interface SilkscreenConvention {
+  id: string;
+  category: "text-size" | "font" | "part-number" | "smash-rate" | "layer-usage";
+  description: string;
+  value: string;
+  layer?: number;
+  occurrences: number;
+}
+
 // ── Eagle SCR Generation ──
 
 export interface ScrCommand {
