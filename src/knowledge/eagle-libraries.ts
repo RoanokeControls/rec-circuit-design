@@ -142,3 +142,84 @@ export const keyParts: RecLibraryPart[] = [
   { deviceset: "10UH_2.3A", prefix: "L", footprint: "IND_IHLP-2020CZ", description: "10uH 2.3A power inductor", category: "inductor", variants: ["", "-L", "-M"] },
   { deviceset: "22UH_1.9A", prefix: "L", footprint: "IND_IHLP-2020CZ", description: "22uH 1.9A power inductor", category: "inductor", variants: ["", "-L", "-M"] },
 ];
+
+// ── Standard Fusion 360 Electronics Layer Definitions ──
+// Use in all .lbr library files and board scripts.
+// Matches Fusion 360 Electronics layer panel structure.
+// Layer numbers are Eagle-compatible; Fusion renames them in the UI.
+
+export interface EagleLayer {
+  number: number;
+  name: string;
+  fusionName: string;
+  group: string;
+  color: number;
+  fill: number;
+  visible: boolean;
+}
+
+export const standardLayers: EagleLayer[] = [
+  // ── Copper ──
+  { number: 1,  name: "Top",       fusionName: "Top",              group: "Copper",     color: 4,  fill: 1,  visible: true },
+  { number: 16, name: "Bottom",    fusionName: "Bottom",           group: "Copper",     color: 1,  fill: 1,  visible: false },
+  { number: 17, name: "Pads",      fusionName: "Pads",             group: "Copper",     color: 2,  fill: 1,  visible: false },
+  { number: 18, name: "Vias",      fusionName: "Vias",             group: "Copper",     color: 2,  fill: 1,  visible: false },
+  { number: 19, name: "Unrouted",  fusionName: "Unrouted",         group: "Copper",     color: 6,  fill: 1,  visible: false },
+  // ── Mechanical ──
+  { number: 20, name: "Dimension", fusionName: "BoardOutline",     group: "Mechanical", color: 15, fill: 1,  visible: false },
+  { number: 44, name: "Drills",    fusionName: "Drills",           group: "Mechanical", color: 7,  fill: 1,  visible: false },
+  { number: 45, name: "Holes",     fusionName: "Holes",            group: "Mechanical", color: 7,  fill: 1,  visible: false },
+  { number: 46, name: "Milling",   fusionName: "Milling",          group: "Mechanical", color: 3,  fill: 1,  visible: false },
+  // ── Silkscreen ──
+  { number: 21, name: "tPlace",    fusionName: "SilkscreenTop",    group: "Silkscreen", color: 7,  fill: 1,  visible: false },
+  { number: 22, name: "bPlace",    fusionName: "SilkscreenBottom", group: "Silkscreen", color: 7,  fill: 1,  visible: false },
+  { number: 25, name: "tNames",    fusionName: "NamesTop",         group: "Silkscreen", color: 7,  fill: 1,  visible: false },
+  { number: 26, name: "bNames",    fusionName: "NamesBottom",      group: "Silkscreen", color: 7,  fill: 1,  visible: false },
+  { number: 27, name: "tValues",   fusionName: "ValuesTop",        group: "Silkscreen", color: 7,  fill: 1,  visible: false },
+  { number: 28, name: "bValues",   fusionName: "ValuesBottom",     group: "Silkscreen", color: 7,  fill: 1,  visible: false },
+  // ── Mask Openings ──
+  { number: 29, name: "tStop",     fusionName: "SolderMaskTop",    group: "Mask",       color: 7,  fill: 3,  visible: false },
+  { number: 30, name: "bStop",     fusionName: "SolderMaskBottom", group: "Mask",       color: 7,  fill: 3,  visible: false },
+  { number: 31, name: "tCream",    fusionName: "StencilTop",       group: "Mask",       color: 7,  fill: 4,  visible: false },
+  { number: 32, name: "bCream",    fusionName: "StencilBottom",    group: "Mask",       color: 7,  fill: 4,  visible: false },
+  { number: 35, name: "tGlue",     fusionName: "GlueTop",          group: "Mask",       color: 7,  fill: 4,  visible: false },
+  { number: 36, name: "bGlue",     fusionName: "GlueBottom",       group: "Mask",       color: 7,  fill: 4,  visible: false },
+  // ── Exclusions ──
+  { number: 39, name: "tKeepout",  fusionName: "ComponentExcludeTop", group: "Exclusions", color: 4, fill: 11, visible: false },
+  { number: 41, name: "tRestrict", fusionName: "RestrictTop",      group: "Exclusions", color: 4,  fill: 10, visible: false },
+  { number: 42, name: "bRestrict", fusionName: "RestrictBottom",   group: "Exclusions", color: 1,  fill: 10, visible: false },
+  { number: 43, name: "vRestrict", fusionName: "RestrictVias",     group: "Exclusions", color: 2,  fill: 10, visible: false },
+  // ── Documentation ──
+  { number: 47, name: "Measures",  fusionName: "Measures",         group: "Documentation", color: 7, fill: 1, visible: false },
+  { number: 48, name: "Document",  fusionName: "Document",         group: "Documentation", color: 7, fill: 1, visible: false },
+  { number: 49, name: "Reference", fusionName: "Reference",        group: "Documentation", color: 7, fill: 1, visible: false },
+  { number: 51, name: "tDocu",     fusionName: "DocumentTop",      group: "Documentation", color: 7, fill: 1, visible: false },
+  { number: 52, name: "bDocu",     fusionName: "DocumentBottom",   group: "Documentation", color: 7, fill: 1, visible: false },
+  // ── Schematic ──
+  { number: 91, name: "Nets",      fusionName: "Nets",             group: "Schematic",  color: 2,  fill: 1,  visible: true },
+  { number: 92, name: "Busses",    fusionName: "Busses",           group: "Schematic",  color: 1,  fill: 1,  visible: true },
+  { number: 93, name: "Pins",      fusionName: "Pins",             group: "Schematic",  color: 2,  fill: 1,  visible: false },
+  { number: 94, name: "Symbols",   fusionName: "Symbols",          group: "Schematic",  color: 4,  fill: 1,  visible: true },
+  { number: 95, name: "Names",     fusionName: "Names",            group: "Schematic",  color: 7,  fill: 1,  visible: true },
+  { number: 96, name: "Values",    fusionName: "Values",           group: "Schematic",  color: 7,  fill: 1,  visible: true },
+  { number: 97, name: "Info",      fusionName: "Info",             group: "Schematic",  color: 7,  fill: 1,  visible: true },
+  { number: 98, name: "Guide",     fusionName: "Guide",            group: "Schematic",  color: 6,  fill: 1,  visible: true },
+];
+
+/** Generate XML <layers> block for .lbr files */
+export function generateLayersXml(): string {
+  const groups = new Map<string, EagleLayer[]>();
+  for (const layer of standardLayers) {
+    if (!groups.has(layer.group)) groups.set(layer.group, []);
+    groups.get(layer.group)!.push(layer);
+  }
+  const lines: string[] = ["<layers>"];
+  for (const [group, layers] of groups) {
+    lines.push(`<!-- ${group} -->`);
+    for (const l of layers) {
+      lines.push(`<layer number="${l.number}" name="${l.name}" color="${l.color}" fill="${l.fill}" visible="${l.visible ? "yes" : "no"}" active="yes"/>`);
+    }
+  }
+  lines.push("</layers>");
+  return lines.join("\n");
+}

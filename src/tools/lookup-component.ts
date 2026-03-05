@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { inventory, componentNotes, vendorPreferences } from "../knowledge/index.js";
+import { componentNotes, vendorPreferences } from "../knowledge/index.js";
+import { getInventory } from "../utils/inventory-fetcher.js";
 
 export function registerLookupComponent(server: McpServer) {
   server.tool(
@@ -11,6 +12,7 @@ export function registerLookupComponent(server: McpServer) {
       preferInStock: z.boolean().optional().default(true).describe("Prioritize in-stock items in results"),
     },
     async ({ query, preferInStock }) => {
+      const inventory = await getInventory();
       const q = query.toLowerCase();
       let matches = inventory.filter(
         (item) =>

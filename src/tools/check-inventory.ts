@@ -1,6 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { inventory } from "../knowledge/index.js";
+import { getInventory } from "../utils/inventory-fetcher.js";
 
 export function registerCheckInventory(server: McpServer) {
   server.tool(
@@ -18,6 +18,7 @@ export function registerCheckInventory(server: McpServer) {
       boardQty: z.number().optional().default(1).describe("Number of boards in the run (multiplies all quantities)"),
     },
     async ({ parts, boardQty }) => {
+      const inventory = await getInventory();
       const results = parts.map((part) => {
         const inv = inventory.find((i) => i.partNumber === part.partNumber);
         const totalNeeded = part.qtyNeeded * boardQty;

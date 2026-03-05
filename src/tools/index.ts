@@ -16,6 +16,14 @@ import { registerOptimizeForInventory } from "./optimize-for-inventory.js";
 import { registerGenerateSchematicScript } from "./generate-schematic-script.js";
 import { registerGenerateBom } from "./generate-bom.js";
 
+// ── Production & Costing Tools ──
+import { registerEstimateBoardCost } from "./estimate-board-cost.js";
+import { registerPlanProductionRun } from "./plan-production-run.js";
+
+// ── Pricing Tools ──
+import { registerLookupPricing } from "./lookup-pricing.js";
+import { registerPriceBom } from "./price-bom.js";
+
 // ── Mined Knowledge Tools ──
 import { registerLookupDecouplingPattern } from "./lookup-decoupling-pattern.js";
 import { registerLookupPowerTopology } from "./lookup-power-topology.js";
@@ -63,6 +71,14 @@ export function registerAllTools(server: McpServer) {
   // Generation (2)
   registerGenerateSchematicScript(server);
   registerGenerateBom(server);
+
+  // Production & Costing (2)
+  registerEstimateBoardCost(server);
+  registerPlanProductionRun(server);
+
+  // Pricing (2)
+  registerLookupPricing(server);
+  registerPriceBom(server);
 
   // Mined Knowledge — Core (7)
   registerLookupDecouplingPattern(server);

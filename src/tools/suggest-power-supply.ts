@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { powerSupplies, inventory, deratingRules } from "../knowledge/index.js";
+import { powerSupplies, deratingRules } from "../knowledge/index.js";
+import { getInventory } from "../utils/inventory-fetcher.js";
 
 export function registerSuggestPowerSupply(server: McpServer) {
   server.tool(
@@ -13,6 +14,7 @@ export function registerSuggestPowerSupply(server: McpServer) {
       batteryPowered: z.boolean().optional().default(false).describe("True if efficiency matters (battery operation)"),
     },
     async ({ inputVoltage, outputVoltage, outputCurrentMa, batteryPowered }) => {
+      const inventory = await getInventory();
       const outputCurrentA = outputCurrentMa / 1000;
 
       const candidates = powerSupplies.filter((ps) => {

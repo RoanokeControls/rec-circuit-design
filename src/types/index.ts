@@ -59,6 +59,23 @@ export interface InventoryItem {
   lastUpdated: string;
 }
 
+export interface InventoryEnvelope {
+  version: number;
+  generated: string;
+  source: "cost-sheet" | "dba-export" | "manual";
+  itemCount: number;
+  items: InventoryItem[];
+}
+
+export interface DesignPart {
+  ref: string;
+  value: string;
+  deviceset: string;
+  package: string;
+  library: string;
+  smd: boolean;
+}
+
 // ── Reference Circuits ──
 
 export interface ReferenceCircuit {
@@ -604,6 +621,60 @@ export interface ProgrammingInterface {
   description: string;
   protocol: string;
   notes?: string;
+}
+
+// ── Pricing ──
+
+export interface PriceBreak {
+  qty: number;
+  unitPrice: number;
+  currency: string;
+}
+
+export interface PartOffer {
+  distributor: string;
+  mpn: string;
+  manufacturer: string;
+  description: string;
+  stock: number;
+  priceBreaks: PriceBreak[];
+  moq: number;
+  leadTimeDays: number | null;
+  url: string;
+}
+
+export interface PricingResult {
+  query: string;
+  source: "digikey" | "octopart" | "cache";
+  offers: PartOffer[];
+  bestPrice: number | null;
+  bestPriceQty100: number | null;
+  totalStock: number;
+  timestamp: string;
+}
+
+export interface BomPricingLine {
+  deviceset: string;
+  value: string;
+  qtyPerBoard: number;
+  qtyTotal: number;
+  inventoryCost: number;
+  liveBestPrice: number | null;
+  lineCostInventory: number;
+  lineCostLive: number | null;
+  offers: PartOffer[];
+  pricingSource: "inventory" | "digikey" | "octopart" | "not-found";
+}
+
+export interface BomPricingResult {
+  designName: string;
+  boardQty: number;
+  totalCostInventory: number;
+  totalCostLive: number | null;
+  costPerBoardLive: number | null;
+  linesWithPricing: number;
+  linesTotal: number;
+  lines: BomPricingLine[];
 }
 
 // ── Eagle SCR Generation ──

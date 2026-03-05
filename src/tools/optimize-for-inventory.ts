@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { inventory, substitutionRules, componentNotes } from "../knowledge/index.js";
+import { substitutionRules, componentNotes } from "../knowledge/index.js";
+import { getInventory } from "../utils/inventory-fetcher.js";
 
 export function registerOptimizeForInventory(server: McpServer) {
   server.tool(
@@ -19,6 +20,7 @@ export function registerOptimizeForInventory(server: McpServer) {
         .describe("Current BOM — list of components with reference designators and part numbers"),
     },
     async ({ bom }) => {
+      const inventory = await getInventory();
       const suggestions = bom.map((item) => {
         const currentPart = inventory.find((i) => i.partNumber === item.partNumber);
         const notes = componentNotes.filter((n) => n.partNumber === item.partNumber);

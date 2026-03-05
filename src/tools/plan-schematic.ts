@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { referenceCircuits, powerSupplies, protectionCircuits, inventory, designRules, lessonsLearned } from "../knowledge/index.js";
+import { referenceCircuits, powerSupplies, protectionCircuits, designRules, lessonsLearned } from "../knowledge/index.js";
+import { getInventory } from "../utils/inventory-fetcher.js";
 
 export function registerPlanSchematic(server: McpServer) {
   server.tool(
@@ -14,6 +15,7 @@ export function registerPlanSchematic(server: McpServer) {
       boardQty: z.number().optional().default(100).describe("Expected production quantity — affects inventory check"),
     },
     async ({ mcu, powerSource, interfaces, features, boardQty }) => {
+      const inventory = await getInventory();
       const mcuLower = mcu.toLowerCase();
 
       // Find matching reference circuit

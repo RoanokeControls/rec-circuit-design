@@ -42,21 +42,26 @@ export class ScrBuilder {
   }
 
   setLayer(layer: string): this {
-    this.add(`LAYER ${layer};`, `Switch to layer ${layer}`);
+    this.add(`CHANGE LAYER ${layer};`, `Switch to layer ${layer}`);
     return this;
   }
 
   // ── Component Placement ──
   // ADD command format per Eagle/Fusion Electronics:
-  //   ADD 'DEVICESET_NAME[VARIANT]' REFDES ROTATION (X Y);
+  //   ADD 'DEVICESET_NAME[VARIANT]' 'REFDES' ROTATION (X Y);
+  //
+  // CRITICAL: Both device name AND refdes MUST be quoted.
+  // Unquoted refdes crashes Fusion (PlacePartWorker.cpp).
   //
   // The deviceset name is the part name from the REC library.
   // Examples:
-  //   ADD '10K_0805' R1 R0 (500 1800);
-  //   ADD 'ESP32-WROVER' A1 R0 (1000 1200);
-  //   ADD '0.1UF_0603_5%_50V' C1 R0 (600 1800);
-  //   ADD 'STM32F103C8T6-M' CR1 R0 (800 1000);  ← -M variant
-  //   ADD '+3.3V' (500 2000);                      ← supply symbol, no refdes
+  //   ADD '10K_0805' 'R1' R0 (500 1800);
+  //   ADD 'ESP32-WROVER' 'A1' R0 (1000 1200);
+  //   ADD '0.1UF_0603_5%_50V' 'C1' R0 (600 1800);
+  //   ADD 'STM32F103C8T6-M' 'CR1' R0 (800 1000);  ← -M variant
+  //
+  // Supply symbols: Do NOT use ADD for supply symbols (GND, +3.3V, etc.)
+  // Instead, use named NET stubs + LABEL to create power connections.
 
   addComponent(
     devicesetName: string,
@@ -69,19 +74,20 @@ export class ScrBuilder {
     const deviceName = variant ? `${devicesetName}${variant}` : devicesetName;
     const rotStr = `R${rotation}`;
     this.add(
-      `ADD '${deviceName}' ${refDes} ${rotStr} (${x} ${y});`,
+      `ADD '${deviceName}' '${refDes}' ${rotStr} (${x} ${y});`,
       `Place ${refDes} — ${devicesetName}`
     );
     return this;
   }
 
-  addSupplySymbol(symbolName: string, x: number, y: number): this {
-    this.add(`ADD '${symbolName}' (${x} ${y});`, `Supply: ${symbolName}`);
+  addSupplyNet(netName: string, x: number, y: number, stubLength: number = 100): this {
+    this.add(`NET '${netName}' (${x} ${y}) (${x} ${y + stubLength});`, `Supply: ${netName}`);
+    this.add(`LABEL (${x} ${y}) (${x} ${y});`, `Label: ${netName}`);
     return this;
   }
 
   setValue(refDes: string, value: string): this {
-    this.add(`VALUE ${refDes} '${value}';`, `Set ${refDes} = ${value}`);
+    this.add(`VALUE '${refDes}' '${value}';`, `Set ${refDes} = ${value}`);
     return this;
   }
 
@@ -122,8 +128,10 @@ export class ScrBuilder {
     return this;
   }
 
-  addLabel(netName: string, x: number, y: number): this {
-    this.add(`LABEL '${netName}' (${x} ${y});`, `Label: ${netName}`);
+  addLabel(x: number, y: number): this {
+    // LABEL inherits net name from the preceding NET command.
+    // It takes coordinate pairs only — no net name argument.
+    this.add(`LABEL (${x} ${y}) (${x} ${y});`, "Label");
     return this;
   }
 

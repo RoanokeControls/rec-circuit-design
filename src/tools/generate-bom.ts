@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { referenceCircuits, powerSupplies, protectionCircuits, inventory } from "../knowledge/index.js";
+import { referenceCircuits, powerSupplies, protectionCircuits } from "../knowledge/index.js";
+import { getInventory } from "../utils/inventory-fetcher.js";
 
 export function registerGenerateBom(server: McpServer) {
   server.tool(
@@ -13,6 +14,7 @@ export function registerGenerateBom(server: McpServer) {
       boardQty: z.number().optional().default(1).describe("Number of boards — multiplies quantities"),
     },
     async ({ circuitId, powerSupplyId, protectionIds, boardQty }) => {
+      const inventory = await getInventory();
       const bomLines: Array<{
         refDes: string;
         value: string;

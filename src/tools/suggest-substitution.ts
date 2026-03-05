@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { substitutionRules, inventory } from "../knowledge/index.js";
+import { substitutionRules } from "../knowledge/index.js";
+import { getInventory } from "../utils/inventory-fetcher.js";
 
 export function registerSuggestSubstitution(server: McpServer) {
   server.tool(
@@ -10,6 +11,7 @@ export function registerSuggestSubstitution(server: McpServer) {
       partNumber: z.string().describe("The part number to find substitutes for"),
     },
     async ({ partNumber }) => {
+      const inventory = await getInventory();
       const pn = partNumber.toUpperCase();
 
       const asOriginal = substitutionRules.filter(
