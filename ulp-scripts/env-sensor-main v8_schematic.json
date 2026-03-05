@@ -1,0 +1,2540 @@
+{
+  "export_type": "schematic",
+  "design_name": "env-sensor-main v8",
+  "filename": "/var/folders/5s/_9hv2m2154d1xts9rx6rbs600000gn/T/Neutron/ElectronFileOutput/95436/sch-80adcd19-5b0c-4a7c-a644-74056b38b522/env-sensor-main v8.sch",
+  "grid": {
+    "distance": 0.100000,
+    "unit": 3
+  },
+  "sheet_count": 3,
+  "global_attributes": {
+  },
+  "libraries": [
+    "env-sensor"
+  ],
+  "parts": [
+    {
+      "name": "C1",
+      "value": "10uF",
+      "deviceset": "C0805",
+      "device": "C0805",
+      "package": "C0805",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0805 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C2",
+      "value": "100nF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C3",
+      "value": "22uF",
+      "deviceset": "C0805",
+      "device": "C0805",
+      "package": "C0805",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0805 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C4",
+      "value": "1uF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C5",
+      "value": "1uF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C6",
+      "value": "10uF",
+      "deviceset": "C0805",
+      "device": "C0805",
+      "package": "C0805",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0805 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C7",
+      "value": "100nF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C8",
+      "value": "1uF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C9",
+      "value": "100nF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C10",
+      "value": "100nF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C11",
+      "value": "100uF",
+      "deviceset": "C-ELEC",
+      "device": "C-ELEC",
+      "package": "CAP-ELEC-6.3",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "6.3mm radial electrolytic capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "C12",
+      "value": "100nF",
+      "deviceset": "C0402",
+      "device": "C0402",
+      "package": "C0402",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0402 chip capacitor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "D1",
+      "value": "SS14",
+      "deviceset": "SS14",
+      "device": "SS14",
+      "package": "SMA",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "SS14 1A 40V Schottky diode, SMA package",
+      "attributes": {
+      }
+    },
+    {
+      "name": "D2",
+      "value": "SS14",
+      "deviceset": "SS14",
+      "device": "SS14",
+      "package": "SMA",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "SS14 1A 40V Schottky diode, SMA package",
+      "attributes": {
+      }
+    },
+    {
+      "name": "J1",
+      "value": "USB-C",
+      "deviceset": "USB-C-16P",
+      "device": "USB-C-16P",
+      "package": "USB-C-16P",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "USB Type-C receptacle, 16-pin SMD. For power + native USB data.",
+      "attributes": {
+      }
+    },
+    {
+      "name": "J2",
+      "value": "BME280",
+      "deviceset": "RJ45-8P8C",
+      "device": "RJ45-8P8C",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "RJ-45 8P8C modular jack, through-hole",
+      "attributes": {
+      }
+    },
+    {
+      "name": "J3",
+      "value": "SCD41",
+      "deviceset": "RJ45-8P8C",
+      "device": "RJ45-8P8C",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "RJ-45 8P8C modular jack, through-hole",
+      "attributes": {
+      }
+    },
+    {
+      "name": "J4",
+      "value": "PMSA003I",
+      "deviceset": "RJ45-8P8C",
+      "device": "RJ45-8P8C",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "RJ-45 8P8C modular jack, through-hole",
+      "attributes": {
+      }
+    },
+    {
+      "name": "J5",
+      "value": "ArduCAM-SPI",
+      "deviceset": "RJ45-8P8C",
+      "device": "RJ45-8P8C",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "RJ-45 8P8C modular jack, through-hole",
+      "attributes": {
+      }
+    },
+    {
+      "name": "J6",
+      "value": "EXPANSION",
+      "deviceset": "HDR-2X5",
+      "device": "HDR-2X5",
+      "package": "HDR-2X5",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "2x5 2.54mm pin header for expansion",
+      "attributes": {
+      }
+    },
+    {
+      "name": "J7",
+      "value": "12V-PWR-IN",
+      "deviceset": "RJ45-8P8C",
+      "device": "RJ45-8P8C",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "RJ-45 8P8C modular jack, through-hole",
+      "attributes": {
+      }
+    },
+    {
+      "name": "L1",
+      "value": "4.7uH",
+      "deviceset": "L1210",
+      "device": "L1210",
+      "package": "IND-1210",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "1210 shielded inductor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "LED1",
+      "value": "GREEN",
+      "deviceset": "LED-0603",
+      "device": "LED-0603",
+      "package": "LED-0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 SMD LED, green",
+      "attributes": {
+      }
+    },
+    {
+      "name": "Q1",
+      "value": "DMP2035U",
+      "deviceset": "DMP2035U",
+      "device": "DMP2035U",
+      "package": "SOT-23-3",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "DMP2035U P-Channel MOSFET, SOT-23. Reverse polarity protection.",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R1",
+      "value": "4.7K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R2",
+      "value": "4.7K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R3",
+      "value": "10K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R4",
+      "value": "5.1K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R5",
+      "value": "5.1K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R6",
+      "value": "10K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R7",
+      "value": "10K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R8",
+      "value": "1.5K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R9",
+      "value": "73.2K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "R10",
+      "value": "10K",
+      "deviceset": "R0603",
+      "device": "R0603",
+      "package": "R0603",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "0603 chip resistor",
+      "attributes": {
+      }
+    },
+    {
+      "name": "SW1",
+      "value": "RESET",
+      "deviceset": "TACT-SW",
+      "device": "TACT-SW",
+      "package": "TACT-6MM",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "6mm tactile switch, SPST momentary",
+      "attributes": {
+      }
+    },
+    {
+      "name": "SW2",
+      "value": "BOOT",
+      "deviceset": "TACT-SW",
+      "device": "TACT-SW",
+      "package": "TACT-6MM",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "6mm tactile switch, SPST momentary",
+      "attributes": {
+      }
+    },
+    {
+      "name": "TVS1",
+      "value": "PRTR5V0U2X",
+      "deviceset": "PRTR5V0U2X",
+      "device": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "NXP PRTR5V0U2X dual-line TVS for ESD protection on I2C/SPI",
+      "attributes": {
+      }
+    },
+    {
+      "name": "TVS2",
+      "value": "PRTR5V0U2X",
+      "deviceset": "PRTR5V0U2X",
+      "device": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "NXP PRTR5V0U2X dual-line TVS for ESD protection on I2C/SPI",
+      "attributes": {
+      }
+    },
+    {
+      "name": "TVS3",
+      "value": "PRTR5V0U2X",
+      "deviceset": "PRTR5V0U2X",
+      "device": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "NXP PRTR5V0U2X dual-line TVS for ESD protection on I2C/SPI",
+      "attributes": {
+      }
+    },
+    {
+      "name": "TVS4",
+      "value": "PRTR5V0U2X",
+      "deviceset": "PRTR5V0U2X",
+      "device": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "NXP PRTR5V0U2X dual-line TVS for ESD protection on I2C/SPI",
+      "attributes": {
+      }
+    },
+    {
+      "name": "TVS5",
+      "value": "PRTR5V0U2X",
+      "deviceset": "PRTR5V0U2X",
+      "device": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "NXP PRTR5V0U2X dual-line TVS for ESD protection on I2C/SPI",
+      "attributes": {
+      }
+    },
+    {
+      "name": "TVS6",
+      "value": "PRTR5V0U2X",
+      "deviceset": "PRTR5V0U2X",
+      "device": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "NXP PRTR5V0U2X dual-line TVS for ESD protection on I2C/SPI",
+      "attributes": {
+      }
+    },
+    {
+      "name": "U1",
+      "value": "ESP32-S3-WROOM-1U-N8R8",
+      "deviceset": "ESP32-S3-WROOM-1U",
+      "device": "ESP32-S3-WROOM-1U",
+      "package": "ESP32-S3-WROOM-1U",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "Espressif ESP32-S3-WROOM-1U-N8R8 WiFi+BLE module.",
+      "attributes": {
+      }
+    },
+    {
+      "name": "U2",
+      "value": "SGP41-D-R4",
+      "deviceset": "SGP41",
+      "device": "SGP41",
+      "package": "DFN-6-2.44",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "Sensirion SGP41 TVOC/NOx sensor, I2C address 0x59",
+      "attributes": {
+      }
+    },
+    {
+      "name": "U3",
+      "value": "LTR-390UV-01",
+      "deviceset": "LTR-390UV",
+      "device": "LTR-390UV",
+      "package": "ODFN-6-2X2",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "Lite-On LTR-390UV-01 ambient light + UV sensor, I2C address 0x53",
+      "attributes": {
+      }
+    },
+    {
+      "name": "U4",
+      "value": "AP2112K-3.3",
+      "deviceset": "AP2112K",
+      "device": "AP2112K",
+      "package": "SOT-23-5",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "Diodes Inc AP2112K-3.3TRG1, 3.3V 600mA LDO",
+      "attributes": {
+      }
+    },
+    {
+      "name": "U5",
+      "value": "MP2315GJ-Z",
+      "deviceset": "MP2315",
+      "device": "MP2315",
+      "package": "SOT-23-8",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "MPS MP2315GJ-Z, 4.5-24V to 5V step-down converter",
+      "attributes": {
+      }
+    },
+    {
+      "name": "U6",
+      "value": "SP3485",
+      "deviceset": "SP3485",
+      "device": "SP3485",
+      "package": "SOIC-8",
+      "library": "env-sensor",
+      "technology": "''",
+      "headline": "MaxLinear SP3485 3.3V half-duplex RS-485 transceiver, SOIC-8.",
+      "attributes": {
+      }
+    }
+  ],
+  "sheets": [
+    {
+      "number": 1,
+      "description": "",
+      "headline": "",
+      "parts": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C10",
+        "C11",
+        "C12",
+        "D1",
+        "D2",
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "L1",
+        "LED1",
+        "Q1",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "SW1",
+        "SW2",
+        "TVS1",
+        "TVS2",
+        "TVS3",
+        "TVS4",
+        "TVS5",
+        "TVS6",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "nets": [
+        {
+          "name": "3V3",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "3V3",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 90220800,
+              "y": 93472000
+            },
+            {
+              "part": "U2",
+              "pin": "VDD",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 182067200,
+              "y": 115417600
+            },
+            {
+              "part": "U2",
+              "pin": "VDD2",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 182067200,
+              "y": 114604800
+            },
+            {
+              "part": "U3",
+              "pin": "VDD",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 182067200,
+              "y": 74777600
+            },
+            {
+              "part": "U4",
+              "pin": "VOUT",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 159308800,
+              "y": 172313600
+            },
+            {
+              "part": "C5",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 171500800,
+              "y": 159308800
+            },
+            {
+              "part": "C6",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 31699200,
+              "y": 113792000
+            },
+            {
+              "part": "C7",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 33324800,
+              "y": 105664000
+            },
+            {
+              "part": "C9",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 164998400,
+              "y": 121920000
+            },
+            {
+              "part": "C10",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 164998400,
+              "y": 81280000
+            },
+            {
+              "part": "R1",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 152806400,
+              "y": 105664000
+            },
+            {
+              "part": "R2",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 152806400,
+              "y": 97536000
+            },
+            {
+              "part": "R3",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 152806400,
+              "y": 89408000
+            },
+            {
+              "part": "R7",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 30886400,
+              "y": 89408000
+            },
+            {
+              "part": "TVS1",
+              "pin": "VCC",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 28448000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS2",
+              "pin": "VCC",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 77216000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS3",
+              "pin": "VCC",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 117856000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS4",
+              "pin": "VCC",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 142240000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS5",
+              "pin": "VCC",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 166624000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS6",
+              "pin": "VCC",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 191008000,
+              "y": 39827200
+            },
+            {
+              "part": "J2",
+              "pin": "4",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 20320000,
+              "y": 8940800
+            },
+            {
+              "part": "J3",
+              "pin": "4",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 69088000,
+              "y": 8940800
+            },
+            {
+              "part": "J4",
+              "pin": "4",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 117856000,
+              "y": 8940800
+            },
+            {
+              "part": "J5",
+              "pin": "4",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 166624000,
+              "y": 8940800
+            },
+            {
+              "part": "J6",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 208076800,
+              "y": 91033600
+            },
+            {
+              "part": "U6",
+              "pin": "VCC",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 53644800,
+              "y": 197510400
+            },
+            {
+              "part": "C12",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 47955200,
+              "y": 208076800
+            }
+          ]
+        },
+        {
+          "name": "5V",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "D1",
+              "pin": "C",
+              "gate": "G$1",
+              "pad": "C",
+              "x": 115417600,
+              "y": 178816000
+            },
+            {
+              "part": "D2",
+              "pin": "C",
+              "gate": "G$1",
+              "pad": "C",
+              "x": 115417600,
+              "y": 162560000
+            },
+            {
+              "part": "C3",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 129235200,
+              "y": 186944000
+            },
+            {
+              "part": "C11",
+              "pin": "+",
+              "gate": "G$1",
+              "pad": "+",
+              "x": 128422400,
+              "y": 198323200
+            },
+            {
+              "part": "U4",
+              "pin": "VIN",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 149555200,
+              "y": 172313600
+            },
+            {
+              "part": "U4",
+              "pin": "EN",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 149555200,
+              "y": 170688000
+            },
+            {
+              "part": "C4",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 138988800,
+              "y": 159308800
+            },
+            {
+              "part": "R9",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 95910400,
+              "y": 154432000
+            },
+            {
+              "part": "J2",
+              "pin": "5",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 20320000,
+              "y": 8128000
+            },
+            {
+              "part": "J3",
+              "pin": "5",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 69088000,
+              "y": 8128000
+            },
+            {
+              "part": "J4",
+              "pin": "5",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 117856000,
+              "y": 8128000
+            }
+          ]
+        },
+        {
+          "name": "5V_BUCK",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "L1",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 91033600,
+              "y": 178816000
+            },
+            {
+              "part": "D1",
+              "pin": "A",
+              "gate": "G$1",
+              "pad": "A",
+              "x": 112166400,
+              "y": 178816000
+            }
+          ]
+        },
+        {
+          "name": "12V",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "J7",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 4064000,
+              "y": 173939200
+            },
+            {
+              "part": "J7",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 4064000,
+              "y": 173126400
+            },
+            {
+              "part": "J7",
+              "pin": "3",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 4064000,
+              "y": 172313600
+            },
+            {
+              "part": "J7",
+              "pin": "6",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 4064000,
+              "y": 169875200
+            },
+            {
+              "part": "Q1",
+              "pin": "S",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 35763200,
+              "y": 178003200
+            }
+          ]
+        },
+        {
+          "name": "12V_PROT",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "Q1",
+              "pin": "D",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 35763200,
+              "y": 173126400
+            },
+            {
+              "part": "U5",
+              "pin": "IN",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 60147200,
+              "y": 173126400
+            },
+            {
+              "part": "U5",
+              "pin": "EN",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 60147200,
+              "y": 171500800
+            },
+            {
+              "part": "C1",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 44704000,
+              "y": 159308800
+            }
+          ]
+        },
+        {
+          "name": "BOOT",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO0",
+              "gate": "G$1",
+              "pad": "27",
+              "x": 90220800,
+              "y": 91033600
+            },
+            {
+              "part": "R7",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 34137600,
+              "y": 89408000
+            },
+            {
+              "part": "SW2",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2,4",
+              "x": 6502400,
+              "y": 89408000
+            }
+          ]
+        },
+        {
+          "name": "BST",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U5",
+              "pin": "BST",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 69900800,
+              "y": 173126400
+            },
+            {
+              "part": "C2",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 88595200,
+              "y": 186944000
+            }
+          ]
+        },
+        {
+          "name": "CC1",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "J1",
+              "pin": "CC1",
+              "gate": "G$1",
+              "pad": "A5",
+              "x": 17068800,
+              "y": 130048000
+            },
+            {
+              "part": "R4",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 39014400,
+              "y": 138176000
+            }
+          ]
+        },
+        {
+          "name": "CC2",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "J1",
+              "pin": "CC2",
+              "gate": "G$1",
+              "pad": "B5",
+              "x": 17068800,
+              "y": 129235200
+            },
+            {
+              "part": "R5",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 39014400,
+              "y": 130048000
+            }
+          ]
+        },
+        {
+          "name": "EN",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "EN",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 90220800,
+              "y": 92659200
+            },
+            {
+              "part": "R6",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 34137600,
+              "y": 97536000
+            },
+            {
+              "part": "C8",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 20320000,
+              "y": 97536000
+            },
+            {
+              "part": "R6",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 30886400,
+              "y": 97536000
+            },
+            {
+              "part": "SW1",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2,4",
+              "x": 6502400,
+              "y": 97536000
+            },
+            {
+              "part": "C8",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 18694400,
+              "y": 97536000
+            }
+          ]
+        },
+        {
+          "name": "FB",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U5",
+              "pin": "FB",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 69900800,
+              "y": 169875200
+            },
+            {
+              "part": "R9",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 92659200,
+              "y": 154432000
+            },
+            {
+              "part": "R10",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 92659200,
+              "y": 146304000
+            }
+          ]
+        },
+        {
+          "name": "GND",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "1,40,41_1,41_2,41_3,41_4,41_5,41_6,41_7,41_8,41_9,41_10,41_11,41_12,41_13,41_14,41_15,41_16,41_17,41_18,41_19,41_20,41_21",
+              "x": 97536000,
+              "y": 65836800
+            },
+            {
+              "part": "U2",
+              "pin": "VSS",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 182067200,
+              "y": 112979200
+            },
+            {
+              "part": "U2",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 182067200,
+              "y": 112166400
+            },
+            {
+              "part": "U3",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 182067200,
+              "y": 71526400
+            },
+            {
+              "part": "U4",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 154432000,
+              "y": 166624000
+            },
+            {
+              "part": "U5",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 65024000,
+              "y": 165811200
+            },
+            {
+              "part": "U5",
+              "pin": "PGND",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 65024000,
+              "y": 164998400
+            },
+            {
+              "part": "U5",
+              "pin": "AAM",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 60147200,
+              "y": 169875200
+            },
+            {
+              "part": "Q1",
+              "pin": "G",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 33324800,
+              "y": 175564800
+            },
+            {
+              "part": "J1",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "A1,A12,B1,B12",
+              "x": 8940800,
+              "y": 126796800
+            },
+            {
+              "part": "J1",
+              "pin": "SHIELD",
+              "gate": "G$1",
+              "pad": "SH1,SH2,SH3,SH4",
+              "x": 8940800,
+              "y": 127609600
+            },
+            {
+              "part": "J2",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 20320000,
+              "y": 10566400
+            },
+            {
+              "part": "J2",
+              "pin": "6",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 20320000,
+              "y": 7315200
+            },
+            {
+              "part": "J2",
+              "pin": "SH",
+              "gate": "G$1",
+              "pad": "S1,S2",
+              "x": 20320000,
+              "y": 4876800
+            },
+            {
+              "part": "J3",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 69088000,
+              "y": 10566400
+            },
+            {
+              "part": "J3",
+              "pin": "6",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 69088000,
+              "y": 7315200
+            },
+            {
+              "part": "J3",
+              "pin": "SH",
+              "gate": "G$1",
+              "pad": "S1,S2",
+              "x": 69088000,
+              "y": 4876800
+            },
+            {
+              "part": "J4",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 117856000,
+              "y": 10566400
+            },
+            {
+              "part": "J4",
+              "pin": "6",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 117856000,
+              "y": 7315200
+            },
+            {
+              "part": "J4",
+              "pin": "SH",
+              "gate": "G$1",
+              "pad": "S1,S2",
+              "x": 117856000,
+              "y": 4876800
+            },
+            {
+              "part": "J5",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 166624000,
+              "y": 10566400
+            },
+            {
+              "part": "J5",
+              "pin": "6",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 166624000,
+              "y": 7315200
+            },
+            {
+              "part": "J5",
+              "pin": "SH",
+              "gate": "G$1",
+              "pad": "S1,S2",
+              "x": 166624000,
+              "y": 4876800
+            },
+            {
+              "part": "J7",
+              "pin": "4",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 4064000,
+              "y": 171500800
+            },
+            {
+              "part": "J7",
+              "pin": "5",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 4064000,
+              "y": 170688000
+            },
+            {
+              "part": "J7",
+              "pin": "SH",
+              "gate": "G$1",
+              "pad": "S1,S2",
+              "x": 4064000,
+              "y": 167436800
+            },
+            {
+              "part": "C1",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 46329600,
+              "y": 159308800
+            },
+            {
+              "part": "C3",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 130860800,
+              "y": 186944000
+            },
+            {
+              "part": "C4",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 137363200,
+              "y": 159308800
+            },
+            {
+              "part": "C5",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 169875200,
+              "y": 159308800
+            },
+            {
+              "part": "C6",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 33324800,
+              "y": 113792000
+            },
+            {
+              "part": "C7",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 31699200,
+              "y": 105664000
+            },
+            {
+              "part": "C9",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 166624000,
+              "y": 121920000
+            },
+            {
+              "part": "C10",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 166624000,
+              "y": 81280000
+            },
+            {
+              "part": "C11",
+              "pin": "-",
+              "gate": "G$1",
+              "pad": "-",
+              "x": 131673600,
+              "y": 198323200
+            },
+            {
+              "part": "R4",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 42265600,
+              "y": 138176000
+            },
+            {
+              "part": "R5",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 42265600,
+              "y": 130048000
+            },
+            {
+              "part": "R10",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 95910400,
+              "y": 146304000
+            },
+            {
+              "part": "SW1",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 3251200,
+              "y": 97536000
+            },
+            {
+              "part": "SW2",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 3251200,
+              "y": 89408000
+            },
+            {
+              "part": "LED1",
+              "pin": "C",
+              "gate": "G$1",
+              "pad": "C",
+              "x": 196697600,
+              "y": 48768000
+            },
+            {
+              "part": "TVS1",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 20320000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS2",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 69088000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS3",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 109728000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS4",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 134112000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS5",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 158496000,
+              "y": 39827200
+            },
+            {
+              "part": "TVS6",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 182880000,
+              "y": 39827200
+            },
+            {
+              "part": "J6",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 214579200,
+              "y": 91033600
+            },
+            {
+              "part": "U6",
+              "pin": "GND",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 53644800,
+              "y": 192633600
+            },
+            {
+              "part": "C12",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 49580800,
+              "y": 208076800
+            }
+          ]
+        },
+        {
+          "name": "GPIO3",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO3",
+              "gate": "G$1",
+              "pad": "15",
+              "x": 90220800,
+              "y": 88595200
+            },
+            {
+              "part": "J6",
+              "pin": "3",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 208076800,
+              "y": 90220800
+            }
+          ]
+        },
+        {
+          "name": "GPIO4",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO4",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 90220800,
+              "y": 87782400
+            },
+            {
+              "part": "J6",
+              "pin": "4",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 214579200,
+              "y": 90220800
+            }
+          ]
+        },
+        {
+          "name": "GPIO5",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO5",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 90220800,
+              "y": 86969600
+            },
+            {
+              "part": "J6",
+              "pin": "5",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 208076800,
+              "y": 89408000
+            }
+          ]
+        },
+        {
+          "name": "GPIO7",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO7",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 90220800,
+              "y": 85344000
+            },
+            {
+              "part": "J6",
+              "pin": "6",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 214579200,
+              "y": 89408000
+            }
+          ]
+        },
+        {
+          "name": "GPIO8",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO8",
+              "gate": "G$1",
+              "pad": "12",
+              "x": 90220800,
+              "y": 84531200
+            },
+            {
+              "part": "J6",
+              "pin": "7",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 208076800,
+              "y": 88595200
+            }
+          ]
+        },
+        {
+          "name": "GPIO9",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO9",
+              "gate": "G$1",
+              "pad": "17",
+              "x": 90220800,
+              "y": 83718400
+            },
+            {
+              "part": "J6",
+              "pin": "8",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 214579200,
+              "y": 88595200
+            }
+          ]
+        },
+        {
+          "name": "GPIO38",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO38",
+              "gate": "G$1",
+              "pad": "31",
+              "x": 104851200,
+              "y": 85344000
+            },
+            {
+              "part": "J3",
+              "pin": "7",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 69088000,
+              "y": 6502400
+            }
+          ]
+        },
+        {
+          "name": "GPIO39",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO39",
+              "gate": "G$1",
+              "pad": "32",
+              "x": 104851200,
+              "y": 84531200
+            },
+            {
+              "part": "J3",
+              "pin": "8",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 69088000,
+              "y": 5689600
+            }
+          ]
+        },
+        {
+          "name": "GPIO40",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO40",
+              "gate": "G$1",
+              "pad": "33",
+              "x": 104851200,
+              "y": 83718400
+            },
+            {
+              "part": "TVS4",
+              "pin": "IO1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 134112000,
+              "y": 41452800
+            },
+            {
+              "part": "TVS3",
+              "pin": "IO2",
+              "gate": "G$1",
+              "pad": "4,6",
+              "x": 117856000,
+              "y": 41452800
+            },
+            {
+              "part": "J4",
+              "pin": "7",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 117856000,
+              "y": 6502400
+            }
+          ]
+        },
+        {
+          "name": "GPIO41",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO41",
+              "gate": "G$1",
+              "pad": "34",
+              "x": 104851200,
+              "y": 82905600
+            },
+            {
+              "part": "TVS4",
+              "pin": "IO2",
+              "gate": "G$1",
+              "pad": "4,6",
+              "x": 142240000,
+              "y": 41452800
+            },
+            {
+              "part": "TVS5",
+              "pin": "IO1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 158496000,
+              "y": 41452800
+            },
+            {
+              "part": "J4",
+              "pin": "8",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 117856000,
+              "y": 5689600
+            }
+          ]
+        },
+        {
+          "name": "INT",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U3",
+              "pin": "INT",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 191820800,
+              "y": 74777600
+            }
+          ]
+        },
+        {
+          "name": "LED_A",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "LED1",
+              "pin": "A",
+              "gate": "G$1",
+              "pad": "A",
+              "x": 193446400,
+              "y": 48768000
+            },
+            {
+              "part": "R8",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 180441600,
+              "y": 48768000
+            }
+          ]
+        },
+        {
+          "name": "LED_DRV",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO6",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 90220800,
+              "y": 86156800
+            },
+            {
+              "part": "R8",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 177190400,
+              "y": 48768000
+            }
+          ]
+        },
+        {
+          "name": "RS485_A",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U6",
+              "pin": "A",
+              "gate": "G$1",
+              "pad": "6",
+              "x": 53644800,
+              "y": 195884800
+            },
+            {
+              "part": "J7",
+              "pin": "7",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 4064000,
+              "y": 169062400
+            }
+          ]
+        },
+        {
+          "name": "RS485_B",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U6",
+              "pin": "B",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 53644800,
+              "y": 194259200
+            },
+            {
+              "part": "J7",
+              "pin": "8",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 4064000,
+              "y": 168249600
+            }
+          ]
+        },
+        {
+          "name": "RS485_DE",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO15",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 104851200,
+              "y": 93472000
+            },
+            {
+              "part": "U6",
+              "pin": "DE",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 43891200,
+              "y": 194259200
+            },
+            {
+              "part": "U6",
+              "pin": "RE",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 43891200,
+              "y": 195884800
+            }
+          ]
+        },
+        {
+          "name": "RS485_RX",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO16",
+              "gate": "G$1",
+              "pad": "9",
+              "x": 104851200,
+              "y": 92659200
+            },
+            {
+              "part": "U6",
+              "pin": "RO",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 43891200,
+              "y": 197510400
+            }
+          ]
+        },
+        {
+          "name": "RS485_TX",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO14",
+              "gate": "G$1",
+              "pad": "22",
+              "x": 90220800,
+              "y": 79654400
+            },
+            {
+              "part": "U6",
+              "pin": "DI",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 43891200,
+              "y": 192633600
+            }
+          ]
+        },
+        {
+          "name": "SCL",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO2",
+              "gate": "G$1",
+              "pad": "38",
+              "x": 90220800,
+              "y": 89408000
+            },
+            {
+              "part": "U2",
+              "pin": "SCL",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 191820800,
+              "y": 112979200
+            },
+            {
+              "part": "U3",
+              "pin": "SCL",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 191820800,
+              "y": 72339200
+            },
+            {
+              "part": "R2",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 156057600,
+              "y": 97536000
+            },
+            {
+              "part": "TVS1",
+              "pin": "IO2",
+              "gate": "G$1",
+              "pad": "4,6",
+              "x": 28448000,
+              "y": 41452800
+            },
+            {
+              "part": "TVS2",
+              "pin": "IO2",
+              "gate": "G$1",
+              "pad": "4,6",
+              "x": 77216000,
+              "y": 41452800
+            },
+            {
+              "part": "J2",
+              "pin": "3",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 20320000,
+              "y": 9753600
+            },
+            {
+              "part": "J3",
+              "pin": "3",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 69088000,
+              "y": 9753600
+            },
+            {
+              "part": "J4",
+              "pin": "3",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 117856000,
+              "y": 9753600
+            }
+          ]
+        },
+        {
+          "name": "SDA",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO1",
+              "gate": "G$1",
+              "pad": "39",
+              "x": 90220800,
+              "y": 90220800
+            },
+            {
+              "part": "U2",
+              "pin": "SDA",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 191820800,
+              "y": 114604800
+            },
+            {
+              "part": "U3",
+              "pin": "SDA",
+              "gate": "G$1",
+              "pad": "4",
+              "x": 191820800,
+              "y": 73964800
+            },
+            {
+              "part": "R1",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 156057600,
+              "y": 105664000
+            },
+            {
+              "part": "TVS1",
+              "pin": "IO1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 20320000,
+              "y": 41452800
+            },
+            {
+              "part": "TVS2",
+              "pin": "IO1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 69088000,
+              "y": 41452800
+            },
+            {
+              "part": "TVS3",
+              "pin": "IO1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 109728000,
+              "y": 41452800
+            },
+            {
+              "part": "J2",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 20320000,
+              "y": 11379200
+            },
+            {
+              "part": "J3",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 69088000,
+              "y": 11379200
+            },
+            {
+              "part": "J4",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 117856000,
+              "y": 11379200
+            },
+            {
+              "part": "J5",
+              "pin": "8",
+              "gate": "G$1",
+              "pad": "8",
+              "x": 166624000,
+              "y": 5689600
+            }
+          ]
+        },
+        {
+          "name": "SPI_CS",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO10",
+              "gate": "G$1",
+              "pad": "18",
+              "x": 90220800,
+              "y": 82905600
+            },
+            {
+              "part": "R3",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 156057600,
+              "y": 89408000
+            },
+            {
+              "part": "TVS6",
+              "pin": "IO2",
+              "gate": "G$1",
+              "pad": "4,6",
+              "x": 191008000,
+              "y": 41452800
+            },
+            {
+              "part": "J5",
+              "pin": "5",
+              "gate": "G$1",
+              "pad": "5",
+              "x": 166624000,
+              "y": 8128000
+            }
+          ]
+        },
+        {
+          "name": "SPI_MISO",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO13",
+              "gate": "G$1",
+              "pad": "21",
+              "x": 90220800,
+              "y": 80467200
+            },
+            {
+              "part": "J5",
+              "pin": "3",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 166624000,
+              "y": 9753600
+            }
+          ]
+        },
+        {
+          "name": "SPI_MOSI",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO11",
+              "gate": "G$1",
+              "pad": "19",
+              "x": 90220800,
+              "y": 82092800
+            },
+            {
+              "part": "J5",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 166624000,
+              "y": 11379200
+            }
+          ]
+        },
+        {
+          "name": "SPI_SCK",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO12",
+              "gate": "G$1",
+              "pad": "20",
+              "x": 90220800,
+              "y": 81280000
+            },
+            {
+              "part": "TVS6",
+              "pin": "IO1",
+              "gate": "G$1",
+              "pad": "1,3",
+              "x": 182880000,
+              "y": 41452800
+            },
+            {
+              "part": "TVS5",
+              "pin": "IO2",
+              "gate": "G$1",
+              "pad": "4,6",
+              "x": 166624000,
+              "y": 41452800
+            },
+            {
+              "part": "J5",
+              "pin": "7",
+              "gate": "G$1",
+              "pad": "7",
+              "x": 166624000,
+              "y": 6502400
+            }
+          ]
+        },
+        {
+          "name": "SW",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U5",
+              "pin": "SW",
+              "gate": "G$1",
+              "pad": "3",
+              "x": 69900800,
+              "y": 171500800
+            },
+            {
+              "part": "L1",
+              "pin": "1",
+              "gate": "G$1",
+              "pad": "1",
+              "x": 87782400,
+              "y": 178816000
+            },
+            {
+              "part": "C2",
+              "pin": "2",
+              "gate": "G$1",
+              "pad": "2",
+              "x": 90220800,
+              "y": 186944000
+            }
+          ]
+        },
+        {
+          "name": "USB_DN",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO19",
+              "gate": "G$1",
+              "pad": "13",
+              "x": 104851200,
+              "y": 90220800
+            },
+            {
+              "part": "J1",
+              "pin": "D-",
+              "gate": "G$1",
+              "pad": "A7,B7",
+              "x": 17068800,
+              "y": 131673600
+            }
+          ]
+        },
+        {
+          "name": "USB_DP",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "U1",
+              "pin": "GPIO20",
+              "gate": "G$1",
+              "pad": "14",
+              "x": 104851200,
+              "y": 89408000
+            },
+            {
+              "part": "J1",
+              "pin": "D+",
+              "gate": "G$1",
+              "pad": "A6,B6",
+              "x": 17068800,
+              "y": 132486400
+            }
+          ]
+        },
+        {
+          "name": "VBUS",
+          "class_index": 0,
+          "class_name": "default",
+          "pinrefs": [
+            {
+              "part": "J1",
+              "pin": "VBUS",
+              "gate": "G$1",
+              "pad": "A4,A9,B4,B9",
+              "x": 8940800,
+              "y": 133299200
+            },
+            {
+              "part": "D2",
+              "pin": "A",
+              "gate": "G$1",
+              "pad": "A",
+              "x": 112166400,
+              "y": 162560000
+            }
+          ]
+        }
+      ],
+      "buses": [
+      ]
+    },
+    {
+      "number": 2,
+      "description": "",
+      "headline": "",
+      "parts": [
+      ],
+      "nets": [
+      ],
+      "buses": [
+      ]
+    },
+    {
+      "number": 3,
+      "description": "",
+      "headline": "",
+      "parts": [
+      ],
+      "nets": [
+      ],
+      "buses": [
+      ]
+    }
+  ]
+}

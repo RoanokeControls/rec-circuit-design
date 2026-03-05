@@ -1,0 +1,1865 @@
+{
+  "export_type": "board",
+  "design_name": "env-sensor-main v8",
+  "filename": "/var/folders/5s/_9hv2m2154d1xts9rx6rbs600000gn/T/Neutron/ElectronFileOutput/95436/brd-d92d9369-0e1c-4621-9cad-df7c4cbef907/env-sensor-main v8.brd",
+  "grid": {
+    "distance": 0.100000,
+    "unit": 1
+  },
+  "board_outline": [
+    {"x1": 0.000000, "y1": 0.000000, "x2": 100.000000, "y2": 0.000000, "width": 0.100000},
+    {"x1": 100.000000, "y1": 0.000000, "x2": 100.000000, "y2": 80.000000, "width": 0.100000},
+    {"x1": 100.000000, "y1": 80.000000, "x2": 0.000000, "y2": 80.000000, "width": 0.100000},
+    {"x1": 0.000000, "y1": 80.000000, "x2": 0.000000, "y2": 0.000000, "width": 0.100000}
+  ],
+  "area": {
+    "x1": -1.921600,
+    "y1": -0.050000,
+    "x2": 100.050000,
+    "y2": 80.050000
+  },
+  "layers": [
+    {"number": 1, "name": "Top", "visible": 1, "color": 4},
+    {"number": 16, "name": "Route16", "visible": 1, "color": 1},
+    {"number": 17, "name": "Pads", "visible": 1, "color": 2},
+    {"number": 19, "name": "Unrouted", "visible": 1, "color": 6},
+    {"number": 20, "name": "BoardOutline", "visible": 1, "color": 24},
+    {"number": 21, "name": "SilkscreenTop", "visible": 1, "color": 7},
+    {"number": 23, "name": "OriginsTop", "visible": 1, "color": 15},
+    {"number": 25, "name": "NamesTop", "visible": 1, "color": 7},
+    {"number": 27, "name": "ValuesTop", "visible": 1, "color": 7},
+    {"number": 29, "name": "SolderMaskTop", "visible": 0, "color": 7},
+    {"number": 30, "name": "SolderMaskBottom", "visible": 0, "color": 7},
+    {"number": 31, "name": "StencilTop", "visible": 0, "color": 7},
+    {"number": 39, "name": "ComponentExcludeTop", "visible": 1, "color": 4},
+    {"number": 41, "name": "RestrictTop", "visible": 1, "color": 4},
+    {"number": 42, "name": "RestrictBottom", "visible": 1, "color": 1},
+    {"number": 44, "name": "Drills", "visible": 0, "color": 7},
+    {"number": 45, "name": "Holes", "visible": 1, "color": 7},
+    {"number": 51, "name": "DocumentTop", "visible": 1, "color": 7}
+  ],
+  "net_classes": [
+    {
+      "number": 0,
+      "name": "default",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 1,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 2,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 3,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 4,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 5,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 6,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 7,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 8,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 9,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 10,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 11,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 12,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 13,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 14,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    },
+    {
+      "number": 15,
+      "name": "",
+      "width": 0.000000,
+      "drill": 0.000000,
+      "clearance": 0.000000
+    }
+  ],
+  "elements": [
+    {
+      "name": "C1",
+      "value": "10uF",
+      "package": "C0805",
+      "library": "env-sensor",
+      "x": 32.000000,
+      "y": 62.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C1",
+        "VALUE": "10uF"
+      }
+    },
+    {
+      "name": "C2",
+      "value": "100nF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 44.000000,
+      "y": 72.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C2",
+        "VALUE": "100nF"
+      }
+    },
+    {
+      "name": "C3",
+      "value": "22uF",
+      "package": "C0805",
+      "library": "env-sensor",
+      "x": 60.000000,
+      "y": 68.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C3",
+        "VALUE": "22uF"
+      }
+    },
+    {
+      "name": "C4",
+      "value": "1uF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 68.000000,
+      "y": 62.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C4",
+        "VALUE": "1uF"
+      }
+    },
+    {
+      "name": "C5",
+      "value": "1uF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 78.000000,
+      "y": 62.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C5",
+        "VALUE": "1uF"
+      }
+    },
+    {
+      "name": "C6",
+      "value": "10uF",
+      "package": "C0805",
+      "library": "env-sensor",
+      "x": 18.000000,
+      "y": 48.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C6",
+        "VALUE": "10uF"
+      }
+    },
+    {
+      "name": "C7",
+      "value": "100nF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 18.000000,
+      "y": 44.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C7",
+        "VALUE": "100nF"
+      }
+    },
+    {
+      "name": "C8",
+      "value": "1uF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 16.000000,
+      "y": 35.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C8",
+        "VALUE": "1uF"
+      }
+    },
+    {
+      "name": "C9",
+      "value": "100nF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 65.000000,
+      "y": 48.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C9",
+        "VALUE": "100nF"
+      }
+    },
+    {
+      "name": "C10",
+      "value": "100nF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 65.000000,
+      "y": 38.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C10",
+        "VALUE": "100nF"
+      }
+    },
+    {
+      "name": "C11",
+      "value": "100uF",
+      "package": "CAP-ELEC-6.3",
+      "library": "env-sensor",
+      "x": 60.000000,
+      "y": 62.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "C11",
+        "VALUE": "100uF"
+      }
+    },
+    {
+      "name": "C12",
+      "value": "100nF",
+      "package": "C0402",
+      "library": "env-sensor",
+      "x": 22.000000,
+      "y": 58.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "C12",
+        "VALUE": "100nF"
+      }
+    },
+    {
+      "name": "D1",
+      "value": "SS14",
+      "package": "SMA",
+      "library": "env-sensor",
+      "x": 54.000000,
+      "y": 68.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "D1",
+        "VALUE": "SS14"
+      }
+    },
+    {
+      "name": "D2",
+      "value": "SS14",
+      "package": "SMA",
+      "library": "env-sensor",
+      "x": 54.000000,
+      "y": 63.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "D2",
+        "VALUE": "SS14"
+      }
+    },
+    {
+      "name": "J1",
+      "value": "USB-C",
+      "package": "USB-C-16P",
+      "library": "env-sensor",
+      "x": 3.000000,
+      "y": 44.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "J1",
+        "VALUE": "USB-C"
+      }
+    },
+    {
+      "name": "J2",
+      "value": "BME280",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "x": 20.000000,
+      "y": 8.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "J2",
+        "VALUE": "BME280"
+      }
+    },
+    {
+      "name": "J3",
+      "value": "SCD41",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "x": 40.000000,
+      "y": 8.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "J3",
+        "VALUE": "SCD41"
+      }
+    },
+    {
+      "name": "J4",
+      "value": "PMSA003I",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "x": 60.000000,
+      "y": 8.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "J4",
+        "VALUE": "PMSA003I"
+      }
+    },
+    {
+      "name": "J5",
+      "value": "ArduCAM-SPI",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "x": 80.000000,
+      "y": 8.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "J5",
+        "VALUE": "ArduCAM-SPI"
+      }
+    },
+    {
+      "name": "J6",
+      "value": "EXPANSION",
+      "package": "HDR-2X5",
+      "library": "env-sensor",
+      "x": 90.000000,
+      "y": 44.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "J6",
+        "VALUE": "EXPANSION"
+      }
+    },
+    {
+      "name": "J7",
+      "value": "12V-PWR-IN",
+      "package": "RJ45-8P8C",
+      "library": "env-sensor",
+      "x": 10.000000,
+      "y": 62.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "J7",
+        "VALUE": "12V-PWR-IN"
+      }
+    },
+    {
+      "name": "L1",
+      "value": "4.7uH",
+      "package": "IND-1210",
+      "library": "env-sensor",
+      "x": 46.000000,
+      "y": 66.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "L1",
+        "VALUE": "4.7uH"
+      }
+    },
+    {
+      "name": "LED1",
+      "value": "GREEN",
+      "package": "LED-0603",
+      "library": "env-sensor",
+      "x": 86.000000,
+      "y": 38.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "LED1",
+        "VALUE": "GREEN"
+      }
+    },
+    {
+      "name": "Q1",
+      "value": "DMP2035U",
+      "package": "SOT-23-3",
+      "library": "env-sensor",
+      "x": 26.000000,
+      "y": 66.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "Q1",
+        "VALUE": "DMP2035U"
+      }
+    },
+    {
+      "name": "R1",
+      "value": "4.7K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 52.000000,
+      "y": 44.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R1",
+        "VALUE": "4.7K"
+      }
+    },
+    {
+      "name": "R2",
+      "value": "4.7K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 52.000000,
+      "y": 41.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R2",
+        "VALUE": "4.7K"
+      }
+    },
+    {
+      "name": "R3",
+      "value": "10K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 52.000000,
+      "y": 38.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R3",
+        "VALUE": "10K"
+      }
+    },
+    {
+      "name": "R4",
+      "value": "5.1K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 13.000000,
+      "y": 48.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R4",
+        "VALUE": "5.1K"
+      }
+    },
+    {
+      "name": "R5",
+      "value": "5.1K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 13.000000,
+      "y": 45.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R5",
+        "VALUE": "5.1K"
+      }
+    },
+    {
+      "name": "R6",
+      "value": "10K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 16.000000,
+      "y": 38.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R6",
+        "VALUE": "10K"
+      }
+    },
+    {
+      "name": "R7",
+      "value": "10K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 16.000000,
+      "y": 32.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R7",
+        "VALUE": "10K"
+      }
+    },
+    {
+      "name": "R8",
+      "value": "1.5K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 82.000000,
+      "y": 38.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R8",
+        "VALUE": "1.5K"
+      }
+    },
+    {
+      "name": "R9",
+      "value": "73.2K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 40.000000,
+      "y": 60.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R9",
+        "VALUE": "73.2K"
+      }
+    },
+    {
+      "name": "R10",
+      "value": "10K",
+      "package": "R0603",
+      "library": "env-sensor",
+      "x": 40.000000,
+      "y": 57.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "R10",
+        "VALUE": "10K"
+      }
+    },
+    {
+      "name": "SW1",
+      "value": "RESET",
+      "package": "TACT-6MM",
+      "library": "env-sensor",
+      "x": 6.000000,
+      "y": 36.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "SW1",
+        "VALUE": "RESET"
+      }
+    },
+    {
+      "name": "SW2",
+      "value": "BOOT",
+      "package": "TACT-6MM",
+      "library": "env-sensor",
+      "x": 6.000000,
+      "y": 31.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 0,
+      "attributes": {
+        "NAME": "SW2",
+        "VALUE": "BOOT"
+      }
+    },
+    {
+      "name": "TVS1",
+      "value": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "x": 20.000000,
+      "y": 24.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "TVS1",
+        "VALUE": "PRTR5V0U2X"
+      }
+    },
+    {
+      "name": "TVS2",
+      "value": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "x": 40.000000,
+      "y": 24.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "TVS2",
+        "VALUE": "PRTR5V0U2X"
+      }
+    },
+    {
+      "name": "TVS3",
+      "value": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "x": 55.000000,
+      "y": 24.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "TVS3",
+        "VALUE": "PRTR5V0U2X"
+      }
+    },
+    {
+      "name": "TVS4",
+      "value": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "x": 65.000000,
+      "y": 24.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "TVS4",
+        "VALUE": "PRTR5V0U2X"
+      }
+    },
+    {
+      "name": "TVS5",
+      "value": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "x": 75.000000,
+      "y": 24.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "TVS5",
+        "VALUE": "PRTR5V0U2X"
+      }
+    },
+    {
+      "name": "TVS6",
+      "value": "PRTR5V0U2X",
+      "package": "SOT-363",
+      "library": "env-sensor",
+      "x": 85.000000,
+      "y": 24.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "TVS6",
+        "VALUE": "PRTR5V0U2X"
+      }
+    },
+    {
+      "name": "U1",
+      "value": "ESP32-S3-WROOM-1U-N8R8",
+      "package": "ESP32-S3-WROOM-1U",
+      "library": "env-sensor",
+      "x": 32.000000,
+      "y": 38.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "U1",
+        "VALUE": "ESP32-S3-WROOM-1U-N8R8"
+      }
+    },
+    {
+      "name": "U2",
+      "value": "SGP41-D-R4",
+      "package": "DFN-6-2.44",
+      "library": "env-sensor",
+      "x": 70.000000,
+      "y": 46.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "U2",
+        "VALUE": "SGP41-D-R4"
+      }
+    },
+    {
+      "name": "U3",
+      "value": "LTR-390UV-01",
+      "package": "ODFN-6-2X2",
+      "library": "env-sensor",
+      "x": 70.000000,
+      "y": 36.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "U3",
+        "VALUE": "LTR-390UV-01"
+      }
+    },
+    {
+      "name": "U4",
+      "value": "AP2112K-3.3",
+      "package": "SOT-23-5",
+      "library": "env-sensor",
+      "x": 72.000000,
+      "y": 66.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "U4",
+        "VALUE": "AP2112K-3.3"
+      }
+    },
+    {
+      "name": "U5",
+      "value": "MP2315GJ-Z",
+      "package": "SOT-23-8",
+      "library": "env-sensor",
+      "x": 38.000000,
+      "y": 66.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "U5",
+        "VALUE": "MP2315GJ-Z"
+      }
+    },
+    {
+      "name": "U6",
+      "value": "SP3485",
+      "package": "SOIC-8",
+      "library": "env-sensor",
+      "x": 26.000000,
+      "y": 58.000000,
+      "angle": 0.000000,
+      "mirror": 0,
+      "smd": 1,
+      "attributes": {
+        "NAME": "U6",
+        "VALUE": "SP3485"
+      }
+    }
+  ],
+  "signals": [
+    {
+      "name": "3V3",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "2"},
+        {"element": "U2", "pad": "3"},
+        {"element": "U2", "pad": "1"},
+        {"element": "U3", "pad": "1"},
+        {"element": "U4", "pad": "5"},
+        {"element": "C5", "pad": "2"},
+        {"element": "C6", "pad": "1"},
+        {"element": "C7", "pad": "2"},
+        {"element": "C9", "pad": "1"},
+        {"element": "C10", "pad": "1"},
+        {"element": "R1", "pad": "1"},
+        {"element": "R2", "pad": "1"},
+        {"element": "R3", "pad": "1"},
+        {"element": "R7", "pad": "1"},
+        {"element": "TVS1", "pad": "5"},
+        {"element": "TVS2", "pad": "5"},
+        {"element": "TVS3", "pad": "5"},
+        {"element": "TVS4", "pad": "5"},
+        {"element": "TVS5", "pad": "5"},
+        {"element": "TVS6", "pad": "5"},
+        {"element": "J2", "pad": "4"},
+        {"element": "J3", "pad": "4"},
+        {"element": "J4", "pad": "4"},
+        {"element": "J5", "pad": "4"},
+        {"element": "J6", "pad": "1"},
+        {"element": "U6", "pad": "8"},
+        {"element": "C12", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 71.050000, "y1": 67.200000, "x2": 78.500000, "y2": 62.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 84.920000, "y1": 45.270000, "x2": 78.500000, "y2": 62.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 70.800000, "y1": 44.900000, "x2": 84.920000, "y2": 45.270000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 69.200000, "y1": 44.900000, "x2": 70.800000, "y2": 44.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 64.500000, "y1": 48.000000, "x2": 69.200000, "y2": 44.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 64.500000, "y1": 38.000000, "x2": 69.200000, "y2": 44.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 69.350000, "y1": 35.200000, "x2": 64.500000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 65.000000, "y1": 24.900000, "x2": 69.350000, "y2": 35.200000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 75.000000, "y1": 24.900000, "x2": 65.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 85.000000, "y1": 24.900000, "x2": 75.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 55.000000, "y1": 24.900000, "x2": 65.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 51.250000, "y1": 38.000000, "x2": 64.500000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 51.250000, "y1": 41.000000, "x2": 51.250000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 51.250000, "y1": 44.000000, "x2": 51.250000, "y2": 41.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 79.365000, "y1": 11.810000, "x2": 75.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 59.365000, "y1": 11.810000, "x2": 55.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.000000, "y1": 24.900000, "x2": 55.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 39.365000, "y1": 11.810000, "x2": 40.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 20.000000, "y1": 24.900000, "x2": 40.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 15.250000, "y1": 32.000000, "x2": 20.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 18.500000, "y1": 44.000000, "x2": 15.250000, "y2": 32.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 17.100000, "y1": 48.000000, "x2": 18.500000, "y2": 44.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 23.250000, "y1": 45.140000, "x2": 18.500000, "y2": 44.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 21.500000, "y1": 58.000000, "x2": 17.100000, "y2": 48.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 28.700000, "y1": 56.095000, "x2": 21.500000, "y2": 58.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 19.365000, "y1": 11.810000, "x2": 20.000000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "5V",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "D1", "pad": "C"},
+        {"element": "D2", "pad": "C"},
+        {"element": "C3", "pad": "1"},
+        {"element": "C11", "pad": "+"},
+        {"element": "U4", "pad": "1"},
+        {"element": "U4", "pad": "3"},
+        {"element": "C4", "pad": "2"},
+        {"element": "R9", "pad": "2"},
+        {"element": "J2", "pad": "5"},
+        {"element": "J3", "pad": "5"},
+        {"element": "J4", "pad": "5"}
+      ],
+      "wires": [
+        {"x1": 71.050000, "y1": 64.800000, "x2": 72.950000, "y2": 64.800000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 68.500000, "y1": 62.000000, "x2": 71.050000, "y2": 64.800000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 58.750000, "y1": 62.000000, "x2": 68.500000, "y2": 62.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 56.000000, "y1": 63.000000, "x2": 58.750000, "y2": 62.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 56.000000, "y1": 68.000000, "x2": 56.000000, "y2": 63.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 59.100000, "y1": 68.000000, "x2": 56.000000, "y2": 68.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.750000, "y1": 60.000000, "x2": 56.000000, "y2": 63.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.635000, "y1": 14.350000, "x2": 40.750000, "y2": 60.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 60.635000, "y1": 14.350000, "x2": 40.635000, "y2": 14.350000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 20.635000, "y1": 14.350000, "x2": 40.635000, "y2": 14.350000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "5V_BUCK",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "L1", "pad": "2"},
+        {"element": "D1", "pad": "A"}
+      ],
+      "wires": [
+        {"x1": 47.400000, "y1": 66.000000, "x2": 52.000000, "y2": 68.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "12V",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "J7", "pad": "1"},
+        {"element": "J7", "pad": "2"},
+        {"element": "J7", "pad": "3"},
+        {"element": "J7", "pad": "6"},
+        {"element": "Q1", "pad": "3"}
+      ],
+      "wires": [
+        {"x1": 11.905000, "y1": 65.810000, "x2": 26.000000, "y2": 67.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 8.095000, "y1": 68.350000, "x2": 11.905000, "y2": 65.810000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 5.555000, "y1": 68.350000, "x2": 8.095000, "y2": 68.350000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 6.825000, "y1": 65.810000, "x2": 8.095000, "y2": 68.350000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "12V_PROT",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "Q1", "pad": "2"},
+        {"element": "U5", "pad": "1"},
+        {"element": "U5", "pad": "5"},
+        {"element": "C1", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 37.025000, "y1": 64.800000, "x2": 38.975000, "y2": 67.200000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 31.100000, "y1": 62.000000, "x2": 37.025000, "y2": 64.800000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 26.950000, "y1": 65.000000, "x2": 31.100000, "y2": 62.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "BOOT",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "27"},
+        {"element": "R7", "pad": "2"},
+        {"element": "SW2", "pad": "2"},
+        {"element": "SW2", "pad": "4"}
+      ],
+      "wires": [
+        {"x1": 16.750000, "y1": 32.000000, "x2": 40.750000, "y2": 29.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 9.250000, "y1": 33.250000, "x2": 16.750000, "y2": 32.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 9.250000, "y1": 28.750000, "x2": 9.250000, "y2": 33.250000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "BST",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U5", "pad": "2"},
+        {"element": "C2", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 37.675000, "y1": 64.800000, "x2": 43.500000, "y2": 72.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "CC1",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "J1", "pad": "A5"},
+        {"element": "R4", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 2.000000, "y1": 50.450000, "x2": 12.250000, "y2": 48.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "CC2",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "J1", "pad": "B5"},
+        {"element": "R5", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 4.000000, "y1": 43.050000, "x2": 12.250000, "y2": 45.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "EN",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "3"},
+        {"element": "R6", "pad": "2"},
+        {"element": "C8", "pad": "2"},
+        {"element": "R6", "pad": "1"},
+        {"element": "SW1", "pad": "2"},
+        {"element": "SW1", "pad": "4"},
+        {"element": "C8", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 16.750000, "y1": 38.000000, "x2": 23.250000, "y2": 43.870000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 15.250000, "y1": 38.000000, "x2": 16.750000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 16.500000, "y1": 35.000000, "x2": 16.750000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 15.500000, "y1": 35.000000, "x2": 16.500000, "y2": 35.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 9.250000, "y1": 38.250000, "x2": 15.250000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 9.250000, "y1": 33.750000, "x2": 9.250000, "y2": 38.250000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "FB",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U5", "pad": "8"},
+        {"element": "R9", "pad": "1"},
+        {"element": "R10", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 39.250000, "y1": 60.000000, "x2": 37.025000, "y2": 67.200000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 39.250000, "y1": 57.000000, "x2": 39.250000, "y2": 60.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GND",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "41_3"},
+        {"element": "U1", "pad": "41_11"},
+        {"element": "U1", "pad": "41_18"},
+        {"element": "U1", "pad": "41_17"},
+        {"element": "U1", "pad": "41_5"},
+        {"element": "U1", "pad": "41_9"},
+        {"element": "U1", "pad": "40"},
+        {"element": "U1", "pad": "41_19"},
+        {"element": "U1", "pad": "41_14"},
+        {"element": "U1", "pad": "1"},
+        {"element": "U1", "pad": "41_16"},
+        {"element": "U1", "pad": "41_2"},
+        {"element": "U1", "pad": "41_4"},
+        {"element": "U1", "pad": "41_8"},
+        {"element": "U1", "pad": "41_20"},
+        {"element": "U1", "pad": "41_1"},
+        {"element": "U1", "pad": "41_10"},
+        {"element": "U1", "pad": "41_13"},
+        {"element": "U1", "pad": "41_21"},
+        {"element": "U1", "pad": "41_12"},
+        {"element": "U1", "pad": "41_6"},
+        {"element": "U1", "pad": "41_7"},
+        {"element": "U1", "pad": "41_15"},
+        {"element": "U2", "pad": "2"},
+        {"element": "U2", "pad": "6"},
+        {"element": "U3", "pad": "3"},
+        {"element": "U4", "pad": "2"},
+        {"element": "U5", "pad": "4"},
+        {"element": "U5", "pad": "7"},
+        {"element": "U5", "pad": "6"},
+        {"element": "Q1", "pad": "1"},
+        {"element": "J1", "pad": "A12"},
+        {"element": "J1", "pad": "A1"},
+        {"element": "J1", "pad": "B1"},
+        {"element": "J1", "pad": "B12"},
+        {"element": "J1", "pad": "SH4"},
+        {"element": "J1", "pad": "SH2"},
+        {"element": "J1", "pad": "SH1"},
+        {"element": "J1", "pad": "SH3"},
+        {"element": "J2", "pad": "2"},
+        {"element": "J2", "pad": "6"},
+        {"element": "J2", "pad": "S1"},
+        {"element": "J2", "pad": "S2"},
+        {"element": "J3", "pad": "2"},
+        {"element": "J3", "pad": "6"},
+        {"element": "J3", "pad": "S1"},
+        {"element": "J3", "pad": "S2"},
+        {"element": "J4", "pad": "2"},
+        {"element": "J4", "pad": "6"},
+        {"element": "J4", "pad": "S1"},
+        {"element": "J4", "pad": "S2"},
+        {"element": "J5", "pad": "2"},
+        {"element": "J5", "pad": "6"},
+        {"element": "J5", "pad": "S1"},
+        {"element": "J5", "pad": "S2"},
+        {"element": "J7", "pad": "4"},
+        {"element": "J7", "pad": "5"},
+        {"element": "J7", "pad": "S1"},
+        {"element": "J7", "pad": "S2"},
+        {"element": "C1", "pad": "2"},
+        {"element": "C3", "pad": "2"},
+        {"element": "C4", "pad": "1"},
+        {"element": "C5", "pad": "1"},
+        {"element": "C6", "pad": "2"},
+        {"element": "C7", "pad": "1"},
+        {"element": "C9", "pad": "2"},
+        {"element": "C10", "pad": "2"},
+        {"element": "C11", "pad": "-"},
+        {"element": "R4", "pad": "2"},
+        {"element": "R5", "pad": "2"},
+        {"element": "R10", "pad": "2"},
+        {"element": "SW1", "pad": "1"},
+        {"element": "SW1", "pad": "3"},
+        {"element": "SW2", "pad": "1"},
+        {"element": "SW2", "pad": "3"},
+        {"element": "LED1", "pad": "C"},
+        {"element": "TVS1", "pad": "2"},
+        {"element": "TVS2", "pad": "2"},
+        {"element": "TVS3", "pad": "2"},
+        {"element": "TVS4", "pad": "2"},
+        {"element": "TVS5", "pad": "2"},
+        {"element": "TVS6", "pad": "2"},
+        {"element": "J6", "pad": "2"},
+        {"element": "U6", "pad": "5"},
+        {"element": "C12", "pad": "2"}
+      ],
+      "wires": [
+        {"x1": 28.700000, "y1": 59.905000, "x2": 22.500000, "y2": 58.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 23.250000, "y1": 46.410000, "x2": 18.900000, "y2": 48.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": -0.250000, "y1": 43.050000, "x2": 2.750000, "y2": 38.250000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": -1.320000, "y1": 44.000000, "x2": -0.250000, "y2": 43.050000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": -1.320000, "y1": 49.500000, "x2": -1.320000, "y2": 44.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": -0.250000, "y1": 50.450000, "x2": -1.320000, "y2": 49.500000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 29.100000, "y1": 40.090000, "x2": 23.250000, "y2": 46.410000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 31.200000, "y1": 38.690000, "x2": 31.900000, "y2": 38.690000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 30.500000, "y1": 38.690000, "x2": 31.200000, "y2": 38.690000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 30.500000, "y1": 39.390000, "x2": 30.500000, "y2": 40.090000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 30.500000, "y1": 37.990000, "x2": 30.500000, "y2": 37.290000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 29.800000, "y1": 38.690000, "x2": 29.100000, "y2": 38.690000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+        {
+          "width": 0.300000,
+          "layer": 1,
+          "isolate": 0.250000,
+          "rank": 1,
+          "orphans": 0,
+          "thermals": 1,
+          "vertices": [
+            {"x1": 0.500000, "y1": 0.500000, "x2": 99.500000, "y2": 0.500000},
+            {"x1": 99.500000, "y1": 0.500000, "x2": 99.500000, "y2": 79.500000},
+            {"x1": 99.500000, "y1": 79.500000, "x2": 0.500000, "y2": 79.500000},
+            {"x1": 0.500000, "y1": 79.500000, "x2": 0.500000, "y2": 0.500000}
+          ]
+        },
+        {
+          "width": 0.300000,
+          "layer": 16,
+          "isolate": 0.250000,
+          "rank": 1,
+          "orphans": 0,
+          "thermals": 1,
+          "vertices": [
+            {"x1": 0.500000, "y1": 0.500000, "x2": 99.500000, "y2": 0.500000},
+            {"x1": 99.500000, "y1": 0.500000, "x2": 99.500000, "y2": 79.500000},
+            {"x1": 99.500000, "y1": 79.500000, "x2": 0.500000, "y2": 79.500000},
+            {"x1": 0.500000, "y1": 79.500000, "x2": 0.500000, "y2": 0.500000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GPIO3",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "15"},
+        {"element": "J6", "pad": "3"}
+      ],
+      "wires": [
+        {"x1": 25.015000, "y1": 28.650000, "x2": 87.460000, "y2": 45.270000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO4",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "4"},
+        {"element": "J6", "pad": "4"}
+      ],
+      "wires": [
+        {"x1": 23.250000, "y1": 42.600000, "x2": 87.460000, "y2": 42.730000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO5",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "5"},
+        {"element": "J6", "pad": "5"}
+      ],
+      "wires": [
+        {"x1": 23.250000, "y1": 41.330000, "x2": 90.000000, "y2": 45.270000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO7",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "7"},
+        {"element": "J6", "pad": "6"}
+      ],
+      "wires": [
+        {"x1": 23.250000, "y1": 38.790000, "x2": 90.000000, "y2": 42.730000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO8",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "12"},
+        {"element": "J6", "pad": "7"}
+      ],
+      "wires": [
+        {"x1": 23.250000, "y1": 32.440000, "x2": 92.540000, "y2": 45.270000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO9",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "17"},
+        {"element": "J6", "pad": "8"}
+      ],
+      "wires": [
+        {"x1": 27.555000, "y1": 28.650000, "x2": 92.540000, "y2": 42.730000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO38",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "31"},
+        {"element": "J3", "pad": "7"}
+      ],
+      "wires": [
+        {"x1": 43.175000, "y1": 14.350000, "x2": 40.750000, "y2": 34.980000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO39",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "32"},
+        {"element": "J3", "pad": "8"}
+      ],
+      "wires": [
+        {"x1": 44.445000, "y1": 11.810000, "x2": 40.750000, "y2": 36.250000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO40",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "33"},
+        {"element": "TVS4", "pad": "3"},
+        {"element": "TVS4", "pad": "1"},
+        {"element": "TVS3", "pad": "6"},
+        {"element": "TVS3", "pad": "4"},
+        {"element": "J4", "pad": "7"}
+      ],
+      "wires": [
+        {"x1": 64.350000, "y1": 23.100000, "x2": 65.650000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 63.175000, "y1": 14.350000, "x2": 64.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 55.650000, "y1": 24.900000, "x2": 64.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 54.350000, "y1": 24.900000, "x2": 55.650000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.750000, "y1": 37.520000, "x2": 54.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "GPIO41",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "34"},
+        {"element": "TVS4", "pad": "6"},
+        {"element": "TVS4", "pad": "4"},
+        {"element": "TVS5", "pad": "3"},
+        {"element": "TVS5", "pad": "1"},
+        {"element": "J4", "pad": "8"}
+      ],
+      "wires": [
+        {"x1": 74.350000, "y1": 23.100000, "x2": 75.650000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 65.650000, "y1": 24.900000, "x2": 74.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 64.350000, "y1": 24.900000, "x2": 65.650000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 64.445000, "y1": 11.810000, "x2": 64.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.750000, "y1": 38.790000, "x2": 64.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "INT",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U3", "pad": "6"}
+      ],
+      "wires": [
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "LED_A",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "R8", "pad": "2"},
+        {"element": "LED1", "pad": "A"}
+      ],
+      "wires": [
+        {"x1": 82.750000, "y1": 38.000000, "x2": 86.750000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "LED_DRV",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "6"},
+        {"element": "R8", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 23.250000, "y1": 40.060000, "x2": 81.250000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "RS485_A",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U6", "pad": "6"},
+        {"element": "J7", "pad": "7"}
+      ],
+      "wires": [
+        {"x1": 13.175000, "y1": 68.350000, "x2": 28.700000, "y2": 58.635000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "RS485_B",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U6", "pad": "7"},
+        {"element": "J7", "pad": "8"}
+      ],
+      "wires": [
+        {"x1": 14.445000, "y1": 65.810000, "x2": 28.700000, "y2": 57.365000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "RS485_DE",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "8"},
+        {"element": "U6", "pad": "3"},
+        {"element": "U6", "pad": "2"}
+      ],
+      "wires": [
+        {"x1": 23.300000, "y1": 57.365000, "x2": 23.300000, "y2": 58.635000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 23.250000, "y1": 37.520000, "x2": 23.300000, "y2": 57.365000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "RS485_RX",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "9"},
+        {"element": "U6", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 23.250000, "y1": 36.250000, "x2": 23.300000, "y2": 56.095000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "RS485_TX",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "22"},
+        {"element": "U6", "pad": "4"}
+      ],
+      "wires": [
+        {"x1": 33.905000, "y1": 28.650000, "x2": 23.300000, "y2": 59.905000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "SCL",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "38"},
+        {"element": "U2", "pad": "4"},
+        {"element": "U3", "pad": "5"},
+        {"element": "R2", "pad": "2"},
+        {"element": "TVS1", "pad": "6"},
+        {"element": "TVS1", "pad": "4"},
+        {"element": "TVS2", "pad": "6"},
+        {"element": "TVS2", "pad": "4"},
+        {"element": "J2", "pad": "3"},
+        {"element": "J3", "pad": "3"},
+        {"element": "J4", "pad": "3"}
+      ],
+      "wires": [
+        {"x1": 70.000000, "y1": 36.800000, "x2": 70.800000, "y2": 47.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 52.750000, "y1": 41.000000, "x2": 70.000000, "y2": 36.800000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.750000, "y1": 43.870000, "x2": 52.750000, "y2": 41.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.650000, "y1": 24.900000, "x2": 40.750000, "y2": 43.870000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 39.350000, "y1": 24.900000, "x2": 40.650000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 38.095000, "y1": 14.350000, "x2": 39.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 20.650000, "y1": 24.900000, "x2": 39.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 19.350000, "y1": 24.900000, "x2": 20.650000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 18.095000, "y1": 14.350000, "x2": 19.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 58.095000, "y1": 14.350000, "x2": 38.095000, "y2": 14.350000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "SDA",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "39"},
+        {"element": "U2", "pad": "5"},
+        {"element": "U3", "pad": "4"},
+        {"element": "R1", "pad": "2"},
+        {"element": "TVS1", "pad": "3"},
+        {"element": "TVS1", "pad": "1"},
+        {"element": "TVS2", "pad": "3"},
+        {"element": "TVS2", "pad": "1"},
+        {"element": "TVS3", "pad": "3"},
+        {"element": "TVS3", "pad": "1"},
+        {"element": "J2", "pad": "1"},
+        {"element": "J3", "pad": "1"},
+        {"element": "J4", "pad": "1"},
+        {"element": "J5", "pad": "8"}
+      ],
+      "wires": [
+        {"x1": 70.650000, "y1": 36.800000, "x2": 70.000000, "y2": 47.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 52.750000, "y1": 44.000000, "x2": 70.000000, "y2": 47.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.750000, "y1": 45.140000, "x2": 52.750000, "y2": 44.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 55.650000, "y1": 23.100000, "x2": 70.650000, "y2": 36.800000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 54.350000, "y1": 23.100000, "x2": 55.650000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 55.555000, "y1": 14.350000, "x2": 55.650000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 40.650000, "y1": 23.100000, "x2": 54.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 39.350000, "y1": 23.100000, "x2": 40.650000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 35.555000, "y1": 14.350000, "x2": 39.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 20.650000, "y1": 23.100000, "x2": 35.555000, "y2": 14.350000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 19.350000, "y1": 23.100000, "x2": 20.650000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 15.555000, "y1": 14.350000, "x2": 19.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 84.445000, "y1": 11.810000, "x2": 70.650000, "y2": 36.800000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "SPI_CS",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "18"},
+        {"element": "R3", "pad": "2"},
+        {"element": "TVS6", "pad": "6"},
+        {"element": "TVS6", "pad": "4"},
+        {"element": "J5", "pad": "5"}
+      ],
+      "wires": [
+        {"x1": 85.650000, "y1": 24.900000, "x2": 84.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 80.635000, "y1": 14.350000, "x2": 84.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 52.750000, "y1": 38.000000, "x2": 84.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 28.825000, "y1": 28.650000, "x2": 52.750000, "y2": 38.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "SPI_MISO",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "21"},
+        {"element": "J5", "pad": "3"}
+      ],
+      "wires": [
+        {"x1": 32.635000, "y1": 28.650000, "x2": 78.095000, "y2": 14.350000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "SPI_MOSI",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "19"},
+        {"element": "J5", "pad": "1"}
+      ],
+      "wires": [
+        {"x1": 30.095000, "y1": 28.650000, "x2": 75.555000, "y2": 14.350000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "SPI_SCK",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "20"},
+        {"element": "TVS6", "pad": "3"},
+        {"element": "TVS6", "pad": "1"},
+        {"element": "TVS5", "pad": "6"},
+        {"element": "TVS5", "pad": "4"},
+        {"element": "J5", "pad": "7"}
+      ],
+      "wires": [
+        {"x1": 84.350000, "y1": 23.100000, "x2": 85.650000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 83.175000, "y1": 14.350000, "x2": 84.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 75.650000, "y1": 24.900000, "x2": 84.350000, "y2": 23.100000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 74.350000, "y1": 24.900000, "x2": 75.650000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 31.365000, "y1": 28.650000, "x2": 74.350000, "y2": 24.900000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "SW",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U5", "pad": "3"},
+        {"element": "L1", "pad": "1"},
+        {"element": "C2", "pad": "2"}
+      ],
+      "wires": [
+        {"x1": 44.600000, "y1": 66.000000, "x2": 44.500000, "y2": 72.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 38.325000, "y1": 64.800000, "x2": 44.600000, "y2": 66.000000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "USB_DN",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "13"},
+        {"element": "J1", "pad": "B7"},
+        {"element": "J1", "pad": "A7"}
+      ],
+      "wires": [
+        {"x1": 2.000000, "y1": 43.050000, "x2": 23.250000, "y2": 31.170000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 4.000000, "y1": 50.450000, "x2": 2.000000, "y2": 43.050000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "USB_DP",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "U1", "pad": "14"},
+        {"element": "J1", "pad": "B6"},
+        {"element": "J1", "pad": "A6"}
+      ],
+      "wires": [
+        {"x1": 3.000000, "y1": 43.050000, "x2": 23.250000, "y2": 29.900000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 3.000000, "y1": 50.450000, "x2": 3.000000, "y2": 43.050000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    },
+    {
+      "name": "VBUS",
+      "class_index": 0,
+      "class_name": "default",
+      "airwiresHidden": 0,
+      "contactrefs": [
+        {"element": "J1", "pad": "B4"},
+        {"element": "J1", "pad": "A4"},
+        {"element": "J1", "pad": "A9"},
+        {"element": "J1", "pad": "B9"},
+        {"element": "D2", "pad": "A"}
+      ],
+      "wires": [
+        {"x1": 5.750000, "y1": 50.450000, "x2": 52.000000, "y2": 63.000000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 0.750000, "y1": 50.450000, "x2": 5.750000, "y2": 50.450000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 5.250000, "y1": 43.050000, "x2": 5.750000, "y2": 50.450000, "width": 0.000000, "layer": 19, "style": 0},
+        {"x1": 0.250000, "y1": 43.050000, "x2": 5.250000, "y2": 43.050000, "width": 0.000000, "layer": 19, "style": 0}
+      ],
+      "vias": [
+      ],
+      "polygons": [
+      ]
+    }
+  ],
+  "holes": [
+    {"x": 4.000000, "y": 4.000000, "drill": 3.200000},
+    {"x": 96.000000, "y": 4.000000, "drill": 3.200000},
+    {"x": 4.000000, "y": 76.000000, "drill": 3.200000},
+    {"x": 96.000000, "y": 76.000000, "drill": 3.200000}
+  ]
+}
