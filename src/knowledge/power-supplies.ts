@@ -1,7 +1,7 @@
 import { PowerSupplyDesign } from "../types/index.js";
 
 // ── Your team's standard power supply designs ──
-// Component names match REC_Standard_Library v365.lbr devicesets.
+// Component names match REC_Standard_Library.lbr devicesets.
 
 export const powerSupplies: PowerSupplyDesign[] = [
   {
@@ -14,7 +14,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
     components: [
       {
         refDes: "VR1",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "NCP1117ST33T3G",
         eaglePackage: "SOT230P700X170-4",
         description: "3.3V LDO regulator 1A SOT-223",
@@ -22,7 +22,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
       },
       {
         refDes: "C_IN",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "10UF_1206_10%_25V",
         eaglePackage: "CAPC3216X135",
         value: "10UF",
@@ -30,7 +30,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
       },
       {
         refDes: "C_INB",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "0.1UF_0603_5%_50V",
         eaglePackage: "CAPC1608X85",
         value: "0.1UF",
@@ -38,7 +38,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
       },
       {
         refDes: "C_OUT",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "10UF_0805",
         eaglePackage: "CAPC2012X110",
         value: "10UF",
@@ -47,7 +47,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
       },
       {
         refDes: "C_OUTB",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "0.1UF_0603_5%_50V",
         eaglePackage: "CAPC1608X85",
         value: "0.1UF",
@@ -73,7 +73,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
     components: [
       {
         refDes: "U1",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "SPX3819M5-L-3-3/TR",
         eaglePackage: "SOT-23-5",
         description: "3.3V LDO 500mA SOT-23-5 — low quiescent current",
@@ -81,7 +81,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
       },
       {
         refDes: "C_IN",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "10UF_0805",
         eaglePackage: "CAPC2012X110",
         value: "10UF",
@@ -89,7 +89,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
       },
       {
         refDes: "C_OUT",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "10UF_0805",
         eaglePackage: "CAPC2012X110",
         value: "10UF",
@@ -98,7 +98,7 @@ export const powerSupplies: PowerSupplyDesign[] = [
       },
       {
         refDes: "C_BYP",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "0.01UF_0603",
         eaglePackage: "CAPC1608X85",
         value: "0.01UF",

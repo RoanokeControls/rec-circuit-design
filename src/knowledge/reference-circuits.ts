@@ -1,7 +1,7 @@
 import { ReferenceCircuit } from "../types/index.js";
 
 // ── Your team's standard reference circuit designs ──
-// Component names use REC_Standard_Library v365.lbr deviceset names.
+// Component names use REC_Standard_Library.lbr deviceset names.
 // See eagle-libraries.ts for naming conventions and footprint mappings.
 //
 // To look up a part in the library, use the autodesk-coder MCP:
@@ -22,7 +22,7 @@ export const referenceCircuits: ReferenceCircuit[] = [
         components: [
           {
             refDes: "C1",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "0.1UF_0603_5%_50V",
             eaglePackage: "CAPC1608X85",
             value: "0.1UF",
@@ -31,7 +31,7 @@ export const referenceCircuits: ReferenceCircuit[] = [
           },
           {
             refDes: "C2",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "10UF_0805",
             eaglePackage: "CAPC2012X110",
             value: "10UF",
@@ -39,7 +39,7 @@ export const referenceCircuits: ReferenceCircuit[] = [
           },
           {
             refDes: "C3",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "0.1UF_0805",
             eaglePackage: "CAPC2012X110",
             value: "0.1UF",
@@ -62,14 +62,14 @@ export const referenceCircuits: ReferenceCircuit[] = [
         components: [
           {
             refDes: "J1",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "ESP32_TAG",
             eaglePackage: "TC2030-MCP-NL",
             description: "Tag-Connect 6-pin programming header for ESP32",
           },
           {
             refDes: "R1",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "10K_0805",
             eaglePackage: "RESC2012X65",
             value: "10K",
@@ -77,7 +77,7 @@ export const referenceCircuits: ReferenceCircuit[] = [
           },
           {
             refDes: "C4",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "10UF_0805",
             eaglePackage: "CAPC2012X110",
             value: "10UF",
@@ -100,14 +100,14 @@ export const referenceCircuits: ReferenceCircuit[] = [
         components: [
           {
             refDes: "D1",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "LED_RED_0805",
             eaglePackage: "LEDC2012X110N_B",
             description: "Power indicator LED",
           },
           {
             refDes: "R2",
-            eagleLibrary: "REC_Standard_Library v365",
+            eagleLibrary: "REC_Standard_Library",
             eagleDevice: "1K_0805",
             eaglePackage: "RESC2012X65",
             value: "1K",

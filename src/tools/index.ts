@@ -15,6 +15,7 @@ import { registerOptimizeForInventory } from "./optimize-for-inventory.js";
 // ── Generation Tools ──
 import { registerGenerateSchematicScript } from "./generate-schematic-script.js";
 import { registerGenerateBom } from "./generate-bom.js";
+import { registerGenerateCustomLibrary } from "./generate-custom-library.js";
 
 // ── Production & Costing Tools ──
 import { registerEstimateBoardCost } from "./estimate-board-cost.js";
@@ -68,9 +69,10 @@ export function registerAllTools(server: McpServer) {
   registerPlanSchematic(server);
   registerOptimizeForInventory(server);
 
-  // Generation (2)
+  // Generation (3)
   registerGenerateSchematicScript(server);
   registerGenerateBom(server);
+  registerGenerateCustomLibrary(server);
 
   // Production & Costing (2)
   registerEstimateBoardCost(server);

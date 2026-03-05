@@ -1,19 +1,23 @@
 // ── REC Standard Library Mappings ──
 // Sourced from autodesk-coder MCP: library-data/rec-library.json
-// Library: REC_Standard_Library v365.lbr (454 devicesets, 175 footprints, 112 symbols)
+// Library: REC_Standard_Library (454 devicesets, 175 footprints, 112 symbols)
 //
 // REFERENCE: Use the autodesk-coder MCP tools to look up exact part details:
 //   - search_api(query, type_filter: "library_part") — find parts by keyword
 //   - get_ecad("Schematic Editor Commands") — Eagle SCR command reference
 //
 // ADD command format for SCR scripts:
-//   USE 'REC_Standard_Library v365.lbr';
-//   ADD 'DEVICESET_NAME' REFDES (X Y);
+//   USE 'REC_Standard_Library';
+//   ADD 'DEVICESET_NAME' 'REFDES' ROTATION (X Y);
+//
+// IMPORTANT: USE takes the library name only — no version number, no .lbr extension.
+// The library must be imported into Fusion 360 Library Manager first.
+// USE activates the library so ADD can find its parts in scripts.
 //
 // For multi-variant devices (e.g. STM32 with -L/-M footprint variants):
-//   ADD 'STM32F103C8T6-M' REFDES (X Y);
+//   ADD 'STM32F103C8T6-M' 'CR1' R0 (800 1000);
 
-export const REC_LIBRARY_NAME = "REC_Standard_Library v365.lbr";
+export const REC_LIBRARY_NAME = "REC_Standard_Library";
 
 // ── Naming Conventions ──
 // Resistors:  {VALUE}{UNIT}_{PACKAGE}[_{TOLERANCE}][_{POWER}]

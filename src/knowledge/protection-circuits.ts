@@ -1,7 +1,7 @@
 import { ProtectionCircuit } from "../types/index.js";
 
 // ── Your team's standard protection circuit blocks ──
-// Component names match REC_Standard_Library v365.lbr devicesets.
+// Component names match REC_Standard_Library.lbr devicesets.
 
 export const protectionCircuits: ProtectionCircuit[] = [
   {
@@ -12,7 +12,7 @@ export const protectionCircuits: ProtectionCircuit[] = [
     components: [
       {
         refDes: "D_ESD",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "PESD3V3L4UG,115",
         eaglePackage: "SOT95P270X145-6N",
         description: "4-channel 3.3V ESD clamp — protects up to 4 signal lines",
@@ -38,7 +38,7 @@ export const protectionCircuits: ProtectionCircuit[] = [
     components: [
       {
         refDes: "D_TVS",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "SMCJ20CA",
         eaglePackage: "DIOM6859X262N",
         description: "20V bidirectional TVS — power line surge protection",
@@ -61,7 +61,7 @@ export const protectionCircuits: ProtectionCircuit[] = [
     components: [
       {
         refDes: "F1",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "0.75A_POLYSW",
         eaglePackage: "RESC1608X60",
         description: "750mA resettable polyswitch fuse — 0603",
@@ -83,7 +83,7 @@ export const protectionCircuits: ProtectionCircuit[] = [
     components: [
       {
         refDes: "D_REV",
-        eagleLibrary: "REC_Standard_Library v365",
+        eagleLibrary: "REC_Standard_Library",
         eagleDevice: "1N5819HW-7-F",
         eaglePackage: "SOD2512X110N",
         description: "40V 1A Schottky — series reverse polarity protection",
