@@ -150,9 +150,10 @@ export async function searchKeyword(query: string, qty = 1): Promise<PricingResu
       };
     });
 
-    // Best price at qty 1 and qty 100
+    // Best price: prefer price break at requested qty, fall back to lowest available
     let bestPrice: number | null = null;
     let bestPriceQty100: number | null = null;
+    let lowestAnyBreak: number | null = null;
 
     for (const offer of offers) {
       for (const pb of offer.priceBreaks) {
@@ -162,8 +163,16 @@ export async function searchKeyword(query: string, qty = 1): Promise<PricingResu
         if (pb.qty <= 100 && (bestPriceQty100 === null || pb.unitPrice < bestPriceQty100)) {
           bestPriceQty100 = pb.unitPrice;
         }
+        // Track lowest price from any break as fallback
+        if (lowestAnyBreak === null || pb.unitPrice < lowestAnyBreak) {
+          lowestAnyBreak = pb.unitPrice;
+        }
       }
     }
+
+    // Fall back to lowest available price if no break matches requested qty
+    if (bestPrice === null) bestPrice = lowestAnyBreak;
+    if (bestPriceQty100 === null) bestPriceQty100 = lowestAnyBreak;
 
     const totalStock = offers.reduce((sum, o) => sum + o.stock, 0);
 
