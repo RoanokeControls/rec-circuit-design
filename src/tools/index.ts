@@ -17,6 +17,11 @@ import { registerGenerateSchematicScript } from "./generate-schematic-script.js"
 import { registerGenerateBom } from "./generate-bom.js";
 import { registerGenerateCustomLibrary } from "./generate-custom-library.js";
 
+// ── Datasheet Workflow Tools ──
+import { registerDownloadDatasheets } from "./download-datasheets.js";
+import { registerVerifyFootprint } from "./verify-footprint.js";
+import { registerExtractApplicationCircuit } from "./extract-application-circuit.js";
+
 // ── Production & Costing Tools ──
 import { registerEstimateBoardCost } from "./estimate-board-cost.js";
 import { registerPlanProductionRun } from "./plan-production-run.js";
@@ -73,6 +78,11 @@ export function registerAllTools(server: McpServer) {
   registerGenerateSchematicScript(server);
   registerGenerateBom(server);
   registerGenerateCustomLibrary(server);
+
+  // Datasheet Workflow (3)
+  registerDownloadDatasheets(server);
+  registerVerifyFootprint(server);
+  registerExtractApplicationCircuit(server);
 
   // Production & Costing (2)
   registerEstimateBoardCost(server);

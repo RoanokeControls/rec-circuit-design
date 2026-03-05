@@ -47,6 +47,33 @@ Open the script in Fusion 360 Electronics, run it, and your schematic is placed 
 |------|-------------|
 | `generate-schematic-script` | Output a Fusion 360 Eagle `.scr` file from circuit blocks using REC library parts |
 | `generate-bom` | Output a CSV BOM with part numbers, inventory status, and cost rollup |
+| `generate-custom-library` | Generate an Eagle `.lbr` library with custom footprints — gates on datasheet verification |
+
+### Datasheet Workflow
+
+Datasheet-driven footprint verification. These tools enforce a download-first workflow so footprints are built from manufacturer mechanical drawings, not assumptions.
+
+| Tool | Description |
+|------|-------------|
+| `download-datasheets` | Fetch manufacturer PDFs for a component list, extract key specs, write manifest |
+| `verify-footprint` | Cross-check library footprint dimensions against datasheet specs |
+| `extract-application-circuit` | Pull recommended component values and layout notes from datasheet knowledge |
+
+**Workflow:** `plan-schematic` → `download-datasheets` → `extract-application-circuit` → `generate-custom-library` (blocks without datasheets) → `verify-footprint` → `generate-schematic-script`
+
+### Production & Costing
+
+| Tool | Description |
+|------|-------------|
+| `estimate-board-cost` | Estimate per-board cost including fab, assembly, and components |
+| `plan-production-run` | Plan a production run with inventory checks and lead time estimates |
+
+### Pricing
+
+| Tool | Description |
+|------|-------------|
+| `lookup-pricing` | Look up DigiKey pricing for a component at various quantities |
+| `price-bom` | Price an entire BOM via DigiKey API with quantity breaks |
 
 ### Knowledge Input
 
@@ -228,7 +255,7 @@ rec-circuit-design/
 │   ├── index.ts                    # MCP server entry point
 │   ├── types/
 │   │   └── index.ts                # 22 core type definitions
-│   ├── tools/                      # 16 tools, one per file
+│   ├── tools/                      # 43 tools, one per file
 │   │   ├── lookup-reference-circuit.ts
 │   │   ├── lookup-component.ts
 │   │   ├── suggest-power-supply.ts
@@ -239,12 +266,17 @@ rec-circuit-design/
 │   │   ├── optimize-for-inventory.ts
 │   │   ├── generate-schematic-script.ts
 │   │   ├── generate-bom.ts
+│   │   ├── generate-custom-library.ts
+│   │   ├── download-datasheets.ts     # NEW — datasheet workflow
+│   │   ├── verify-footprint.ts        # NEW — datasheet workflow
+│   │   ├── extract-application-circuit.ts  # NEW — datasheet workflow
 │   │   ├── add-lesson-learned.ts
 │   │   ├── add-design-rule.ts
 │   │   ├── add-component-note.ts
 │   │   ├── flag-component.ts
 │   │   ├── add-substitution-rule.ts
 │   │   ├── update-inventory.ts
+│   │   ├── ...                        # 22 more mined knowledge & utility tools
 │   │   └── index.ts
 │   ├── knowledge/                  # Your team's data
 │   │   ├── reference-circuits.ts
@@ -269,10 +301,10 @@ rec-circuit-design/
 
 ## Stats
 
-- **16 tools** — 6 lookup, 2 planning, 2 generation, 6 knowledge input
+- **43 tools** — 6 lookup, 2 planning, 3 generation, 3 datasheet workflow, 7 mined knowledge (core), 12 mined knowledge (extended), 2 production/costing, 2 pricing, 6 knowledge input
 - **12 knowledge files** — reference circuits through vendor preferences
 - **22 TypeScript types** — fully typed knowledge schema
-- **~2,900 lines** — TypeScript, zero build errors
+- **~74,000 lines** — TypeScript, zero build errors
 - **454 parts** — REC Standard Library integration (devicesets, footprints, symbols)
 
 ## License

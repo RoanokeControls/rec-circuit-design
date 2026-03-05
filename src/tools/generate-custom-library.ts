@@ -413,7 +413,8 @@ export function registerGenerateCustomLibrary(server: McpServer) {
     "pin-to-pad connects, graphics) from the REC library export, and produces a self-contained " +
     "custom library. This avoids Fusion 360 managed library versioning issues — one library, " +
     "one version, no USE command needed in scripts. " +
-    "PREREQUISITE: Run export-library-v2.ulp on REC_Standard_Library in Fusion first.",
+    "PREREQUISITE: Run export-library-v2.ulp on REC_Standard_Library in Fusion first. " +
+    "IMPORTANT: Run download-datasheets BEFORE this tool to ensure custom component footprints are datasheet-verified.",
     {
       libraryName: z.string().describe("Name for the custom library (e.g. 'PCBLF0846_Custom')"),
       components: z.array(z.string()).describe(
@@ -432,8 +433,16 @@ export function registerGenerateCustomLibrary(server: McpServer) {
       checkVersion: z.boolean().optional().default(true).describe(
         "Check if library data is current (warns if export is old)"
       ),
+      datasheetDirectory: z.string().optional().describe(
+        "Path to datasheets/ directory. When provided with requireDatasheets=true, " +
+        "verifies that datasheets exist for all custom components before generating."
+      ),
+      requireDatasheets: z.boolean().optional().default(true).describe(
+        "When true and datasheetDirectory is set, refuse to generate if custom components " +
+        "are missing datasheets. Set false to skip this check."
+      ),
     },
-    async ({ libraryName, components, customComponents, sourceLibrary, checkVersion }) => {
+    async ({ libraryName, components, customComponents, sourceLibrary, checkVersion, datasheetDirectory, requireDatasheets }) => {
       // Load library data
       const lib = loadLibraryData(sourceLibrary);
       if (!lib) {
@@ -472,6 +481,61 @@ export function registerGenerateCustomLibrary(server: McpServer) {
             "Consider re-exporting with export-library-v2.ulp to capture any library updates."
           );
         }
+      }
+
+      // ── Datasheet gate: check custom components have datasheets ──
+      if (customComponents?.length && datasheetDirectory && requireDatasheets) {
+        let manifest: { datasheets?: { partNumber: string }[] } | null = null;
+        const manifestPath = join(datasheetDirectory, "manifest.json");
+        if (existsSync(manifestPath)) {
+          try {
+            manifest = JSON.parse(readFileSync(manifestPath, "utf-8"));
+          } catch { /* ignore parse errors */ }
+        }
+
+        const manifestParts = new Set(
+          (manifest?.datasheets || []).map((d) => d.partNumber.toLowerCase())
+        );
+        const missingDatasheets: string[] = [];
+        for (const cc of customComponents) {
+          if (!manifestParts.has(cc.name.toLowerCase())) {
+            missingDatasheets.push(cc.name);
+          }
+        }
+
+        if (missingDatasheets.length > 0) {
+          return {
+            content: [{
+              type: "text" as const,
+              text:
+                `# Datasheet Gate — BLOCKED\n\n` +
+                `${missingDatasheets.length} custom component(s) are missing datasheets:\n` +
+                missingDatasheets.map((n) => `- **${n}**`).join("\n") +
+                `\n\n` +
+                `## Why this matters\n` +
+                `Generating footprints without datasheets leads to incorrect pad dimensions, ` +
+                `wrong package types, and board respins. All three footprint errors on the ` +
+                `LM2596S buck converter project were caught by reviewing datasheets.\n\n` +
+                `## How to fix\n` +
+                `Run \`download-datasheets\` first:\n` +
+                `\`\`\`\n` +
+                `download-datasheets(\n` +
+                `  projectPath: "${datasheetDirectory.replace(/\/datasheets\/?$/, "")}",\n` +
+                `  components: [\n` +
+                missingDatasheets.map((n) => `    { partNumber: "${n}" }`).join(",\n") +
+                `\n  ]\n` +
+                `)\n` +
+                `\`\`\`\n\n` +
+                `Or set \`requireDatasheets: false\` to skip this check (not recommended).`,
+            }],
+          };
+        }
+
+        // Datasheets present — add a verification note
+        warnings.push(
+          `Datasheet verification: ${customComponents.length} custom component(s) have datasheets in ${datasheetDirectory}. ` +
+          `Run verify-footprint after generating to cross-check pad dimensions.`
+        );
       }
 
       // Build lookup maps
