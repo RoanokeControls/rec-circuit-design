@@ -31,3 +31,4 @@ export { protectionDesigns, protectionTypes, tvsToConnectorDistance } from "./mi
 export { testPointDesigns, testPointCategories, debugHeaders } from "./mined-testpoints.js";
 export { boardSummaries, boardSummarySummary } from "./mined-board-summary.js";
 export { programmingInterfaces } from "./mined-programming.js";
+export { layoutPatterns, getLayoutPattern, getLayoutsByCategory } from "./mined-layout.js";

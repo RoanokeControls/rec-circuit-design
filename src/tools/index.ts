@@ -19,6 +19,7 @@ import { registerGenerateCustomLibrary } from "./generate-custom-library.js";
 
 // ── Datasheet Workflow Tools ──
 import { registerDownloadDatasheets } from "./download-datasheets.js";
+import { registerDownload3dModels } from "./download-3d-models.js";
 import { registerVerifyFootprint } from "./verify-footprint.js";
 import { registerExtractApplicationCircuit } from "./extract-application-circuit.js";
 
@@ -52,6 +53,7 @@ import { registerLookupProtectionCircuit } from "./lookup-protection-circuit.js"
 import { registerLookupTestpoints } from "./lookup-testpoints.js";
 import { registerLookupBoardDesign } from "./lookup-board-design.js";
 import { registerLookupProgrammingInterface } from "./lookup-programming-interface.js";
+import { registerLookupLayoutPattern } from "./lookup-layout-pattern.js";
 
 // ── Knowledge Input Tools (for engineers on the floor) ──
 import { registerAddLessonLearned } from "./add-lesson-learned.js";
@@ -79,8 +81,9 @@ export function registerAllTools(server: McpServer) {
   registerGenerateBom(server);
   registerGenerateCustomLibrary(server);
 
-  // Datasheet Workflow (3)
+  // Datasheet Workflow (4)
   registerDownloadDatasheets(server);
+  registerDownload3dModels(server);
   registerVerifyFootprint(server);
   registerExtractApplicationCircuit(server);
 
@@ -114,6 +117,7 @@ export function registerAllTools(server: McpServer) {
   registerLookupTestpoints(server);
   registerLookupBoardDesign(server);
   registerLookupProgrammingInterface(server);
+  registerLookupLayoutPattern(server);
 
   // Knowledge Input (6)
   registerAddLessonLearned(server);

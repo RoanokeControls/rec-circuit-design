@@ -2,6 +2,10 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
+import { minedPowerSupplies, minedDecoupling } from "../knowledge/index.js";
+import type { MinedPowerSupply, DecouplingPattern } from "../types/index.js";
+
+// ── Curated (datasheet-derived) types and data ──
 
 interface ComponentSpec {
   ref: string;
@@ -143,7 +147,9 @@ const APPLICATION_CIRCUITS: ApplicationCircuit[] = [
   },
 ];
 
-function findCircuit(partNumber: string): ApplicationCircuit | undefined {
+// ── Curated tier helpers ──
+
+function findCuratedCircuit(partNumber: string): ApplicationCircuit | undefined {
   return APPLICATION_CIRCUITS.find((c) => c.matchPattern.test(partNumber));
 }
 
@@ -204,10 +210,139 @@ function applyCalculations(
   return { ...config, components: updatedComponents };
 }
 
+// ── Mined data tier helpers ──
+
+/**
+ * Fuzzy-match a part number against the mined power supply regulator names.
+ * Strips common suffixes (-ADJ, -3.3, -5.0, package codes) and does
+ * case-insensitive substring matching in both directions.
+ */
+function findMinedSupply(partNumber: string): MinedPowerSupply | undefined {
+  const needle = partNumber.toUpperCase().replace(/[-_]/g, "");
+
+  // Exact match first
+  const exact = minedPowerSupplies.find(
+    (s) => s.regulator.toUpperCase().replace(/[-_]/g, "") === needle,
+  );
+  if (exact) return exact;
+
+  // Needle contains regulator name (e.g. "LM2596S-ADJ" contains "LM2596")
+  const containsMatch = minedPowerSupplies.find((s) => {
+    const reg = s.regulator.toUpperCase().replace(/[-_]/g, "");
+    return needle.includes(reg) || reg.includes(needle);
+  });
+  if (containsMatch) return containsMatch;
+
+  // Strip trailing package/variant suffixes and retry
+  const stripped = needle.replace(/(ADJ|33|50|12|S|T|D|P|N|SMT)$/g, "");
+  if (stripped.length >= 3) {
+    return minedPowerSupplies.find((s) => {
+      const reg = s.regulator.toUpperCase().replace(/[-_]/g, "");
+      return stripped.includes(reg) || reg.includes(stripped);
+    });
+  }
+
+  return undefined;
+}
+
+/**
+ * Find decoupling patterns for a given IC. Tries exact match first,
+ * then fuzzy substring matching.
+ */
+function findMinedDecoupling(partNumber: string): DecouplingPattern | undefined {
+  const needle = partNumber.toUpperCase().replace(/[-_]/g, "");
+
+  const exact = minedDecoupling.find(
+    (d) => d.icValue.toUpperCase().replace(/[-_]/g, "") === needle,
+  );
+  if (exact) return exact;
+
+  return minedDecoupling.find((d) => {
+    const ic = d.icValue.toUpperCase().replace(/[-_]/g, "");
+    return needle.includes(ic) || ic.includes(needle);
+  });
+}
+
+/**
+ * Sort a Record<string, number> by count descending, return as array of {name, count}.
+ */
+function sortedNets(nets: Record<string, number>): { name: string; count: number }[] {
+  return Object.entries(nets)
+    .sort(([, a], [, b]) => b - a)
+    .map(([name, count]) => ({ name, count }));
+}
+
+/**
+ * Build a mined application circuit response from real design data.
+ */
+function buildMinedResponse(
+  partNumber: string,
+  supply: MinedPowerSupply,
+  decoupling: DecouplingPattern | undefined,
+  manifest: Record<string, unknown> | null,
+  manifestPath: string,
+  parameters: Record<string, unknown>,
+) {
+  const inputRails = sortedNets(supply.inputNets);
+  const outputRails = sortedNets(supply.outputNets);
+
+  const supportComponents = supply.components.map((comp) => ({
+    role: comp.role,
+    preferredValue: comp.preferredValue,
+    allObservedValues: comp.values,
+    observedCount: comp.count,
+  }));
+
+  const decouplingInfo = decoupling
+    ? {
+        icValue: decoupling.icValue,
+        icCategory: decoupling.icCategory,
+        occurrences: decoupling.occurrences,
+        designRule: decoupling.designRule,
+        caps: decoupling.caps.map((cap) => ({
+          role: cap.role,
+          preferredValue: cap.preferredValue,
+          allObservedValues: cap.values,
+          placementDistance: {
+            medianMm: cap.medianDistanceMm,
+            p25Mm: cap.p25Mm,
+            p75Mm: cap.p75Mm,
+          },
+          observedCount: cap.count,
+        })),
+        sourceDesigns: decoupling.sourceDesigns,
+      }
+    : null;
+
+  return {
+    partNumber,
+    regulator: supply.regulator,
+    dataSource: `mined (from ${supply.occurrences} production designs)`,
+    topology: supply.topology,
+    occurrences: supply.occurrences,
+    manifestFound: manifest !== null,
+    manifestPath,
+    parameters,
+    inputRails,
+    outputRails,
+    supportComponents,
+    decoupling: decouplingInfo,
+    sourceDesigns: supply.sourceDesigns,
+    note: "This circuit data was mined from real production designs, not from a datasheet. "
+      + "Preferred values reflect the most commonly used parts across designs. "
+      + "Always verify critical values (feedback resistors, inductors) against the datasheet.",
+  };
+}
+
+// ── Tool registration ──
+
 export function registerExtractApplicationCircuit(server: McpServer) {
   server.tool(
     "extract-application-circuit",
-    "Extract recommended application circuit from a downloaded datasheet. Returns component values, formulas, and layout notes from the manufacturer's reference design. Use this to verify your schematic matches the datasheet recommendations before generating the Eagle script.",
+    "Extract recommended application circuit for a part. Returns component values, formulas, and layout notes. "
+      + "Curated datasheet data available for: " + APPLICATION_CIRCUITS.map((c) => c.partFamily).join(", ")
+      + ". Mined production data available for " + minedPowerSupplies.length + " additional regulators from "
+      + minedPowerSupplies.reduce((sum, s) => sum + s.occurrences, 0) + " real board designs.",
     {
       datasheetDirectory: z.string().describe("Path to datasheets/ directory containing manifest.json"),
       partNumber: z.string().describe("Part number to look up (e.g., 'LM2596S-ADJ')"),
@@ -229,60 +364,164 @@ export function registerExtractApplicationCircuit(server: McpServer) {
         }
       }
 
-      // Find matching application circuit in knowledge base
-      const circuit = findCircuit(partNumber);
+      const parameters = {
+        configuration: configuration || "all",
+        inputVoltage: inputVoltage || "not specified",
+        outputVoltage: outputVoltage || "not specified",
+        outputCurrent: outputCurrent || "not specified",
+      };
 
-      if (!circuit) {
+      // ── Tier 1: Curated datasheet circuits ──
+      const curatedCircuit = findCuratedCircuit(partNumber);
+
+      if (curatedCircuit) {
+        let configs = curatedCircuit.configurations;
+        if (configuration) {
+          const match = configs.filter((c) =>
+            c.name.toLowerCase().includes(configuration.toLowerCase())
+          );
+          if (match.length > 0) {
+            configs = match;
+          }
+        }
+
+        const processedConfigs = configs.map((config) =>
+          applyCalculations(curatedCircuit, config, outputVoltage)
+        );
+
+        // Also check if mined data can supplement the curated data
+        const minedSupply = findMinedSupply(partNumber);
+        const minedDecouplingMatch = findMinedDecoupling(partNumber);
+
+        const supplementary: Record<string, unknown> = {};
+        if (minedSupply) {
+          supplementary.minedUsageData = {
+            note: `Also found in ${minedSupply.occurrences} production designs — showing real-world usage alongside datasheet recommendations`,
+            topology: minedSupply.topology,
+            occurrences: minedSupply.occurrences,
+            commonInputRails: sortedNets(minedSupply.inputNets).slice(0, 5),
+            commonOutputRails: sortedNets(minedSupply.outputNets).slice(0, 5),
+            observedSupportComponents: minedSupply.components.map((comp) => ({
+              role: comp.role,
+              preferredValue: comp.preferredValue,
+              observedCount: comp.count,
+            })),
+            sourceDesigns: minedSupply.sourceDesigns,
+          };
+        }
+        if (minedDecouplingMatch) {
+          supplementary.minedDecoupling = {
+            note: `Decoupling data from ${minedDecouplingMatch.occurrences} production designs`,
+            caps: minedDecouplingMatch.caps.map((cap) => ({
+              role: cap.role,
+              preferredValue: cap.preferredValue,
+              placementDistance: {
+                medianMm: cap.medianDistanceMm,
+                p25Mm: cap.p25Mm,
+                p75Mm: cap.p75Mm,
+              },
+              observedCount: cap.count,
+            })),
+          };
+        }
+
         return {
           content: [{
             type: "text" as const,
             text: JSON.stringify({
               partNumber,
-              error: "Part not found in application circuit database",
-              message: `No application circuit data for '${partNumber}'. The knowledge base currently covers: ${APPLICATION_CIRCUITS.map((c) => c.partFamily).join(", ")}.`,
-              howToAdd: "Add a new entry to the APPLICATION_CIRCUITS array in extract-application-circuit.ts with the part's matchPattern, configurations, component values, and layout notes from the datasheet.",
+              partFamily: curatedCircuit.partFamily,
+              dataSource: "curated (from datasheet)",
               manifestFound: manifest !== null,
               manifestPath: existsSync(manifestPath) ? manifestPath : "not found",
+              parameters,
+              configurations: processedConfigs.map((config) => ({
+                name: config.name,
+                components: config.components,
+                layoutNotes: config.layoutNotes,
+              })),
+              ...supplementary,
             }, null, 2),
           }],
         };
       }
 
-      // Filter configurations
-      let configs = circuit.configurations;
-      if (configuration) {
-        const match = configs.filter((c) =>
-          c.name.toLowerCase().includes(configuration.toLowerCase())
+      // ── Tier 2: Mined production design data ──
+      const minedSupply = findMinedSupply(partNumber);
+
+      if (minedSupply) {
+        const decoupling = findMinedDecoupling(partNumber);
+        const result = buildMinedResponse(
+          partNumber,
+          minedSupply,
+          decoupling,
+          manifest,
+          existsSync(manifestPath) ? manifestPath : "not found",
+          parameters,
         );
-        if (match.length > 0) {
-          configs = match;
-        }
+
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify(result, null, 2),
+          }],
+        };
       }
 
-      // Apply calculations if voltage/current parameters provided
-      const processedConfigs = configs.map((config) =>
-        applyCalculations(circuit, config, outputVoltage)
-      );
+      // ── Tier 3: Check decoupling only (non-power-supply ICs) ──
+      const decouplingOnly = findMinedDecoupling(partNumber);
+
+      if (decouplingOnly) {
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify({
+              partNumber,
+              dataSource: `mined decoupling (from ${decouplingOnly.occurrences} production designs)`,
+              manifestFound: manifest !== null,
+              manifestPath: existsSync(manifestPath) ? manifestPath : "not found",
+              parameters,
+              note: "No power supply circuit data found for this part, but decoupling patterns are available from production designs.",
+              decoupling: {
+                icValue: decouplingOnly.icValue,
+                icCategory: decouplingOnly.icCategory,
+                occurrences: decouplingOnly.occurrences,
+                designRule: decouplingOnly.designRule,
+                caps: decouplingOnly.caps.map((cap) => ({
+                  role: cap.role,
+                  preferredValue: cap.preferredValue,
+                  allObservedValues: cap.values,
+                  placementDistance: {
+                    medianMm: cap.medianDistanceMm,
+                    p25Mm: cap.p25Mm,
+                    p75Mm: cap.p75Mm,
+                  },
+                  observedCount: cap.count,
+                })),
+                sourceDesigns: decouplingOnly.sourceDesigns,
+              },
+            }, null, 2),
+          }],
+        };
+      }
+
+      // ── No match in any tier ──
+      const allKnown = [
+        ...APPLICATION_CIRCUITS.map((c) => `${c.partFamily} (curated)`),
+        ...minedPowerSupplies.map((s) => `${s.regulator} (mined, ${s.occurrences} designs)`),
+      ];
 
       return {
         content: [{
           type: "text" as const,
           text: JSON.stringify({
             partNumber,
-            partFamily: circuit.partFamily,
+            error: "Part not found in application circuit database",
+            message: `No application circuit data for '${partNumber}'.`,
+            availableParts: allKnown,
+            decouplingPatternsAvailable: minedDecoupling.length,
             manifestFound: manifest !== null,
             manifestPath: existsSync(manifestPath) ? manifestPath : "not found",
-            parameters: {
-              configuration: configuration || "all",
-              inputVoltage: inputVoltage || "not specified",
-              outputVoltage: outputVoltage || "not specified",
-              outputCurrent: outputCurrent || "not specified",
-            },
-            configurations: processedConfigs.map((config) => ({
-              name: config.name,
-              components: config.components,
-              layoutNotes: config.layoutNotes,
-            })),
           }, null, 2),
         }],
       };

@@ -1,6 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { readFile, writeFile } from "fs/promises";
+import { readFile, writeFile, mkdir } from "fs/promises";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
@@ -44,6 +44,7 @@ export function registerAddSubstitutionRule(server: McpServer) {
         // Start fresh
       }
       existing.push(entry);
+      await mkdir(PENDING_DIR, { recursive: true });
       await writeFile(pendingFile, JSON.stringify(existing, null, 2), "utf-8");
 
       return {
