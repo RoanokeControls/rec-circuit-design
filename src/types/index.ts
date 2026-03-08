@@ -101,6 +101,30 @@ export type CircuitCategory =
   | "display"
   | "wireless"
   | "protection"
+  | "relay-driver"
+  | "timer"
+  | "solar"
+  | "filter"
+  | "oscillator"
+  | "rectifier"
+  | "voltage-regulator"
+  | "logic"
+  | "amplifier"
+  | "test-equipment"
+  | "flasher"
+  | "fet"
+  | "scr"
+  | "triac"
+  | "piezo"
+  | "debounce"
+  | "sensor"
+  | "alarm"
+  | "power-control"
+  | "led"
+  | "optocoupler"
+  | "data-conversion"
+  | "sound-effects"
+  | "pll"
   | "custom";
 
 export interface CircuitBlock {
@@ -135,14 +159,44 @@ export type BlockType =
   | "sensor"
   | "connector"
   | "debug"
+  | "relay-driver"
+  | "comparator"
+  | "timer"
+  | "optocoupler"
+  | "solar-charger"
+  | "active-filter"
+  | "audio-amplifier"
+  | "missing-pulse-detector"
+  | "ir-transmitter"
+  | "ir-receiver"
+  | "dc-dc-converter"
+  | "cmos-oscillator"
+  | "protection"
+  | "voltage-regulator"
+  | "filter"
+  | "logic"
+  | "amplifier"
+  | "oscillator"
+  | "piezo"
+  | "debounce"
+  | "communication"
+  | "sensor-interface"
+  | "power-supply"
+  | "voltage-reference"
+  | "current-source"
+  | "tone-decoder"
+  | "data-converter"
+  | "sound-generator"
+  | "pll"
+  | "display-driver"
   | "custom";
 
 export interface BlockComponent {
   refDes: string;
   partNumber?: string;
-  eagleLibrary: string;
-  eagleDevice: string;
-  eaglePackage: string;
+  eagleLibrary?: string;
+  eagleDevice?: string;
+  eaglePackage?: string;
   value?: string;
   description: string;
   critical?: boolean;
@@ -167,7 +221,7 @@ export interface PinRef {
 export interface PowerSupplyDesign {
   id: string;
   name: string;
-  topology: "ldo" | "buck" | "boost" | "buck-boost" | "charge-pump" | "battery-charger";
+  topology: "ldo" | "linear" | "buck" | "boost" | "buck-boost" | "charge-pump" | "battery-charger";
   inputVoltage: VoltageRange;
   outputVoltage: number;
   outputCurrent: number;
