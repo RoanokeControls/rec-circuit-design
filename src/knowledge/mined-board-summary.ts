@@ -203,8 +203,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 2,
       regulators: [
-        "SPX3819",
-        "TPS54286"
+        "TPS54286",
+        "SPX3819"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -248,8 +248,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 2,
       regulators: [
-        "SPX3819",
-        "TPS54286"
+        "TPS54286",
+        "SPX3819"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -293,8 +293,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 2,
       regulators: [
-        "SPX3819",
-        "TPS54286"
+        "TPS54286",
+        "SPX3819"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -335,13 +335,13 @@ export const boardSummaries: BoardSummary[] = [
       signalNets: 75,
       mcuFamilies: [
         "ESP32",
-        "PIC18",
-        "RP2040"
+        "RP2040",
+        "PIC18"
       ],
       mcuCount: 4,
       regulators: [
-        "NCP1117",
-        "IRM-15"
+        "IRM-15",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -387,13 +387,13 @@ export const boardSummaries: BoardSummary[] = [
       signalNets: 86,
       mcuFamilies: [
         "ESP32",
-        "PIC18",
-        "RP2040"
+        "RP2040",
+        "PIC18"
       ],
       mcuCount: 3,
       regulators: [
-        "NCP1117",
-        "IRM-15"
+        "IRM-15",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -534,13 +534,13 @@ export const boardSummaries: BoardSummary[] = [
       smdRatio: 0.87,
       signalNets: 66,
       mcuFamilies: [
-        "PIC18",
-        "RP2040"
+        "RP2040",
+        "PIC18"
       ],
       mcuCount: 3,
       regulators: [
-        "NCP1117",
-        "IRM-15"
+        "IRM-15",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -785,8 +785,8 @@ export const boardSummaries: BoardSummary[] = [
       smdRatio: 0.95,
       signalNets: 65,
       mcuFamilies: [
-        "nRF5x",
-        "AVR/SAM"
+        "AVR/SAM",
+        "nRF5x"
       ],
       mcuCount: 2,
       regulators: [
@@ -836,8 +836,8 @@ export const boardSummaries: BoardSummary[] = [
       smdRatio: 0.95,
       signalNets: 58,
       mcuFamilies: [
-        "nRF5x",
-        "AVR/SAM"
+        "AVR/SAM",
+        "nRF5x"
       ],
       mcuCount: 2,
       regulators: [
@@ -891,8 +891,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "IRM-02"
+        "IRM-02",
+        "NCP1117"
       ],
       hasTriacs: true,
       hasRelays: false,
@@ -938,8 +938,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "IRM-02"
+        "IRM-02",
+        "NCP1117"
       ],
       hasTriacs: true,
       hasRelays: false,
@@ -985,8 +985,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "IRM-02"
+        "IRM-02",
+        "NCP1117"
       ],
       hasTriacs: true,
       hasRelays: false,
@@ -1397,8 +1397,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "IRM-02"
+        "IRM-02",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -1534,8 +1534,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "MC7805"
+        "MC7805",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: true,
@@ -1584,8 +1584,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "MC7805"
+        "MC7805",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: true,
@@ -1634,8 +1634,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "MC7805"
+        "MC7805",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: true,
@@ -1727,9 +1727,9 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
+        "IRM-10",
         "MC7805",
-        "IRM-10"
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: true,
@@ -1917,8 +1917,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "IRM-02"
+        "IRM-02",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -1964,8 +1964,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
-        "IRM-02"
+        "IRM-02",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -2099,8 +2099,8 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 2,
       regulators: [
-        "NCP1117",
-        "LM317"
+        "LM317",
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,
@@ -3158,9 +3158,9 @@ export const boardSummaries: BoardSummary[] = [
       ],
       mcuCount: 1,
       regulators: [
-        "NCP1117",
+        "IRM-10",
         "IRM-15",
-        "IRM-10"
+        "NCP1117"
       ],
       hasTriacs: false,
       hasRelays: false,

@@ -277,9 +277,9 @@ export function registerPlanSchematic(server: McpServer) {
       // ── 9. Inventory check for curated components ──
       const allCuratedDevices: string[] = [];
       if (refCircuit) {
-        refCircuit.blocks.forEach(b => b.components.forEach(c => allCuratedDevices.push(c.eagleDevice)));
+        refCircuit.blocks.forEach(b => b.components.forEach(c => { if (c.eagleDevice) allCuratedDevices.push(c.eagleDevice); }));
       }
-      curatedPower.forEach(ps => ps.components.forEach(c => allCuratedDevices.push(c.eagleDevice)));
+      curatedPower.forEach(ps => ps.components.forEach(c => { if (c.eagleDevice) allCuratedDevices.push(c.eagleDevice); }));
 
       const inventoryStatus = allCuratedDevices.map(device => {
         const inv = inventory.find((i: InventoryItem) => i.eagleDevice === device);

@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "b2c3d4e5-f6a7-8901-bcde-batch-3d-export",
+  "author": "Steve Hall",
+  "description": {
+    "": "Batch export Fusion 360 component 3D models to STEP format and upload to the team API. Read-only — no designs are modified."
+  },
+  "version": "1.0.0",
+  "runOnStartup": false,
+  "supportedOS": "windows|mac"
+}

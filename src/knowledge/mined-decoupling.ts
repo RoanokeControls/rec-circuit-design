@@ -221,17 +221,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 19
         },
         {
-          role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
-          values: [
-            "10UF_1206_10%_25V"
-          ],
-          medianDistanceMm: 81.22,
-          p25Mm: 74.85,
-          p75Mm: 86.33,
-          count: 8
-        },
-        {
           role: "bypass",
           preferredValue: "1F_2.7V_RAD",
           values: [
@@ -243,14 +232,25 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 8
         },
         {
-          role: "bypass",
-          preferredValue: "10NF_0805",
+          role: "bulk",
+          preferredValue: "10UF_1206_10%_25V",
           values: [
-            "10NF_0805"
+            "10UF_1206_10%_25V"
           ],
-          medianDistanceMm: 44.14,
-          p25Mm: 44.14,
-          p75Mm: 44.14,
+          medianDistanceMm: 81.22,
+          p25Mm: 74.85,
+          p75Mm: 86.33,
+          count: 8
+        },
+        {
+          role: "bulk",
+          preferredValue: "1000UF_50V_RAD",
+          values: [
+            "1000UF_50V_RAD"
+          ],
+          medianDistanceMm: 12.93,
+          p25Mm: 12.93,
+          p75Mm: 14.02,
           count: 3
         }
       ],
@@ -343,17 +343,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 18
         },
         {
-          role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 31.78,
-          p25Mm: 31.78,
-          p75Mm: 31.78,
-          count: 3
-        },
-        {
           role: "bulk",
           preferredValue: "1000UF_50V_RAD",
           values: [
@@ -362,6 +351,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 68.36,
           p25Mm: 68.36,
           p75Mm: 68.66,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 31.78,
+          p25Mm: 31.78,
+          p75Mm: 31.78,
           count: 3
         }
       ],
@@ -477,17 +477,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 18
         },
         {
-          role: "bulk",
-          preferredValue: "100UF_25V_ALE",
-          values: [
-            "100UF_25V_ALE"
-          ],
-          medianDistanceMm: 7.3,
-          p25Mm: 4.95,
-          p75Mm: 7.85,
-          count: 17
-        },
-        {
           role: "bypass",
           preferredValue: "0.1UF_0805",
           values: [
@@ -496,6 +485,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 25.14,
           p25Mm: 17.73,
           p75Mm: 47.68,
+          count: 17
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_25V_ALE",
+          values: [
+            "100UF_25V_ALE"
+          ],
+          medianDistanceMm: 7.3,
+          p25Mm: 4.95,
+          p75Mm: 7.85,
           count: 17
         }
       ],
@@ -664,14 +664,14 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 3
         },
         {
-          role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
+          role: "bypass",
+          preferredValue: "1F_2.7V_RAD",
           values: [
-            "10UF_1206_10%_25V"
+            "1F_2.7V_RAD"
           ],
-          medianDistanceMm: 58.66,
-          p25Mm: 42.37,
-          p75Mm: 58.66,
+          medianDistanceMm: 79.33,
+          p25Mm: 65.11,
+          p75Mm: 79.33,
           count: 2
         }
       ],
@@ -1750,28 +1750,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "2.2UF_0805_10%_50V",
-          values: [
-            "2.2UF_0805_10%_50V"
-          ],
-          medianDistanceMm: 106.24,
-          p25Mm: 46.11,
-          p75Mm: 116.1,
-          count: 12
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0805_20%",
-          values: [
-            "1UF_0805_20%"
-          ],
-          medianDistanceMm: 39.28,
-          p25Mm: 31.22,
-          p75Mm: 90.56,
-          count: 12
-        },
-        {
-          role: "bypass",
           preferredValue: "18pF",
           values: [
             "18pF"
@@ -1779,6 +1757,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 49.9,
           p25Mm: 43.26,
           p75Mm: 106.0,
+          count: 12
+        },
+        {
+          role: "bulk",
+          preferredValue: "2200UF_50V_RAD",
+          values: [
+            "2200UF_50V_RAD"
+          ],
+          medianDistanceMm: 110.19,
+          p25Mm: 45.95,
+          p75Mm: 122.36,
           count: 12
         },
         {
@@ -1790,6 +1779,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 111.16,
           p25Mm: 52.32,
           p75Mm: 121.0,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "2.2UF_0805_10%_50V",
+          values: [
+            "2.2UF_0805_10%_50V"
+          ],
+          medianDistanceMm: 106.24,
+          p25Mm: 46.11,
+          p75Mm: 116.1,
           count: 12
         }
       ],
@@ -1959,17 +1959,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 6
         },
         {
-          role: "bypass",
-          preferredValue: "100PF_50V_AXIALWIDE",
-          values: [
-            "100PF_50V_AXIALWIDE"
-          ],
-          medianDistanceMm: 99.3,
-          p25Mm: 86.67,
-          p75Mm: 107.92,
-          count: 6
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_16V",
           values: [
@@ -1978,6 +1967,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 118.17,
           p25Mm: 100.86,
           p75Mm: 127.36,
+          count: 6
+        },
+        {
+          role: "bypass",
+          preferredValue: "100PF_50V_AXIALWIDE",
+          values: [
+            "100PF_50V_AXIALWIDE"
+          ],
+          medianDistanceMm: 99.3,
+          p25Mm: 86.67,
+          p75Mm: 107.92,
           count: 6
         },
         {
@@ -2005,14 +2005,14 @@ export const minedDecoupling: DecouplingPattern[] = [
       occurrences: 8,
       caps: [
         {
-          role: "bulk",
-          preferredValue: "10UF_1210",
+          role: "bypass",
+          preferredValue: "0.1UF_0603_5%_50V",
           values: [
-            "10UF_1210"
+            "0.1UF_0603_5%_50V"
           ],
-          medianDistanceMm: 141.35,
-          p25Mm: 120.4,
-          p75Mm: 163.35,
+          medianDistanceMm: 137.89,
+          p25Mm: 116.56,
+          p75Mm: 160.43,
           count: 48
         },
         {
@@ -2027,14 +2027,14 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 48
         },
         {
-          role: "bypass",
-          preferredValue: "0.1UF_0603_5%_50V",
+          role: "bulk",
+          preferredValue: "10UF_1210",
           values: [
-            "0.1UF_0603_5%_50V"
+            "10UF_1210"
           ],
-          medianDistanceMm: 137.89,
-          p25Mm: 116.56,
-          p75Mm: 160.43,
+          medianDistanceMm: 141.35,
+          p25Mm: 120.4,
+          p75Mm: 163.35,
           count: 48
         }
       ],
@@ -2279,17 +2279,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 8
         },
         {
-          role: "bypass",
-          preferredValue: "4.7UF_0805",
-          values: [
-            "4.7UF_0805"
-          ],
-          medianDistanceMm: 32.31,
-          p25Mm: 15.23,
-          p75Mm: 32.31,
-          count: 8
-        },
-        {
           role: "bulk",
           preferredValue: "22UF_1206_10V",
           values: [
@@ -2298,6 +2287,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 50.64,
           p25Mm: 38.69,
           p75Mm: 50.64,
+          count: 8
+        },
+        {
+          role: "bypass",
+          preferredValue: "4.7UF_0805",
+          values: [
+            "4.7UF_0805"
+          ],
+          medianDistanceMm: 32.31,
+          p25Mm: 15.23,
+          p75Mm: 32.31,
           count: 8
         }
       ],
@@ -2375,6 +2375,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 16
         },
         {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V",
+          values: [
+            "22UF_1206_10V"
+          ],
+          medianDistanceMm: 24.22,
+          p25Mm: 17.3,
+          p75Mm: 24.93,
+          count: 16
+        },
+        {
           role: "bypass",
           preferredValue: "4.7UF_0805",
           values: [
@@ -2387,14 +2398,14 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "22UF_1206_10V",
+          preferredValue: "100UF_35V_RAD",
           values: [
-            "22UF_1206_10V"
+            "100UF_35V_RAD"
           ],
-          medianDistanceMm: 24.22,
-          p25Mm: 17.3,
-          p75Mm: 24.93,
-          count: 16
+          medianDistanceMm: 34.74,
+          p25Mm: 33.56,
+          p75Mm: 34.74,
+          count: 8
         },
         {
           role: "bypass",
@@ -2416,17 +2427,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 18.28,
           p25Mm: 14.14,
           p75Mm: 18.28,
-          count: 8
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.33F-5.5V-SUPERCAP",
-          values: [
-            "0.33F-5.5V-SUPERCAP"
-          ],
-          medianDistanceMm: 19.56,
-          p25Mm: 16.13,
-          p75Mm: 19.56,
           count: 8
         }
       ],
@@ -2579,14 +2579,14 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 2
         },
         {
-          role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
+          role: "bypass",
+          preferredValue: "1F_2.7V_RAD",
           values: [
-            "10UF_1206_10%_25V"
+            "1F_2.7V_RAD"
           ],
-          medianDistanceMm: 58.42,
-          p25Mm: 58.42,
-          p75Mm: 58.42,
+          medianDistanceMm: 93.56,
+          p25Mm: 93.56,
+          p75Mm: 93.56,
           count: 1
         }
       ],
@@ -2887,6 +2887,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 7
         },
         {
+          role: "bulk",
+          preferredValue: "100UF_35V_RAD",
+          values: [
+            "100UF_35V_RAD"
+          ],
+          medianDistanceMm: 103.25,
+          p25Mm: 103.25,
+          p75Mm: 103.25,
+          count: 4
+        },
+        {
           role: "bypass",
           preferredValue: "0.1UF_0603_10%_16V",
           values: [
@@ -2895,17 +2906,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 78.77,
           p25Mm: 78.77,
           p75Mm: 78.77,
-          count: 4
-        },
-        {
-          role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
-          values: [
-            "100UF_1206_6.3V1206"
-          ],
-          medianDistanceMm: 59.47,
-          p25Mm: 59.47,
-          p75Mm: 59.47,
           count: 4
         }
       ],
@@ -3004,17 +3004,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 5
         },
         {
-          role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
-          values: [
-            "10UF_1206_10%_25V"
-          ],
-          medianDistanceMm: 42.22,
-          p25Mm: 42.22,
-          p75Mm: 47.15,
-          count: 3
-        },
-        {
           role: "bypass",
           preferredValue: "1F_2.7V_RAD",
           values: [
@@ -3023,6 +3012,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 46.41,
           p25Mm: 33.93,
           p75Mm: 46.41,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1206_10%_25V",
+          values: [
+            "10UF_1206_10%_25V"
+          ],
+          medianDistanceMm: 42.22,
+          p25Mm: 42.22,
+          p75Mm: 47.15,
           count: 3
         }
       ],
@@ -3120,17 +3120,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 5
         },
         {
-          role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
-          values: [
-            "10UF_1206_10%_25V"
-          ],
-          medianDistanceMm: 34.47,
-          p25Mm: 34.47,
-          p75Mm: 37.23,
-          count: 3
-        },
-        {
           role: "bypass",
           preferredValue: "1F_2.7V_RAD",
           values: [
@@ -3139,6 +3128,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 35.16,
           p25Mm: 23.33,
           p75Mm: 35.16,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1206_10%_25V",
+          values: [
+            "10UF_1206_10%_25V"
+          ],
+          medianDistanceMm: 34.47,
+          p25Mm: 34.47,
+          p75Mm: 37.23,
           count: 3
         }
       ],
@@ -3741,17 +3741,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "10UF_1210",
-          values: [
-            "10UF_1210"
-          ],
-          medianDistanceMm: 15.15,
-          p25Mm: 10.6,
-          p75Mm: 170.09,
-          count: 18
-        },
-        {
-          role: "bulk",
           preferredValue: "100UF_35V_ALE",
           values: [
             "100UF_35V_ALE"
@@ -3759,6 +3748,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 16.13,
           p25Mm: 8.89,
           p75Mm: 169.73,
+          count: 18
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_1210",
+          values: [
+            "10UF_1210"
+          ],
+          medianDistanceMm: 15.15,
+          p25Mm: 10.6,
+          p75Mm: 170.09,
           count: 18
         },
         {
@@ -3773,17 +3773,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 6
         },
         {
-          role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 47.75,
-          p25Mm: 47.75,
-          p75Mm: 47.75,
-          count: 2
-        },
-        {
           role: "bulk",
           preferredValue: "1000UF_50V_RAD",
           values: [
@@ -3792,6 +3781,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 9.43,
           p25Mm: 9.15,
           p75Mm: 9.43,
+          count: 2
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 47.75,
+          p25Mm: 47.75,
+          p75Mm: 47.75,
           count: 2
         }
       ],
@@ -4040,17 +4040,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "22UF_1206_25V",
-          values: [
-            "22UF_1206_25V"
-          ],
-          medianDistanceMm: 94.65,
-          p25Mm: 53.99,
-          p75Mm: 109.77,
-          count: 3
-        },
-        {
-          role: "bulk",
           preferredValue: "22UF_1206_10V",
           values: [
             "22UF_1206_10V"
@@ -4058,6 +4047,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 86.48,
           p25Mm: 45.45,
           p75Mm: 101.7,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_25V",
+          values: [
+            "22UF_1206_25V"
+          ],
+          medianDistanceMm: 94.65,
+          p25Mm: 53.99,
+          p75Mm: 109.77,
           count: 3
         },
         {
@@ -4140,6 +4140,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 9
         },
         {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V",
+          values: [
+            "22UF_1206_10V"
+          ],
+          medianDistanceMm: 16.45,
+          p25Mm: 4.08,
+          p75Mm: 16.45,
+          count: 8
+        },
+        {
           role: "bypass",
           preferredValue: "4.7UF_0805",
           values: [
@@ -4152,14 +4163,14 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "22UF_1206_10V",
+          preferredValue: "100UF_35V_RAD",
           values: [
-            "22UF_1206_10V"
+            "100UF_35V_RAD"
           ],
-          medianDistanceMm: 16.45,
-          p25Mm: 4.08,
-          p75Mm: 16.45,
-          count: 8
+          medianDistanceMm: 7.97,
+          p25Mm: 7.97,
+          p75Mm: 7.97,
+          count: 4
         },
         {
           role: "bypass",
@@ -4181,17 +4192,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 46.69,
           p25Mm: 46.69,
           p75Mm: 46.69,
-          count: 4
-        },
-        {
-          role: "bypass",
-          preferredValue: "0.33F-5.5V-SUPERCAP",
-          values: [
-            "0.33F-5.5V-SUPERCAP"
-          ],
-          medianDistanceMm: 8.78,
-          p25Mm: 8.78,
-          p75Mm: 8.78,
           count: 4
         }
       ],
@@ -4255,17 +4255,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 4
         },
         {
-          role: "bypass",
-          preferredValue: "100PF_50V_AXIALWIDE",
-          values: [
-            "100PF_50V_AXIALWIDE"
-          ],
-          medianDistanceMm: 64.64,
-          p25Mm: 36.46,
-          p75Mm: 73.93,
-          count: 4
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_16V",
           values: [
@@ -4274,6 +4263,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 80.62,
           p25Mm: 48.96,
           p75Mm: 93.36,
+          count: 4
+        },
+        {
+          role: "bypass",
+          preferredValue: "100PF_50V_AXIALWIDE",
+          values: [
+            "100PF_50V_AXIALWIDE"
+          ],
+          medianDistanceMm: 64.64,
+          p25Mm: 36.46,
+          p75Mm: 73.93,
           count: 4
         }
       ],
@@ -4412,24 +4412,24 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1.5PF_0402",
+          preferredValue: "1PF_0402",
           values: [
-            "1.5PF_0402"
+            "1PF_0402"
           ],
-          medianDistanceMm: 107.33,
-          p25Mm: 86.94,
-          p75Mm: 107.33,
+          medianDistanceMm: 106.73,
+          p25Mm: 86.48,
+          p75Mm: 106.73,
           count: 4
         },
         {
-          role: "bypass",
-          preferredValue: "1000PF_0402",
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
           values: [
-            "1000PF_0402"
+            "22UF_1206_10V1206"
           ],
-          medianDistanceMm: 108.55,
-          p25Mm: 88.67,
-          p75Mm: 108.55,
+          medianDistanceMm: 52.76,
+          p25Mm: 42.35,
+          p75Mm: 52.76,
           count: 4
         },
         {
@@ -4479,17 +4479,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 12
         },
         {
-          role: "bulk",
-          preferredValue: "10UF_0603",
-          values: [
-            "10UF_0603"
-          ],
-          medianDistanceMm: 79.11,
-          p25Mm: 77.23,
-          p75Mm: 81.72,
-          count: 4
-        },
-        {
           role: "bypass",
           preferredValue: "0.1UF_0603_5%_50V",
           values: [
@@ -4498,6 +4487,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 75.8,
           p25Mm: 73.85,
           p75Mm: 78.52,
+          count: 4
+        },
+        {
+          role: "bulk",
+          preferredValue: "10UF_0603",
+          values: [
+            "10UF_0603"
+          ],
+          medianDistanceMm: 79.11,
+          p25Mm: 77.23,
+          p75Mm: 81.72,
           count: 4
         }
       ],
@@ -4546,17 +4546,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 12
         },
         {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 21.39,
-          p25Mm: 21.17,
-          p75Mm: 21.39,
-          count: 4
-        },
-        {
           role: "bypass",
           preferredValue: "1UF_0603_10%_25V",
           values: [
@@ -4565,6 +4554,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 38.42,
           p25Mm: 22.96,
           p75Mm: 38.42,
+          count: 4
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 21.39,
+          p25Mm: 21.17,
+          p75Mm: 21.39,
           count: 4
         }
       ],
@@ -4663,28 +4663,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "2.2UF_0805_10%_50V",
-          values: [
-            "2.2UF_0805_10%_50V"
-          ],
-          medianDistanceMm: 19.31,
-          p25Mm: 4.52,
-          p75Mm: 19.34,
-          count: 8
-        },
-        {
-          role: "bypass",
-          preferredValue: "1UF_0805_20%",
-          values: [
-            "1UF_0805_20%"
-          ],
-          medianDistanceMm: 126.97,
-          p25Mm: 118.63,
-          p75Mm: 139.92,
-          count: 8
-        },
-        {
-          role: "bypass",
           preferredValue: "18pF",
           values: [
             "18pF"
@@ -4692,17 +4670,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 141.55,
           p25Mm: 122.05,
           p75Mm: 142.87,
-          count: 8
-        },
-        {
-          role: "bypass",
-          preferredValue: "3300PF_1206",
-          values: [
-            "3300PF_1206"
-          ],
-          medianDistanceMm: 15.61,
-          p25Mm: 2.17,
-          p75Mm: 23.76,
           count: 8
         },
         {
@@ -4718,13 +4685,46 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "150PF_0805",
+          preferredValue: "3300PF_1206",
           values: [
-            "150PF_0805"
+            "3300PF_1206"
           ],
-          medianDistanceMm: 13.95,
-          p25Mm: 2.24,
-          p75Mm: 23.27,
+          medianDistanceMm: 15.61,
+          p25Mm: 2.17,
+          p75Mm: 23.76,
+          count: 8
+        },
+        {
+          role: "bypass",
+          preferredValue: "2.2UF_0805_10%_50V",
+          values: [
+            "2.2UF_0805_10%_50V"
+          ],
+          medianDistanceMm: 19.31,
+          p25Mm: 4.52,
+          p75Mm: 19.34,
+          count: 8
+        },
+        {
+          role: "bypass",
+          preferredValue: "2200PF_0603",
+          values: [
+            "2200PF_0603"
+          ],
+          medianDistanceMm: 12.33,
+          p25Mm: 5.32,
+          p75Mm: 25.93,
+          count: 8
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0805_20%",
+          values: [
+            "1UF_0805_20%"
+          ],
+          medianDistanceMm: 126.97,
+          p25Mm: 118.63,
+          p75Mm: 139.92,
           count: 8
         }
       ],
@@ -4797,13 +4797,13 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "10UF_1206_10%_25V",
+          preferredValue: "100UF_1206_6.3V1206",
           values: [
-            "10UF_1206_10%_25V"
+            "100UF_1206_6.3V1206"
           ],
-          medianDistanceMm: 47.46,
-          p25Mm: 38.53,
-          p75Mm: 47.46,
+          medianDistanceMm: 68.67,
+          p25Mm: 68.67,
+          p75Mm: 99.33,
           count: 3
         },
         {
@@ -4819,13 +4819,13 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "100UF_1206_6.3V1206",
+          preferredValue: "10UF_1206_10%_25V",
           values: [
-            "100UF_1206_6.3V1206"
+            "10UF_1206_10%_25V"
           ],
-          medianDistanceMm: 68.67,
-          p25Mm: 68.67,
-          p75Mm: 99.33,
+          medianDistanceMm: 47.46,
+          p25Mm: 38.53,
+          p75Mm: 47.46,
           count: 3
         },
         {
@@ -4956,17 +4956,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 3
         },
         {
-          role: "bypass",
-          preferredValue: "100PF_50V_AXIALWIDE",
-          values: [
-            "100PF_50V_AXIALWIDE"
-          ],
-          medianDistanceMm: 82.54,
-          p25Mm: 70.82,
-          p75Mm: 88.03,
-          count: 3
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_16V",
           values: [
@@ -4975,6 +4964,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 87.14,
           p25Mm: 66.4,
           p75Mm: 107.09,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "100PF_50V_AXIALWIDE",
+          values: [
+            "100PF_50V_AXIALWIDE"
+          ],
+          medianDistanceMm: 82.54,
+          p25Mm: 70.82,
+          p75Mm: 88.03,
           count: 3
         }
       ],
@@ -5013,17 +5013,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1UF_0603_10%_25V",
-          values: [
-            "1UF_0603_10%_25V"
-          ],
-          medianDistanceMm: 2.99,
-          p25Mm: 2.06,
-          p75Mm: 2.99,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "1000PF_0603",
           values: [
             "1000PF_0603"
@@ -5031,6 +5020,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 3.07,
           p25Mm: 3.07,
           p75Mm: 4.14,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603_10%_25V",
+          values: [
+            "1UF_0603_10%_25V"
+          ],
+          medianDistanceMm: 2.99,
+          p25Mm: 2.06,
+          p75Mm: 2.99,
           count: 3
         },
         {
@@ -5161,17 +5161,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 9
         },
         {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 8.35,
-          p25Mm: 8.35,
-          p75Mm: 8.35,
-          count: 3
-        },
-        {
           role: "bypass",
           preferredValue: "1UF_0603_10%_25V",
           values: [
@@ -5180,6 +5169,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 3.91,
           p25Mm: 3.91,
           p75Mm: 3.91,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 8.35,
+          p25Mm: 8.35,
+          p75Mm: 8.35,
           count: 3
         }
       ],
@@ -5474,17 +5474,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 18
         },
         {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 22.7,
-          p25Mm: 17.93,
-          p75Mm: 27.83,
-          count: 12
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_50V",
           values: [
@@ -5493,6 +5482,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 16.51,
           p25Mm: 10.28,
           p75Mm: 43.43,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 22.7,
+          p25Mm: 17.93,
+          p75Mm: 27.83,
           count: 12
         },
         {
@@ -5508,17 +5508,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 33.49,
-          p25Mm: 33.49,
-          p75Mm: 33.49,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "10NF_0805",
           values: [
             "10NF_0805"
@@ -5526,6 +5515,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 1.77,
           p25Mm: 1.77,
           p75Mm: 1.77,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603",
+          values: [
+            "1UF_0603"
+          ],
+          medianDistanceMm: 33.49,
+          p25Mm: 33.49,
+          p75Mm: 33.49,
           count: 3
         }
       ],
@@ -5612,17 +5612,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 18
         },
         {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 10.49,
-          p25Mm: 8.09,
-          p75Mm: 17.38,
-          count: 12
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_50V",
           values: [
@@ -5631,6 +5620,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 7.84,
           p25Mm: 6.01,
           p75Mm: 29.96,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 10.49,
+          p25Mm: 8.09,
+          p75Mm: 17.38,
           count: 12
         },
         {
@@ -5646,17 +5646,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 19.53,
-          p25Mm: 19.53,
-          p75Mm: 19.53,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "10NF_0805",
           values: [
             "10NF_0805"
@@ -5664,6 +5653,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 11.94,
           p25Mm: 11.94,
           p75Mm: 11.94,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603",
+          values: [
+            "1UF_0603"
+          ],
+          medianDistanceMm: 19.53,
+          p25Mm: 19.53,
+          p75Mm: 19.53,
           count: 3
         }
       ],
@@ -5703,17 +5703,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 18
         },
         {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 13.55,
-          p25Mm: 12.93,
-          p75Mm: 31.06,
-          count: 12
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_50V",
           values: [
@@ -5722,6 +5711,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 25.91,
           p25Mm: 9.03,
           p75Mm: 27.66,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 13.55,
+          p25Mm: 12.93,
+          p75Mm: 31.06,
           count: 12
         },
         {
@@ -5737,17 +5737,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 2.47,
-          p25Mm: 2.47,
-          p75Mm: 2.47,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "10NF_0805",
           values: [
             "10NF_0805"
@@ -5755,6 +5744,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 32.36,
           p25Mm: 32.36,
           p75Mm: 32.36,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603",
+          values: [
+            "1UF_0603"
+          ],
+          medianDistanceMm: 2.47,
+          p25Mm: 2.47,
+          p75Mm: 2.47,
           count: 3
         }
       ],
@@ -5794,17 +5794,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 18
         },
         {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 23.67,
-          p25Mm: 23.39,
-          p75Mm: 43.47,
-          count: 12
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_50V",
           values: [
@@ -5813,6 +5802,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 38.69,
           p25Mm: 19.39,
           p75Mm: 39.68,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 23.67,
+          p25Mm: 23.39,
+          p75Mm: 43.47,
           count: 12
         },
         {
@@ -5828,17 +5828,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 13.48,
-          p25Mm: 13.48,
-          p75Mm: 13.48,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "10NF_0805",
           values: [
             "10NF_0805"
@@ -5846,6 +5835,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 43.65,
           p25Mm: 43.65,
           p75Mm: 43.65,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603",
+          values: [
+            "1UF_0603"
+          ],
+          medianDistanceMm: 13.48,
+          p25Mm: 13.48,
+          p75Mm: 13.48,
           count: 3
         }
       ],
@@ -5885,17 +5885,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 18
         },
         {
-          role: "bypass",
-          preferredValue: "0.1UF_50V_0603",
-          values: [
-            "0.1UF_50V_0603"
-          ],
-          medianDistanceMm: 25.11,
-          p25Mm: 23.53,
-          p75Mm: 43.55,
-          count: 12
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_50V",
           values: [
@@ -5904,6 +5893,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 38.5,
           p25Mm: 20.43,
           p75Mm: 40.61,
+          count: 12
+        },
+        {
+          role: "bypass",
+          preferredValue: "0.1UF_50V_0603",
+          values: [
+            "0.1UF_50V_0603"
+          ],
+          medianDistanceMm: 25.11,
+          p25Mm: 23.53,
+          p75Mm: 43.55,
           count: 12
         },
         {
@@ -5919,17 +5919,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1UF_0603",
-          values: [
-            "1UF_0603"
-          ],
-          medianDistanceMm: 16.36,
-          p25Mm: 16.36,
-          p75Mm: 16.36,
-          count: 3
-        },
-        {
-          role: "bypass",
           preferredValue: "10NF_0805",
           values: [
             "10NF_0805"
@@ -5937,6 +5926,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 43.47,
           p25Mm: 43.47,
           p75Mm: 43.47,
+          count: 3
+        },
+        {
+          role: "bypass",
+          preferredValue: "1UF_0603",
+          values: [
+            "1UF_0603"
+          ],
+          medianDistanceMm: 16.36,
+          p25Mm: 16.36,
+          p75Mm: 16.36,
           count: 3
         }
       ],
@@ -6206,17 +6206,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bulk",
-          preferredValue: "22UF_1206_10V1206",
-          values: [
-            "22UF_1206_10V1206"
-          ],
-          medianDistanceMm: 8.52,
-          p25Mm: 5.07,
-          p75Mm: 38.65,
-          count: 3
-        },
-        {
-          role: "bulk",
           preferredValue: "100UF_1206_6.3V1206",
           values: [
             "100UF_1206_6.3V1206"
@@ -6224,6 +6213,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 75.6,
           p25Mm: 19.32,
           p75Mm: 88.3,
+          count: 3
+        },
+        {
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
+          values: [
+            "22UF_1206_10V1206"
+          ],
+          medianDistanceMm: 8.52,
+          p25Mm: 5.07,
+          p75Mm: 38.65,
           count: 3
         }
       ],
@@ -6433,17 +6433,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 2
         },
         {
-          role: "bypass",
-          preferredValue: "100PF_50V_AXIALWIDE",
-          values: [
-            "100PF_50V_AXIALWIDE"
-          ],
-          medianDistanceMm: 39.87,
-          p25Mm: 35.92,
-          p75Mm: 39.87,
-          count: 2
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_16V",
           values: [
@@ -6452,6 +6441,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 58.62,
           p25Mm: 51.66,
           p75Mm: 58.62,
+          count: 2
+        },
+        {
+          role: "bypass",
+          preferredValue: "100PF_50V_AXIALWIDE",
+          values: [
+            "100PF_50V_AXIALWIDE"
+          ],
+          medianDistanceMm: 39.87,
+          p25Mm: 35.92,
+          p75Mm: 39.87,
           count: 2
         }
       ],
@@ -6511,17 +6511,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 2
         },
         {
-          role: "bypass",
-          preferredValue: "100PF_50V_AXIALWIDE",
-          values: [
-            "100PF_50V_AXIALWIDE"
-          ],
-          medianDistanceMm: 87.5,
-          p25Mm: 5.64,
-          p75Mm: 87.5,
-          count: 2
-        },
-        {
           role: "bulk",
           preferredValue: "220UF_16V",
           values: [
@@ -6530,6 +6519,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 99.28,
           p25Mm: 24.77,
           p75Mm: 99.28,
+          count: 2
+        },
+        {
+          role: "bypass",
+          preferredValue: "100PF_50V_AXIALWIDE",
+          values: [
+            "100PF_50V_AXIALWIDE"
+          ],
+          medianDistanceMm: 87.5,
+          p25Mm: 5.64,
+          p75Mm: 87.5,
           count: 2
         }
       ],
@@ -6568,6 +6568,17 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
+          preferredValue: "1000PF_0603",
+          values: [
+            "1000PF_0603"
+          ],
+          medianDistanceMm: 42.67,
+          p25Mm: 42.67,
+          p75Mm: 42.67,
+          count: 2
+        },
+        {
+          role: "bypass",
           preferredValue: "0.022UF_0603",
           values: [
             "0.022UF_0603"
@@ -6586,17 +6597,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 45.6,
           p25Mm: 45.6,
           p75Mm: 45.6,
-          count: 2
-        },
-        {
-          role: "bypass",
-          preferredValue: "1000PF_0603",
-          values: [
-            "1000PF_0603"
-          ],
-          medianDistanceMm: 42.67,
-          p25Mm: 42.67,
-          p75Mm: 42.67,
           count: 2
         }
       ],
@@ -6691,24 +6691,24 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1.5PF_0402",
+          preferredValue: "1PF_0402",
           values: [
-            "1.5PF_0402"
+            "1PF_0402"
           ],
-          medianDistanceMm: 28.46,
-          p25Mm: 28.46,
-          p75Mm: 28.46,
+          medianDistanceMm: 27.8,
+          p25Mm: 27.8,
+          p75Mm: 27.8,
           count: 2
         },
         {
-          role: "bypass",
-          preferredValue: "1000PF_0402",
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
           values: [
-            "1000PF_0402"
+            "22UF_1206_10V1206"
           ],
-          medianDistanceMm: 29.77,
-          p25Mm: 29.77,
-          p75Mm: 29.77,
+          medianDistanceMm: 29.05,
+          p25Mm: 29.05,
+          p75Mm: 29.05,
           count: 2
         },
         {
@@ -6814,24 +6814,24 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "1.5PF_0402",
+          preferredValue: "1PF_0402",
           values: [
-            "1.5PF_0402"
+            "1PF_0402"
           ],
-          medianDistanceMm: 5.5,
-          p25Mm: 5.5,
-          p75Mm: 5.5,
+          medianDistanceMm: 3.75,
+          p25Mm: 3.75,
+          p75Mm: 3.75,
           count: 2
         },
         {
-          role: "bypass",
-          preferredValue: "1000PF_0402",
+          role: "bulk",
+          preferredValue: "22UF_1206_10V1206",
           values: [
-            "1000PF_0402"
+            "22UF_1206_10V1206"
           ],
-          medianDistanceMm: 1.28,
-          p25Mm: 1.28,
-          p75Mm: 1.28,
+          medianDistanceMm: 56.23,
+          p25Mm: 56.23,
+          p75Mm: 56.23,
           count: 2
         },
         {
@@ -6892,17 +6892,6 @@ export const minedDecoupling: DecouplingPattern[] = [
           count: 6
         },
         {
-          role: "bulk",
-          preferredValue: "100UF_35V_ALE",
-          values: [
-            "100UF_35V_ALE"
-          ],
-          medianDistanceMm: 21.39,
-          p25Mm: 21.17,
-          p75Mm: 21.39,
-          count: 2
-        },
-        {
           role: "bypass",
           preferredValue: "1UF_0603_10%_25V",
           values: [
@@ -6911,6 +6900,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 38.42,
           p25Mm: 22.96,
           p75Mm: 38.42,
+          count: 2
+        },
+        {
+          role: "bulk",
+          preferredValue: "100UF_35V_ALE",
+          values: [
+            "100UF_35V_ALE"
+          ],
+          medianDistanceMm: 21.39,
+          p25Mm: 21.17,
+          p75Mm: 21.39,
           count: 2
         }
       ],
@@ -7271,17 +7271,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 4.31,
-          p25Mm: 4.27,
-          p75Mm: 4.31,
-          count: 2
-        },
-        {
-          role: "bypass",
           preferredValue: "47PF_0603",
           values: [
             "47PF_0603"
@@ -7289,6 +7278,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 6.0,
           p25Mm: 6.0,
           p75Mm: 6.0,
+          count: 2
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 4.31,
+          p25Mm: 4.27,
+          p75Mm: 4.31,
           count: 2
         }
       ],
@@ -7328,17 +7328,6 @@ export const minedDecoupling: DecouplingPattern[] = [
         },
         {
           role: "bypass",
-          preferredValue: "10NF_0805",
-          values: [
-            "10NF_0805"
-          ],
-          medianDistanceMm: 16.97,
-          p25Mm: 16.91,
-          p75Mm: 16.97,
-          count: 2
-        },
-        {
-          role: "bypass",
           preferredValue: "47PF_0603",
           values: [
             "47PF_0603"
@@ -7346,6 +7335,17 @@ export const minedDecoupling: DecouplingPattern[] = [
           medianDistanceMm: 7.13,
           p25Mm: 7.13,
           p75Mm: 7.13,
+          count: 2
+        },
+        {
+          role: "bypass",
+          preferredValue: "10NF_0805",
+          values: [
+            "10NF_0805"
+          ],
+          medianDistanceMm: 16.97,
+          p25Mm: 16.91,
+          p75Mm: 16.97,
           count: 2
         }
       ],

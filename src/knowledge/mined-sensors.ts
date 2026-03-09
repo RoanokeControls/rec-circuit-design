@@ -404,10 +404,10 @@ export const sensorDesigns: SensorDesign[] = [
           type: "temp_sensor"
         },
         {
-          name: "divider_ID_SCAN3",
+          name: "divider_ID_SCAN1",
           value: "1k, 1k",
           type: "voltage_divider",
-          net: "ID_SCAN3"
+          net: "ID_SCAN1"
         },
         {
           name: "divider_ID_SCAN0",
@@ -416,16 +416,16 @@ export const sensorDesigns: SensorDesign[] = [
           net: "ID_SCAN0"
         },
         {
-          name: "divider_ID_SCAN1",
-          value: "1k, 1k",
-          type: "voltage_divider",
-          net: "ID_SCAN1"
-        },
-        {
           name: "divider_ID_SCAN2",
           value: "1k, 1k",
           type: "voltage_divider",
           net: "ID_SCAN2"
+        },
+        {
+          name: "divider_ID_SCAN3",
+          value: "1k, 1k",
+          type: "voltage_divider",
+          net: "ID_SCAN3"
         }
       ],
       optoInputs: [],
@@ -775,10 +775,10 @@ export const sensorDesigns: SensorDesign[] = [
           type: "temp_sensor"
         },
         {
-          name: "divider_ID_SCAN3",
+          name: "divider_ID_SCAN1",
           value: "1k, 1k",
           type: "voltage_divider",
-          net: "ID_SCAN3"
+          net: "ID_SCAN1"
         },
         {
           name: "divider_ID_SCAN0",
@@ -787,16 +787,16 @@ export const sensorDesigns: SensorDesign[] = [
           net: "ID_SCAN0"
         },
         {
-          name: "divider_ID_SCAN1",
-          value: "1k, 1k",
-          type: "voltage_divider",
-          net: "ID_SCAN1"
-        },
-        {
           name: "divider_ID_SCAN2",
           value: "1k, 1k",
           type: "voltage_divider",
           net: "ID_SCAN2"
+        },
+        {
+          name: "divider_ID_SCAN3",
+          value: "1k, 1k",
+          type: "voltage_divider",
+          net: "ID_SCAN3"
         }
       ],
       optoInputs: [],

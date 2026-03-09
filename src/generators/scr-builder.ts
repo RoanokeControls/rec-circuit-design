@@ -103,8 +103,9 @@ export class ScrBuilder {
       const col = i % 4;
       const x = originX + col * spacing;
       const y = originY - row * spacing;
+      if (!comp.eagleDevice) return; // skip generic/unspecified components
       this.addComponent(
-        comp.eagleDevice, // In our data this is now the REC deviceset name
+        comp.eagleDevice,
         comp.refDes,
         x,
         y

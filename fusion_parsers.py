@@ -607,6 +607,322 @@ def load_rec_library():
     return {"version": None, "devicesets": {}}
 
 
+# ── Full Library Extraction ───────────────────────────────────────
+
+def extract_library_data(xml_str):
+    """Extract complete library definitions from EAGLE schematic XML.
+
+    Schematics embed full library data (packages, symbols, devicesets)
+    for every component used. This extracts ALL of it.
+
+    Returns dict keyed by library name, each containing footprints,
+    symbols, and devicesets with full detail.
+    """
+    root = ET.fromstring(xml_str)
+    drawing = root.find("drawing")
+    schematic = drawing.find("schematic") if drawing is not None else None
+    if schematic is None:
+        return {}
+
+    libs_elem = schematic.find("libraries")
+    if libs_elem is None:
+        return {}
+
+    result = {}
+    for lib in libs_elem.findall("library"):
+        lib_name = lib.get("name", "")
+        lib_data = _parse_library_element(lib)
+        if lib_data["devicesets"] or lib_data["footprints"] or lib_data["symbols"]:
+            result[lib_name] = lib_data
+
+    return result
+
+
+def extract_board_library_data(xml_str):
+    """Extract library data from EAGLE board XML.
+
+    Boards embed packages (footprints) but not symbols/devicesets.
+    """
+    root = ET.fromstring(xml_str)
+    drawing = root.find("drawing")
+    board = drawing.find("board") if drawing is not None else None
+    if board is None:
+        return {}
+
+    libs_elem = board.find("libraries")
+    if libs_elem is None:
+        return {}
+
+    result = {}
+    for lib in libs_elem.findall("library"):
+        lib_name = lib.get("name", "")
+        lib_data = _parse_library_element(lib)
+        if lib_data["footprints"]:
+            result[lib_name] = lib_data
+
+    return result
+
+
+def extract_fusionlbr_data(zip_bytes):
+    """Extract library data from a .fusionlbr file (ZIP containing .lbr XML)."""
+    xml_str = extract_eagle_xml(zip_bytes, ".lbr")
+    if not xml_str:
+        return {}
+
+    root = ET.fromstring(xml_str)
+    drawing = root.find("drawing")
+    library = drawing.find("library") if drawing is not None else None
+    if library is None:
+        return {}
+
+    lib_name = library.get("name", "")
+    lib_data = _parse_library_element(library)
+    return {lib_name: lib_data} if lib_data["devicesets"] or lib_data["footprints"] else {}
+
+
+def _parse_library_element(lib_elem):
+    """Parse a <library> XML element into structured data."""
+    footprints = []
+    symbols = []
+    devicesets = []
+
+    # Parse packages (footprints)
+    pkgs_elem = lib_elem.find("packages")
+    if pkgs_elem is not None:
+        for pkg in pkgs_elem.findall("package"):
+            fp = _parse_package(pkg)
+            if fp:
+                footprints.append(fp)
+
+    # Parse symbols
+    syms_elem = lib_elem.find("symbols")
+    if syms_elem is not None:
+        for sym in syms_elem.findall("symbol"):
+            s = _parse_symbol(sym)
+            if s:
+                symbols.append(s)
+
+    # Parse devicesets
+    dsets_elem = lib_elem.find("devicesets")
+    if dsets_elem is not None:
+        for ds in dsets_elem.findall("deviceset"):
+            d = _parse_deviceset(ds)
+            if d:
+                devicesets.append(d)
+
+    return {
+        "footprints": footprints,
+        "symbols": symbols,
+        "devicesets": devicesets,
+    }
+
+
+def _parse_package(pkg_elem):
+    """Parse a <package> element into footprint data."""
+    name = pkg_elem.get("name", "")
+    if not name:
+        return None
+
+    desc = pkg_elem.get("description", "") or ""
+    desc_elem = pkg_elem.find("description")
+    if desc_elem is not None and desc_elem.text:
+        desc = desc_elem.text
+
+    smds = []
+    for smd in pkg_elem.findall("smd"):
+        smds.append({
+            "name": smd.get("name", ""),
+            "x": float(smd.get("x", "0")),
+            "y": float(smd.get("y", "0")),
+            "dx": float(smd.get("dx", "0")),
+            "dy": float(smd.get("dy", "0")),
+            "layer": int(smd.get("layer", "1")),
+            "roundness": int(smd.get("roundness", "0")),
+            "rot": smd.get("rot", ""),
+        })
+
+    pads = []
+    for pad in pkg_elem.findall("pad"):
+        pads.append({
+            "name": pad.get("name", ""),
+            "x": float(pad.get("x", "0")),
+            "y": float(pad.get("y", "0")),
+            "drill": float(pad.get("drill", "0")),
+            "diameter": float(pad.get("diameter", "0")),
+            "shape": pad.get("shape", "round"),
+            "rot": pad.get("rot", ""),
+        })
+
+    wires = []
+    for wire in pkg_elem.findall("wire"):
+        wires.append({
+            "x1": float(wire.get("x1", "0")),
+            "y1": float(wire.get("y1", "0")),
+            "x2": float(wire.get("x2", "0")),
+            "y2": float(wire.get("y2", "0")),
+            "width": float(wire.get("width", "0")),
+            "layer": int(wire.get("layer", "0")),
+        })
+
+    circles = []
+    for c in pkg_elem.findall("circle"):
+        circles.append({
+            "x": float(c.get("x", "0")),
+            "y": float(c.get("y", "0")),
+            "radius": float(c.get("radius", "0")),
+            "width": float(c.get("width", "0")),
+            "layer": int(c.get("layer", "0")),
+        })
+
+    rectangles = []
+    for r in pkg_elem.findall("rectangle"):
+        rectangles.append({
+            "x1": float(r.get("x1", "0")),
+            "y1": float(r.get("y1", "0")),
+            "x2": float(r.get("x2", "0")),
+            "y2": float(r.get("y2", "0")),
+            "layer": int(r.get("layer", "0")),
+        })
+
+    texts = []
+    for t in pkg_elem.findall("text"):
+        texts.append({
+            "value": t.text or "",
+            "x": float(t.get("x", "0")),
+            "y": float(t.get("y", "0")),
+            "size": float(t.get("size", "1.27")),
+            "layer": int(t.get("layer", "0")),
+        })
+
+    holes = []
+    for h in pkg_elem.findall("hole"):
+        holes.append({
+            "x": float(h.get("x", "0")),
+            "y": float(h.get("y", "0")),
+            "drill": float(h.get("drill", "0")),
+        })
+
+    return {
+        "name": name,
+        "description": desc,
+        "smds": smds,
+        "pads": pads,
+        "wires": wires,
+        "circles": circles,
+        "rectangles": rectangles,
+        "texts": texts,
+        "holes": holes,
+    }
+
+
+def _parse_symbol(sym_elem):
+    """Parse a <symbol> element."""
+    name = sym_elem.get("name", "")
+    if not name:
+        return None
+
+    pins = []
+    for pin in sym_elem.findall("pin"):
+        pins.append({
+            "name": pin.get("name", ""),
+            "x": float(pin.get("x", "0")),
+            "y": float(pin.get("y", "0")),
+            "length": pin.get("length", "middle"),
+            "direction": pin.get("direction", "io"),
+            "visible": pin.get("visible", "both"),
+            "rot": pin.get("rot", ""),
+            "swaplevel": int(pin.get("swaplevel", "0")),
+        })
+
+    wires = []
+    for wire in sym_elem.findall("wire"):
+        wires.append({
+            "x1": float(wire.get("x1", "0")),
+            "y1": float(wire.get("y1", "0")),
+            "x2": float(wire.get("x2", "0")),
+            "y2": float(wire.get("y2", "0")),
+            "width": float(wire.get("width", "0")),
+            "layer": int(wire.get("layer", "0")),
+        })
+
+    return {
+        "name": name,
+        "pins": pins,
+        "wires": wires,
+    }
+
+
+def _parse_deviceset(ds_elem):
+    """Parse a <deviceset> element."""
+    name = ds_elem.get("name", "")
+    if not name:
+        return None
+
+    prefix = ds_elem.get("prefix", "")
+    uservalue = ds_elem.get("uservalue", "") == "yes"
+
+    desc = ""
+    desc_elem = ds_elem.find("description")
+    if desc_elem is not None and desc_elem.text:
+        desc = desc_elem.text
+
+    # Gates
+    gates = []
+    gates_elem = ds_elem.find("gates")
+    if gates_elem is not None:
+        for gate in gates_elem.findall("gate"):
+            gates.append({
+                "name": gate.get("name", ""),
+                "symbol": gate.get("symbol", ""),
+                "x": float(gate.get("x", "0")),
+                "y": float(gate.get("y", "0")),
+            })
+
+    # Devices
+    devices = []
+    devices_elem = ds_elem.find("devices")
+    if devices_elem is not None:
+        for dev in devices_elem.findall("device"):
+            dev_name = dev.get("name", "")
+            footprint = dev.get("package", "")
+
+            connects = []
+            conn_elem = dev.find("connects")
+            if conn_elem is not None:
+                for conn in conn_elem.findall("connect"):
+                    connects.append({
+                        "gate": conn.get("gate", ""),
+                        "pin": conn.get("pin", ""),
+                        "pad": conn.get("pad", ""),
+                    })
+
+            # Package3d instances (URNs)
+            pkg3d_urns = []
+            pkg3d_elem = dev.find("package3dinstances")
+            if pkg3d_elem is not None:
+                for inst in pkg3d_elem.findall("package3dinstance"):
+                    urn = inst.get("package3d_urn", "")
+                    if urn:
+                        pkg3d_urns.append(urn)
+
+            devices.append({
+                "name": dev_name,
+                "footprint": footprint,
+                "connects": connects,
+                "package3d_urns": pkg3d_urns,
+            })
+
+    return {
+        "name": name,
+        "prefix": prefix,
+        "uservalue": uservalue,
+        "description": desc,
+        "headline": strip_html(desc)[:200] if desc else "",
+        "gates": gates,
+        "devices": devices,
+    }
+
+
 def strip_html(s):
     """Remove HTML tags."""
     result = ""

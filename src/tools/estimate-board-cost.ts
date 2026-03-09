@@ -15,6 +15,7 @@ export function registerEstimateBoardCost(server: McpServer) {
       useLivePricing: z.boolean().optional().default(false).describe("When true, also fetches live DigiKey pricing for each component"),
     },
     async ({ designName, boardQty, useLivePricing }) => {
+      try {
       const bom = await getDesignBom(designName);
 
       if (!bom) {
@@ -154,6 +155,15 @@ export function registerEstimateBoardCost(server: McpServer) {
       };
 
       return { content: [{ type: "text" as const, text: JSON.stringify(result, null, 2) }] };
+      } catch (err) {
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify({ error: "Board cost estimate failed", detail: String(err) }, null, 2),
+          }],
+          isError: true,
+        };
+      }
     }
   );
 }

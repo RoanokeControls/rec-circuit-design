@@ -18,6 +18,7 @@ export function registerCheckInventory(server: McpServer) {
       boardQty: z.number().optional().default(1).describe("Number of boards in the run (multiplies all quantities)"),
     },
     async ({ parts, boardQty }) => {
+      try {
       const inventory = await getInventory();
       const results = parts.map((part) => {
         const inv = inventory.find((i) => i.partNumber === part.partNumber);
@@ -57,6 +58,15 @@ export function registerCheckInventory(server: McpServer) {
       };
 
       return { content: [{ type: "text" as const, text: JSON.stringify(summary, null, 2) }] };
+      } catch (err) {
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify({ error: "Inventory check failed", detail: String(err) }, null, 2),
+          }],
+          isError: true,
+        };
+      }
     }
   );
 }

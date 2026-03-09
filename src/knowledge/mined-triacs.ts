@@ -581,8 +581,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "All-In-One_Schematic_IO_Board",
       triacCount: 7,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -992,8 +992,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "All-In-One_Schematic_IO_Board_w_ESP32",
       triacCount: 7,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -1443,8 +1443,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "All-In-One_Schematic",
       triacCount: 6,
       triacModels: [
-        "BTA12",
-        "T1235"
+        "T1235",
+        "BTA12"
       ],
       circuits: [
         {
@@ -2128,8 +2128,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "BGW_Fan_Control_PIK",
       triacCount: 2,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -2291,8 +2291,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "BGW_Fan_Control",
       triacCount: 2,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -2674,8 +2674,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "CarterHoffmann485DisplayAlternate",
       triacCount: 5,
       triacModels: [
-        "T3906",
-        "T3485"
+        "T3485",
+        "T3906"
       ],
       circuits: [
         {
@@ -3819,8 +3819,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "FGLF0623-03_PIK",
       triacCount: 7,
       triacModels: [
-        "BTA12",
-        "T3904"
+        "T3904",
+        "BTA12"
       ],
       circuits: [
         {
@@ -4233,8 +4233,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "FGLF0623_Triac_Board_Original",
       triacCount: 7,
       triacModels: [
-        "BTA12",
-        "T3904"
+        "T3904",
+        "BTA12"
       ],
       circuits: [
         {
@@ -5388,8 +5388,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "Livewell Schematic",
       triacCount: 2,
       triacModels: [
-        "T3904",
-        "T2907"
+        "T2907",
+        "T3904"
       ],
       circuits: [
         {
@@ -5635,9 +5635,9 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "Main_Board_PIK",
       triacCount: 7,
       triacModels: [
+        "T3904",
         "BTA12",
-        "T8024",
-        "T3904"
+        "T8024"
       ],
       circuits: [
         {
@@ -5997,9 +5997,9 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "Main_Board",
       triacCount: 7,
       triacModels: [
+        "T3904",
         "BTA12",
-        "T8024",
-        "T3904"
+        "T8024"
       ],
       circuits: [
         {
@@ -6359,9 +6359,9 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "Main_Board_test_stand",
       triacCount: 7,
       triacModels: [
+        "T3904",
         "BTA12",
-        "T8024",
-        "T3904"
+        "T8024"
       ],
       circuits: [
         {
@@ -11532,8 +11532,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "PCBLF0804-2_PIK",
       triacCount: 2,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -11695,8 +11695,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "PCBLF0804-4_PIK",
       triacCount: 2,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -11858,8 +11858,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "PCBLF0827-0_PIK",
       triacCount: 5,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -13042,8 +13042,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "ProSmoker_PK100",
       triacCount: 8,
       triacModels: [
-        "BTA12",
-        "T3906"
+        "T3906",
+        "BTA12"
       ],
       circuits: [
         {
@@ -13729,8 +13729,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "Southbend_RTD_control",
       triacCount: 2,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -15084,8 +15084,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "TouchMZ_In_Out_Board",
       triacCount: 9,
       triacModels: [
-        "T3904",
-        "T1235"
+        "T1235",
+        "T3904"
       ],
       circuits: [
         {
@@ -15522,8 +15522,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "ZLF0053_PIK",
       triacCount: 8,
       triacModels: [
-        "BTA12",
-        "T3906"
+        "T3906",
+        "BTA12"
       ],
       circuits: [
         {
@@ -15804,8 +15804,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "ZLF0053",
       triacCount: 8,
       triacModels: [
-        "BTA12",
-        "T3906"
+        "T3906",
+        "BTA12"
       ],
       circuits: [
         {
@@ -16086,8 +16086,8 @@ export const triacDesigns: TriacDeepDesign[] = [
       design: "ZLF0053_v44_PIK",
       triacCount: 8,
       triacModels: [
-        "BTA12",
-        "T3906"
+        "T3906",
+        "BTA12"
       ],
       circuits: [
         {

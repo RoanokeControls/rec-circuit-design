@@ -8,3 +8,5 @@ __pycache__/
 *.aps-token.json
 aps-export-output/
 analysis/*.json
+pdf files/
+harvest-output/

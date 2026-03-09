@@ -21,15 +21,15 @@ export const ledDesigns: LedDesign[] = [
               value: "3306F-1-103"
             },
             {
+              name: "R12",
+              value: "3306F-1-103"
+            },
+            {
               name: "R10",
               value: "3306F-1-103"
             },
             {
               name: "R9",
-              value: "3306F-1-103"
-            },
-            {
-              name: "R12",
               value: "3306F-1-103"
             }
           ],
@@ -259,11 +259,15 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R6",
-              value: "470^_AXIAL"
+              name: "R18",
+              value: "10K_AXIAL"
             },
             {
-              name: "R86",
+              name: "R107",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R28",
               value: "10K_AXIAL"
             },
             {
@@ -271,15 +275,7 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R32",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R27",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R37",
+              name: "R29",
               value: "10K_AXIAL"
             },
             {
@@ -287,12 +283,80 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R114",
+              name: "R41",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R117",
               value: "1K_AXIAL"
+            },
+            {
+              name: "R1",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R40",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R21",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R94",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R22",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R2",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R34",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R32",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R17",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R86",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R84",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R37",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R42",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R15",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R39",
+              value: "10K_AXIAL"
             },
             {
               name: "R106",
               value: "1K_AXIAL"
+            },
+            {
+              name: "R27",
+              value: "10K_AXIAL"
             },
             {
               name: "R38",
@@ -303,43 +367,15 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R94",
+              name: "R31",
               value: "10K_AXIAL"
             },
             {
-              name: "R109",
+              name: "R114",
               value: "1K_AXIAL"
             },
             {
-              name: "R22",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R107",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R40",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R96",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R2",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R41",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R3",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R15",
+              name: "R33",
               value: "10K_AXIAL"
             },
             {
@@ -347,55 +383,7 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R29",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R112",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R28",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R18",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R113",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R34",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R30",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R36",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R42",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R31",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R111",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R1",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R84",
+              name: "R110",
               value: "1K_AXIAL"
             },
             {
@@ -403,19 +391,7 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R17",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R33",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R16",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R117",
+              name: "R113",
               value: "1K_AXIAL"
             },
             {
@@ -423,20 +399,44 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R110",
+              name: "R112",
               value: "1K_AXIAL"
             },
             {
-              name: "R21",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R39",
+              name: "R36",
               value: "10K_AXIAL"
             },
             {
               name: "R14",
               value: "10K_AXIAL"
+            },
+            {
+              name: "R16",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R30",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R111",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R109",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R3",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R96",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R6",
+              value: "470^_AXIAL"
             }
           ],
           mcuDrive: null
@@ -451,7 +451,15 @@ export const ledDesigns: LedDesign[] = [
               value: "470^_AXIAL"
             },
             {
-              name: "R86",
+              name: "R18",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R107",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R28",
               value: "10K_AXIAL"
             },
             {
@@ -459,15 +467,7 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R32",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R27",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R37",
+              name: "R29",
               value: "10K_AXIAL"
             },
             {
@@ -475,12 +475,80 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R114",
+              name: "R41",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R117",
               value: "1K_AXIAL"
+            },
+            {
+              name: "R1",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R40",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R21",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R94",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R22",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R2",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R34",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R32",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R17",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R86",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R84",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R37",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R42",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R15",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R39",
+              value: "10K_AXIAL"
             },
             {
               name: "R106",
               value: "1K_AXIAL"
+            },
+            {
+              name: "R27",
+              value: "10K_AXIAL"
             },
             {
               name: "R38",
@@ -491,43 +559,15 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R94",
+              name: "R31",
               value: "10K_AXIAL"
             },
             {
-              name: "R109",
+              name: "R114",
               value: "1K_AXIAL"
             },
             {
-              name: "R22",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R107",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R40",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R96",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R2",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R41",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R3",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R15",
+              name: "R33",
               value: "10K_AXIAL"
             },
             {
@@ -535,55 +575,7 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R29",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R112",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R28",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R18",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R113",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R34",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R30",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R36",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R42",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R31",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R111",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R1",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R84",
+              name: "R110",
               value: "1K_AXIAL"
             },
             {
@@ -591,19 +583,7 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R17",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R33",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R16",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R117",
+              name: "R113",
               value: "1K_AXIAL"
             },
             {
@@ -611,20 +591,40 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R110",
+              name: "R112",
               value: "1K_AXIAL"
             },
             {
-              name: "R21",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R39",
+              name: "R36",
               value: "10K_AXIAL"
             },
             {
               name: "R14",
               value: "10K_AXIAL"
+            },
+            {
+              name: "R16",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R30",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R111",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R109",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R3",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R96",
+              value: "1K_AXIAL"
             }
           ],
           mcuDrive: null
@@ -639,7 +639,15 @@ export const ledDesigns: LedDesign[] = [
               value: "470^_AXIAL"
             },
             {
-              name: "R86",
+              name: "R18",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R107",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R28",
               value: "10K_AXIAL"
             },
             {
@@ -647,15 +655,7 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R32",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R27",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R37",
+              name: "R29",
               value: "10K_AXIAL"
             },
             {
@@ -663,12 +663,80 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R114",
+              name: "R41",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R117",
               value: "1K_AXIAL"
+            },
+            {
+              name: "R1",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R40",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R21",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R94",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R22",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R2",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R34",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R32",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R17",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R86",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R84",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R37",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R42",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R15",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R39",
+              value: "10K_AXIAL"
             },
             {
               name: "R106",
               value: "1K_AXIAL"
+            },
+            {
+              name: "R27",
+              value: "10K_AXIAL"
             },
             {
               name: "R38",
@@ -679,43 +747,15 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R94",
+              name: "R31",
               value: "10K_AXIAL"
             },
             {
-              name: "R109",
+              name: "R114",
               value: "1K_AXIAL"
             },
             {
-              name: "R22",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R107",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R40",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R96",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R2",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R41",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R3",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R15",
+              name: "R33",
               value: "10K_AXIAL"
             },
             {
@@ -723,55 +763,7 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R29",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R112",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R28",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R18",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R113",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R34",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R30",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R36",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R42",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R31",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R111",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R1",
-              value: "1K_AXIAL"
-            },
-            {
-              name: "R84",
+              name: "R110",
               value: "1K_AXIAL"
             },
             {
@@ -779,19 +771,7 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R17",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R33",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R16",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R117",
+              name: "R113",
               value: "1K_AXIAL"
             },
             {
@@ -799,20 +779,40 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_AXIAL"
             },
             {
-              name: "R110",
+              name: "R112",
               value: "1K_AXIAL"
             },
             {
-              name: "R21",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R39",
+              name: "R36",
               value: "10K_AXIAL"
             },
             {
               name: "R14",
               value: "10K_AXIAL"
+            },
+            {
+              name: "R16",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R30",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R111",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R109",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R3",
+              value: "1K_AXIAL"
+            },
+            {
+              name: "R96",
+              value: "1K_AXIAL"
             }
           ],
           mcuDrive: null
@@ -885,11 +885,7 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R40",
-              value: "4.7K_0603"
-            },
-            {
-              name: "R41",
+              name: "R42",
               value: "4.7K_0603"
             },
             {
@@ -897,7 +893,11 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_0603_1/10W"
             },
             {
-              name: "R42",
+              name: "R41",
+              value: "4.7K_0603"
+            },
+            {
+              name: "R40",
               value: "4.7K_0603"
             }
           ],
@@ -909,11 +909,7 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R40",
-              value: "4.7K_0603"
-            },
-            {
-              name: "R41",
+              name: "R42",
               value: "4.7K_0603"
             },
             {
@@ -921,7 +917,11 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_0603_1/10W"
             },
             {
-              name: "R42",
+              name: "R41",
+              value: "4.7K_0603"
+            },
+            {
+              name: "R40",
               value: "4.7K_0603"
             }
           ],
@@ -1064,11 +1064,11 @@ export const ledDesigns: LedDesign[] = [
           color: "blue",
           limitingResistors: [
             {
-              name: "R3",
+              name: "R2",
               value: "1k"
             },
             {
-              name: "R2",
+              name: "R3",
               value: "1k"
             }
           ],
@@ -1080,16 +1080,16 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R2",
-              value: "1k"
+              name: "R1",
+              value: "10k"
+            },
+            {
+              name: "R4",
+              value: "10k"
             },
             {
               name: "R9",
               value: "2.2k"
-            },
-            {
-              name: "R1",
-              value: "10k"
             },
             {
               name: "R5",
@@ -1100,8 +1100,8 @@ export const ledDesigns: LedDesign[] = [
               value: "2.2k"
             },
             {
-              name: "R4",
-              value: "10k"
+              name: "R2",
+              value: "1k"
             }
           ],
           mcuDrive: null
@@ -1156,48 +1156,8 @@ export const ledDesigns: LedDesign[] = [
               value: "3.3K_0603"
             },
             {
-              name: "R47",
-              value: "10K_0603"
-            },
-            {
-              name: "R28",
-              value: "1K_0805_0.1%"
-            },
-            {
-              name: "R55",
-              value: "27K_0805_0.125W"
-            },
-            {
-              name: "R27",
-              value: "150^_0603"
-            },
-            {
-              name: "R49",
-              value: "1K_0805_0.1%"
-            },
-            {
-              name: "R9",
-              value: "150^_0603"
-            },
-            {
-              name: "R26",
-              value: "1K_0603"
-            },
-            {
-              name: "R5",
-              value: "27K_0805_0.125W"
-            },
-            {
-              name: "R4",
-              value: "27K_0805_0.125W"
-            },
-            {
               name: "R37",
               value: "1K_0603"
-            },
-            {
-              name: "R56",
-              value: "27K_0805_0.125W"
             },
             {
               name: "R10",
@@ -1206,6 +1166,46 @@ export const ledDesigns: LedDesign[] = [
             {
               name: "R57",
               value: "27K_0805_0.125W"
+            },
+            {
+              name: "R26",
+              value: "1K_0603"
+            },
+            {
+              name: "R28",
+              value: "1K_0805_0.1%"
+            },
+            {
+              name: "R49",
+              value: "1K_0805_0.1%"
+            },
+            {
+              name: "R5",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R27",
+              value: "150^_0603"
+            },
+            {
+              name: "R4",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R56",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R55",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R9",
+              value: "150^_0603"
+            },
+            {
+              name: "R47",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -1241,16 +1241,16 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_0603"
             },
             {
+              name: "R42",
+              value: "140K_0603"
+            },
+            {
               name: "R43",
               value: "220K_0805"
             },
             {
-              name: "R8",
-              value: "3.3K_0603"
-            },
-            {
-              name: "R1",
-              value: "1M_AXIAL"
+              name: "R50",
+              value: "10.5K_0805_0.1%"
             },
             {
               name: "R22",
@@ -1261,24 +1261,24 @@ export const ledDesigns: LedDesign[] = [
               value: "1M_0805_1%"
             },
             {
+              name: "R33",
+              value: "1K_0805_0.1%"
+            },
+            {
               name: "R7",
               value: "3.3K_0603"
             },
             {
-              name: "R50",
-              value: "10.5K_0805_0.1%"
-            },
-            {
-              name: "R33",
-              value: "1K_0805_0.1%"
+              name: "R8",
+              value: "3.3K_0603"
             },
             {
               name: "R6",
               value: "10K_0603"
             },
             {
-              name: "R42",
-              value: "140K_0603"
+              name: "R1",
+              value: "1M_AXIAL"
             }
           ],
           mcuDrive: null
@@ -1324,48 +1324,8 @@ export const ledDesigns: LedDesign[] = [
               value: "3.3K_0603"
             },
             {
-              name: "R47",
-              value: "10K_0603"
-            },
-            {
-              name: "R28",
-              value: "1K_0805_0.1%"
-            },
-            {
-              name: "R55",
-              value: "27K_0805_0.125W"
-            },
-            {
-              name: "R27",
-              value: "150^_0603"
-            },
-            {
-              name: "R49",
-              value: "1K_0805_0.1%"
-            },
-            {
-              name: "R9",
-              value: "150^_0603"
-            },
-            {
-              name: "R26",
-              value: "1K_0603"
-            },
-            {
-              name: "R5",
-              value: "27K_0805_0.125W"
-            },
-            {
-              name: "R4",
-              value: "27K_0805_0.125W"
-            },
-            {
               name: "R37",
               value: "1K_0603"
-            },
-            {
-              name: "R56",
-              value: "27K_0805_0.125W"
             },
             {
               name: "R10",
@@ -1374,6 +1334,46 @@ export const ledDesigns: LedDesign[] = [
             {
               name: "R57",
               value: "27K_0805_0.125W"
+            },
+            {
+              name: "R26",
+              value: "1K_0603"
+            },
+            {
+              name: "R28",
+              value: "1K_0805_0.1%"
+            },
+            {
+              name: "R49",
+              value: "1K_0805_0.1%"
+            },
+            {
+              name: "R5",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R27",
+              value: "150^_0603"
+            },
+            {
+              name: "R4",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R56",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R55",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R9",
+              value: "150^_0603"
+            },
+            {
+              name: "R47",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -1409,16 +1409,16 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_0603"
             },
             {
+              name: "R42",
+              value: "140K_0603"
+            },
+            {
               name: "R43",
               value: "220K_0805"
             },
             {
-              name: "R8",
-              value: "3.3K_0603"
-            },
-            {
-              name: "R1",
-              value: "1M_AXIAL"
+              name: "R50",
+              value: "10.5K_0805_0.1%"
             },
             {
               name: "R22",
@@ -1429,24 +1429,24 @@ export const ledDesigns: LedDesign[] = [
               value: "1M_0805_1%"
             },
             {
+              name: "R33",
+              value: "1K_0805_0.1%"
+            },
+            {
               name: "R7",
               value: "3.3K_0603"
             },
             {
-              name: "R50",
-              value: "10.5K_0805_0.1%"
-            },
-            {
-              name: "R33",
-              value: "1K_0805_0.1%"
+              name: "R8",
+              value: "3.3K_0603"
             },
             {
               name: "R6",
               value: "10K_0603"
             },
             {
-              name: "R42",
-              value: "140K_0603"
+              name: "R1",
+              value: "1M_AXIAL"
             }
           ],
           mcuDrive: null
@@ -1492,48 +1492,8 @@ export const ledDesigns: LedDesign[] = [
               value: "3.3K_0603"
             },
             {
-              name: "R47",
-              value: "10K_0603"
-            },
-            {
-              name: "R28",
-              value: "1K_0805_0.1%"
-            },
-            {
-              name: "R55",
-              value: "27K_0805_0.125W"
-            },
-            {
-              name: "R27",
-              value: "150^_0603"
-            },
-            {
-              name: "R49",
-              value: "1K_0805_0.1%"
-            },
-            {
-              name: "R9",
-              value: "150^_0603"
-            },
-            {
-              name: "R26",
-              value: "1K_0603"
-            },
-            {
-              name: "R5",
-              value: "27K_0805_0.125W"
-            },
-            {
-              name: "R4",
-              value: "27K_0805_0.125W"
-            },
-            {
               name: "R37",
               value: "1K_0603"
-            },
-            {
-              name: "R56",
-              value: "27K_0805_0.125W"
             },
             {
               name: "R10",
@@ -1542,6 +1502,46 @@ export const ledDesigns: LedDesign[] = [
             {
               name: "R57",
               value: "27K_0805_0.125W"
+            },
+            {
+              name: "R26",
+              value: "1K_0603"
+            },
+            {
+              name: "R28",
+              value: "1K_0805_0.1%"
+            },
+            {
+              name: "R49",
+              value: "1K_0805_0.1%"
+            },
+            {
+              name: "R5",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R27",
+              value: "150^_0603"
+            },
+            {
+              name: "R4",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R56",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R55",
+              value: "27K_0805_0.125W"
+            },
+            {
+              name: "R9",
+              value: "150^_0603"
+            },
+            {
+              name: "R47",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -1577,16 +1577,16 @@ export const ledDesigns: LedDesign[] = [
               value: "1K_0603"
             },
             {
+              name: "R42",
+              value: "140K_0603"
+            },
+            {
               name: "R43",
               value: "220K_0805"
             },
             {
-              name: "R8",
-              value: "3.3K_0603"
-            },
-            {
-              name: "R1",
-              value: "1M_AXIAL"
+              name: "R50",
+              value: "10.5K_0805_0.1%"
             },
             {
               name: "R22",
@@ -1597,24 +1597,24 @@ export const ledDesigns: LedDesign[] = [
               value: "1M_0805_1%"
             },
             {
+              name: "R33",
+              value: "1K_0805_0.1%"
+            },
+            {
               name: "R7",
               value: "3.3K_0603"
             },
             {
-              name: "R50",
-              value: "10.5K_0805_0.1%"
-            },
-            {
-              name: "R33",
-              value: "1K_0805_0.1%"
+              name: "R8",
+              value: "3.3K_0603"
             },
             {
               name: "R6",
               value: "10K_0603"
             },
             {
-              name: "R42",
-              value: "140K_0603"
+              name: "R1",
+              value: "1M_AXIAL"
             }
           ],
           mcuDrive: null
@@ -1644,8 +1644,28 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R25",
-              value: "100"
+              name: "R18",
+              value: "470k"
+            },
+            {
+              name: "R112",
+              value: "10M"
+            },
+            {
+              name: "R106",
+              value: "1M"
+            },
+            {
+              name: "R44",
+              value: "1M"
+            },
+            {
+              name: "R103",
+              value: "DNP"
+            },
+            {
+              name: "R32",
+              value: "DNP"
             },
             {
               name: "R26",
@@ -1656,28 +1676,8 @@ export const ledDesigns: LedDesign[] = [
               value: "100"
             },
             {
-              name: "R106",
-              value: "1M"
-            },
-            {
-              name: "R112",
-              value: "10M"
-            },
-            {
-              name: "R32",
-              value: "DNP"
-            },
-            {
-              name: "R18",
-              value: "470k"
-            },
-            {
-              name: "R103",
-              value: "DNP"
-            },
-            {
-              name: "R44",
-              value: "1M"
+              name: "R25",
+              value: "100"
             }
           ],
           mcuDrive: null
@@ -2009,11 +2009,43 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R30",
-              value: "100^_0603"
+              name: "R133",
+              value: "10^_0603"
+            },
+            {
+              name: "R42",
+              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
+            },
+            {
+              name: "R26",
+              value: "10K_0603"
+            },
+            {
+              name: "R107",
+              value: "10K_0603"
             },
             {
               name: "R28",
+              value: "10K_0603"
+            },
+            {
+              name: "R14",
+              value: "10K_0603"
+            },
+            {
+              name: "R76",
+              value: "8.66K_0603"
+            },
+            {
+              name: "R122",
+              value: "10K_0603"
+            },
+            {
+              name: "R99",
+              value: "4.02K_0603"
+            },
+            {
+              name: "R121",
               value: "10K_0603"
             },
             {
@@ -2025,44 +2057,12 @@ export const ledDesigns: LedDesign[] = [
               value: "8.66K_0603"
             },
             {
-              name: "R121",
-              value: "10K_0603"
-            },
-            {
-              name: "R107",
-              value: "10K_0603"
-            },
-            {
-              name: "R99",
-              value: "4.02K_0603"
-            },
-            {
-              name: "R133",
-              value: "10^_0603"
-            },
-            {
               name: "R23",
               value: "2.2K_0805"
             },
             {
-              name: "R26",
-              value: "10K_0603"
-            },
-            {
-              name: "R42",
-              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
-            },
-            {
-              name: "R122",
-              value: "10K_0603"
-            },
-            {
-              name: "R76",
-              value: "8.66K_0603"
-            },
-            {
-              name: "R14",
-              value: "10K_0603"
+              name: "R30",
+              value: "100^_0603"
             }
           ],
           mcuDrive: null
@@ -2080,11 +2080,43 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R30",
-              value: "100^_0603"
+              name: "R133",
+              value: "10^_0603"
+            },
+            {
+              name: "R42",
+              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
+            },
+            {
+              name: "R26",
+              value: "10K_0603"
+            },
+            {
+              name: "R107",
+              value: "10K_0603"
             },
             {
               name: "R28",
+              value: "10K_0603"
+            },
+            {
+              name: "R14",
+              value: "10K_0603"
+            },
+            {
+              name: "R76",
+              value: "8.66K_0603"
+            },
+            {
+              name: "R122",
+              value: "10K_0603"
+            },
+            {
+              name: "R99",
+              value: "4.02K_0603"
+            },
+            {
+              name: "R121",
               value: "10K_0603"
             },
             {
@@ -2096,44 +2128,12 @@ export const ledDesigns: LedDesign[] = [
               value: "8.66K_0603"
             },
             {
-              name: "R121",
-              value: "10K_0603"
-            },
-            {
-              name: "R107",
-              value: "10K_0603"
-            },
-            {
-              name: "R99",
-              value: "4.02K_0603"
-            },
-            {
-              name: "R133",
-              value: "10^_0603"
-            },
-            {
               name: "R23",
               value: "2.2K_0805"
             },
             {
-              name: "R26",
-              value: "10K_0603"
-            },
-            {
-              name: "R42",
-              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
-            },
-            {
-              name: "R122",
-              value: "10K_0603"
-            },
-            {
-              name: "R76",
-              value: "8.66K_0603"
-            },
-            {
-              name: "R14",
-              value: "10K_0603"
+              name: "R30",
+              value: "100^_0603"
             }
           ],
           mcuDrive: null
@@ -2151,11 +2151,43 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R30",
-              value: "100^_0603"
+              name: "R133",
+              value: "10^_0603"
+            },
+            {
+              name: "R42",
+              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
+            },
+            {
+              name: "R26",
+              value: "10K_0603"
+            },
+            {
+              name: "R107",
+              value: "10K_0603"
             },
             {
               name: "R28",
+              value: "10K_0603"
+            },
+            {
+              name: "R14",
+              value: "10K_0603"
+            },
+            {
+              name: "R76",
+              value: "8.66K_0603"
+            },
+            {
+              name: "R122",
+              value: "10K_0603"
+            },
+            {
+              name: "R99",
+              value: "4.02K_0603"
+            },
+            {
+              name: "R121",
               value: "10K_0603"
             },
             {
@@ -2167,44 +2199,12 @@ export const ledDesigns: LedDesign[] = [
               value: "8.66K_0603"
             },
             {
-              name: "R121",
-              value: "10K_0603"
-            },
-            {
-              name: "R107",
-              value: "10K_0603"
-            },
-            {
-              name: "R99",
-              value: "4.02K_0603"
-            },
-            {
-              name: "R133",
-              value: "10^_0603"
-            },
-            {
               name: "R23",
               value: "2.2K_0805"
             },
             {
-              name: "R26",
-              value: "10K_0603"
-            },
-            {
-              name: "R42",
-              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
-            },
-            {
-              name: "R122",
-              value: "10K_0603"
-            },
-            {
-              name: "R76",
-              value: "8.66K_0603"
-            },
-            {
-              name: "R14",
-              value: "10K_0603"
+              name: "R30",
+              value: "100^_0603"
             }
           ],
           mcuDrive: null
@@ -2222,11 +2222,43 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R30",
-              value: "100^_0603"
+              name: "R133",
+              value: "10^_0603"
+            },
+            {
+              name: "R42",
+              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
+            },
+            {
+              name: "R26",
+              value: "10K_0603"
+            },
+            {
+              name: "R107",
+              value: "10K_0603"
             },
             {
               name: "R28",
+              value: "10K_0603"
+            },
+            {
+              name: "R14",
+              value: "10K_0603"
+            },
+            {
+              name: "R76",
+              value: "8.66K_0603"
+            },
+            {
+              name: "R122",
+              value: "10K_0603"
+            },
+            {
+              name: "R99",
+              value: "4.02K_0603"
+            },
+            {
+              name: "R121",
               value: "10K_0603"
             },
             {
@@ -2238,44 +2270,12 @@ export const ledDesigns: LedDesign[] = [
               value: "8.66K_0603"
             },
             {
-              name: "R121",
-              value: "10K_0603"
-            },
-            {
-              name: "R107",
-              value: "10K_0603"
-            },
-            {
-              name: "R99",
-              value: "4.02K_0603"
-            },
-            {
-              name: "R133",
-              value: "10^_0603"
-            },
-            {
               name: "R23",
               value: "2.2K_0805"
             },
             {
-              name: "R26",
-              value: "10K_0603"
-            },
-            {
-              name: "R42",
-              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
-            },
-            {
-              name: "R122",
-              value: "10K_0603"
-            },
-            {
-              name: "R76",
-              value: "8.66K_0603"
-            },
-            {
-              name: "R14",
-              value: "10K_0603"
+              name: "R30",
+              value: "100^_0603"
             }
           ],
           mcuDrive: null
@@ -2293,7 +2293,7 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R27",
+              name: "R1",
               value: "180^_0603"
             },
             {
@@ -2301,47 +2301,15 @@ export const ledDesigns: LedDesign[] = [
               value: "180^_0603"
             },
             {
-              name: "R13",
-              value: "100K_0603"
-            },
-            {
-              name: "R24",
-              value: "100K_0603"
-            },
-            {
-              name: "R63",
-              value: "JUMPER_0805"
-            },
-            {
-              name: "R7",
-              value: "47K_0603"
+              name: "R21",
+              value: "75^_0805"
             },
             {
               name: "R20",
               value: "10K_0603"
             },
             {
-              name: "R12",
-              value: "100K_0603"
-            },
-            {
-              name: "R17",
-              value: "75^_0805"
-            },
-            {
-              name: "R62",
-              value: "JUMPER_0805"
-            },
-            {
-              name: "R16",
-              value: "10K_0603"
-            },
-            {
-              name: "R34",
-              value: "10K_0603"
-            },
-            {
-              name: "R9",
+              name: "R10",
               value: "10K_0805_1%"
             },
             {
@@ -2353,7 +2321,51 @@ export const ledDesigns: LedDesign[] = [
               value: "FERRITE_330^_0805"
             },
             {
-              name: "R10",
+              name: "R14",
+              value: "100K_0603"
+            },
+            {
+              name: "R34",
+              value: "10K_0603"
+            },
+            {
+              name: "R16",
+              value: "10K_0603"
+            },
+            {
+              name: "R62",
+              value: "JUMPER_0805"
+            },
+            {
+              name: "R63",
+              value: "JUMPER_0805"
+            },
+            {
+              name: "R11",
+              value: "JUMPER_0805"
+            },
+            {
+              name: "R13",
+              value: "100K_0603"
+            },
+            {
+              name: "R24",
+              value: "100K_0603"
+            },
+            {
+              name: "R12",
+              value: "100K_0603"
+            },
+            {
+              name: "R7",
+              value: "47K_0603"
+            },
+            {
+              name: "R3",
+              value: "FERRITE_330^_0805"
+            },
+            {
+              name: "R9",
               value: "10K_0805_1%"
             },
             {
@@ -2361,23 +2373,11 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0603"
             },
             {
-              name: "R3",
-              value: "FERRITE_330^_0805"
-            },
-            {
-              name: "R11",
-              value: "JUMPER_0805"
-            },
-            {
-              name: "R21",
+              name: "R17",
               value: "75^_0805"
             },
             {
-              name: "R14",
-              value: "100K_0603"
-            },
-            {
-              name: "R1",
+              name: "R27",
               value: "180^_0603"
             }
           ],
@@ -2396,7 +2396,7 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R27",
+              name: "R1",
               value: "180^_0603"
             },
             {
@@ -2404,47 +2404,15 @@ export const ledDesigns: LedDesign[] = [
               value: "180^_0603"
             },
             {
-              name: "R13",
-              value: "100K_0603"
-            },
-            {
-              name: "R24",
-              value: "100K_0603"
-            },
-            {
-              name: "R63",
-              value: "JUMPER_0805"
-            },
-            {
-              name: "R7",
-              value: "47K_0603"
+              name: "R21",
+              value: "75^_0805"
             },
             {
               name: "R20",
               value: "10K_0603"
             },
             {
-              name: "R12",
-              value: "100K_0603"
-            },
-            {
-              name: "R17",
-              value: "75^_0805"
-            },
-            {
-              name: "R62",
-              value: "JUMPER_0805"
-            },
-            {
-              name: "R16",
-              value: "10K_0603"
-            },
-            {
-              name: "R34",
-              value: "10K_0603"
-            },
-            {
-              name: "R9",
+              name: "R10",
               value: "10K_0805_1%"
             },
             {
@@ -2456,7 +2424,51 @@ export const ledDesigns: LedDesign[] = [
               value: "FERRITE_330^_0805"
             },
             {
-              name: "R10",
+              name: "R14",
+              value: "100K_0603"
+            },
+            {
+              name: "R34",
+              value: "10K_0603"
+            },
+            {
+              name: "R16",
+              value: "10K_0603"
+            },
+            {
+              name: "R62",
+              value: "JUMPER_0805"
+            },
+            {
+              name: "R63",
+              value: "JUMPER_0805"
+            },
+            {
+              name: "R11",
+              value: "JUMPER_0805"
+            },
+            {
+              name: "R13",
+              value: "100K_0603"
+            },
+            {
+              name: "R24",
+              value: "100K_0603"
+            },
+            {
+              name: "R12",
+              value: "100K_0603"
+            },
+            {
+              name: "R7",
+              value: "47K_0603"
+            },
+            {
+              name: "R3",
+              value: "FERRITE_330^_0805"
+            },
+            {
+              name: "R9",
               value: "10K_0805_1%"
             },
             {
@@ -2464,23 +2476,11 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0603"
             },
             {
-              name: "R3",
-              value: "FERRITE_330^_0805"
-            },
-            {
-              name: "R11",
-              value: "JUMPER_0805"
-            },
-            {
-              name: "R21",
+              name: "R17",
               value: "75^_0805"
             },
             {
-              name: "R14",
-              value: "100K_0603"
-            },
-            {
-              name: "R1",
+              name: "R27",
               value: "180^_0603"
             }
           ],
@@ -2602,11 +2602,7 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R40",
-              value: "4.7K_0603"
-            },
-            {
-              name: "R41",
+              name: "R42",
               value: "4.7K_0603"
             },
             {
@@ -2614,7 +2610,11 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_0603_1/10W"
             },
             {
-              name: "R42",
+              name: "R41",
+              value: "4.7K_0603"
+            },
+            {
+              name: "R40",
               value: "4.7K_0603"
             }
           ],
@@ -2626,11 +2626,7 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R40",
-              value: "4.7K_0603"
-            },
-            {
-              name: "R41",
+              name: "R42",
               value: "4.7K_0603"
             },
             {
@@ -2638,7 +2634,11 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_0603_1/10W"
             },
             {
-              name: "R42",
+              name: "R41",
+              value: "4.7K_0603"
+            },
+            {
+              name: "R40",
               value: "4.7K_0603"
             }
           ],
@@ -2662,8 +2662,28 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R25",
-              value: "100"
+              name: "R18",
+              value: "470k"
+            },
+            {
+              name: "R112",
+              value: "10M"
+            },
+            {
+              name: "R106",
+              value: "1M"
+            },
+            {
+              name: "R44",
+              value: "1M"
+            },
+            {
+              name: "R103",
+              value: "DNP"
+            },
+            {
+              name: "R32",
+              value: "DNP"
             },
             {
               name: "R26",
@@ -2674,28 +2694,8 @@ export const ledDesigns: LedDesign[] = [
               value: "100"
             },
             {
-              name: "R106",
-              value: "1M"
-            },
-            {
-              name: "R112",
-              value: "10M"
-            },
-            {
-              name: "R32",
-              value: "DNP"
-            },
-            {
-              name: "R18",
-              value: "470k"
-            },
-            {
-              name: "R103",
-              value: "DNP"
-            },
-            {
-              name: "R44",
-              value: "1M"
+              name: "R25",
+              value: "100"
             }
           ],
           mcuDrive: null
@@ -2818,7 +2818,7 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R75",
+              name: "R25",
               value: "180^_0603"
             },
             {
@@ -2826,19 +2826,31 @@ export const ledDesigns: LedDesign[] = [
               value: "180^_0603"
             },
             {
-              name: "R29",
-              value: "10K_0603"
+              name: "R75",
+              value: "180^_0603"
             },
             {
-              name: "R8",
-              value: "1.62K_0805_0.1%"
+              name: "R26",
+              value: "10K_0603"
             },
             {
               name: "R28",
               value: "10K_0603"
             },
             {
-              name: "R53",
+              name: "R27",
+              value: "10K_0603"
+            },
+            {
+              name: "R11",
+              value: "10K_0603"
+            },
+            {
+              name: "R29",
+              value: "10K_0603"
+            },
+            {
+              name: "R30",
               value: "10K_0603"
             },
             {
@@ -2850,28 +2862,16 @@ export const ledDesigns: LedDesign[] = [
               value: "1.62K_0805_0.1%"
             },
             {
-              name: "R27",
+              name: "R53",
               value: "10K_0603"
+            },
+            {
+              name: "R8",
+              value: "1.62K_0805_0.1%"
             },
             {
               name: "R23",
               value: "10K_0603"
-            },
-            {
-              name: "R26",
-              value: "10K_0603"
-            },
-            {
-              name: "R30",
-              value: "10K_0603"
-            },
-            {
-              name: "R11",
-              value: "10K_0603"
-            },
-            {
-              name: "R25",
-              value: "180^_0603"
             }
           ],
           mcuDrive: null
@@ -2889,10 +2889,6 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R1",
-              value: "100^_1206_1%_0.5W"
-            },
-            {
               name: "R7",
               value: "165^_1206"
             },
@@ -2903,6 +2899,10 @@ export const ledDesigns: LedDesign[] = [
             {
               name: "R6",
               value: "50^_1206"
+            },
+            {
+              name: "R1",
+              value: "100^_1206_1%_0.5W"
             }
           ],
           mcuDrive: null
@@ -2944,20 +2944,20 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R5",
-              value: "50^_1206"
+              name: "R1",
+              value: "100^_1206_1%_0.5W"
             },
             {
               name: "R4",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R6",
-              value: "165^_1206"
+              name: "R5",
+              value: "50^_1206"
             },
             {
-              name: "R1",
-              value: "100^_1206_1%_0.5W"
+              name: "R6",
+              value: "165^_1206"
             }
           ],
           mcuDrive: null
@@ -2975,8 +2975,8 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R13",
-              value: "165^_1206"
+              name: "R6",
+              value: "100^_1206_1%_0.5W"
             },
             {
               name: "R11",
@@ -2987,12 +2987,12 @@ export const ledDesigns: LedDesign[] = [
               value: "50^_1206"
             },
             {
-              name: "R14",
-              value: "JUMPER_1206_1/4W"
+              name: "R13",
+              value: "165^_1206"
             },
             {
-              name: "R6",
-              value: "100^_1206_1%_0.5W"
+              name: "R14",
+              value: "JUMPER_1206_1/4W"
             }
           ],
           mcuDrive: null
@@ -3014,20 +3014,20 @@ export const ledDesigns: LedDesign[] = [
               value: "100^_1206_1%_0.5W"
             },
             {
-              name: "R7",
-              value: "JUMPER_1206_1/4W"
+              name: "R10",
+              value: "165^_1206"
             },
             {
-              name: "R9",
-              value: "50^_1206"
+              name: "R7",
+              value: "JUMPER_1206_1/4W"
             },
             {
               name: "R8",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R10",
-              value: "165^_1206"
+              name: "R9",
+              value: "50^_1206"
             }
           ],
           mcuDrive: null
@@ -3038,16 +3038,16 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R13",
-              value: "165^_1206"
-            },
-            {
               name: "R11",
               value: "JUMPER_1206_1/4W"
             },
             {
               name: "R12",
               value: "50^_1206"
+            },
+            {
+              name: "R13",
+              value: "165^_1206"
             },
             {
               name: "R14",
@@ -3073,24 +3073,24 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R5",
-              value: "100^_1206_1%_0.5W"
-            },
-            {
               name: "R7",
               value: "JUMPER_1206_1/4W"
-            },
-            {
-              name: "R9",
-              value: "165^_1206"
             },
             {
               name: "R8",
               value: "50^_1206"
             },
             {
+              name: "R9",
+              value: "165^_1206"
+            },
+            {
               name: "R6",
               value: "JUMPER_1206_1/4W"
+            },
+            {
+              name: "R5",
+              value: "100^_1206_1%_0.5W"
             }
           ],
           mcuDrive: null
@@ -3105,12 +3105,12 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R9",
-              value: "165^_1206"
-            },
-            {
               name: "R8",
               value: "50^_1206"
+            },
+            {
+              name: "R9",
+              value: "165^_1206"
             },
             {
               name: "R6",
@@ -3136,16 +3136,16 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
+              name: "R26",
+              value: "50^_1206"
+            },
+            {
               name: "R25",
               value: "JUMPER_1206_1/4W"
             },
             {
               name: "R24",
               value: "JUMPER_1206_1/4W"
-            },
-            {
-              name: "R26",
-              value: "50^_1206"
             },
             {
               name: "R27",
@@ -3164,8 +3164,8 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R2",
-              value: "100^_1206_1%_0.5W"
+              name: "R26",
+              value: "50^_1206"
             },
             {
               name: "R25",
@@ -3176,12 +3176,12 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R26",
-              value: "50^_1206"
-            },
-            {
               name: "R27",
               value: "165^_1206"
+            },
+            {
+              name: "R2",
+              value: "100^_1206_1%_0.5W"
             }
           ],
           mcuDrive: null
@@ -3192,16 +3192,16 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
+              name: "R26",
+              value: "50^_1206"
+            },
+            {
               name: "R25",
               value: "JUMPER_1206_1/4W"
             },
             {
               name: "R24",
               value: "JUMPER_1206_1/4W"
-            },
-            {
-              name: "R26",
-              value: "50^_1206"
             },
             {
               name: "R27",
@@ -3220,24 +3220,24 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
+              name: "R4",
+              value: "100^_1206_1%_0.5W"
+            },
+            {
               name: "R32",
               value: "JUMPER_1206_1/4W"
-            },
-            {
-              name: "R35",
-              value: "165^_1206"
-            },
-            {
-              name: "R34",
-              value: "50^_1206"
             },
             {
               name: "R33",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R4",
-              value: "100^_1206_1%_0.5W"
+              name: "R34",
+              value: "50^_1206"
+            },
+            {
+              name: "R35",
+              value: "165^_1206"
             }
           ],
           mcuDrive: null
@@ -3248,24 +3248,24 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R5",
-              value: "100^_1206_1%_0.5W"
-            },
-            {
               name: "R32",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R35",
-              value: "165^_1206"
+              name: "R33",
+              value: "JUMPER_1206_1/4W"
             },
             {
               name: "R34",
               value: "50^_1206"
             },
             {
-              name: "R33",
-              value: "JUMPER_1206_1/4W"
+              name: "R35",
+              value: "165^_1206"
+            },
+            {
+              name: "R5",
+              value: "100^_1206_1%_0.5W"
             }
           ],
           mcuDrive: null
@@ -3284,16 +3284,16 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R35",
-              value: "165^_1206"
+              name: "R33",
+              value: "JUMPER_1206_1/4W"
             },
             {
               name: "R34",
               value: "50^_1206"
             },
             {
-              name: "R33",
-              value: "JUMPER_1206_1/4W"
+              name: "R35",
+              value: "165^_1206"
             }
           ],
           mcuDrive: null
@@ -3304,24 +3304,24 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
+              name: "R7",
+              value: "100^_1206_1%_0.5W"
+            },
+            {
               name: "R32",
               value: "JUMPER_1206_1/4W"
-            },
-            {
-              name: "R35",
-              value: "165^_1206"
-            },
-            {
-              name: "R34",
-              value: "50^_1206"
             },
             {
               name: "R33",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R7",
-              value: "100^_1206_1%_0.5W"
+              name: "R34",
+              value: "50^_1206"
+            },
+            {
+              name: "R35",
+              value: "165^_1206"
             }
           ],
           mcuDrive: null
@@ -3336,16 +3336,16 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R35",
-              value: "165^_1206"
+              name: "R33",
+              value: "JUMPER_1206_1/4W"
             },
             {
               name: "R34",
               value: "50^_1206"
             },
             {
-              name: "R33",
-              value: "JUMPER_1206_1/4W"
+              name: "R35",
+              value: "165^_1206"
             },
             {
               name: "R8",
@@ -3360,24 +3360,24 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
+              name: "R9",
+              value: "100^_1206_1%_0.5W"
+            },
+            {
               name: "R32",
               value: "JUMPER_1206_1/4W"
-            },
-            {
-              name: "R35",
-              value: "165^_1206"
-            },
-            {
-              name: "R34",
-              value: "50^_1206"
             },
             {
               name: "R33",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R9",
-              value: "100^_1206_1%_0.5W"
+              name: "R34",
+              value: "50^_1206"
+            },
+            {
+              name: "R35",
+              value: "165^_1206"
             }
           ],
           mcuDrive: null
@@ -3396,16 +3396,16 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_1206_1/4W"
             },
             {
+              name: "R30",
+              value: "50^_1206"
+            },
+            {
               name: "R28",
               value: "JUMPER_1206_1/4W"
             },
             {
               name: "R31",
               value: "165^_1206"
-            },
-            {
-              name: "R30",
-              value: "50^_1206"
             }
           ],
           mcuDrive: null
@@ -3416,12 +3416,12 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R11",
-              value: "100^_1206_1%_0.5W"
-            },
-            {
               name: "R29",
               value: "JUMPER_1206_1/4W"
+            },
+            {
+              name: "R30",
+              value: "50^_1206"
             },
             {
               name: "R28",
@@ -3432,8 +3432,8 @@ export const ledDesigns: LedDesign[] = [
               value: "165^_1206"
             },
             {
-              name: "R30",
-              value: "50^_1206"
+              name: "R11",
+              value: "100^_1206_1%_0.5W"
             }
           ],
           mcuDrive: null
@@ -3452,16 +3452,16 @@ export const ledDesigns: LedDesign[] = [
               value: "JUMPER_1206_1/4W"
             },
             {
+              name: "R30",
+              value: "50^_1206"
+            },
+            {
               name: "R28",
               value: "JUMPER_1206_1/4W"
             },
             {
               name: "R31",
               value: "165^_1206"
-            },
-            {
-              name: "R30",
-              value: "50^_1206"
             }
           ],
           mcuDrive: null
@@ -3472,24 +3472,24 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R43",
-              value: "165^_1206"
+              name: "R22",
+              value: "100^_1206_1%_0.5W"
             },
             {
               name: "R42",
               value: "50^_1206"
             },
             {
-              name: "R40",
-              value: "JUMPER_1206_1/4W"
-            },
-            {
               name: "R41",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R22",
-              value: "100^_1206_1%_0.5W"
+              name: "R43",
+              value: "165^_1206"
+            },
+            {
+              name: "R40",
+              value: "JUMPER_1206_1/4W"
             }
           ],
           mcuDrive: null
@@ -3500,24 +3500,24 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
-              name: "R23",
-              value: "100^_1206_1%_0.5W"
+              name: "R42",
+              value: "50^_1206"
+            },
+            {
+              name: "R41",
+              value: "JUMPER_1206_1/4W"
             },
             {
               name: "R43",
               value: "165^_1206"
             },
             {
-              name: "R42",
-              value: "50^_1206"
-            },
-            {
               name: "R40",
               value: "JUMPER_1206_1/4W"
             },
             {
-              name: "R41",
-              value: "JUMPER_1206_1/4W"
+              name: "R23",
+              value: "100^_1206_1%_0.5W"
             }
           ],
           mcuDrive: null
@@ -3535,16 +3535,16 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
+              name: "R30",
+              value: "120^_0603"
+            },
+            {
               name: "R13",
               value: "2.7K_0603"
             },
             {
               name: "R14",
               value: "2.7K_0603"
-            },
-            {
-              name: "R30",
-              value: "120^_0603"
             }
           ],
           mcuDrive: null
@@ -3667,6 +3667,18 @@ export const ledDesigns: LedDesign[] = [
           color: "unknown",
           limitingResistors: [
             {
+              name: "R31",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R28",
+              value: "10K_AXIAL"
+            },
+            {
+              name: "R29",
+              value: "10K_AXIAL"
+            },
+            {
               name: "R27",
               value: "10K_AXIAL"
             },
@@ -3679,19 +3691,7 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_AXIAL"
             },
             {
-              name: "R31",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R28",
-              value: "10K_AXIAL"
-            },
-            {
               name: "R26",
-              value: "10K_AXIAL"
-            },
-            {
-              name: "R29",
               value: "10K_AXIAL"
             }
           ],
@@ -3710,12 +3710,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R1",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R1",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3726,12 +3726,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R2",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R2",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3742,12 +3742,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R3",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R3",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3774,12 +3774,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R5",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R5",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3790,12 +3790,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R6",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R6",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3806,12 +3806,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R7",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R7",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3822,12 +3822,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R8",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R8",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3838,12 +3838,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R9",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R9",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3854,12 +3854,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R10",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R10",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3870,12 +3870,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R11",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R11",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3886,12 +3886,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R12",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R12",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3902,12 +3902,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R13",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R13",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3918,12 +3918,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R14",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R14",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3934,12 +3934,12 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R15",
-              value: "620^_1210"
-            },
-            {
               name: "R16",
               value: "JUMPER_1206_1/2W"
+            },
+            {
+              name: "R15",
+              value: "620^_1210"
             }
           ],
           mcuDrive: null
@@ -3961,15 +3961,11 @@ export const ledDesigns: LedDesign[] = [
               value: "1.2K_0805"
             },
             {
-              name: "R7",
-              value: "10K_0805_1%"
-            },
-            {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -3977,12 +3973,16 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
-              value: "10K_0603"
+              name: "R19",
+              value: "100K_0805"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R7",
+              value: "10K_0805_1%"
+            },
+            {
+              name: "R25",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -3997,15 +3997,11 @@ export const ledDesigns: LedDesign[] = [
               value: "1.2K_0805"
             },
             {
-              name: "R7",
-              value: "10K_0805_1%"
-            },
-            {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -4013,12 +4009,16 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
-              value: "10K_0603"
+              name: "R19",
+              value: "100K_0805"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R7",
+              value: "10K_0805_1%"
+            },
+            {
+              name: "R25",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -4029,8 +4029,20 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R32",
-              value: "4.7K_0805_5%_0.125W"
+              name: "R23",
+              value: "10K_0603"
+            },
+            {
+              name: "R21",
+              value: "100K_0805"
+            },
+            {
+              name: "R2",
+              value: "10K_0805_1%"
+            },
+            {
+              name: "R19",
+              value: "100K_0805"
             },
             {
               name: "R7",
@@ -4041,20 +4053,8 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0603"
             },
             {
-              name: "R19",
-              value: "100K_0805"
-            },
-            {
-              name: "R2",
-              value: "10K_0805_1%"
-            },
-            {
-              name: "R23",
-              value: "10K_0603"
-            },
-            {
-              name: "R21",
-              value: "100K_0805"
+              name: "R32",
+              value: "4.7K_0805_5%_0.125W"
             }
           ],
           mcuDrive: null
@@ -4065,8 +4065,20 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R3",
-              value: "1.2K_0805"
+              name: "R23",
+              value: "10K_0603"
+            },
+            {
+              name: "R21",
+              value: "100K_0805"
+            },
+            {
+              name: "R2",
+              value: "10K_0805_1%"
+            },
+            {
+              name: "R19",
+              value: "100K_0805"
             },
             {
               name: "R7",
@@ -4077,20 +4089,8 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0603"
             },
             {
-              name: "R19",
-              value: "100K_0805"
-            },
-            {
-              name: "R2",
-              value: "10K_0805_1%"
-            },
-            {
-              name: "R23",
-              value: "10K_0603"
-            },
-            {
-              name: "R21",
-              value: "100K_0805"
+              name: "R3",
+              value: "1.2K_0805"
             }
           ],
           mcuDrive: null
@@ -4105,15 +4105,11 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R7",
-              value: "10K_0805_1%"
-            },
-            {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -4121,12 +4117,16 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
-              value: "10K_0603"
+              name: "R19",
+              value: "100K_0805"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R7",
+              value: "10K_0805_1%"
+            },
+            {
+              name: "R25",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -4148,11 +4148,11 @@ export const ledDesigns: LedDesign[] = [
               value: "1.2K_0805"
             },
             {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -4160,12 +4160,12 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
-              value: "10K_0603"
+              name: "R19",
+              value: "100K_0805"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R25",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -4180,11 +4180,11 @@ export const ledDesigns: LedDesign[] = [
               value: "1.2K_0805"
             },
             {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -4192,12 +4192,12 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
-              value: "10K_0603"
+              name: "R19",
+              value: "100K_0805"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R25",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -4208,15 +4208,11 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R32",
-              value: "4.7K_0805_5%_0.125W"
-            },
-            {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -4224,12 +4220,16 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
+              name: "R19",
+              value: "100K_0805"
+            },
+            {
+              name: "R25",
               value: "10K_0603"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R32",
+              value: "4.7K_0805_5%_0.125W"
             }
           ],
           mcuDrive: null
@@ -4240,15 +4240,11 @@ export const ledDesigns: LedDesign[] = [
           color: "red",
           limitingResistors: [
             {
-              name: "R3",
-              value: "1.2K_0805"
-            },
-            {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -4256,12 +4252,16 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
+              name: "R19",
+              value: "100K_0805"
+            },
+            {
+              name: "R25",
               value: "10K_0603"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R3",
+              value: "1.2K_0805"
             }
           ],
           mcuDrive: null
@@ -4276,11 +4276,11 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R25",
+              name: "R23",
               value: "10K_0603"
             },
             {
-              name: "R19",
+              name: "R21",
               value: "100K_0805"
             },
             {
@@ -4288,12 +4288,12 @@ export const ledDesigns: LedDesign[] = [
               value: "10K_0805_1%"
             },
             {
-              name: "R23",
-              value: "10K_0603"
+              name: "R19",
+              value: "100K_0805"
             },
             {
-              name: "R21",
-              value: "100K_0805"
+              name: "R25",
+              value: "10K_0603"
             }
           ],
           mcuDrive: null
@@ -4419,13 +4419,13 @@ export const ledCurrentLimitingResistors = {
     "JUMPER_1206_1/4W": 41,
     "100^_0603": 34,
     "1k": 22,
-    "100^_1206_1%_0.5W": 22,
     "165^_1206": 22,
     "50^_1206": 22,
+    "100^_1206_1%_0.5W": 22,
     "10K_0805_1%": 21,
     "100K_0805": 20,
     "27K_0805_0.125W": 15,
-    "620^_1210": 15,
     "JUMPER_1206_1/2W": 15,
+    "620^_1210": 15,
     "4.7K_0603": 12
   };

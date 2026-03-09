@@ -13,13 +13,18 @@ export const testPointDesigns: TestPointDesign[] = [
         },
         {
           name: "J15",
-          net: "COLON_12V",
+          net: "COLON_5V",
           category: "signal"
         },
         {
           name: "J15",
-          net: "COLON_5V",
+          net: "COLON_12V",
           category: "signal"
+        },
+        {
+          name: "J16",
+          net: "GND",
+          category: "ground"
         },
         {
           name: "J16",
@@ -30,11 +35,6 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J16",
           net: "+3.3V",
           category: "power"
-        },
-        {
-          name: "J16",
-          net: "GND",
-          category: "ground"
         }
       ],
       debugHeaders: [],
@@ -43,11 +43,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J6",
           value: "TC2030_ICSP",
           nets: [
+            "GND",
+            "N$13",
             "PGD",
             "N$14",
-            "+3.3V",
-            "N$13",
-            "GND"
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -63,11 +63,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J6",
           value: "TC2030_ICSP",
           nets: [
-            "N$14",
-            "+3.3V",
-            "N$13",
+            "N$12",
             "GND",
-            "N$12"
+            "N$13",
+            "N$14",
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -164,11 +164,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J1",
           value: "TC2030_ICSP",
           nets: [
-            "PGD",
-            "+3.3V",
-            "N$9",
             "GND",
-            "PGC"
+            "PGC",
+            "N$9",
+            "PGD",
+            "+3.3V"
           ],
           pinCount: 5
         },
@@ -176,12 +176,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J5",
           value: "TC2030_ICSP",
           nets: [
-            "PIC_TX",
-            "DEBUG_SCL",
             "+3.3V",
-            "PIC_RX",
+            "DEBUG_SDA",
             "GND",
-            "DEBUG_SDA"
+            "PIC_TX",
+            "PIC_RX",
+            "DEBUG_SCL"
           ],
           pinCount: 6
         }
@@ -197,11 +197,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J1",
           value: "TC2030_ICSP",
           nets: [
-            "PGD",
-            "+3.3V",
-            "N$9",
             "GND",
-            "PGC"
+            "PGC",
+            "N$9",
+            "PGD",
+            "+3.3V"
           ],
           pinCount: 5
         },
@@ -209,12 +209,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J5",
           value: "TC2030_ICSP",
           nets: [
-            "PIC_TX",
-            "DEBUG_SCL",
             "+3.3V",
-            "PIC_RX",
+            "DEBUG_SDA",
             "GND",
-            "DEBUG_SDA"
+            "PIC_TX",
+            "PIC_RX",
+            "DEBUG_SCL"
           ],
           pinCount: 6
         },
@@ -222,12 +222,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J17",
           value: "TC2030_ICSP",
           nets: [
-            "ESP_EN",
-            "ESP32A_IO0",
             "ESP32A_PGM_TX",
-            "+3.3V_ESP",
             "GND",
-            "ESP32A_PGM_RX"
+            "ESP32A_PGM_RX",
+            "+3.3V_ESP",
+            "ESP_EN",
+            "ESP32A_IO0"
           ],
           pinCount: 6
         }
@@ -243,11 +243,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J5",
           value: "TC2030_ICSP",
           nets: [
-            "PGD",
-            "+3.3V",
             "N$3",
             "GND",
-            "PGC"
+            "PGC",
+            "PGD",
+            "+3.3V"
           ],
           pinCount: 5
         },
@@ -255,12 +255,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J3",
           value: "TC2030_ICSP",
           nets: [
-            "ESP32_PGM_TX",
+            "GND",
             "ESP32_PGM_RX",
-            "ESP32_EN",
-            "+3.3V",
+            "ESP32_PGM_TX",
             "ESP32_IO0",
-            "GND"
+            "ESP32_EN",
+            "+3.3V"
           ],
           pinCount: 6
         }
@@ -276,11 +276,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J6",
           value: "TC2030_ICSP",
           nets: [
+            "GND",
+            "N$13",
             "PGD",
             "N$14",
-            "+3.3V",
-            "N$13",
-            "GND"
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -296,11 +296,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "TAG",
           value: "TC2030_ICSP",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -316,11 +316,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "TAG",
           value: "TC2030_ICSP",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -389,11 +389,11 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "6P_0.1_VERT",
           type: "debug",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ]
         }
       ],
@@ -402,11 +402,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J10",
           value: "TC2030_ICSP",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -422,11 +422,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J10",
           value: "TC2030_ICSP",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -442,11 +442,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "JP",
           value: "TC2030_ICSP",
           nets: [
-            "PGD",
-            "+5V",
             "N$3",
             "GND",
-            "PGC"
+            "PGC",
+            "+5V",
+            "PGD"
           ],
           pinCount: 5
         }
@@ -462,11 +462,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "JP",
           value: "TC2030_ICSP",
           nets: [
-            "PGD",
-            "+5V",
             "N$3",
             "GND",
-            "PGC"
+            "PGC",
+            "+5V",
+            "PGD"
           ],
           pinCount: 5
         }
@@ -482,12 +482,12 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "6130XX21121_61300621121",
           type: "uart_debug",
           nets: [
-            "PROG_DATA",
-            "+3.3V",
-            "SERIAL_RX",
-            "PROG_EN",
             "SERIAL_TX",
-            "PROG_RST"
+            "PROG_DATA",
+            "SERIAL_RX",
+            "PROG_RST",
+            "+3.3V",
+            "PROG_EN"
           ]
         },
         {
@@ -495,16 +495,16 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "PINHD-2X8",
           type: "uart_debug",
           nets: [
-            "POGO_ADDR1",
-            "POGO_ADDR2",
-            "PROG_DATA",
-            "POGO_ID0",
+            "POGO_ID3",
+            "POGO_RSV",
             "+3.3V",
-            "POGO_ADDR0",
-            "SERIAL_RX",
-            "PROG_EN",
+            "POGO_ID1",
+            "SERIAL_TX",
+            "GND",
+            "POGO_ADDR1",
+            "POGO_ID0",
             "POGO_ID2",
-            "POGO_ID3"
+            "PROG_DATA"
           ]
         }
       ],
@@ -526,12 +526,12 @@ export const testPointDesigns: TestPointDesign[] = [
         },
         {
           name: "J2",
-          net: "N$2",
+          net: "N$1",
           category: "unlabeled"
         },
         {
           name: "J2",
-          net: "N$1",
+          net: "N$2",
           category: "unlabeled"
         }
       ],
@@ -548,12 +548,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J5",
           value: "TC2030_ICSP",
           nets: [
-            "PIC_TX",
-            "DEBUG_SCL",
             "+3.3V",
-            "PIC_RX",
+            "DEBUG_SDA",
             "GND",
-            "DEBUG_SDA"
+            "PIC_TX",
+            "PIC_RX",
+            "DEBUG_SCL"
           ],
           pinCount: 6
         },
@@ -561,12 +561,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J17",
           value: "TC2030_ICSP",
           nets: [
-            "ESP_EN",
-            "ESP32A_IO0",
             "ESP32A_PGM_TX",
-            "+3.3V_ESP",
             "GND",
-            "ESP32A_PGM_RX"
+            "ESP32A_PGM_RX",
+            "+3.3V_ESP",
+            "ESP_EN",
+            "ESP32A_IO0"
           ],
           pinCount: 6
         }
@@ -650,7 +650,7 @@ export const testPointDesigns: TestPointDesign[] = [
       testPoints: [
         {
           name: "J5",
-          net: "+3.3V",
+          net: "+5V",
           category: "power"
         },
         {
@@ -660,7 +660,7 @@ export const testPointDesigns: TestPointDesign[] = [
         },
         {
           name: "J5",
-          net: "+5V",
+          net: "+3.3V",
           category: "power"
         }
       ],
@@ -677,11 +677,11 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "6P_0.1_VERT",
           type: "debug",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ]
         }
       ],
@@ -690,11 +690,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J7",
           value: "TC2030_ICSP",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -710,11 +710,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J2",
           value: "TC2030_ICSP",
           nets: [
+            "GND",
             "N$53",
-            "N$47",
-            "N$52",
             "+5V",
-            "GND"
+            "N$47",
+            "N$52"
           ],
           pinCount: 5
         }
@@ -1001,8 +1001,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK4_SPST",
           type: "debug",
           nets: [
-            "N$150",
-            "IN_DEBUG6"
+            "IN_DEBUG6",
+            "N$150"
           ]
         },
         {
@@ -1010,8 +1010,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK4_SPST",
           type: "debug",
           nets: [
-            "N$149",
-            "IN_DEBUG5"
+            "IN_DEBUG5",
+            "N$149"
           ]
         },
         {
@@ -1019,8 +1019,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK4_SPST",
           type: "debug",
           nets: [
-            "IN_DEBUG4",
-            "N$148"
+            "N$148",
+            "IN_DEBUG4"
           ]
         },
         {
@@ -1037,8 +1037,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK4_SPST",
           type: "debug",
           nets: [
-            "N$146",
-            "IN_DEBUG2"
+            "IN_DEBUG2",
+            "N$146"
           ]
         },
         {
@@ -1046,8 +1046,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK4_SPST",
           type: "debug",
           nets: [
-            "N$145",
-            "IN_DEBUG1"
+            "IN_DEBUG1",
+            "N$145"
           ]
         },
         {
@@ -1082,8 +1082,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK4_SPST",
           type: "debug",
           nets: [
-            "OUT_DEBUG5",
-            "N$172"
+            "N$172",
+            "OUT_DEBUG5"
           ]
         },
         {
@@ -1118,8 +1118,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK4_SPST",
           type: "debug",
           nets: [
-            "OUT_DEBUG1",
-            "N$176"
+            "N$176",
+            "OUT_DEBUG1"
           ]
         },
         {
@@ -1136,10 +1136,10 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK5_SPST_SPDT",
           type: "debug",
           nets: [
-            "N$77",
-            "VDD",
+            "GND",
             "IN_DEBUG1",
-            "GND"
+            "VDD",
+            "N$77"
           ]
         },
         {
@@ -1147,106 +1147,10 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK5_SPST_SPDT",
           type: "debug",
           nets: [
-            "VDD",
-            "N$89",
             "IN_DEBUG2",
-            "GND"
-          ]
-        },
-        {
-          name: "JP181",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "N$204",
+            "GND",
             "VDD",
-            "IN_DEBUG3",
-            "GND"
-          ]
-        },
-        {
-          name: "JP182",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "IN_DEBUG4",
-            "VDD",
-            "N$207",
-            "GND"
-          ]
-        },
-        {
-          name: "JP183",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "IN_DEBUG5",
-            "VDD",
-            "N$210",
-            "GND"
-          ]
-        },
-        {
-          name: "JP184",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "N$213",
-            "IN_DEBUG6",
-            "VDD",
-            "GND"
-          ]
-        },
-        {
-          name: "JP185",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "IN_DEBUG7",
-            "N$216",
-            "VDD",
-            "GND"
-          ]
-        },
-        {
-          name: "JP186",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "N$219",
-            "VDD",
-            "IN_DEBUG8",
-            "GND"
-          ]
-        }
-      ],
-      icspConnectors: [],
-      testPointCount: 0
-    },
-    {
-      design: "Noah_2.0_WIP_PIK_PCB",
-      testPoints: [],
-      debugHeaders: [
-        {
-          name: "JP179",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "N$77",
-            "IN_DEBUG1",
-            "VDD",
-            "GND"
-          ]
-        },
-        {
-          name: "JP180",
-          value: "TEST_LINK5_SPST_SPDT",
-          type: "debug",
-          nets: [
-            "VDD",
-            "N$89",
-            "IN_DEBUG2",
-            "GND"
+            "N$89"
           ]
         },
         {
@@ -1265,10 +1169,10 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK5_SPST_SPDT",
           type: "debug",
           nets: [
+            "GND",
             "IN_DEBUG4",
             "VDD",
-            "N$207",
-            "GND"
+            "N$207"
           ]
         },
         {
@@ -1276,10 +1180,10 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK5_SPST_SPDT",
           type: "debug",
           nets: [
-            "IN_DEBUG5",
-            "VDD",
+            "GND",
             "N$210",
-            "GND"
+            "IN_DEBUG5",
+            "VDD"
           ]
         },
         {
@@ -1287,10 +1191,10 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK5_SPST_SPDT",
           type: "debug",
           nets: [
+            "GND",
             "N$213",
-            "IN_DEBUG6",
             "VDD",
-            "GND"
+            "IN_DEBUG6"
           ]
         },
         {
@@ -1298,10 +1202,106 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK5_SPST_SPDT",
           type: "debug",
           nets: [
+            "GND",
             "IN_DEBUG7",
+            "VDD",
+            "N$216"
+          ]
+        },
+        {
+          name: "JP186",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "N$219",
+            "GND",
+            "VDD",
+            "IN_DEBUG8"
+          ]
+        }
+      ],
+      icspConnectors: [],
+      testPointCount: 0
+    },
+    {
+      design: "Noah_2.0_WIP_PIK_PCB",
+      testPoints: [],
+      debugHeaders: [
+        {
+          name: "JP179",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "GND",
+            "VDD",
+            "IN_DEBUG1",
+            "N$77"
+          ]
+        },
+        {
+          name: "JP180",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "GND",
+            "IN_DEBUG2",
+            "VDD",
+            "N$89"
+          ]
+        },
+        {
+          name: "JP181",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "GND",
+            "IN_DEBUG3",
+            "VDD",
+            "N$204"
+          ]
+        },
+        {
+          name: "JP182",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "GND",
+            "VDD",
+            "IN_DEBUG4",
+            "N$207"
+          ]
+        },
+        {
+          name: "JP183",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "GND",
+            "VDD",
+            "IN_DEBUG5",
+            "N$210"
+          ]
+        },
+        {
+          name: "JP184",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "GND",
+            "N$213",
+            "VDD",
+            "IN_DEBUG6"
+          ]
+        },
+        {
+          name: "JP185",
+          value: "TEST_LINK5_SPST_SPDT",
+          type: "debug",
+          nets: [
+            "GND",
             "N$216",
             "VDD",
-            "GND"
+            "IN_DEBUG7"
           ]
         },
         {
@@ -1310,9 +1310,9 @@ export const testPointDesigns: TestPointDesign[] = [
           type: "debug",
           nets: [
             "GND",
+            "N$219",
             "VDD",
-            "IN_DEBUG8",
-            "N$219"
+            "IN_DEBUG8"
           ]
         },
         {
@@ -1320,8 +1320,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "N$145",
-            "IN_DEBUG1"
+            "IN_DEBUG1",
+            "N$145"
           ]
         },
         {
@@ -1329,8 +1329,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "N$146",
-            "IN_DEBUG2"
+            "IN_DEBUG2",
+            "N$146"
           ]
         },
         {
@@ -1347,8 +1347,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "IN_DEBUG4",
-            "N$148"
+            "N$148",
+            "IN_DEBUG4"
           ]
         },
         {
@@ -1365,8 +1365,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "IN_DEBUG6",
-            "N$150"
+            "N$150",
+            "IN_DEBUG6"
           ]
         },
         {
@@ -1392,8 +1392,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "N$169",
-            "OUT_DEBUG1"
+            "OUT_DEBUG1",
+            "N$169"
           ]
         },
         {
@@ -1419,8 +1419,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "OUT_DEBUG4",
-            "N$172"
+            "N$172",
+            "OUT_DEBUG4"
           ]
         },
         {
@@ -1446,8 +1446,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "N$175",
-            "OUT_DEBUG7"
+            "OUT_DEBUG7",
+            "N$175"
           ]
         },
         {
@@ -1455,8 +1455,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "OUT_DEBUG8",
-            "N$176"
+            "N$176",
+            "OUT_DEBUG8"
           ]
         },
         {
@@ -1464,8 +1464,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST4PIN",
           type: "debug",
           nets: [
-            "N$177",
-            "OUT_DEBUG0"
+            "OUT_DEBUG0",
+            "N$177"
           ]
         },
         {
@@ -1473,8 +1473,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST2PIN",
           type: "debug",
           nets: [
-            "N$228",
-            "OUT_DEBUG0"
+            "OUT_DEBUG0",
+            "N$228"
           ]
         },
         {
@@ -1491,8 +1491,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST2PIN",
           type: "debug",
           nets: [
-            "OUT_DEBUG2",
-            "N$242"
+            "N$242",
+            "OUT_DEBUG2"
           ]
         },
         {
@@ -1518,8 +1518,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST2PIN",
           type: "debug",
           nets: [
-            "OUT_DEBUG5",
-            "N$251"
+            "N$251",
+            "OUT_DEBUG5"
           ]
         },
         {
@@ -1545,8 +1545,8 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "TEST_LINK_SPST2PIN",
           type: "debug",
           nets: [
-            "N$260",
-            "OUT_DEBUG8"
+            "OUT_DEBUG8",
+            "N$260"
           ]
         }
       ],
@@ -1562,11 +1562,11 @@ export const testPointDesigns: TestPointDesign[] = [
           value: "6P_0.1_VERT",
           type: "debug",
           nets: [
-            "+3.3V",
-            "GND",
-            "SWD_CLK",
             "RST",
-            "SWD_IO"
+            "SWD_CLK",
+            "GND",
+            "SWD_IO",
+            "+3.3V"
           ]
         }
       ],
@@ -1853,12 +1853,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J3",
           value: "TC2030_ICSP",
           nets: [
-            "ESP32A_EN",
-            "ESP32A_IO0",
-            "+3.3V",
             "ESP32A_PGM_TX",
+            "ESP32A_EN",
             "GND",
-            "ESP32A_PGM_RX"
+            "ESP32A_PGM_RX",
+            "ESP32A_IO0",
+            "+3.3V"
           ],
           pinCount: 6
         }
@@ -1874,11 +1874,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J5",
           value: "TC2030_ICSP",
           nets: [
-            "PGD",
-            "+3.3V",
             "N$3",
             "GND",
-            "PGC"
+            "PGC",
+            "PGD",
+            "+3.3V"
           ],
           pinCount: 5
         },
@@ -1886,12 +1886,12 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J3",
           value: "TC2030_ICSP",
           nets: [
-            "ESP32_PGM_TX",
+            "GND",
             "ESP32_PGM_RX",
-            "ESP32_EN",
-            "+3.3V",
+            "ESP32_PGM_TX",
             "ESP32_IO0",
-            "GND"
+            "ESP32_EN",
+            "+3.3V"
           ],
           pinCount: 6
         }
@@ -1926,22 +1926,22 @@ export const testPointDesigns: TestPointDesign[] = [
         },
         {
           name: "J2",
-          net: "N$44",
-          category: "unlabeled"
-        },
-        {
-          name: "J2",
           net: "N$35",
           category: "unlabeled"
         },
         {
-          name: "J3",
-          net: "N$43",
+          name: "J2",
+          net: "N$44",
           category: "unlabeled"
         },
         {
           name: "J3",
           net: "N$51",
+          category: "unlabeled"
+        },
+        {
+          name: "J3",
+          net: "N$43",
           category: "unlabeled"
         },
         {
@@ -1979,6 +1979,11 @@ export const testPointDesigns: TestPointDesign[] = [
       testPoints: [
         {
           name: "J2",
+          net: "GND",
+          category: "ground"
+        },
+        {
+          name: "J2",
           net: "+12V",
           category: "power"
         },
@@ -1986,11 +1991,6 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J2",
           net: "+5V",
           category: "power"
-        },
-        {
-          name: "J2",
-          net: "GND",
-          category: "ground"
         }
       ],
       debugHeaders: [],
@@ -2006,10 +2006,10 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "DISPLAY",
           value: "DM-OLED096-636",
           nets: [
-            "N$2",
+            "GND",
             "VCC_IN",
             "N$1",
-            "GND"
+            "N$2"
           ],
           pinCount: 4
         }
@@ -2081,11 +2081,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J9",
           value: "TC2030_ICSP",
           nets: [
-            "N$66",
             "N$67",
-            "+3.3V",
+            "GND",
             "N$65",
-            "GND"
+            "N$66",
+            "+3.3V"
           ],
           pinCount: 5
         }
@@ -2149,11 +2149,11 @@ export const testPointDesigns: TestPointDesign[] = [
           name: "J5",
           value: "TC2030_ICSP",
           nets: [
-            "PGD",
-            "+5V",
             "N$3",
             "GND",
-            "PGC"
+            "PGC",
+            "+5V",
+            "PGD"
           ],
           pinCount: 5
         }

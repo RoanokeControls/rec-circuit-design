@@ -212,14 +212,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R27",
+              name: "R24",
               value: "220^_0603",
-              net: "N$18"
+              net: "N$15"
             },
             {
               name: "R25",
               value: "220^_0603",
-              net: "N$23"
+              net: "N$22"
             },
             {
               name: "R26",
@@ -227,14 +227,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "N$21"
             },
             {
-              name: "R24",
+              name: "R26",
               value: "220^_0603",
-              net: "N$15"
+              net: "N$20"
             },
             {
               name: "R27",
               value: "220^_0603",
-              net: "N$19"
+              net: "N$18"
             }
           ]
         }
@@ -263,8 +263,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
-              value: "100K_AXIAL",
+              name: "R21",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -273,18 +273,18 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+12V"
             },
             {
-              name: "R16",
-              value: "2.7K_5W_FUSIBLE",
-              net: "+12V"
-            },
-            {
               name: "R20",
               value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
-              name: "R23",
-              value: "100K_AXIAL",
+              name: "R19",
+              value: "2.7K_5W_FUSIBLE",
+              net: "+12V"
+            },
+            {
+              name: "R18",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             }
           ]
@@ -307,8 +307,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
-              value: "100K_AXIAL",
+              name: "R21",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -322,8 +322,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+12V"
             },
             {
-              name: "R23",
-              value: "100K_AXIAL",
+              name: "R19",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -351,8 +351,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
-              value: "100K_AXIAL",
+              name: "R21",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -361,18 +361,18 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+12V"
             },
             {
-              name: "R16",
-              value: "2.7K_5W_FUSIBLE",
-              net: "+12V"
-            },
-            {
               name: "R20",
               value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
-              name: "R23",
-              value: "100K_AXIAL",
+              name: "R19",
+              value: "2.7K_5W_FUSIBLE",
+              net: "+12V"
+            },
+            {
+              name: "R18",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             }
           ]
@@ -395,8 +395,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
-              value: "100K_AXIAL",
+              name: "R21",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -405,17 +405,17 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+12V"
             },
             {
-              name: "R16",
-              value: "2.7K_5W_FUSIBLE",
-              net: "+12V"
-            },
-            {
               name: "R20",
               value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
-              name: "R23",
+              name: "R19",
+              value: "2.7K_5W_FUSIBLE",
+              net: "+12V"
+            },
+            {
+              name: "R26",
               value: "100K_AXIAL",
               net: "+12V"
             }
@@ -439,8 +439,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
-              value: "100K_AXIAL",
+              name: "R21",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -449,17 +449,17 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+12V"
             },
             {
-              name: "R16",
-              value: "2.7K_5W_FUSIBLE",
-              net: "+12V"
-            },
-            {
               name: "R20",
               value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
-              name: "R23",
+              name: "R18",
+              value: "2.7K_5W_FUSIBLE",
+              net: "+12V"
+            },
+            {
+              name: "R26",
               value: "100K_AXIAL",
               net: "+12V"
             }
@@ -483,8 +483,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
-              value: "100K_AXIAL",
+              name: "R21",
+              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -493,18 +493,18 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+12V"
             },
             {
-              name: "R16",
+              name: "R19",
               value: "2.7K_5W_FUSIBLE",
-              net: "+12V"
-            },
-            {
-              name: "R23",
-              value: "100K_AXIAL",
               net: "+12V"
             },
             {
               name: "R18",
               value: "2.7K_5W_FUSIBLE",
+              net: "+12V"
+            },
+            {
+              name: "R26",
+              value: "100K_AXIAL",
               net: "+12V"
             }
           ]
@@ -527,18 +527,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
-              value: "100K_AXIAL",
-              net: "+12V"
-            },
-            {
               name: "R29",
               value: "1.2K_1W_AXIAL",
-              net: "+12V"
-            },
-            {
-              name: "R16",
-              value: "2.7K_5W_FUSIBLE",
               net: "+12V"
             },
             {
@@ -547,7 +537,17 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+12V"
             },
             {
-              name: "R23",
+              name: "R19",
+              value: "2.7K_5W_FUSIBLE",
+              net: "+12V"
+            },
+            {
+              name: "R18",
+              value: "2.7K_5W_FUSIBLE",
+              net: "+12V"
+            },
+            {
+              name: "R26",
               value: "100K_AXIAL",
               net: "+12V"
             }
@@ -801,29 +801,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R63",
-              value: "10K_0603",
-              net: "ESP_EN"
-            },
-            {
-              name: "R69",
-              value: "1.2K_0603",
-              net: "ESP_EN"
-            },
-            {
-              name: "R62",
-              value: "10K_0603",
-              net: "ESP32A_IO0"
-            },
-            {
-              name: "R59",
-              value: "1.2K_0603",
-              net: "ESP32A_IO0"
-            },
-            {
               name: "R60",
               value: "1.2K_0603",
               net: "ESP32A_PGM_TX"
+            },
+            {
+              name: "R4",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R57",
+              value: "FERRITE_330^_0805",
+              net: "GND"
+            },
+            {
+              name: "R52",
+              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0",
+              net: "GND"
+            },
+            {
+              name: "R61",
+              value: "1.2K_0603",
+              net: "ESP32A_PGM_RX"
             }
           ]
         }
@@ -941,19 +941,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R49",
-              value: "180^_0603",
-              net: "PROBE2_LED"
-            },
-            {
               name: "R48",
               value: "180^_0603",
               net: "PROBE1_LED"
-            },
-            {
-              name: "R50",
-              value: "180^_0603",
-              net: "PROBE3_LED"
             },
             {
               name: "R30",
@@ -961,7 +951,17 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "ESP32_EN"
             },
             {
-              name: "R47",
+              name: "R66",
+              value: "100K_0603",
+              net: "RTPINT_CTPSDA"
+            },
+            {
+              name: "R50",
+              value: "180^_0603",
+              net: "PROBE3_LED"
+            },
+            {
+              name: "R21",
               value: "1.62K_0805_0.1%",
               net: "+3.3V"
             }
@@ -1001,29 +1001,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R22",
-              value: "10K_AXIAL",
-              net: "N$105"
+              name: "R5",
+              value: "470^_AXIAL",
+              net: "GND"
             },
             {
-              name: "R86",
-              value: "10K_AXIAL",
-              net: "VCC"
+              name: "R8",
+              value: "470^_AXIAL",
+              net: "GND"
             },
             {
-              name: "R108",
-              value: "1K_AXIAL",
-              net: "VCC"
+              name: "R88",
+              value: "470^_AXIAL",
+              net: "GND"
             },
             {
-              name: "R32",
-              value: "10K_AXIAL",
-              net: "VCC"
+              name: "R13",
+              value: "470^_AXIAL",
+              net: "GND"
             },
             {
-              name: "R27",
-              value: "10K_AXIAL",
-              net: "VCC"
+              name: "R87",
+              value: "470^_AXIAL",
+              net: "GND"
             }
           ]
         }
@@ -1077,38 +1077,38 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
             {
               name: "R34",
               value: "100^_1206_1%_0.5W",
-              net: "USDS_SEL"
+              net: "GND"
             },
             {
               name: "R34",
               value: "100^_1206_1%_0.5W",
-              net: "GND"
+              net: "USDS_SEL"
             }
           ],
           biasResistors: [
-            {
-              name: "R56",
-              value: "10K_0603",
-              net: "RS485B"
-            },
             {
               name: "R57",
               value: "220^_0603",
               net: "RS485B"
             },
             {
-              name: "R47",
+              name: "R56",
               value: "10K_0603",
-              net: "GND"
-            },
-            {
-              name: "R43",
-              value: "10K_0603_.1%",
-              net: "GND"
+              net: "RS485B"
             },
             {
               name: "R48",
               value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R37",
+              value: "10K_0603_.1%",
+              net: "GND"
+            },
+            {
+              name: "R46",
+              value: "10K_0603_.1%",
               net: "GND"
             }
           ]
@@ -1156,38 +1156,38 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
             {
               name: "R34",
               value: "100^_1206_1%_0.5W",
-              net: "USDS_SEL"
+              net: "GND"
             },
             {
               name: "R34",
               value: "100^_1206_1%_0.5W",
-              net: "GND"
+              net: "USDS_SEL"
             }
           ],
           biasResistors: [
-            {
-              name: "R56",
-              value: "10K_0603",
-              net: "RS485B"
-            },
             {
               name: "R57",
               value: "220^_0603",
               net: "RS485B"
             },
             {
-              name: "R47",
+              name: "R56",
               value: "10K_0603",
-              net: "GND"
-            },
-            {
-              name: "R43",
-              value: "10K_0603_.1%",
-              net: "GND"
+              net: "RS485B"
             },
             {
               name: "R48",
               value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R37",
+              value: "10K_0603_.1%",
+              net: "GND"
+            },
+            {
+              name: "R46",
+              value: "10K_0603_.1%",
               net: "GND"
             }
           ]
@@ -1276,9 +1276,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           ],
           biasResistors: [
             {
-              name: "R10",
+              name: "R11",
               value: "1.2K_0805",
-              net: "N$5"
+              net: "N$3"
             },
             {
               name: "R20",
@@ -1286,9 +1286,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+5V"
             },
             {
-              name: "R11",
+              name: "R10",
               value: "1.2K_0805",
-              net: "N$3"
+              net: "N$5"
             }
           ]
         }
@@ -1348,17 +1348,7 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R10",
-              value: "1M_0603_1%",
-              net: "GND"
-            },
-            {
-              name: "R25",
-              value: "10K_0603",
-              net: "GND"
-            },
-            {
-              name: "R13",
+              name: "R23",
               value: "10K_0603",
               net: "GND"
             },
@@ -1368,7 +1358,17 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "GND"
             },
             {
-              name: "R23",
+              name: "R10",
+              value: "1M_0603_1%",
+              net: "GND"
+            },
+            {
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R14",
               value: "10K_0603",
               net: "GND"
             }
@@ -1383,28 +1383,28 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
+              name: "R23",
               value: "10K_0603",
-              net: "N$26"
+              net: "GND"
             },
             {
-              name: "R24",
-              value: "10M_0603",
-              net: "+3.3V_BLE"
-            },
-            {
-              name: "R24",
-              value: "10M_0603",
-              net: "N$20"
-            },
-            {
-              name: "R18",
-              value: "100^_0603",
-              net: "N$20"
+              name: "R1",
+              value: "180^_0603",
+              net: "GND"
             },
             {
               name: "R10",
               value: "1M_0603_1%",
+              net: "GND"
+            },
+            {
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R14",
+              value: "10K_0603",
               net: "GND"
             }
           ]
@@ -1467,9 +1467,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R10",
+              value: "1.2K_0805",
+              net: "LEDBL"
+            },
+            {
               name: "R1",
               value: "180^_0603",
               net: "ESP32_PGM_TX"
+            },
+            {
+              name: "R11",
+              value: "10K_0805_1%",
+              net: "ESP32_IO0"
             },
             {
               name: "R12",
@@ -1477,19 +1487,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "ESP32_EN"
             },
             {
-              name: "R19",
-              value: "1.2K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R12",
-              value: "10K_0805_1%",
-              net: "+3.3V"
-            },
-            {
-              name: "R5",
-              value: "1.62K_0805_1%",
-              net: "+3.3V"
+              name: "R2",
+              value: "180^_0603",
+              net: "ESP32_PGM_RX"
             }
           ]
         }
@@ -1595,14 +1595,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R5",
+              name: "R1",
               value: "10k",
-              net: "0"
+              net: "3.3V"
             },
             {
-              name: "R6",
-              value: "2.2k",
-              net: "SDA"
+              name: "R4",
+              value: "10k",
+              net: "3.3V"
             },
             {
               name: "R9",
@@ -1610,13 +1610,13 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "3.3V"
             },
             {
-              name: "R1",
+              name: "R5",
               value: "10k",
               net: "3.3V"
             },
             {
-              name: "R5",
-              value: "10k",
+              name: "R6",
+              value: "2.2k",
               net: "3.3V"
             }
           ]
@@ -1675,14 +1675,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R2",
+              value: "1k",
+              net: "GND"
+            },
+            {
               name: "R4",
               value: "10k",
               net: "RFM_RST"
-            },
-            {
-              name: "R9",
-              value: "2.2k",
-              net: "3.3V"
             },
             {
               name: "R1",
@@ -1690,12 +1690,12 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "3.3V"
             },
             {
-              name: "R5",
+              name: "R4",
               value: "10k",
               net: "3.3V"
             },
             {
-              name: "R6",
+              name: "R9",
               value: "2.2k",
               net: "3.3V"
             }
@@ -1783,14 +1783,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R2",
+              value: "1k",
+              net: "GND"
+            },
+            {
+              name: "R7",
+              value: "10k",
+              net: "!DTR"
+            },
+            {
               name: "R8",
               value: "10k",
               net: "!RTS"
-            },
-            {
-              name: "R9",
-              value: "2.2k",
-              net: "3.3V"
             },
             {
               name: "R1",
@@ -1798,13 +1803,8 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "3.3V"
             },
             {
-              name: "R5",
+              name: "R4",
               value: "10k",
-              net: "3.3V"
-            },
-            {
-              name: "R6",
-              value: "2.2k",
               net: "3.3V"
             }
           ]
@@ -1902,24 +1902,24 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "N$8"
             },
             {
-              name: "R10",
+              name: "R11",
               value: "1.2K_0805",
-              net: "N$5"
+              net: "N$3"
+            },
+            {
+              name: "R7",
+              value: "150^_0603",
+              net: "GND"
+            },
+            {
+              name: "R8",
+              value: "15K_0805_0.1%",
+              net: "GND"
             },
             {
               name: "R1",
               value: "10K_0603",
               net: "N$6"
-            },
-            {
-              name: "R20",
-              value: "JUMPER_0805_2.5A",
-              net: "+5V"
-            },
-            {
-              name: "R11",
-              value: "1.2K_0805",
-              net: "N$3"
             }
           ]
         }
@@ -2056,6 +2056,21 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R60",
+              value: "1.2K_0603",
+              net: "ESP32A_PGM_TX"
+            },
+            {
+              name: "R61",
+              value: "1.2K_0603",
+              net: "ESP32A_PGM_RX"
+            },
+            {
+              name: "R73",
+              value: "100K_0603",
+              net: "RTC_SDA"
+            },
+            {
               name: "R63",
               value: "10K_0603",
               net: "ESP_EN"
@@ -2064,21 +2079,6 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               name: "R69",
               value: "1.2K_0603",
               net: "ESP_EN"
-            },
-            {
-              name: "R62",
-              value: "10K_0603",
-              net: "ESP32A_IO0"
-            },
-            {
-              name: "R59",
-              value: "1.2K_0603",
-              net: "ESP32A_IO0"
-            },
-            {
-              name: "R60",
-              value: "1.2K_0603",
-              net: "ESP32A_PGM_TX"
             }
           ]
         }
@@ -2231,16 +2231,6 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R87",
-              value: "0",
-              net: "USB_VBUS1"
-            },
-            {
-              name: "R93",
-              value: "0",
-              net: "USB_VBUS1"
-            },
-            {
               name: "R90",
               value: "0",
               net: "USB_VBUS2"
@@ -2251,9 +2241,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "USB_VBUS2"
             },
             {
-              name: "R92",
+              name: "R89",
               value: "0",
-              net: "USB_GND1"
+              net: "USB_CC2"
+            },
+            {
+              name: "R95",
+              value: "0",
+              net: "USB_CC2"
+            },
+            {
+              name: "R94",
+              value: "0",
+              net: "USB_CC1"
             }
           ]
         },
@@ -2266,28 +2266,28 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R43",
-              value: "33k",
-              net: "GND"
-            },
-            {
               name: "R20",
               value: "470k",
               net: "GND"
             },
             {
-              name: "R16",
-              value: "100k",
-              net: "GND"
-            },
-            {
-              name: "R99",
-              value: "5.1k",
-              net: "GND"
-            },
-            {
               name: "R78",
               value: "100k",
+              net: "GND"
+            },
+            {
+              name: "R97",
+              value: "0",
+              net: "GND"
+            },
+            {
+              name: "R39",
+              value: "0",
+              net: "GND"
+            },
+            {
+              name: "R98",
+              value: "5.1k",
               net: "GND"
             }
           ]
@@ -2301,29 +2301,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R22",
+              name: "R120",
+              value: "0",
+              net: "VID1"
+            },
+            {
+              name: "R86",
               value: "1k",
-              net: "BLUE"
+              net: "PCB_ID2"
             },
             {
-              name: "R125",
-              value: "100",
-              net: "RXD"
+              name: "R84",
+              value: "1k",
+              net: "PCB_ID2"
             },
             {
-              name: "R6",
+              name: "R78",
               value: "100k",
-              net: "COM_EN2"
+              net: "PCB_ID2"
             },
             {
-              name: "R21",
+              name: "R82",
               value: "1k",
-              net: "BUZZER"
-            },
-            {
-              name: "R113",
-              value: "100",
-              net: "TXD"
+              net: "PCB_ID2"
             }
           ]
         }
@@ -2353,7 +2353,12 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "GND"
             },
             {
-              name: "R53",
+              name: "R28",
+              value: "1k",
+              net: "GND"
+            },
+            {
+              name: "R50",
               value: "1k",
               net: "GND"
             },
@@ -2363,12 +2368,7 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "GND"
             },
             {
-              name: "R43",
-              value: "1k",
-              net: "GND"
-            },
-            {
-              name: "R45",
+              name: "R59",
               value: "1k",
               net: "GND"
             }
@@ -2418,7 +2418,12 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "GND"
             },
             {
-              name: "R53",
+              name: "R28",
+              value: "1k",
+              net: "GND"
+            },
+            {
+              name: "R50",
               value: "1k",
               net: "GND"
             },
@@ -2428,12 +2433,7 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "GND"
             },
             {
-              name: "R43",
-              value: "1k",
-              net: "GND"
-            },
-            {
-              name: "R45",
+              name: "R59",
               value: "1k",
               net: "GND"
             }
@@ -2483,9 +2483,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "SOL2"
             },
             {
-              name: "R12",
-              value: "100^_0603",
-              net: "N$24"
+              name: "R27",
+              value: "100K_0805",
+              net: "SWSENSE"
+            },
+            {
+              name: "R31",
+              value: "1K_0603",
+              net: "LED_GRN"
             },
             {
               name: "R15",
@@ -2493,14 +2498,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "PRES_SDA"
             },
             {
-              name: "R13",
-              value: "75^_0805",
-              net: "SOL3"
-            },
-            {
-              name: "R6",
-              value: "75^_0805",
-              net: "SOL1"
+              name: "R17",
+              value: "10K_0603",
+              net: "ESP32_IO0"
             }
           ]
         }
@@ -2545,9 +2545,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "SOL2"
             },
             {
-              name: "R12",
-              value: "100^_0603",
-              net: "N$24"
+              name: "R27",
+              value: "100K_0805",
+              net: "SWSENSE"
+            },
+            {
+              name: "R31",
+              value: "1K_0603",
+              net: "LED_GRN"
             },
             {
               name: "R15",
@@ -2555,14 +2560,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "PRES_SDA"
             },
             {
-              name: "R13",
-              value: "75^_0805",
-              net: "SOL3"
-            },
-            {
-              name: "R6",
-              value: "75^_0805",
-              net: "SOL1"
+              name: "R17",
+              value: "10K_0603",
+              net: "ESP32_IO0"
             }
           ]
         }
@@ -2607,9 +2607,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "SOL2"
             },
             {
-              name: "R12",
-              value: "100^_0603",
-              net: "N$24"
+              name: "R27",
+              value: "100K_0805",
+              net: "SWSENSE"
+            },
+            {
+              name: "R31",
+              value: "1K_0603",
+              net: "LED_GRN"
             },
             {
               name: "R15",
@@ -2617,14 +2622,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "PRES_SDA"
             },
             {
-              name: "R13",
-              value: "75^_0805",
-              net: "SOL3"
-            },
-            {
-              name: "R6",
-              value: "75^_0805",
-              net: "SOL1"
+              name: "R17",
+              value: "10K_0603",
+              net: "ESP32_IO0"
             }
           ]
         }
@@ -2669,9 +2669,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "SOL2"
             },
             {
-              name: "R12",
-              value: "100^_0603",
-              net: "N$24"
+              name: "R27",
+              value: "100K_0805",
+              net: "SWSENSE"
+            },
+            {
+              name: "R31",
+              value: "1K_0603",
+              net: "LED_GRN"
             },
             {
               name: "R15",
@@ -2679,14 +2684,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "PRES_SDA"
             },
             {
-              name: "R13",
-              value: "75^_0805",
-              net: "SOL3"
-            },
-            {
-              name: "R6",
-              value: "75^_0805",
-              net: "SOL1"
+              name: "R17",
+              value: "10K_0603",
+              net: "ESP32_IO0"
             }
           ]
         }
@@ -2711,28 +2711,28 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R8",
-              value: "100K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R7",
-              value: "47K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R9",
+              name: "R10",
               value: "1M_0603_1%",
-              net: "+3.3V"
+              net: "GND"
+            },
+            {
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R1",
+              value: "180^_0603",
+              net: "GND"
             },
             {
               name: "R2",
               value: "FERRITE_330^_0805",
-              net: "+3.3V"
-            },
-            {
-              name: "R4",
-              value: "100K_0603",
               net: "+3.3V"
             }
           ]
@@ -2746,28 +2746,28 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R8",
-              value: "100K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R7",
-              value: "47K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R9",
+              name: "R10",
               value: "1M_0603_1%",
-              net: "+3.3V"
+              net: "GND"
+            },
+            {
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R1",
+              value: "180^_0603",
+              net: "GND"
             },
             {
               name: "R2",
               value: "FERRITE_330^_0805",
-              net: "+3.3V"
-            },
-            {
-              name: "R4",
-              value: "100K_0603",
               net: "+3.3V"
             }
           ]
@@ -2793,29 +2793,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R2",
+              name: "R12",
+              value: "10K_0603",
+              net: "VALVE_CLOSED"
+            },
+            {
+              name: "R3",
               value: "180^_0603",
-              net: "N$2"
+              net: "N$3"
             },
             {
-              name: "R22",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_TX"
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
             },
             {
-              name: "R7",
-              value: "180^_0603",
-              net: "OUTPUT"
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
             },
             {
-              name: "R8",
-              value: "180^_0603",
-              net: "OUTPUT"
-            },
-            {
-              name: "R21",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_RX"
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         },
@@ -2828,29 +2828,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R19",
+              value: "10K_0603",
+              net: "N$22"
+            },
+            {
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
+            },
+            {
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
               name: "R9",
               value: "4.7K_0603",
-              net: "EMITTER_OUT"
-            },
-            {
-              name: "R21",
-              value: "1.2K_0805",
-              net: "N$21"
-            },
-            {
-              name: "R18",
-              value: "10K_0603",
-              net: "N$24"
-            },
-            {
-              name: "R29",
-              value: "10K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R28",
-              value: "10K_0603",
-              net: "+3.3V"
+              net: "GND"
             }
           ]
         }
@@ -2875,29 +2875,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R2",
+              name: "R12",
+              value: "10K_0603",
+              net: "VALVE_CLOSED"
+            },
+            {
+              name: "R3",
               value: "180^_0603",
-              net: "N$2"
+              net: "N$3"
             },
             {
-              name: "R22",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_TX"
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
             },
             {
-              name: "R7",
-              value: "180^_0603",
-              net: "OUTPUT"
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
             },
             {
-              name: "R8",
-              value: "180^_0603",
-              net: "OUTPUT"
-            },
-            {
-              name: "R21",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_RX"
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         },
@@ -2910,29 +2910,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R19",
+              value: "10K_0603",
+              net: "N$22"
+            },
+            {
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
+            },
+            {
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
               name: "R9",
               value: "4.7K_0603",
-              net: "EMITTER_OUT"
-            },
-            {
-              name: "R21",
-              value: "1.2K_0805",
-              net: "N$21"
-            },
-            {
-              name: "R18",
-              value: "10K_0603",
-              net: "N$24"
-            },
-            {
-              name: "R29",
-              value: "10K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R28",
-              value: "10K_0603",
-              net: "+3.3V"
+              net: "GND"
             }
           ]
         },
@@ -2945,29 +2945,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R36",
-              value: "180^_0603",
-              net: "N$18"
+              name: "R57",
+              value: "JUMPER_0603_1/10W",
+              net: "EE_CLK_ESP1"
             },
             {
-              name: "R58",
-              value: "JUMPER_0603_1/10W",
-              net: "EE_DAT_ESP1"
+              name: "R42",
+              value: "180^_0603",
+              net: "OUTPUT1"
+            },
+            {
+              name: "R41",
+              value: "180^_0603",
+              net: "OUTPUT1"
+            },
+            {
+              name: "R55",
+              value: "1.2K_0805",
+              net: "ESP32_PGM_TX1"
             },
             {
               name: "R45",
               value: "10K_0603",
               net: "VALVE_CLOSED1"
-            },
-            {
-              name: "R47",
-              value: "10K_0603",
-              net: "GND1"
-            },
-            {
-              name: "R38",
-              value: "2.7K_0603",
-              net: "GND1"
             }
           ]
         },
@@ -2980,29 +2980,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R51",
+              value: "JUMPER_0805_2.5A",
+              net: "+5V1"
+            },
+            {
+              name: "R35",
+              value: "4.7K_0603",
+              net: "COLLECTOR_OUT1"
+            },
+            {
               name: "R52",
               value: "10K_0603",
               net: "N$48"
             },
             {
-              name: "R47",
+              name: "R65",
+              value: "1.2K_0603",
+              net: "+3.3V1"
+            },
+            {
+              name: "R61",
               value: "10K_0603",
-              net: "GND1"
-            },
-            {
-              name: "R38",
-              value: "2.7K_0603",
-              net: "GND1"
-            },
-            {
-              name: "R43",
-              value: "4.7K_0603",
-              net: "GND1"
-            },
-            {
-              name: "R46",
-              value: "10K_0603",
-              net: "GND1"
+              net: "+3.3V1"
             }
           ]
         },
@@ -3015,29 +3015,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R67",
-              value: "180^_0603",
-              net: "N$55"
+              name: "R88",
+              value: "1.2K_0805",
+              net: "ESP32_PGM_TX2"
             },
             {
-              name: "R69",
-              value: "180^_0603",
-              net: "N$56"
-            },
-            {
-              name: "R71",
-              value: "2.7K_0603",
-              net: "GND2"
-            },
-            {
-              name: "R80",
+              name: "R78",
               value: "10K_0603",
-              net: "GND2"
+              net: "VALVE_CLOSED2"
             },
             {
-              name: "R79",
+              name: "R87",
+              value: "1.2K_0805",
+              net: "ESP32_PGM_RX2"
+            },
+            {
+              name: "R81",
               value: "10K_0603",
-              net: "GND2"
+              net: "VALVE_OPEN2"
+            },
+            {
+              name: "R77",
+              value: "10K_0603",
+              net: "ESP32_IO2"
             }
           ]
         },
@@ -3055,24 +3055,24 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "COLLECTOR_OUT2"
             },
             {
+              name: "R87",
+              value: "1.2K_0805",
+              net: "N$72"
+            },
+            {
               name: "R84",
               value: "JUMPER_0805_2.5A",
               net: "+5V2"
             },
             {
-              name: "R71",
-              value: "2.7K_0603",
-              net: "GND2"
+              name: "R86",
+              value: "10K_0603",
+              net: "N$73"
             },
             {
-              name: "R80",
-              value: "10K_0603",
-              net: "GND2"
-            },
-            {
-              name: "R79",
-              value: "10K_0603",
-              net: "GND2"
+              name: "R76",
+              value: "4.7K_0603",
+              net: "EMITTER_OUT2"
             }
           ]
         },
@@ -3085,22 +3085,22 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R100",
-              value: "180^_0603",
-              net: "N$82"
+              name: "R124",
+              value: "JUMPER_0603_1/10W",
+              net: "EE_DAT_ESP3"
             },
             {
-              name: "R103",
-              value: "180^_0603",
-              net: "N$84"
+              name: "R121",
+              value: "1.2K_0805",
+              net: "ESP32_PGM_TX3"
             },
             {
-              name: "R106",
-              value: "180^_0603",
-              net: "+3.3V3"
+              name: "R120",
+              value: "1.2K_0805",
+              net: "ESP32_PGM_RX3"
             },
             {
-              name: "R125",
+              name: "R110",
               value: "10K_0603",
               net: "+3.3V3"
             },
@@ -3120,12 +3120,12 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R106",
-              value: "180^_0603",
-              net: "+3.3V3"
+              name: "R119",
+              value: "10K_0603",
+              net: "N$100"
             },
             {
-              name: "R125",
+              name: "R110",
               value: "10K_0603",
               net: "+3.3V3"
             },
@@ -3135,13 +3135,13 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "+3.3V3"
             },
             {
-              name: "R127",
+              name: "R122",
               value: "10K_0603",
               net: "+3.3V3"
             },
             {
-              name: "R105",
-              value: "1.62K_0805_1%",
+              name: "R106",
+              value: "180^_0603",
               net: "+3.3V3"
             }
           ]
@@ -3179,29 +3179,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R2",
+              name: "R12",
+              value: "10K_0603",
+              net: "VALVE_CLOSED"
+            },
+            {
+              name: "R3",
               value: "180^_0603",
-              net: "N$2"
+              net: "N$3"
             },
             {
-              name: "R22",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_TX"
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
             },
             {
-              name: "R7",
-              value: "180^_0603",
-              net: "OUTPUT"
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
             },
             {
-              name: "R8",
-              value: "180^_0603",
-              net: "OUTPUT"
-            },
-            {
-              name: "R21",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_RX"
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         },
@@ -3214,29 +3214,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R19",
+              value: "10K_0603",
+              net: "N$22"
+            },
+            {
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
+            },
+            {
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
               name: "R9",
               value: "4.7K_0603",
-              net: "EMITTER_OUT"
-            },
-            {
-              name: "R21",
-              value: "1.2K_0805",
-              net: "N$21"
-            },
-            {
-              name: "R18",
-              value: "10K_0603",
-              net: "N$24"
-            },
-            {
-              name: "R29",
-              value: "10K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R28",
-              value: "10K_0603",
-              net: "+3.3V"
+              net: "GND"
             }
           ]
         }
@@ -3261,29 +3261,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R13",
-              value: "100K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R24",
-              value: "100K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R63",
-              value: "JUMPER_0805",
-              net: "+3.3V"
-            },
-            {
-              name: "R7",
-              value: "47K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R20",
+              name: "R54",
               value: "10K_0603",
-              net: "+3.3V"
+              net: "GND"
+            },
+            {
+              name: "R61",
+              value: "JUMPER_0805",
+              net: "GND"
+            },
+            {
+              name: "R36",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R38",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R44",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         },
@@ -3296,29 +3296,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R18",
-              value: "10M_0603",
-              net: "N$13"
-            },
-            {
-              name: "R34",
-              value: "10K_0603",
-              net: "LORA_RST"
-            },
-            {
               name: "R19",
               value: "100K_0603",
               net: "N$21"
             },
             {
-              name: "R48",
-              value: "180^_0603",
-              net: "ESP32_LED2"
-            },
-            {
               name: "R10",
               value: "10K_0805_1%",
               net: "ESP32_EN"
+            },
+            {
+              name: "R18",
+              value: "10M_0603",
+              net: "N$13"
+            },
+            {
+              name: "R21",
+              value: "75^_0805",
+              net: "+3.3V"
+            },
+            {
+              name: "R20",
+              value: "10K_0603",
+              net: "+3.3V"
             }
           ]
         }
@@ -3343,29 +3343,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R13",
-              value: "100K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R24",
-              value: "100K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R63",
-              value: "JUMPER_0805",
-              net: "+3.3V"
-            },
-            {
-              name: "R7",
-              value: "47K_0603",
-              net: "+3.3V"
-            },
-            {
-              name: "R20",
+              name: "R54",
               value: "10K_0603",
-              net: "+3.3V"
+              net: "GND"
+            },
+            {
+              name: "R61",
+              value: "JUMPER_0805",
+              net: "GND"
+            },
+            {
+              name: "R36",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R38",
+              value: "10K_0603",
+              net: "GND"
+            },
+            {
+              name: "R44",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         },
@@ -3378,29 +3378,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R18",
-              value: "10M_0603",
-              net: "N$13"
-            },
-            {
-              name: "R34",
-              value: "10K_0603",
-              net: "LORA_RST"
-            },
-            {
               name: "R19",
               value: "100K_0603",
               net: "N$21"
             },
             {
-              name: "R48",
-              value: "180^_0603",
-              net: "ESP32_LED2"
-            },
-            {
               name: "R10",
               value: "10K_0805_1%",
               net: "ESP32_EN"
+            },
+            {
+              name: "R18",
+              value: "10M_0603",
+              net: "N$13"
+            },
+            {
+              name: "R21",
+              value: "75^_0805",
+              net: "+3.3V"
+            },
+            {
+              name: "R20",
+              value: "10K_0603",
+              net: "+3.3V"
             }
           ]
         }
@@ -3446,14 +3446,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R3",
-              value: "4.7K_0603",
-              net: "N$7"
+              name: "R8",
+              value: "180^_0603",
+              net: "N$3"
             },
             {
-              name: "R7",
-              value: "180^_0603",
-              net: "N$2"
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
+            },
+            {
+              name: "R2",
+              value: "4.7K_0603",
+              net: "N$6"
             },
             {
               name: "R9",
@@ -3461,14 +3466,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "N$4"
             },
             {
-              name: "R12",
-              value: "10K_0805_1%",
-              net: "ESP32_EN"
-            },
-            {
               name: "R16",
               value: "100K_0603",
-              net: "+3.3V"
+              net: "RTC_SDA"
             }
           ]
         }
@@ -3493,16 +3493,6 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R87",
-              value: "0",
-              net: "USB_VBUS1"
-            },
-            {
-              name: "R93",
-              value: "0",
-              net: "USB_VBUS1"
-            },
-            {
               name: "R90",
               value: "0",
               net: "USB_VBUS2"
@@ -3513,9 +3503,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "USB_VBUS2"
             },
             {
-              name: "R92",
+              name: "R89",
               value: "0",
-              net: "USB_GND1"
+              net: "USB_CC2"
+            },
+            {
+              name: "R95",
+              value: "0",
+              net: "USB_CC2"
+            },
+            {
+              name: "R94",
+              value: "0",
+              net: "USB_CC1"
             }
           ]
         },
@@ -3528,28 +3528,28 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R43",
-              value: "33k",
-              net: "GND"
-            },
-            {
               name: "R20",
               value: "470k",
               net: "GND"
             },
             {
-              name: "R16",
-              value: "100k",
-              net: "GND"
-            },
-            {
-              name: "R99",
-              value: "5.1k",
-              net: "GND"
-            },
-            {
               name: "R78",
               value: "100k",
+              net: "GND"
+            },
+            {
+              name: "R97",
+              value: "0",
+              net: "GND"
+            },
+            {
+              name: "R39",
+              value: "0",
+              net: "GND"
+            },
+            {
+              name: "R98",
+              value: "5.1k",
               net: "GND"
             }
           ]
@@ -3563,29 +3563,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R22",
+              name: "R120",
+              value: "0",
+              net: "VID1"
+            },
+            {
+              name: "R86",
               value: "1k",
-              net: "BLUE"
+              net: "PCB_ID2"
             },
             {
-              name: "R125",
-              value: "100",
-              net: "RXD"
+              name: "R84",
+              value: "1k",
+              net: "PCB_ID2"
             },
             {
-              name: "R6",
+              name: "R78",
               value: "100k",
-              net: "COM_EN2"
+              net: "PCB_ID2"
             },
             {
-              name: "R21",
+              name: "R82",
               value: "1k",
-              net: "BUZZER"
-            },
-            {
-              name: "R113",
-              value: "100",
-              net: "TXD"
+              net: "PCB_ID2"
             }
           ]
         }
@@ -3610,14 +3610,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R2",
-              value: "180^_0603",
-              net: "N$2"
+              name: "R7",
+              value: "10K_0603",
+              net: "SCL"
             },
             {
-              name: "R22",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_TX"
+              name: "R8",
+              value: "10K_0603",
+              net: "RST"
             },
             {
               name: "R21",
@@ -3625,14 +3625,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "ESP32_PGM_RX"
             },
             {
-              name: "R7",
+              name: "R13",
               value: "10K_0603",
-              net: "SCL"
+              net: "N$9"
             },
             {
-              name: "R9",
+              name: "R5",
               value: "10K_0603",
-              net: "ESP32_EN"
+              net: "SDA"
             }
           ]
         },
@@ -3645,9 +3645,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R18",
+              name: "R19",
               value: "10K_0603",
-              net: "N$24"
+              net: "N$22"
             },
             {
               name: "R21",
@@ -3655,19 +3655,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "N$21"
             },
             {
-              name: "R7",
-              value: "10K_0603",
-              net: "+3.3V"
+              name: "R22",
+              value: "1.2K_0805",
+              net: "N$20"
             },
             {
-              name: "R11",
-              value: "10K_0603",
-              net: "+3.3V"
+              name: "R4",
+              value: "JUMPER_0805_2.5A",
+              net: "+5V"
             },
             {
-              name: "R9",
+              name: "R18",
               value: "10K_0603",
-              net: "+3.3V"
+              net: "N$24"
             }
           ]
         }
@@ -3692,16 +3692,6 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R62",
-              value: "10K_0603",
-              net: "ESP32A_IO0"
-            },
-            {
-              name: "R59",
-              value: "1.2K_0603",
-              net: "ESP32A_IO0"
-            },
-            {
               name: "R61",
               value: "1.2K_0603",
               net: "ESP32A_PGM_RX"
@@ -3712,9 +3702,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "RTC_SCL"
             },
             {
-              name: "R49",
+              name: "R59",
+              value: "1.2K_0603",
+              net: "ESP32A_IO0"
+            },
+            {
+              name: "R62",
               value: "10K_0603",
-              net: "GND"
+              net: "ESP32A_IO0"
+            },
+            {
+              name: "R60",
+              value: "1.2K_0603",
+              net: "ESP32A_PGM_TX"
             }
           ]
         }
@@ -3747,14 +3747,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R3",
-              value: "4.7K_0603",
-              net: "N$7"
+              name: "R8",
+              value: "180^_0603",
+              net: "N$3"
             },
             {
-              name: "R7",
-              value: "180^_0603",
-              net: "N$2"
+              name: "R4",
+              value: "2.7K_0603",
+              net: "GND"
+            },
+            {
+              name: "R2",
+              value: "4.7K_0603",
+              net: "N$6"
             },
             {
               name: "R9",
@@ -3762,14 +3767,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "N$4"
             },
             {
-              name: "R12",
-              value: "10K_0805_1%",
-              net: "ESP32_EN"
-            },
-            {
               name: "R16",
               value: "100K_0603",
-              net: "+3.3V"
+              net: "RTC_SDA"
             }
           ]
         }
@@ -3875,6 +3875,11 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
+              name: "R2",
+              value: "1.2K_0603",
+              net: "ESP32A_PGM_TX"
+            },
+            {
               name: "R4",
               value: "1.2K_0603",
               net: "ESP32A_EN"
@@ -3885,19 +3890,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "ESP32A_EN"
             },
             {
-              name: "R7",
-              value: "10K_0603",
-              net: "ESP32A_IO0"
-            },
-            {
-              name: "R1",
+              name: "R3",
               value: "1.2K_0603",
-              net: "ESP32A_IO0"
+              net: "ESP32A_PGM_RX"
             },
             {
-              name: "R7",
-              value: "10K_0603",
-              net: "+3.3V"
+              name: "R60",
+              value: "100K_0603",
+              net: "RTC_SDA"
             }
           ]
         }
@@ -3987,29 +3987,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R3",
-              value: "180^_0603",
-              net: "N$7"
-            },
-            {
-              name: "R75",
-              value: "180^_0603",
-              net: "BLUE_INDICATOR"
-            },
-            {
               name: "R25",
               value: "180^_0603",
               net: "GREEN_INDICATOR"
             },
             {
-              name: "R30",
-              value: "10K_0603",
-              net: "ESP32_EN"
+              name: "R45",
+              value: "150^_0603",
+              net: "GND"
             },
             {
-              name: "R29",
-              value: "10K_0603",
-              net: "+3.3V"
+              name: "R52",
+              value: "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0",
+              net: "GND"
+            },
+            {
+              name: "R2",
+              value: "180^_0603",
+              net: "N$6"
+            },
+            {
+              name: "R75",
+              value: "180^_0603",
+              net: "BLUE_INDICATOR"
             }
           ]
         }
@@ -4091,14 +4091,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R2",
-              value: "180^_0603",
-              net: "N$2"
+              name: "R7",
+              value: "10K_0603",
+              net: "SCL"
             },
             {
-              name: "R22",
-              value: "1.2K_0805",
-              net: "ESP32_PGM_TX"
+              name: "R8",
+              value: "10K_0603",
+              net: "RST"
             },
             {
               name: "R21",
@@ -4106,14 +4106,14 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "ESP32_PGM_RX"
             },
             {
-              name: "R7",
+              name: "R13",
               value: "10K_0603",
-              net: "SCL"
+              net: "N$9"
             },
             {
-              name: "R9",
+              name: "R5",
               value: "10K_0603",
-              net: "ESP32_EN"
+              net: "SDA"
             }
           ]
         },
@@ -4175,9 +4175,9 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R18",
+              name: "R19",
               value: "10K_0603",
-              net: "N$24"
+              net: "N$22"
             },
             {
               name: "R21",
@@ -4185,19 +4185,19 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "N$21"
             },
             {
-              name: "R7",
-              value: "10K_0603",
-              net: "+3.3V"
+              name: "R22",
+              value: "1.2K_0805",
+              net: "N$20"
             },
             {
-              name: "R11",
-              value: "10K_0603",
-              net: "+3.3V"
+              name: "R4",
+              value: "JUMPER_0805_2.5A",
+              net: "+5V"
             },
             {
-              name: "R9",
+              name: "R18",
               value: "10K_0603",
-              net: "+3.3V"
+              net: "N$24"
             }
           ]
         }
@@ -4227,22 +4227,22 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               net: "GREEN_INDICATOR"
             },
             {
-              name: "R24",
+              name: "R75",
               value: "180^_0603",
-              net: "RED_INDICATOR"
-            },
-            {
-              name: "R58",
-              value: "JUMPER_0603_1/10W",
-              net: "+3.3V"
+              net: "BLUE_INDICATOR"
             },
             {
               name: "R66",
               value: "100K_0603",
-              net: "+3.3V"
+              net: "RTPINT_CTPSDA"
             },
             {
-              name: "R62",
+              name: "R1",
+              value: "180^_0603",
+              net: "N$5"
+            },
+            {
+              name: "R64",
               value: "JUMPER_0603_1/10W",
               net: "+3.3V"
             }
@@ -4330,21 +4330,6 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R67",
-              value: "150^_0603",
-              net: "N$99"
-            },
-            {
-              name: "R69",
-              value: "10K_0603",
-              net: "N$96"
-            },
-            {
-              name: "R70",
-              value: "4.7K_0603",
-              net: "N$96"
-            },
-            {
               name: "R68",
               value: "150^_0603",
               net: "N$100"
@@ -4352,7 +4337,22 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
             {
               name: "R70",
               value: "4.7K_0603",
-              net: "+5V"
+              net: "N$96"
+            },
+            {
+              name: "R69",
+              value: "10K_0603",
+              net: "N$96"
+            },
+            {
+              name: "R67",
+              value: "150^_0603",
+              net: "N$99"
+            },
+            {
+              name: "R69",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         }
@@ -4377,24 +4377,24 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R18",
-              value: "75^_0805",
-              net: "C7"
-            },
-            {
-              name: "R17",
-              value: "75^_0805",
-              net: "C6"
-            },
-            {
               name: "R48",
               value: "75^_0805",
               net: "C1"
             },
             {
+              name: "R18",
+              value: "75^_0805",
+              net: "C7"
+            },
+            {
               name: "R13",
               value: "75^_0805",
               net: "C2"
+            },
+            {
+              name: "R17",
+              value: "75^_0805",
+              net: "C6"
             }
           ]
         },
@@ -4406,11 +4406,6 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           esdProtection: [],
           termination: [],
           biasResistors: [
-            {
-              name: "R19",
-              value: "75^_0805",
-              net: "C8"
-            },
             {
               name: "R15",
               value: "75^_0805",
@@ -4425,6 +4420,11 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
               name: "R14",
               value: "75^_0805",
               net: "C3"
+            },
+            {
+              name: "R19",
+              value: "75^_0805",
+              net: "C8"
             }
           ]
         }
@@ -4453,29 +4453,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R24",
-              value: "10M_0603",
-              net: "+3.3V"
+              name: "R23",
+              value: "10K_0603",
+              net: "GND"
             },
             {
-              name: "R7",
-              value: "47K_0603",
-              net: "+3.3V"
+              name: "R1",
+              value: "180^_0603",
+              net: "GND"
             },
             {
-              name: "R20",
-              value: "100K_0603",
-              net: "+3.3V"
+              name: "R10",
+              value: "1M_0603_1%",
+              net: "GND"
             },
             {
-              name: "R17",
-              value: "75^_0805",
-              net: "+3.3V"
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
             },
             {
-              name: "R16",
-              value: "100K_0603",
-              net: "+3.3V"
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         },
@@ -4488,29 +4488,29 @@ export const commInterfaceDesigns: CommInterfaceDesign[] = [
           termination: [],
           biasResistors: [
             {
-              name: "R25",
+              name: "R23",
               value: "10K_0603",
-              net: "N$26"
+              net: "GND"
             },
             {
-              name: "R24",
-              value: "10M_0603",
-              net: "+3.3V"
+              name: "R1",
+              value: "180^_0603",
+              net: "GND"
             },
             {
-              name: "R7",
-              value: "47K_0603",
-              net: "+3.3V"
+              name: "R10",
+              value: "1M_0603_1%",
+              net: "GND"
             },
             {
-              name: "R20",
-              value: "100K_0603",
-              net: "+3.3V"
+              name: "R13",
+              value: "10K_0603",
+              net: "GND"
             },
             {
-              name: "R17",
-              value: "75^_0805",
-              net: "+3.3V"
+              name: "R14",
+              value: "10K_0603",
+              net: "GND"
             }
           ]
         }

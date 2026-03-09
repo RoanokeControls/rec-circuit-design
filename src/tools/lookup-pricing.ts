@@ -29,47 +29,57 @@ export function registerLookupPricing(server: McpServer) {
         };
       }
 
-      const result = await getPartPricing(partNumber, undefined, qty);
+      try {
+        const result = await getPartPricing(partNumber, undefined, qty);
 
-      if (!result) {
+        if (!result) {
+          return {
+            content: [{
+              type: "text" as const,
+              text: JSON.stringify({
+                partNumber,
+                qty,
+                result: "No pricing found",
+                searchesRemaining: digikey.isConfigured() ? digikey.getRemainingSearches() : "N/A (not configured)",
+              }, null, 2),
+            }],
+          };
+        }
+
         return {
           content: [{
             type: "text" as const,
             text: JSON.stringify({
               partNumber,
               qty,
-              result: "No pricing found",
-              searchesRemaining: digikey.isConfigured() ? digikey.getRemainingSearches() : "N/A (not configured)",
+              source: result.source,
+              bestPrice: result.bestPrice,
+              bestPriceQty100: result.bestPriceQty100,
+              totalStock: result.totalStock,
+              offersCount: result.offers.length,
+              searchesRemaining: digikey.isConfigured() ? digikey.getRemainingSearches() : "N/A",
+              offers: result.offers.map((o) => ({
+                distributor: o.distributor,
+                mpn: o.mpn,
+                manufacturer: o.manufacturer,
+                description: o.description,
+                stock: o.stock,
+                moq: o.moq,
+                priceBreaks: o.priceBreaks,
+                url: o.url,
+              })),
             }, null, 2),
           }],
         };
+      } catch (err) {
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify({ error: "Pricing lookup failed", detail: String(err) }, null, 2),
+          }],
+          isError: true,
+        };
       }
-
-      return {
-        content: [{
-          type: "text" as const,
-          text: JSON.stringify({
-            partNumber,
-            qty,
-            source: result.source,
-            bestPrice: result.bestPrice,
-            bestPriceQty100: result.bestPriceQty100,
-            totalStock: result.totalStock,
-            offersCount: result.offers.length,
-            searchesRemaining: digikey.isConfigured() ? digikey.getRemainingSearches() : "N/A",
-            offers: result.offers.map((o) => ({
-              distributor: o.distributor,
-              mpn: o.mpn,
-              manufacturer: o.manufacturer,
-              description: o.description,
-              stock: o.stock,
-              moq: o.moq,
-              priceBreaks: o.priceBreaks,
-              url: o.url,
-            })),
-          }, null, 2),
-        }],
-      };
     }
   );
 }

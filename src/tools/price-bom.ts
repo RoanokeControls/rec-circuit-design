@@ -27,52 +27,62 @@ export function registerPriceBom(server: McpServer) {
         };
       }
 
-      const bom = await getDesignBom(designName);
+      try {
+        const bom = await getDesignBom(designName);
 
-      if (!bom) {
-        const suggestions = await findDesign(designName);
-        const suggList = suggestions.slice(0, 8).map((s) => `  - ${s.name}`).join("\n");
+        if (!bom) {
+          const suggestions = await findDesign(designName);
+          const suggList = suggestions.slice(0, 8).map((s) => `  - ${s.name}`).join("\n");
+          return {
+            content: [{
+              type: "text" as const,
+              text: `Design "${designName}" not found.\n\nDid you mean:\n${suggList}`,
+            }],
+          };
+        }
+
+        const result = await getBomPricing(bom, designName, boardQty);
+
+        const summary = {
+          designName: result.designName,
+          boardQty: result.boardQty,
+          uniqueParts: result.linesTotal,
+          totalCostInventory: result.totalCostInventory,
+          totalCostLive: result.totalCostLive,
+          costPerBoardLive: result.costPerBoardLive,
+          pricingCoverage: `${result.linesWithPricing}/${result.linesTotal} parts priced`,
+          searchesRemaining: digikey.isConfigured() ? digikey.getRemainingSearches() : "N/A",
+          lines: result.lines.map((l) => ({
+            deviceset: l.deviceset,
+            value: l.value,
+            qtyPerBoard: l.qtyPerBoard,
+            qtyTotal: l.qtyTotal,
+            inventoryCost: l.inventoryCost,
+            liveBestPrice: l.liveBestPrice,
+            lineCostInventory: l.lineCostInventory,
+            lineCostLive: l.lineCostLive,
+            pricingSource: l.pricingSource,
+            topOffer: l.offers[0]
+              ? {
+                  mpn: l.offers[0].mpn,
+                  manufacturer: l.offers[0].manufacturer,
+                  stock: l.offers[0].stock,
+                  url: l.offers[0].url,
+                }
+              : null,
+          })),
+        };
+
+        return { content: [{ type: "text" as const, text: JSON.stringify(summary, null, 2) }] };
+      } catch (err) {
         return {
           content: [{
             type: "text" as const,
-            text: `Design "${designName}" not found.\n\nDid you mean:\n${suggList}`,
+            text: JSON.stringify({ error: "BOM pricing failed", detail: String(err) }, null, 2),
           }],
+          isError: true,
         };
       }
-
-      const result = await getBomPricing(bom, designName, boardQty);
-
-      const summary = {
-        designName: result.designName,
-        boardQty: result.boardQty,
-        uniqueParts: result.linesTotal,
-        totalCostInventory: result.totalCostInventory,
-        totalCostLive: result.totalCostLive,
-        costPerBoardLive: result.costPerBoardLive,
-        pricingCoverage: `${result.linesWithPricing}/${result.linesTotal} parts priced`,
-        searchesRemaining: digikey.isConfigured() ? digikey.getRemainingSearches() : "N/A",
-        lines: result.lines.map((l) => ({
-          deviceset: l.deviceset,
-          value: l.value,
-          qtyPerBoard: l.qtyPerBoard,
-          qtyTotal: l.qtyTotal,
-          inventoryCost: l.inventoryCost,
-          liveBestPrice: l.liveBestPrice,
-          lineCostInventory: l.lineCostInventory,
-          lineCostLive: l.lineCostLive,
-          pricingSource: l.pricingSource,
-          topOffer: l.offers[0]
-            ? {
-                mpn: l.offers[0].mpn,
-                manufacturer: l.offers[0].manufacturer,
-                stock: l.offers[0].stock,
-                url: l.offers[0].url,
-              }
-            : null,
-        })),
-      };
-
-      return { content: [{ type: "text" as const, text: JSON.stringify(summary, null, 2) }] };
     }
   );
 }

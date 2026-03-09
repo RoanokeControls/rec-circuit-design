@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { referenceCircuits, powerSupplies, protectionCircuits } from "../knowledge/index.js";
+import { BlockComponent } from "../types/index.js";
 import { getInventory } from "../utils/inventory-fetcher.js";
 import { getDesignBom, findDesign } from "../utils/design-loader.js";
 
@@ -91,21 +92,22 @@ export function registerGenerateBom(server: McpServer) {
         }
       } else {
         // --- Path 2: circuit block IDs (original flow) ---
-        const addComponent = (comp: { refDes: string; value?: string; description: string; eagleDevice: string; eaglePackage: string; eagleLibrary: string; partNumber?: string }) => {
+        const addComponent = (comp: BlockComponent) => {
+          if (!comp.eagleDevice) return; // skip generic/unspecified components
           const inv = inventory.find((i) => i.eagleDevice === comp.eagleDevice);
           bomLines.push({
             refDes: comp.refDes,
             value: comp.value ?? "",
             description: comp.description,
             partNumber: inv?.partNumber ?? comp.partNumber ?? "TBD",
-            package: comp.eaglePackage,
+            package: comp.eaglePackage ?? "",
             qtyPerBoard: 1,
             qtyTotal: boardQty,
             inStock: inv?.status ?? "not-in-inventory",
             qtyOnHand: inv?.qtyOnHand ?? 0,
             unitCost: inv?.unitCost ?? 0,
             lineCost: (inv?.unitCost ?? 0) * boardQty,
-            eagleLib: `${comp.eagleLibrary}:${comp.eagleDevice}`,
+            eagleLib: `${comp.eagleLibrary ?? ""}:${comp.eagleDevice}`,
           });
         };
 

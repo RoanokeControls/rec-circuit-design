@@ -627,11 +627,11 @@ export const mcuProfiles: McuProfile[] = [
           count: 18
         },
         {
-          value: "1UF_0805_20%",
+          value: "22UF_0805",
           count: 2
         },
         {
-          value: "22UF_0805",
+          value: "1UF_0805_20%",
           count: 2
         }
       ],

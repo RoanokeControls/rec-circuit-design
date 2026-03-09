@@ -38,11 +38,20 @@ except ImportError:
     print("  pip3 install requests")
     sys.exit(1)
 
-try:
-    from dotenv import load_dotenv
-    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
-except ImportError:
-    pass  # python-dotenv is optional; fall back to env vars
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def _load_env():
+    """Load .env file manually (no python-dotenv dependency)."""
+    env_path = os.path.join(SCRIPT_DIR, ".env")
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ.setdefault(k.strip(), v.strip())
+
+_load_env()
 
 from fusion_parsers import (
     extract_eagle_xml,

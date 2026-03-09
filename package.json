@@ -1,11 +1,11 @@
 {
   "name": "rec-circuit-design",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Circuit design knowledge, inventory-aware component selection, and Eagle SCR script generation",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp src/knowledge/managed-3d-urns.json dist/knowledge/",
     "start": "node dist/index.js",
     "dev": "tsc --watch"
   },

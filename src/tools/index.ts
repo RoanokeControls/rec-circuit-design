@@ -54,6 +54,7 @@ import { registerLookupTestpoints } from "./lookup-testpoints.js";
 import { registerLookupBoardDesign } from "./lookup-board-design.js";
 import { registerLookupProgrammingInterface } from "./lookup-programming-interface.js";
 import { registerLookupLayoutPattern } from "./lookup-layout-pattern.js";
+import { registerLookupFormula } from "./lookup-formula.js";
 
 // ── Knowledge Input Tools (for engineers on the floor) ──
 import { registerAddLessonLearned } from "./add-lesson-learned.js";
@@ -118,6 +119,7 @@ export function registerAllTools(server: McpServer) {
   registerLookupBoardDesign(server);
   registerLookupProgrammingInterface(server);
   registerLookupLayoutPattern(server);
+  registerLookupFormula(server);
 
   // Knowledge Input (6)
   registerAddLessonLearned(server);

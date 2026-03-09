@@ -22,11 +22,12 @@ export function registerLookupReferenceCircuit(server: McpServer) {
       );
 
       if (matches.length === 0) {
+        const categories = [...new Set(referenceCircuits.map((rc) => rc.category))].sort();
         return {
           content: [
             {
               type: "text" as const,
-              text: `No reference circuits found for "${query}". Available circuits:\n${referenceCircuits.map((rc) => `- ${rc.id}: ${rc.name} (${rc.category})`).join("\n")}`,
+              text: `No reference circuits found for "${query}". ${referenceCircuits.length} circuits available.\n\nTry searching by category:\n${categories.map((c) => `- ${c}`).join("\n")}`,
             },
           ],
         };

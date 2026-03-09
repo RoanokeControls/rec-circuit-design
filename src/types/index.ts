@@ -125,6 +125,7 @@ export type CircuitCategory =
   | "data-conversion"
   | "sound-effects"
   | "pll"
+  | "counter"
   | "custom";
 
 export interface CircuitBlock {
@@ -189,6 +190,9 @@ export type BlockType =
   | "sound-generator"
   | "pll"
   | "display-driver"
+  | "counter"
+  | "sequencer"
+  | "dac"
   | "custom";
 
 export interface BlockComponent {

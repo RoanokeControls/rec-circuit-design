@@ -7,6 +7,32 @@ import { generateLayersXml } from "../knowledge/eagle-libraries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// ── Managed 3D URN lookup ──
+// Maps IPC package names (e.g. RESC1608X60, SOT23) to real Autodesk cloud URNs
+// extracted from Fusion 360's managed component libraries. These URNs point to
+// actual 3D assets on Autodesk's servers that Fusion can resolve and render.
+let managedUrnMap: Record<string, string> | null = null;
+
+function lookupManagedUrn(packageName: string): string | null {
+  if (!managedUrnMap) {
+    // Try dist/knowledge first (runtime), then src/knowledge (dev)
+    const candidates = [
+      join(__dirname, "..", "knowledge", "managed-3d-urns.json"),
+      join(__dirname, "..", "..", "src", "knowledge", "managed-3d-urns.json"),
+    ];
+    for (const p of candidates) {
+      if (existsSync(p)) {
+        try {
+          managedUrnMap = JSON.parse(readFileSync(p, "utf-8"));
+          break;
+        } catch { /* continue */ }
+      }
+    }
+    if (!managedUrnMap) managedUrnMap = {};
+  }
+  return managedUrnMap[packageName] ?? null;
+}
+
 // ── Library data path ──
 // The v2 JSON export from export-library-v2.ulp lives in the autodesk-coder project
 const LIBRARY_DATA_DIR =
@@ -308,7 +334,7 @@ function generateSymbolXml(sym: Symbol): string {
   return lines.join("\n");
 }
 
-function generateDevicesetXml(ds: Deviceset): string {
+function generateDevicesetXml(ds: Deviceset, urnMap: Map<string, string>): string {
   const lines: string[] = [];
   const uservalue = ds.value === "On" ? ` uservalue="yes"` : "";
   lines.push(`<deviceset name="${xmlEsc(ds.name)}" prefix="${xmlEsc(ds.prefix)}"${uservalue}>`);
@@ -337,6 +363,13 @@ function generateDevicesetXml(ds: Deviceset): string {
         }
         lines.push(`</connects>`);
       }
+      // 3D model reference (real Autodesk managed URN)
+      const urn = urnMap.get(d.footprint);
+      if (urn) {
+        lines.push(`<package3dinstances>`);
+        lines.push(`<package3dinstance package3d_urn="${xmlEsc(urn)}"/>`);
+        lines.push(`</package3dinstances>`);
+      }
       // Technologies
       const techs = d.technologies === "''" ? [""] : d.technologies.split(" ").filter(Boolean);
       lines.push(`<technologies>`);
@@ -363,6 +396,7 @@ function generateLibraryXml(
   devicesets: Deviceset[],
   footprints: Footprint[],
   symbols: Symbol[],
+  urnMap: Map<string, string>,
 ): string {
   const lines: string[] = [];
   lines.push(`<?xml version="1.0" encoding="utf-8"?>`);
@@ -377,12 +411,29 @@ function generateLibraryXml(
   lines.push(generateLayersXml());
   lines.push(`<library name="${xmlEsc(libraryName)}">`);
 
-  // Packages
+  // Packages (2D footprints only — no 3D references here)
   lines.push(`<packages>`);
   for (const fp of footprints) {
     lines.push(generateFootprintXml(fp));
   }
   lines.push(`</packages>`);
+
+  // Packages3d — references to real Autodesk managed library 3D assets
+  // These URNs point to existing 3D models on Autodesk's cloud servers
+  // that Fusion 360 can resolve and render in the 3D PCB view.
+  const matchedFootprints = footprints.filter(fp => urnMap.has(fp.name));
+  if (matchedFootprints.length > 0) {
+    lines.push(`<packages3d>`);
+    for (const fp of matchedFootprints) {
+      const urn = urnMap.get(fp.name)!;
+      lines.push(`<package3d name="${xmlEsc(fp.name)}" urn="${xmlEsc(urn)}" type="model">`);
+      lines.push(`<packageinstances>`);
+      lines.push(`<packageinstance name="${xmlEsc(fp.name)}"/>`);
+      lines.push(`</packageinstances>`);
+      lines.push(`</package3d>`);
+    }
+    lines.push(`</packages3d>`);
+  }
 
   // Symbols
   lines.push(`<symbols>`);
@@ -391,10 +442,10 @@ function generateLibraryXml(
   }
   lines.push(`</symbols>`);
 
-  // Devicesets
+  // Devicesets (with package3dinstances inside each device)
   lines.push(`<devicesets>`);
   for (const ds of devicesets) {
-    lines.push(generateDevicesetXml(ds));
+    lines.push(generateDevicesetXml(ds, urnMap));
   }
   lines.push(`</devicesets>`);
 
@@ -441,8 +492,12 @@ export function registerGenerateCustomLibrary(server: McpServer) {
         "When true and datasheetDirectory is set, refuse to generate if custom components " +
         "are missing datasheets. Set false to skip this check."
       ),
+      include3dModels: z.boolean().optional().default(true).describe(
+        "When true, queries the team 3D model API for STEP models matching each footprint " +
+        "and embeds <packages3d> references in the library. Set false to skip."
+      ),
     },
-    async ({ libraryName, components, customComponents, sourceLibrary, checkVersion, datasheetDirectory, requireDatasheets }) => {
+    async ({ libraryName, components, customComponents, sourceLibrary, checkVersion, datasheetDirectory, requireDatasheets, include3dModels }) => {
       // Load library data
       const lib = loadLibraryData(sourceLibrary);
       if (!lib) {
@@ -598,8 +653,31 @@ export function registerGenerateCustomLibrary(server: McpServer) {
         warnings.push(`Missing symbols in export: ${missingSymbols.join(", ")}`);
       }
 
+      // ── 3D model URN lookup for each unique footprint ──
+      // Match footprint names against Autodesk's managed library URNs
+      // (extracted from Fusion 360's bundled component libraries)
+      const urnMap = new Map<string, string>();
+      const models3dNotFound: string[] = [];
+
+      if (include3dModels && usedFootprints.length > 0) {
+        for (const fp of usedFootprints) {
+          const urn = lookupManagedUrn(fp.name);
+          if (urn) {
+            urnMap.set(fp.name, urn);
+          } else {
+            models3dNotFound.push(fp.name);
+          }
+        }
+
+        if (urnMap.size > 0) {
+          warnings.push(
+            `3D models: ${urnMap.size}/${usedFootprints.length} footprints matched Autodesk managed library URNs.`
+          );
+        }
+      }
+
       // Generate the library XML
-      const xml = generateLibraryXml(libraryName, foundDevicesets, usedFootprints, usedSymbols);
+      const xml = generateLibraryXml(libraryName, foundDevicesets, usedFootprints, usedSymbols, urnMap);
 
       // Build report
       let report = `# Custom Library: ${libraryName}\n\n`;
@@ -641,10 +719,33 @@ export function registerGenerateCustomLibrary(server: McpServer) {
       report += `- Source: ${libName}\n`;
       report += `- Total parts available: ${lib.devicesets.length}\n`;
 
+      // 3D model coverage
+      if (include3dModels) {
+        report += `\n## 3D Models (Autodesk Managed URNs)\n`;
+        if (urnMap.size > 0) {
+          report += `Matched ${urnMap.size} of ${usedFootprints.length} footprints to Autodesk cloud 3D assets:\n`;
+          for (const [fpName, urn] of urnMap) {
+            report += `- ${fpName} → ${urn}\n`;
+          }
+          report += `\nThese use real Autodesk managed library URNs — Fusion 360 will resolve and render them automatically in 3D view.\n`;
+        }
+        if (models3dNotFound.length > 0) {
+          report += `\nNo managed URN found (${models3dNotFound.length}):\n`;
+          for (const name of models3dNotFound) {
+            report += `- ${name}\n`;
+          }
+          report += `\nThese packages are not in Autodesk's managed libraries. ` +
+            `To add 3D models: open the footprint in Fusion Package Editor and use "Assign 3D Package" to upload a STEP file.\n`;
+        }
+      }
+
       report += `\n## Summary\n`;
       report += `- Devicesets: ${foundDevicesets.length}\n`;
       report += `- Footprints: ${usedFootprints.length}\n`;
       report += `- Symbols: ${usedSymbols.length}\n`;
+      if (include3dModels) {
+        report += `- 3D Models: ${urnMap.size}/${usedFootprints.length}\n`;
+      }
 
       report += `\n## Usage\n`;
       report += `1. Save the XML below as \`${libraryName}.lbr\`\n`;

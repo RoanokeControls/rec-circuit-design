@@ -16,8 +16,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R12:10K_0603"
+            "R12:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -56,8 +56,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R8:10K_0603"
+            "R8:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -76,8 +76,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -86,8 +86,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:150^_0603"
           ]
         },
         {
@@ -116,8 +116,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "J12:1-2058703-2",
             "R4:10K_0603",
+            "J12:1-2058703-2",
             "U1A:PIC18F26K226SP"
           ]
         },
@@ -127,9 +127,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1A:PIC18F26K226SP",
             "R36:10K_0603",
-            "R35:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "R35:10K_0603"
           ]
         },
         {
@@ -168,8 +168,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         }
       ],
@@ -190,8 +190,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:150^_0603"
           ]
         },
         {
@@ -200,8 +200,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         }
       ],
@@ -222,11 +222,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:475890001MOLEX_475890001_0_0",
-            "R35:10K_0603",
-            "C6:0.1UF_0603_5%_50V",
+            "J8:504050-0691MOLEX_504050-0691_0_0",
+            "J16:PR20203VBNNMETZ_CONNECT_PR20203VBNN_0_0",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "J5:504050-0691MOLEX_504050-0691_0_0"
+            "D2:PMBD7000"
           ]
         },
         {
@@ -235,11 +235,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:475890001MOLEX_475890001_0_0",
-            "R35:10K_0603",
-            "C6:0.1UF_0603_5%_50V",
+            "J8:504050-0691MOLEX_504050-0691_0_0",
+            "J16:PR20203VBNNMETZ_CONNECT_PR20203VBNN_0_0",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "J5:504050-0691MOLEX_504050-0691_0_0"
+            "D2:PMBD7000"
           ]
         },
         {
@@ -248,11 +248,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
+            "J16:PR20203VBNNMETZ_CONNECT_PR20203VBNN_0_0",
             "U1A:PIC18F26K226SP",
-            "R28:1K_0603",
-            "R19:10K_0603",
-            "D6:PMBD7000",
-            "C2:100UF_1206_6.3V1206"
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "R18:10K_0603"
           ]
         },
         {
@@ -261,8 +261,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R12:10K_0603"
+            "R12:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -301,8 +301,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R8:10K_0603"
+            "R8:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -352,8 +352,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:150^_0603"
           ]
         },
         {
@@ -372,8 +372,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -382,8 +382,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:150^_0603"
           ]
         },
         {
@@ -402,8 +402,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         },
         {
@@ -422,8 +422,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "J12:1-2058703-2",
             "R4:10K_0603",
+            "J12:1-2058703-2",
             "U1A:PIC18F26K226SP"
           ]
         },
@@ -433,9 +433,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1A:PIC18F26K226SP",
             "R36:10K_0603",
-            "R35:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "R35:10K_0603"
           ]
         },
         {
@@ -474,8 +474,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         }
       ]
@@ -503,8 +503,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R11:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R11:10K_0603"
           ]
         },
         {
@@ -513,8 +513,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R10:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R10:10K_0603"
           ]
         },
         {
@@ -523,8 +523,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R9:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R9:10K_0603"
           ]
         },
         {
@@ -543,8 +543,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R13:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R13:10K_0603"
           ]
         },
         {
@@ -553,8 +553,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -563,8 +563,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:150^_0603"
           ]
         },
         {
@@ -573,8 +573,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R25:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R25:150^_0603"
           ]
         },
         {
@@ -583,8 +583,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:150^_0603"
           ]
         },
         {
@@ -593,9 +593,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "J12:1-2058703-2",
             "R4:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J12:1-2058703-2"
           ]
         },
         {
@@ -604,9 +604,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R36:10K_0603",
-            "R35:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R35:10K_0603"
           ]
         },
         {
@@ -645,8 +645,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R6:1K_0603"
           ]
         }
       ],
@@ -657,8 +657,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R21:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R21:150^_0603"
           ]
         },
         {
@@ -667,8 +667,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R22:150^_0603"
           ]
         },
         {
@@ -677,8 +677,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R26:150^_0603"
           ]
         }
       ],
@@ -699,11 +699,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:475890001MOLEX_475890001_0_0",
-            "R35:10K_0603",
-            "C6:0.1UF_0603_5%_50V",
-            "J5:504050-0691MOLEX_504050-0691_0_0",
-            "Q2:MMBT3904LT1_SOT23"
+            "J8:504050-0691MOLEX_504050-0691_0_0",
+            "J16:PR20203VBNNMETZ_CONNECT_PR20203VBNN_0_0",
+            "C9:0.1UF_0603_5%_50V",
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -712,11 +712,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:475890001MOLEX_475890001_0_0",
-            "R35:10K_0603",
-            "C6:0.1UF_0603_5%_50V",
-            "J5:504050-0691MOLEX_504050-0691_0_0",
-            "Q2:MMBT3904LT1_SOT23"
+            "J8:504050-0691MOLEX_504050-0691_0_0",
+            "J16:PR20203VBNNMETZ_CONNECT_PR20203VBNN_0_0",
+            "C9:0.1UF_0603_5%_50V",
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -725,11 +725,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "R28:1K_0603",
-            "R19:10K_0603",
-            "D6:PMBD7000",
-            "C2:100UF_1206_6.3V1206",
-            "C8:0.1UF_0603_5%_50V"
+            "J16:PR20203VBNNMETZ_CONNECT_PR20203VBNN_0_0",
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "R18:10K_0603",
+            "J6:"
           ]
         },
         {
@@ -748,8 +748,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R11:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R11:10K_0603"
           ]
         },
         {
@@ -758,8 +758,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R10:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R10:10K_0603"
           ]
         },
         {
@@ -768,8 +768,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R9:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R9:10K_0603"
           ]
         },
         {
@@ -789,8 +789,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "ICSP",
           connectedParts: [
             "J16:PR20203VBNNMETZ_CONNECT_PR20203VBNN_0_0",
-            "J6:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J6:"
           ]
         },
         {
@@ -799,8 +799,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J6:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J6:"
           ]
         },
         {
@@ -809,8 +809,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "R20:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R20:150^_0603"
           ]
         },
         {
@@ -819,8 +819,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R21:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R21:150^_0603"
           ]
         },
         {
@@ -829,8 +829,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R22:150^_0603"
           ]
         },
         {
@@ -839,8 +839,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R13:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R13:10K_0603"
           ]
         },
         {
@@ -849,8 +849,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -859,8 +859,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:150^_0603"
           ]
         },
         {
@@ -869,8 +869,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R25:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R25:150^_0603"
           ]
         },
         {
@@ -879,8 +879,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R26:150^_0603"
           ]
         },
         {
@@ -889,8 +889,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:150^_0603"
           ]
         },
         {
@@ -899,9 +899,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "J12:1-2058703-2",
             "R4:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J12:1-2058703-2"
           ]
         },
         {
@@ -910,9 +910,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R36:10K_0603",
-            "R35:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R35:10K_0603"
           ]
         },
         {
@@ -951,8 +951,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R6:1K_0603"
           ]
         }
       ]
@@ -1010,11 +1010,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "RL2:J104D2C5VDC.20S",
-            "C6:0.1UF_0603_5%_50V",
-            "J5:504050-0691MOLEX_504050-0691_0_0",
-            "D6:PMBD7000",
-            "C2:100UF_1206_6.3V1206"
+            "C9:0.1UF_0603_5%_50V",
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "C10:0.1UF_0603_5%_50V",
+            "J3:5040500891MOLEX_5040500891_0_0"
           ]
         },
         {
@@ -1023,11 +1023,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "RL2:J104D2C5VDC.20S",
-            "C6:0.1UF_0603_5%_50V",
-            "J5:504050-0691MOLEX_504050-0691_0_0",
-            "D6:PMBD7000",
-            "C2:100UF_1206_6.3V1206"
+            "C9:0.1UF_0603_5%_50V",
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "C10:0.1UF_0603_5%_50V",
+            "J3:5040500891MOLEX_5040500891_0_0"
           ]
         },
         {
@@ -1036,11 +1036,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "R28:1K_0603",
-            "R19:10K_0603",
-            "D6:PMBD7000",
-            "C2:100UF_1206_6.3V1206",
-            "C8:0.1UF_0603_5%_50V"
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "R18:10K_0603",
+            "J6:",
+            "R28:1K_0603"
           ]
         },
         {
@@ -1272,9 +1272,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
             "R3:470^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R44:100^_0603"
           ]
         },
         {
@@ -1284,8 +1284,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R43:100^_0603"
           ]
         },
         {
@@ -1295,8 +1295,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R1:470^_0603",
-            "U1A:PIC18F26K226SP",
-            "R42:100^_0603"
+            "R42:100^_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -1306,8 +1306,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:10K_0603"
           ]
         },
         {
@@ -1316,9 +1316,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
             "C8:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         },
         {
@@ -1349,9 +1349,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1A:PIC18F26K226SP",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1361,8 +1361,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "U1A:PIC18F26K226SP",
-            "C24:0.1UF_0603_10%_16V",
-            "R19:1K_0603"
+            "R19:1K_0603",
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1371,9 +1371,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
             "C25:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:1K_0603"
           ]
         },
         {
@@ -1412,8 +1412,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "C12:0.1UF_0603_10%_16V",
+            "U1A:PIC18F26K226SP",
             "R30:1K_0603"
           ]
         },
@@ -1423,8 +1423,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
             "R33:1K_0603",
+            "C13:0.1UF_0603_10%_16V",
             "U1A:PIC18F26K226SP"
           ]
         },
@@ -1434,8 +1434,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R58:1K_AXIAL"
           ]
         }
       ],
@@ -1447,8 +1447,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "uart",
           connectedParts: [
             "J5:",
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         },
         {
@@ -1457,9 +1457,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
             "J5:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R25:150^_0603"
           ]
         }
       ],
@@ -1491,9 +1491,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
             "R3:470^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R44:100^_0603"
           ]
         },
         {
@@ -1503,8 +1503,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R43:100^_0603"
           ]
         },
         {
@@ -1514,8 +1514,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R1:470^_0603",
-            "U1A:PIC18F26K226SP",
-            "R42:100^_0603"
+            "R42:100^_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -1524,11 +1524,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1537,11 +1537,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1550,11 +1550,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:440054-5",
-            "R47:1.62K_0805_0.1%",
-            "U10:W25Q16JVSSIQ",
-            "R24:1.2K_0603",
-            "U1A:PIC18F26K226SP"
+            "R21:1.62K_0805_0.1%",
+            "U1A:PIC18F26K226SP",
+            "Q8:NTR4501NT1G",
+            "C5:0.1UF_0603_10%_16V",
+            "J3:"
           ]
         },
         {
@@ -1563,10 +1563,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "C6:0.1UF_0603_10%_16V",
-            "R24:1.2K_0603",
             "R11:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:1.2K_0603",
+            "C6:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1575,8 +1575,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "J1:"
           ]
         },
         {
@@ -1585,8 +1585,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "J1:"
           ]
         },
         {
@@ -1596,8 +1596,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:10K_0603"
           ]
         },
         {
@@ -1606,9 +1606,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
             "C8:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         },
         {
@@ -1639,9 +1639,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1A:PIC18F26K226SP",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1651,8 +1651,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "U1A:PIC18F26K226SP",
-            "C24:0.1UF_0603_10%_16V",
-            "R19:1K_0603"
+            "R19:1K_0603",
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1661,9 +1661,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
             "C25:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:1K_0603"
           ]
         },
         {
@@ -1702,8 +1702,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "C12:0.1UF_0603_10%_16V",
+            "U1A:PIC18F26K226SP",
             "R30:1K_0603"
           ]
         },
@@ -1713,8 +1713,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
             "R33:1K_0603",
+            "C13:0.1UF_0603_10%_16V",
             "U1A:PIC18F26K226SP"
           ]
         },
@@ -1725,8 +1725,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "uart",
           connectedParts: [
             "J5:",
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         },
         {
@@ -1735,9 +1735,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
             "J5:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R25:150^_0603"
           ]
         },
         {
@@ -1746,8 +1746,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R58:1K_AXIAL"
           ]
         }
       ]
@@ -1766,8 +1766,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R23:470^_0603",
-            "R45:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R45:100^_0603"
           ]
         },
         {
@@ -1776,9 +1776,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
+            "U1:PIC18F26K22-I/SS",
             "R3:470^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R44:100^_0603"
           ]
         },
         {
@@ -1787,9 +1787,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R43:100^_0603"
           ]
         },
         {
@@ -1798,9 +1798,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R1:470^_0603",
-            "R42:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R42:100^_0603"
           ]
         },
         {
@@ -1809,9 +1809,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R5:10K_0603"
           ]
         },
         {
@@ -1820,9 +1820,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C8:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R6:1K_0603"
           ]
         },
         {
@@ -1831,9 +1831,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C9:0.1UF_0603_10%_16V",
-            "R9:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R9:1K_0603"
           ]
         },
         {
@@ -1853,9 +1853,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1864,9 +1864,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C24:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R19:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1875,9 +1875,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C25:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R22:1K_0603"
           ]
         },
         {
@@ -1886,8 +1886,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R54:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R54:100^_0603"
           ]
         },
         {
@@ -1896,8 +1896,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R28:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R28:1.2K_0805"
           ]
         },
         {
@@ -1906,8 +1906,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:1.2K_0805"
           ]
         },
         {
@@ -1917,8 +1917,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C12:0.1UF_0603_10%_16V",
-            "R30:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R30:1K_0603"
           ]
         },
         {
@@ -1927,9 +1927,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R33:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C13:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -1938,8 +1938,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R58:1K_AXIAL"
           ]
         }
       ],
@@ -1950,9 +1950,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R26:150^_0603"
           ]
         },
         {
@@ -1961,9 +1961,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "U1:PIC18F26K22-I/SS"
+            "R25:150^_0603"
           ]
         }
       ],
@@ -1985,8 +1985,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R23:470^_0603",
-            "R45:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R45:100^_0603"
           ]
         },
         {
@@ -1995,9 +1995,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
+            "U1:PIC18F26K22-I/SS",
             "R3:470^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R44:100^_0603"
           ]
         },
         {
@@ -2006,9 +2006,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R43:100^_0603"
           ]
         },
         {
@@ -2017,9 +2017,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R1:470^_0603",
-            "R42:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R42:100^_0603"
           ]
         },
         {
@@ -2028,11 +2028,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2041,11 +2041,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2054,11 +2054,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:440054-5",
-            "R47:1.62K_0805_0.1%",
-            "U10:W25Q16JVSSIQ",
-            "R24:1.2K_0603",
-            "J9:SFV30R-3STBE1HLF"
+            "R21:1.62K_0805_0.1%",
+            "Q8:NTR4501NT1G",
+            "C5:0.1UF_0603_10%_16V",
+            "J3:",
+            "R18:1.62K_0805_0.1%"
           ]
         },
         {
@@ -2067,10 +2067,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "C6:0.1UF_0603_10%_16V",
-            "R24:1.2K_0603",
             "R11:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R24:1.2K_0603",
+            "U1:PIC18F26K22-I/SS",
+            "C6:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2079,8 +2079,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J1:"
           ]
         },
         {
@@ -2089,8 +2089,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J1:"
           ]
         },
         {
@@ -2099,9 +2099,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R5:10K_0603"
           ]
         },
         {
@@ -2110,9 +2110,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C8:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R6:1K_0603"
           ]
         },
         {
@@ -2121,9 +2121,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C9:0.1UF_0603_10%_16V",
-            "R9:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R9:1K_0603"
           ]
         },
         {
@@ -2143,9 +2143,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2154,9 +2154,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C24:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R19:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2165,9 +2165,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C25:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R22:1K_0603"
           ]
         },
         {
@@ -2176,8 +2176,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R54:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R54:100^_0603"
           ]
         },
         {
@@ -2186,8 +2186,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R28:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R28:1.2K_0805"
           ]
         },
         {
@@ -2196,8 +2196,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:1.2K_0805"
           ]
         },
         {
@@ -2207,8 +2207,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C12:0.1UF_0603_10%_16V",
-            "R30:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R30:1K_0603"
           ]
         },
         {
@@ -2217,9 +2217,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R33:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C13:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2228,9 +2228,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R26:150^_0603"
           ]
         },
         {
@@ -2239,9 +2239,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "U1:PIC18F26K22-I/SS"
+            "R25:150^_0603"
           ]
         },
         {
@@ -2250,8 +2250,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R58:1K_AXIAL"
           ]
         }
       ]
@@ -2280,9 +2280,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
             "R3:470^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R44:100^_0603"
           ]
         },
         {
@@ -2292,8 +2292,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R43:100^_0603"
           ]
         },
         {
@@ -2303,8 +2303,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R1:470^_0603",
-            "U1A:PIC18F26K226SP",
-            "R42:100^_0603"
+            "R42:100^_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -2314,8 +2314,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:10K_0603"
           ]
         },
         {
@@ -2324,9 +2324,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
             "C8:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         },
         {
@@ -2357,9 +2357,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1A:PIC18F26K226SP",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2369,8 +2369,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "U1A:PIC18F26K226SP",
-            "C24:0.1UF_0603_10%_16V",
-            "R19:1K_0603"
+            "R19:1K_0603",
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2379,9 +2379,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
             "C25:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:1K_0603"
           ]
         },
         {
@@ -2420,8 +2420,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "C12:0.1UF_0603_10%_16V",
+            "U1A:PIC18F26K226SP",
             "R30:1K_0603"
           ]
         },
@@ -2431,8 +2431,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
             "R33:1K_0603",
+            "C13:0.1UF_0603_10%_16V",
             "U1A:PIC18F26K226SP"
           ]
         },
@@ -2442,8 +2442,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R58:1K_AXIAL"
           ]
         }
       ],
@@ -2455,8 +2455,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "uart",
           connectedParts: [
             "J5:",
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         },
         {
@@ -2465,9 +2465,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
             "J5:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R25:150^_0603"
           ]
         }
       ],
@@ -2499,9 +2499,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
             "R3:470^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R44:100^_0603"
           ]
         },
         {
@@ -2511,8 +2511,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R43:100^_0603"
           ]
         },
         {
@@ -2522,8 +2522,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R1:470^_0603",
-            "U1A:PIC18F26K226SP",
-            "R42:100^_0603"
+            "R42:100^_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -2532,11 +2532,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2545,11 +2545,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2558,11 +2558,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:440054-5",
-            "R47:1.62K_0805_0.1%",
-            "U10:W25Q16JVSSIQ",
-            "R24:1.2K_0603",
-            "U1A:PIC18F26K226SP"
+            "R21:1.62K_0805_0.1%",
+            "U1A:PIC18F26K226SP",
+            "Q8:NTR4501NT1G",
+            "C5:0.1UF_0603_10%_16V",
+            "J3:"
           ]
         },
         {
@@ -2571,10 +2571,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "C6:0.1UF_0603_10%_16V",
-            "R24:1.2K_0603",
             "R11:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:1.2K_0603",
+            "C6:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2583,8 +2583,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "J1:"
           ]
         },
         {
@@ -2593,8 +2593,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "J1:"
           ]
         },
         {
@@ -2604,8 +2604,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:10K_0603"
           ]
         },
         {
@@ -2614,9 +2614,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
             "C8:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         },
         {
@@ -2647,9 +2647,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1A:PIC18F26K226SP",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2659,8 +2659,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "U1A:PIC18F26K226SP",
-            "C24:0.1UF_0603_10%_16V",
-            "R19:1K_0603"
+            "R19:1K_0603",
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2669,9 +2669,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
             "C25:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:1K_0603"
           ]
         },
         {
@@ -2710,8 +2710,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "C12:0.1UF_0603_10%_16V",
+            "U1A:PIC18F26K226SP",
             "R30:1K_0603"
           ]
         },
@@ -2721,8 +2721,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
             "R33:1K_0603",
+            "C13:0.1UF_0603_10%_16V",
             "U1A:PIC18F26K226SP"
           ]
         },
@@ -2733,8 +2733,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "uart",
           connectedParts: [
             "J5:",
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         },
         {
@@ -2743,9 +2743,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
             "J5:",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R25:150^_0603"
           ]
         },
         {
@@ -2754,8 +2754,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R58:1K_AXIAL"
           ]
         }
       ]
@@ -2774,8 +2774,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R23:470^_0603",
-            "R45:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R45:100^_0603"
           ]
         },
         {
@@ -2784,9 +2784,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
+            "U1:PIC18F26K22-I/SS",
             "R3:470^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R44:100^_0603"
           ]
         },
         {
@@ -2795,9 +2795,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R43:100^_0603"
           ]
         },
         {
@@ -2806,9 +2806,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R1:470^_0603",
-            "R42:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R42:100^_0603"
           ]
         },
         {
@@ -2817,9 +2817,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R5:10K_0603"
           ]
         },
         {
@@ -2828,9 +2828,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C8:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R6:1K_0603"
           ]
         },
         {
@@ -2839,9 +2839,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C9:0.1UF_0603_10%_16V",
-            "R9:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R9:1K_0603"
           ]
         },
         {
@@ -2861,9 +2861,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2872,9 +2872,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C24:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R19:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2883,9 +2883,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C25:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R22:1K_0603"
           ]
         },
         {
@@ -2894,8 +2894,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R54:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R54:100^_0603"
           ]
         },
         {
@@ -2904,8 +2904,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R28:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R28:1.2K_0805"
           ]
         },
         {
@@ -2914,8 +2914,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:1.2K_0805"
           ]
         },
         {
@@ -2925,8 +2925,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C12:0.1UF_0603_10%_16V",
-            "R30:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R30:1K_0603"
           ]
         },
         {
@@ -2935,9 +2935,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R33:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C13:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -2946,8 +2946,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R58:1K_AXIAL"
           ]
         }
       ],
@@ -2958,9 +2958,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R26:150^_0603"
           ]
         },
         {
@@ -2969,9 +2969,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "U1:PIC18F26K22-I/SS"
+            "R25:150^_0603"
           ]
         }
       ],
@@ -2993,8 +2993,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R23:470^_0603",
-            "R45:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R45:100^_0603"
           ]
         },
         {
@@ -3003,9 +3003,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
+            "U1:PIC18F26K22-I/SS",
             "R3:470^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R44:100^_0603"
           ]
         },
         {
@@ -3014,9 +3014,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R2:470^_0603",
-            "R43:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R43:100^_0603"
           ]
         },
         {
@@ -3025,9 +3025,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R1:470^_0603",
-            "R42:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R42:100^_0603"
           ]
         },
         {
@@ -3036,11 +3036,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -3049,11 +3049,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "U10:W25Q16JVSSIQ",
+            "PS1:IRM-15-5",
+            "D2:LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
             "C36:12PF_0603",
-            "D6:PMBD7000",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "C12:0.1UF_0603_10%_16V",
+            "C32:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -3062,11 +3062,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J11:440054-5",
-            "R47:1.62K_0805_0.1%",
-            "U10:W25Q16JVSSIQ",
-            "R24:1.2K_0603",
-            "J9:SFV30R-3STBE1HLF"
+            "R21:1.62K_0805_0.1%",
+            "Q8:NTR4501NT1G",
+            "C5:0.1UF_0603_10%_16V",
+            "J3:",
+            "R18:1.62K_0805_0.1%"
           ]
         },
         {
@@ -3075,10 +3075,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "C6:0.1UF_0603_10%_16V",
-            "R24:1.2K_0603",
             "R11:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R24:1.2K_0603",
+            "U1:PIC18F26K22-I/SS",
+            "C6:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -3087,8 +3087,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J1:"
           ]
         },
         {
@@ -3097,8 +3097,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J1:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J1:"
           ]
         },
         {
@@ -3107,9 +3107,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C7:0.1UF_0603_10%_16V",
-            "R5:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R5:10K_0603"
           ]
         },
         {
@@ -3118,9 +3118,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C8:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R6:1K_0603"
           ]
         },
         {
@@ -3129,9 +3129,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C9:0.1UF_0603_10%_16V",
-            "R9:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R9:1K_0603"
           ]
         },
         {
@@ -3151,9 +3151,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R16:1K_0603",
-            "C23:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "C23:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -3162,9 +3162,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C24:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R19:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C24:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -3173,9 +3173,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R22:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C25:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R22:1K_0603"
           ]
         },
         {
@@ -3184,8 +3184,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R54:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R54:100^_0603"
           ]
         },
         {
@@ -3194,8 +3194,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R28:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R28:1.2K_0805"
           ]
         },
         {
@@ -3204,8 +3204,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:1.2K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:1.2K_0805"
           ]
         },
         {
@@ -3215,8 +3215,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "C12:0.1UF_0603_10%_16V",
-            "R30:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R30:1K_0603"
           ]
         },
         {
@@ -3225,9 +3225,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "C13:0.1UF_0603_10%_16V",
+            "U1:PIC18F26K22-I/SS",
             "R33:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "C13:0.1UF_0603_10%_16V"
           ]
         },
         {
@@ -3236,9 +3236,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R26:150^_0603"
           ]
         },
         {
@@ -3247,9 +3247,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R25:150^_0603",
+            "U1:PIC18F26K22-I/SS",
             "J5:",
-            "U1:PIC18F26K22-I/SS"
+            "R25:150^_0603"
           ]
         },
         {
@@ -3258,8 +3258,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R58:1K_AXIAL",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R58:1K_AXIAL"
           ]
         }
       ]
@@ -3277,8 +3277,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R12:10K_0603"
+            "R12:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -3317,8 +3317,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R8:10K_0603"
+            "R8:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -3337,8 +3337,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -3347,8 +3347,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:150^_0603"
           ]
         },
         {
@@ -3416,8 +3416,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:10K_0603"
           ]
         },
         {
@@ -3448,8 +3448,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:150^_0603"
           ]
         },
         {
@@ -3458,8 +3458,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         }
       ],
@@ -3480,11 +3480,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "J11:475890001MOLEX_475890001_0_0",
-            "C6:0.1UF_0603_5%_50V",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "C17:0.1UF_0603_5%_50V"
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "C10:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -3493,11 +3493,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "J11:475890001MOLEX_475890001_0_0",
-            "C6:0.1UF_0603_5%_50V",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "C17:0.1UF_0603_5%_50V"
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "C10:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -3506,11 +3506,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "R29:10K_0603",
             "U1A:PIC18F26K226SP",
-            "R28:1K_0603",
-            "R19:10K_0603",
-            "D6:PMBD7000"
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "R18:10K_0603",
+            "J6:"
           ]
         },
         {
@@ -3519,8 +3519,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R12:10K_0603"
+            "R12:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -3559,8 +3559,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R8:10K_0603"
+            "R8:10K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -3609,8 +3609,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R22:150^_0603"
           ]
         },
         {
@@ -3629,8 +3629,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -3639,8 +3639,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:150^_0603"
           ]
         },
         {
@@ -3659,8 +3659,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R26:150^_0603"
           ]
         },
         {
@@ -3718,8 +3718,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:10K_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:10K_0603"
           ]
         },
         {
@@ -3757,8 +3757,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R11:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R11:10K_0603"
           ]
         },
         {
@@ -3767,8 +3767,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R10:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R10:10K_0603"
           ]
         },
         {
@@ -3777,8 +3777,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R9:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R9:10K_0603"
           ]
         },
         {
@@ -3797,8 +3797,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R13:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R13:10K_0603"
           ]
         },
         {
@@ -3807,8 +3807,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -3817,8 +3817,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:150^_0603"
           ]
         },
         {
@@ -3827,8 +3827,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R25:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R25:150^_0603"
           ]
         },
         {
@@ -3837,8 +3837,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:150^_0603"
           ]
         },
         {
@@ -3876,8 +3876,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R30:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R30:10K_0603"
           ]
         },
         {
@@ -3886,8 +3886,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R6:10K_0603"
           ]
         },
         {
@@ -3908,8 +3908,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R21:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R21:150^_0603"
           ]
         },
         {
@@ -3918,8 +3918,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R22:150^_0603"
           ]
         },
         {
@@ -3928,8 +3928,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R26:150^_0603"
           ]
         }
       ],
@@ -3950,11 +3950,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "J11:475890001MOLEX_475890001_0_0",
-            "C6:0.1UF_0603_5%_50V",
-            "C17:0.1UF_0603_5%_50V",
-            "C18:0.1UF_0603_5%_50V"
+            "C9:0.1UF_0603_5%_50V",
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "C10:0.1UF_0603_5%_50V",
+            "J3:5040500891MOLEX_5040500891_0_0"
           ]
         },
         {
@@ -3963,11 +3963,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "J11:475890001MOLEX_475890001_0_0",
-            "C6:0.1UF_0603_5%_50V",
-            "C17:0.1UF_0603_5%_50V",
-            "C18:0.1UF_0603_5%_50V"
+            "C9:0.1UF_0603_5%_50V",
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "C10:0.1UF_0603_5%_50V",
+            "J3:5040500891MOLEX_5040500891_0_0"
           ]
         },
         {
@@ -3976,11 +3976,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "R29:10K_0603",
-            "R28:1K_0603",
-            "R19:10K_0603",
-            "D6:PMBD7000",
-            "C2:100UF_1206_6.3V1206"
+            "D2:PMBD7000",
+            "C5:0.1UF_0603_5%_50V",
+            "R18:10K_0603",
+            "J6:",
+            "R28:1K_0603"
           ]
         },
         {
@@ -3999,8 +3999,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R11:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R11:10K_0603"
           ]
         },
         {
@@ -4009,8 +4009,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R10:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R10:10K_0603"
           ]
         },
         {
@@ -4019,8 +4019,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R9:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R9:10K_0603"
           ]
         },
         {
@@ -4039,8 +4039,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J6:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J6:"
           ]
         },
         {
@@ -4049,8 +4049,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J6:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J6:"
           ]
         },
         {
@@ -4059,8 +4059,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "R20:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R20:150^_0603"
           ]
         },
         {
@@ -4069,8 +4069,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R21:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R21:150^_0603"
           ]
         },
         {
@@ -4079,8 +4079,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R22:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R22:150^_0603"
           ]
         },
         {
@@ -4089,8 +4089,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R13:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R13:10K_0603"
           ]
         },
         {
@@ -4099,8 +4099,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:2.7K_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R1:2.7K_0805"
           ]
         },
         {
@@ -4109,8 +4109,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:150^_0603"
           ]
         },
         {
@@ -4119,8 +4119,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R25:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R25:150^_0603"
           ]
         },
         {
@@ -4129,8 +4129,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R26:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R26:150^_0603"
           ]
         },
         {
@@ -4139,8 +4139,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R27:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R27:150^_0603"
           ]
         },
         {
@@ -4178,8 +4178,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R30:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R30:10K_0603"
           ]
         },
         {
@@ -4188,8 +4188,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:10K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R6:10K_0603"
           ]
         },
         {
@@ -4217,8 +4217,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R18:330^_0805"
           ]
         },
         {
@@ -4237,8 +4237,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:330^_0805"
           ]
         },
         {
@@ -4247,8 +4247,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R17:330^_0805"
           ]
         },
         {
@@ -4257,8 +4257,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -4267,8 +4267,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R15:330^_0805"
           ]
         },
         {
@@ -4277,8 +4277,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "R7:150^_0805_1%",
+            "U1A:PIC18F26K226SP",
             "R19:4.7K_0805_1%_0.125W"
           ]
         },
@@ -4298,9 +4298,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -4309,9 +4309,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -4368,10 +4368,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "U1A:PIC18F26K226SP",
             "R2:1.2K_0603",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         }
       ],
@@ -4392,10 +4392,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "R3:150^_0805_1%",
-            "U1A:PIC18F26K226SP",
             "R21:1.2K_0603",
-            "C5:0.1UF_0603_5%_50V"
+            "U1A:PIC18F26K226SP",
+            "C5:0.1UF_0603_5%_50V",
+            "R3:150^_0805_1%"
           ]
         },
         {
@@ -4404,8 +4404,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R18:330^_0805"
           ]
         },
         {
@@ -4424,8 +4424,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:330^_0805"
           ]
         },
         {
@@ -4434,8 +4434,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "JP:"
+            "JP:",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -4444,8 +4444,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "JP:"
+            "JP:",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -4454,8 +4454,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R17:330^_0805"
           ]
         },
         {
@@ -4464,8 +4464,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -4474,8 +4474,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R15:330^_0805"
           ]
         },
         {
@@ -4484,10 +4484,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "U1A:PIC18F26K226SP",
             "R2:1.2K_0603",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -4496,8 +4496,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "R7:150^_0805_1%",
+            "U1A:PIC18F26K226SP",
             "R19:4.7K_0805_1%_0.125W"
           ]
         },
@@ -4517,11 +4517,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C4:22UF_1206_10V1206",
-            "R20:4.7K_0805_1%_0.125W",
-            "U1A:PIC18F26K226SP",
-            "JP:",
-            "R21:1.2K_0603"
+            "C1:0.1UF_0603_5%_50V",
+            "R21:1.2K_0603",
+            "C9:0.1UF_0603_5%_50V",
+            "VR1:MC7805CTGMC7805",
+            "C4:22UF_1206_10V1206"
           ]
         },
         {
@@ -4530,11 +4530,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206"
+            "U2:MOC3063SR2M",
+            "C5:0.1UF_0603_5%_50V",
+            "Q8:MMBT3904LT1_SOT23"
           ]
         },
         {
@@ -4543,11 +4543,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206"
+            "U2:MOC3063SR2M",
+            "C5:0.1UF_0603_5%_50V",
+            "Q8:MMBT3904LT1_SOT23"
           ]
         },
         {
@@ -4556,9 +4556,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -4567,9 +4567,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -4633,8 +4633,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R18:330^_0805"
           ]
         },
         {
@@ -4643,8 +4643,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R16:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R16:330^_0805"
           ]
         },
         {
@@ -4653,8 +4653,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:330^_0805"
           ]
         },
         {
@@ -4663,8 +4663,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R17:330^_0805"
           ]
         },
         {
@@ -4673,8 +4673,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -4683,8 +4683,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R15:330^_0805"
           ]
         },
         {
@@ -4694,8 +4694,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R7:150^_0805_1%",
-            "R19:4.7K_0805_1%_0.125W",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R19:4.7K_0805_1%_0.125W"
           ]
         },
         {
@@ -4704,8 +4704,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "Q7:BSS670S2L",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "Q7:BSS670S2L"
           ]
         },
         {
@@ -4714,9 +4714,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -4725,9 +4725,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -4784,10 +4784,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "R2:1.2K_0603",
             "U1:PIC18F26K22-I/SS",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         }
       ],
@@ -4808,10 +4808,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "R3:150^_0805_1%",
             "R21:1.2K_0603",
-            "U1:PIC18F26K22-I/SS",
-            "C5:0.1UF_0603_5%_50V"
+            "C5:0.1UF_0603_5%_50V",
+            "R3:150^_0805_1%",
+            "U1:PIC18F26K22-I/SS"
           ]
         },
         {
@@ -4820,8 +4820,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R18:330^_0805"
           ]
         },
         {
@@ -4830,8 +4830,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R16:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R16:330^_0805"
           ]
         },
         {
@@ -4840,8 +4840,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:330^_0805"
           ]
         },
         {
@@ -4850,8 +4850,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "JP:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "JP:"
           ]
         },
         {
@@ -4860,8 +4860,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "JP:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "JP:"
           ]
         },
         {
@@ -4870,8 +4870,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R17:330^_0805"
           ]
         },
         {
@@ -4880,8 +4880,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -4890,8 +4890,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R15:330^_0805"
           ]
         },
         {
@@ -4900,10 +4900,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "R2:1.2K_0603",
             "U1:PIC18F26K22-I/SS",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -4913,8 +4913,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R7:150^_0805_1%",
-            "R19:4.7K_0805_1%_0.125W",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R19:4.7K_0805_1%_0.125W"
           ]
         },
         {
@@ -4923,8 +4923,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "Q7:BSS670S2L",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "Q7:BSS670S2L"
           ]
         },
         {
@@ -4933,11 +4933,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C4:22UF_1206_10V1206",
-            "R20:4.7K_0805_1%_0.125W",
-            "JP:",
+            "C1:0.1UF_0603_5%_50V",
             "R21:1.2K_0603",
-            "R2:1.2K_0603"
+            "C9:0.1UF_0603_5%_50V",
+            "VR1:MC7805CTGMC7805",
+            "C4:22UF_1206_10V1206"
           ]
         },
         {
@@ -4946,11 +4946,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206",
-            "C8:1000UF_50V_RAD"
+            "C9:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M",
+            "C5:0.1UF_0603_5%_50V",
+            "Q8:MMBT3904LT1_SOT23",
+            "C12:22UF_1206_10V1206"
           ]
         },
         {
@@ -4959,11 +4959,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206",
-            "C8:1000UF_50V_RAD"
+            "C9:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M",
+            "C5:0.1UF_0603_5%_50V",
+            "Q8:MMBT3904LT1_SOT23",
+            "C12:22UF_1206_10V1206"
           ]
         },
         {
@@ -4972,9 +4972,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -4983,9 +4983,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5049,8 +5049,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R18:330^_0805"
           ]
         },
         {
@@ -5069,8 +5069,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:330^_0805"
           ]
         },
         {
@@ -5079,8 +5079,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R17:330^_0805"
           ]
         },
         {
@@ -5089,8 +5089,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -5099,8 +5099,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R15:330^_0805"
           ]
         },
         {
@@ -5109,8 +5109,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "R7:150^_0805_1%",
+            "U1A:PIC18F26K226SP",
             "R19:4.7K_0805_1%_0.125W"
           ]
         },
@@ -5130,9 +5130,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5141,9 +5141,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5200,10 +5200,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "U1A:PIC18F26K226SP",
             "R2:1.2K_0603",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         }
       ],
@@ -5224,10 +5224,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "R3:150^_0805_1%",
-            "U1A:PIC18F26K226SP",
             "R21:1.2K_0603",
-            "C5:0.1UF_0603_5%_50V"
+            "U1A:PIC18F26K226SP",
+            "C5:0.1UF_0603_5%_50V",
+            "R3:150^_0805_1%"
           ]
         },
         {
@@ -5236,8 +5236,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R18:330^_0805"
           ]
         },
         {
@@ -5256,8 +5256,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R24:330^_0805"
           ]
         },
         {
@@ -5266,8 +5266,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "JP:"
+            "JP:",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -5276,8 +5276,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "JP:"
+            "JP:",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -5286,8 +5286,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R17:330^_0805"
           ]
         },
         {
@@ -5296,8 +5296,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -5306,8 +5306,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R15:330^_0805"
           ]
         },
         {
@@ -5316,10 +5316,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "U1A:PIC18F26K226SP",
             "R2:1.2K_0603",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -5328,8 +5328,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
             "R7:150^_0805_1%",
+            "U1A:PIC18F26K226SP",
             "R19:4.7K_0805_1%_0.125W"
           ]
         },
@@ -5349,11 +5349,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C4:22UF_1206_10V1206",
-            "R20:4.7K_0805_1%_0.125W",
-            "U1A:PIC18F26K226SP",
-            "JP:",
-            "R21:1.2K_0603"
+            "C1:0.1UF_0603_5%_50V",
+            "R21:1.2K_0603",
+            "C9:0.1UF_0603_5%_50V",
+            "VR1:MC7805CTGMC7805",
+            "C4:22UF_1206_10V1206"
           ]
         },
         {
@@ -5362,11 +5362,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206"
+            "Q8:MMBT3904LT1_SOT23",
+            "C5:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M"
           ]
         },
         {
@@ -5375,11 +5375,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
+            "C9:0.1UF_0603_5%_50V",
             "U1A:PIC18F26K226SP",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206"
+            "Q8:MMBT3904LT1_SOT23",
+            "C5:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M"
           ]
         },
         {
@@ -5388,9 +5388,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5399,9 +5399,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5465,8 +5465,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R18:330^_0805"
           ]
         },
         {
@@ -5475,8 +5475,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R16:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R16:330^_0805"
           ]
         },
         {
@@ -5485,8 +5485,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:330^_0805"
           ]
         },
         {
@@ -5495,8 +5495,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R17:330^_0805"
           ]
         },
         {
@@ -5505,8 +5505,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -5515,8 +5515,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R15:330^_0805"
           ]
         },
         {
@@ -5526,8 +5526,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R7:150^_0805_1%",
-            "R19:4.7K_0805_1%_0.125W",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R19:4.7K_0805_1%_0.125W"
           ]
         },
         {
@@ -5536,8 +5536,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "Q7:BSS670S2L",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "Q7:BSS670S2L"
           ]
         },
         {
@@ -5546,9 +5546,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5557,9 +5557,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5616,10 +5616,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "R2:1.2K_0603",
             "U1:PIC18F26K22-I/SS",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         }
       ],
@@ -5640,10 +5640,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "R3:150^_0805_1%",
             "R21:1.2K_0603",
-            "U1:PIC18F26K22-I/SS",
-            "C5:0.1UF_0603_5%_50V"
+            "C5:0.1UF_0603_5%_50V",
+            "R3:150^_0805_1%",
+            "U1:PIC18F26K22-I/SS"
           ]
         },
         {
@@ -5652,8 +5652,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R18:330^_0805"
           ]
         },
         {
@@ -5662,8 +5662,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R16:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R16:330^_0805"
           ]
         },
         {
@@ -5672,8 +5672,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R24:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R24:330^_0805"
           ]
         },
         {
@@ -5682,8 +5682,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "JP:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "JP:"
           ]
         },
         {
@@ -5692,8 +5692,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "JP:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "JP:"
           ]
         },
         {
@@ -5702,8 +5702,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R17:330^_0805"
           ]
         },
         {
@@ -5712,8 +5712,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R5:150^_0805_1%",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R5:150^_0805_1%"
           ]
         },
         {
@@ -5722,8 +5722,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:330^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R15:330^_0805"
           ]
         },
         {
@@ -5732,10 +5732,10 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "C7:0.1UF_0603_5%_50V",
+            "U4:FOD817ASD",
             "R2:1.2K_0603",
             "U1:PIC18F26K22-I/SS",
-            "U4:FOD817ASD"
+            "C7:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -5745,8 +5745,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "R7:150^_0805_1%",
-            "R19:4.7K_0805_1%_0.125W",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R19:4.7K_0805_1%_0.125W"
           ]
         },
         {
@@ -5755,8 +5755,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "Q7:BSS670S2L",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "Q7:BSS670S2L"
           ]
         },
         {
@@ -5765,11 +5765,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C4:22UF_1206_10V1206",
-            "R20:4.7K_0805_1%_0.125W",
-            "JP:",
+            "C1:0.1UF_0603_5%_50V",
             "R21:1.2K_0603",
-            "R2:1.2K_0603"
+            "C9:0.1UF_0603_5%_50V",
+            "VR1:MC7805CTGMC7805",
+            "C4:22UF_1206_10V1206"
           ]
         },
         {
@@ -5778,11 +5778,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206",
-            "C8:1000UF_50V_RAD"
+            "C9:0.1UF_0603_5%_50V",
+            "Q8:MMBT3904LT1_SOT23",
+            "C5:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M",
+            "C12:22UF_1206_10V1206"
           ]
         },
         {
@@ -5791,11 +5791,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C6:10NF_0805",
-            "JP:",
-            "Q2:MMBT3904LT1_SOT23",
-            "C2:22UF_1206_10V1206",
-            "C8:1000UF_50V_RAD"
+            "C9:0.1UF_0603_5%_50V",
+            "Q8:MMBT3904LT1_SOT23",
+            "C5:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M",
+            "C12:22UF_1206_10V1206"
           ]
         },
         {
@@ -5804,9 +5804,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5815,9 +5815,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R1:10M_0805_1%",
+            "U1:PIC18F26K22-I/SS",
             "X1:ECS-SR1-8.00-B-TR",
-            "U1:PIC18F26K22-I/SS"
+            "R1:10M_0805_1%"
           ]
         },
         {
@@ -5893,8 +5893,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "spi",
           connectedParts: [
             "R4:27K_0805_0.125W",
-            "C2:0.1UF_0805",
-            "U1:FOD817ASD"
+            "U1:FOD817ASD",
+            "C2:0.1UF_0805"
           ]
         },
         {
@@ -5912,8 +5912,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "i2c",
           connectedParts: [
-            "R45:100^_0603",
-            "R56:27K_0805_0.125W"
+            "R56:27K_0805_0.125W",
+            "R45:100^_0603"
           ]
         },
         {
@@ -5922,8 +5922,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "i2c",
           connectedParts: [
-            "R57:27K_0805_0.125W",
-            "R46:100^_0603"
+            "R46:100^_0603",
+            "R57:27K_0805_0.125W"
           ]
         },
         {
@@ -5950,8 +5950,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R25:10K_0603",
-            "C28:0.1UF_0805"
+            "C28:0.1UF_0805",
+            "R25:10K_0603"
           ]
         },
         {
@@ -5981,11 +5981,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0805",
-            "C30:0.1UF_0805",
-            "U14:LMV331IDCKRDCK5-M",
-            "U10:MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2",
-            "C35:0.1UF_0805"
+            "PS1:IRM-10-12MEAN_WELL_IRM-10-12_0_0",
+            "C29:0.1UF_0805",
+            "C9:0.1UF_0805",
+            "LED1:LED_RED_0805",
+            "U2:FOD817ASD"
           ]
         },
         {
@@ -5994,11 +5994,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0805",
-            "C30:0.1UF_0805",
-            "U14:LMV331IDCKRDCK5-M",
-            "U10:MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2",
-            "C35:0.1UF_0805"
+            "PS1:IRM-10-12MEAN_WELL_IRM-10-12_0_0",
+            "C29:0.1UF_0805",
+            "C9:0.1UF_0805",
+            "LED1:LED_RED_0805",
+            "U2:FOD817ASD"
           ]
         },
         {
@@ -6007,11 +6007,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0805",
-            "U14:LMV331IDCKRDCK5-M",
-            "R47:10K_0603",
-            "U10:MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2",
-            "R28:1K_0805_0.1%"
+            "C9:0.1UF_0805",
+            "R37:1K_0603",
+            "J3:440054-4",
+            "C5:0.1UF_0805",
+            "R10:150^_0603"
           ]
         },
         {
@@ -6020,11 +6020,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0805",
-            "U14:LMV331IDCKRDCK5-M",
-            "R47:10K_0603",
-            "U10:MCP6061-E-SNMICROCHIP_MCP6061-E-SN_0_2",
-            "R28:1K_0805_0.1%"
+            "C9:0.1UF_0805",
+            "R37:1K_0603",
+            "J3:440054-4",
+            "C5:0.1UF_0805",
+            "R10:150^_0603"
           ]
         },
         {
@@ -6034,8 +6034,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "spi",
           connectedParts: [
             "R4:27K_0805_0.125W",
-            "C2:0.1UF_0805",
-            "U1:FOD817ASD"
+            "U1:FOD817ASD",
+            "C2:0.1UF_0805"
           ]
         },
         {
@@ -6044,9 +6044,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_io",
           detail: null,
           connectedParts: [
+            "C3:0.1UF_0805",
             "R5:27K_0805_0.125W",
-            "U2:FOD817ASD",
-            "C3:0.1UF_0805"
+            "U2:FOD817ASD"
           ]
         },
         {
@@ -6155,8 +6155,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "i2c",
           connectedParts: [
-            "R45:100^_0603",
-            "R56:27K_0805_0.125W"
+            "R56:27K_0805_0.125W",
+            "R45:100^_0603"
           ]
         },
         {
@@ -6165,8 +6165,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "i2c",
           connectedParts: [
-            "R57:27K_0805_0.125W",
-            "R46:100^_0603"
+            "R46:100^_0603",
+            "R57:27K_0805_0.125W"
           ]
         },
         {
@@ -6203,8 +6203,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "R25:10K_0603",
-            "C28:0.1UF_0805"
+            "C28:0.1UF_0805",
+            "R25:10K_0603"
           ]
         },
         {
@@ -6334,8 +6334,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "C16:0.1UF_0603_5%_50V",
-            "R48:10K_0603"
+            "R48:10K_0603",
+            "C16:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -6344,8 +6344,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "R46:10K_0603"
+            "R46:10K_0603",
+            "C15:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -6354,8 +6354,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "R44:10K_0603",
-            "C14:0.1UF_0603_5%_50V"
+            "C14:0.1UF_0603_5%_50V",
+            "R44:10K_0603"
           ]
         },
         {
@@ -6364,8 +6364,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "C13:0.1UF_0603_5%_50V",
-            "R42:10K_0603"
+            "R42:10K_0603",
+            "C13:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -6374,8 +6374,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "R40:10K_0603",
-            "C12:0.1UF_0603_5%_50V"
+            "C12:0.1UF_0603_5%_50V",
+            "R40:10K_0603"
           ]
         },
         {
@@ -6453,8 +6453,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "U11:MM74HC595MX",
-            "U12:MM74HC595MX"
+            "U12:MM74HC595MX",
+            "U11:MM74HC595MX"
           ]
         },
         {
@@ -6484,11 +6484,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "C30:0.1UF_0603_5%_50V",
-            "U10:FT232RL-REEL",
-            "J9:",
-            "D13:PMBD7000"
+            "J8:2P_0.100_VERT_MALE_LATCH",
+            "C29:0.1UF_0603_5%_50V",
+            "C9:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M",
+            "J3:2P_0.100_VERT_MALE_LATCH"
           ]
         },
         {
@@ -6497,11 +6497,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "C30:0.1UF_0603_5%_50V",
-            "U10:FT232RL-REEL",
-            "J9:",
-            "D13:PMBD7000"
+            "J8:2P_0.100_VERT_MALE_LATCH",
+            "C29:0.1UF_0603_5%_50V",
+            "C9:0.1UF_0603_5%_50V",
+            "U2:MOC3063SR2M",
+            "J3:2P_0.100_VERT_MALE_LATCH"
           ]
         },
         {
@@ -6520,8 +6520,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "C16:0.1UF_0603_5%_50V",
-            "R48:10K_0603"
+            "R48:10K_0603",
+            "C16:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -6530,8 +6530,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "C15:0.1UF_0603_5%_50V",
-            "R46:10K_0603"
+            "R46:10K_0603",
+            "C15:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -6540,8 +6540,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "R44:10K_0603",
-            "C14:0.1UF_0603_5%_50V"
+            "C14:0.1UF_0603_5%_50V",
+            "R44:10K_0603"
           ]
         },
         {
@@ -6550,8 +6550,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "C13:0.1UF_0603_5%_50V",
-            "R42:10K_0603"
+            "R42:10K_0603",
+            "C13:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -6560,8 +6560,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "analog_input",
           detail: "general_adc",
           connectedParts: [
-            "R40:10K_0603",
-            "C12:0.1UF_0603_5%_50V"
+            "C12:0.1UF_0603_5%_50V",
+            "R40:10K_0603"
           ]
         },
         {
@@ -6591,9 +6591,9 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: null,
           connectedParts: [
             "R54:10K_0603",
-            "R29:6.34K_0805",
-            "R58:10K_0603",
-            "J9:",
+            "R26:6.34K_0805",
+            "C20:0.1UF_0603_5%_50V",
+            "D16:PMBD7000",
             "D13:PMBD7000"
           ]
         },
@@ -6604,8 +6604,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "ICSP",
           connectedParts: [
             "R49:1K_0603",
-            "C19:0.1UF_0603_5%_50V",
-            "J9:"
+            "J9:",
+            "C19:0.1UF_0603_5%_50V"
           ]
         },
         {
@@ -6689,8 +6689,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_io",
           detail: null,
           connectedParts: [
-            "U11:MM74HC595MX",
-            "U12:MM74HC595MX"
+            "U12:MM74HC595MX",
+            "U11:MM74HC595MX"
           ]
         },
         {
@@ -6699,8 +6699,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "spi",
           connectedParts: [
-            "U11:MM74HC595MX",
-            "U12:MM74HC595MX"
+            "U12:MM74HC595MX",
+            "U11:MM74HC595MX"
           ]
         },
         {
@@ -6763,8 +6763,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R44:100^_0603"
           ]
         },
         {
@@ -6773,8 +6773,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R42:100^_0603"
+            "R42:100^_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -6783,8 +6783,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R43:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R43:100^_0603"
           ]
         },
         {
@@ -6816,8 +6816,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "D14:1N4148",
-            "U1A:PIC18F26K226SP",
-            "R55:1K_0603"
+            "R55:1K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -6826,9 +6826,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "D13:1N4148",
+            "R51:1K_0603",
             "U1A:PIC18F26K226SP",
-            "R51:1K_0603"
+            "D13:1N4148"
           ]
         },
         {
@@ -6838,8 +6838,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "D12:1N4148",
-            "U1A:PIC18F26K226SP",
-            "R50:1K_0603"
+            "R50:1K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -6848,8 +6848,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R49:1K_0603",
             "U1A:PIC18F26K226SP",
+            "R49:1K_0603",
             "D21:1N4148"
           ]
         },
@@ -6869,8 +6869,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R48:75^_0805"
+            "R48:75^_0805",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -6889,8 +6889,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R14:75^_0805"
+            "R14:75^_0805",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -6899,8 +6899,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:75^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R15:75^_0805"
           ]
         },
         {
@@ -6919,8 +6919,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:75^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R17:75^_0805"
           ]
         },
         {
@@ -6929,8 +6929,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:75^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R18:75^_0805"
           ]
         },
         {
@@ -6960,9 +6960,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
             "C8:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         }
       ],
@@ -6973,8 +6973,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R1:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:150^_0603"
           ]
         },
         {
@@ -7005,8 +7005,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R44:100^_0603"
           ]
         },
         {
@@ -7015,8 +7015,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R42:100^_0603"
+            "R42:100^_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -7025,8 +7025,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R43:100^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R43:100^_0603"
           ]
         },
         {
@@ -7035,11 +7035,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
+            "C9:0.1UF_0603_10%_16V",
             "U1A:PIC18F26K226SP",
-            "J5:",
-            "R45:150^_0603",
+            "J3:615004144021",
             "U$4:KEYSTONE_4881",
-            "C2:100UF_35V_ALE"
+            "U7:MOC3052SM"
           ]
         },
         {
@@ -7048,11 +7048,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
+            "C9:0.1UF_0603_10%_16V",
             "U1A:PIC18F26K226SP",
-            "J5:",
-            "R45:150^_0603",
+            "J3:615004144021",
             "U$4:KEYSTONE_4881",
-            "C2:100UF_35V_ALE"
+            "U7:MOC3052SM"
           ]
         },
         {
@@ -7062,8 +7062,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "ICSP",
           connectedParts: [
             "R32:1.2K_0603",
-            "C21:0.1UF_0603_10%_16V",
             "U1A:PIC18F26K226SP",
+            "C21:0.1UF_0603_10%_16V",
             "R31:150^_0603"
           ]
         },
@@ -7116,8 +7116,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "D14:1N4148",
-            "U1A:PIC18F26K226SP",
-            "R55:1K_0603"
+            "R55:1K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -7126,9 +7126,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "D13:1N4148",
+            "R51:1K_0603",
             "U1A:PIC18F26K226SP",
-            "R51:1K_0603"
+            "D13:1N4148"
           ]
         },
         {
@@ -7138,8 +7138,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "D12:1N4148",
-            "U1A:PIC18F26K226SP",
-            "R50:1K_0603"
+            "R50:1K_0603",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -7148,8 +7148,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R49:1K_0603",
             "U1A:PIC18F26K226SP",
+            "R49:1K_0603",
             "D21:1N4148"
           ]
         },
@@ -7169,8 +7169,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R48:75^_0805"
+            "R48:75^_0805",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -7189,8 +7189,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "U1A:PIC18F26K226SP",
-            "R14:75^_0805"
+            "R14:75^_0805",
+            "U1A:PIC18F26K226SP"
           ]
         },
         {
@@ -7199,8 +7199,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:75^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R15:75^_0805"
           ]
         },
         {
@@ -7219,8 +7219,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:75^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R17:75^_0805"
           ]
         },
         {
@@ -7229,8 +7229,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:75^_0805",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R18:75^_0805"
           ]
         },
         {
@@ -7260,9 +7260,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
             "C8:0.1UF_0603_10%_16V",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R6:1K_0603"
           ]
         },
         {
@@ -7272,9 +7272,9 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: null,
           connectedParts: [
             "U1A:PIC18F26K226SP",
-            "R8:1.62K_0805_0.1%",
-            "J5:",
-            "C2:100UF_35V_ALE",
+            "J3:615004144021",
+            "Q8:MMBT3906LT1",
+            "Q7:MMBT3906LT1",
             "D4:PMBD7000"
           ]
         },
@@ -7284,8 +7284,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R1:150^_0603",
-            "U1A:PIC18F26K226SP"
+            "U1A:PIC18F26K226SP",
+            "R1:150^_0603"
           ]
         },
         {
@@ -7313,8 +7313,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R44:100^_0603"
           ]
         },
         {
@@ -7323,8 +7323,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R42:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R42:100^_0603"
           ]
         },
         {
@@ -7333,8 +7333,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R43:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R43:100^_0603"
           ]
         },
         {
@@ -7343,9 +7343,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C7:0.1UF_0603_10%_16V",
-            "R47:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R47:150^_0603"
           ]
         },
         {
@@ -7354,9 +7354,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R56:1K_0603",
-            "D15:1N4148",
-            "U1:PIC18F26K22-I/SS"
+            "D15:1N4148"
           ]
         },
         {
@@ -7365,9 +7365,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "D14:1N4148",
-            "R55:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R55:1K_0603"
           ]
         },
         {
@@ -7376,9 +7376,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "D13:1N4148",
             "U1:PIC18F26K22-I/SS",
-            "R51:1K_0603"
+            "R51:1K_0603",
+            "D13:1N4148"
           ]
         },
         {
@@ -7388,8 +7388,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "D12:1N4148",
-            "R50:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R50:1K_0603"
           ]
         },
         {
@@ -7398,8 +7398,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R49:1K_0603",
             "U1:PIC18F26K22-I/SS",
+            "R49:1K_0603",
             "D21:1N4148"
           ]
         },
@@ -7409,8 +7409,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "D22:1N4148",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "D22:1N4148"
           ]
         },
         {
@@ -7419,8 +7419,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R48:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R48:75^_0805"
           ]
         },
         {
@@ -7429,8 +7429,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R13:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R13:75^_0805"
           ]
         },
         {
@@ -7449,8 +7449,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R15:75^_0805"
           ]
         },
         {
@@ -7459,8 +7459,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R16:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R16:75^_0805"
           ]
         },
         {
@@ -7469,8 +7469,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R17:75^_0805"
           ]
         },
         {
@@ -7479,8 +7479,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R18:75^_0805"
           ]
         },
         {
@@ -7489,8 +7489,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R19:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R19:75^_0805"
           ]
         },
         {
@@ -7499,9 +7499,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C9:0.1UF_0603_10%_16V",
-            "R9:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R9:1K_0603"
           ]
         },
         {
@@ -7510,9 +7510,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C8:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R6:1K_0603"
           ]
         }
       ],
@@ -7523,8 +7523,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R1:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R1:150^_0603"
           ]
         },
         {
@@ -7533,8 +7533,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R2:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R2:150^_0603"
           ]
         }
       ],
@@ -7555,8 +7555,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R44:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R44:100^_0603"
           ]
         },
         {
@@ -7565,8 +7565,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R42:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R42:100^_0603"
           ]
         },
         {
@@ -7575,8 +7575,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R43:100^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R43:100^_0603"
           ]
         },
         {
@@ -7585,11 +7585,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J5:",
-            "R45:150^_0603",
+            "C9:0.1UF_0603_10%_16V",
+            "J3:615004144021",
             "U$4:KEYSTONE_4881",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "U7:MOC3052SM",
+            "D4:PMBD7000"
           ]
         },
         {
@@ -7598,11 +7598,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "J5:",
-            "R45:150^_0603",
+            "C9:0.1UF_0603_10%_16V",
+            "J3:615004144021",
             "U$4:KEYSTONE_4881",
-            "C2:100UF_35V_ALE",
-            "C8:0.1UF_0603_10%_16V"
+            "U7:MOC3052SM",
+            "D4:PMBD7000"
           ]
         },
         {
@@ -7613,8 +7613,8 @@ export const picAdDesigns: PicAdDesign[] = [
           connectedParts: [
             "R32:1.2K_0603",
             "C21:0.1UF_0603_10%_16V",
-            "R31:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R31:150^_0603"
           ]
         },
         {
@@ -7623,8 +7623,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J5:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J5:"
           ]
         },
         {
@@ -7633,8 +7633,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "programming",
           detail: "ICSP",
           connectedParts: [
-            "J5:",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "J5:"
           ]
         },
         {
@@ -7643,9 +7643,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C7:0.1UF_0603_10%_16V",
-            "R47:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R47:150^_0603"
           ]
         },
         {
@@ -7654,9 +7654,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "R56:1K_0603",
-            "D15:1N4148",
-            "U1:PIC18F26K22-I/SS"
+            "D15:1N4148"
           ]
         },
         {
@@ -7665,9 +7665,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "D14:1N4148",
-            "R55:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R55:1K_0603"
           ]
         },
         {
@@ -7676,9 +7676,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "D13:1N4148",
             "U1:PIC18F26K22-I/SS",
-            "R51:1K_0603"
+            "R51:1K_0603",
+            "D13:1N4148"
           ]
         },
         {
@@ -7688,8 +7688,8 @@ export const picAdDesigns: PicAdDesign[] = [
           detail: "relay_drive",
           connectedParts: [
             "D12:1N4148",
-            "R50:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R50:1K_0603"
           ]
         },
         {
@@ -7698,8 +7698,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R49:1K_0603",
             "U1:PIC18F26K22-I/SS",
+            "R49:1K_0603",
             "D21:1N4148"
           ]
         },
@@ -7709,8 +7709,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "D22:1N4148",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "D22:1N4148"
           ]
         },
         {
@@ -7719,8 +7719,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R48:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R48:75^_0805"
           ]
         },
         {
@@ -7729,8 +7729,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R13:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R13:75^_0805"
           ]
         },
         {
@@ -7749,8 +7749,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R15:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R15:75^_0805"
           ]
         },
         {
@@ -7759,8 +7759,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R16:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R16:75^_0805"
           ]
         },
         {
@@ -7769,8 +7769,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R17:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R17:75^_0805"
           ]
         },
         {
@@ -7779,8 +7779,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R18:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R18:75^_0805"
           ]
         },
         {
@@ -7789,8 +7789,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R19:75^_0805",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R19:75^_0805"
           ]
         },
         {
@@ -7799,9 +7799,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
+            "U1:PIC18F26K22-I/SS",
             "C9:0.1UF_0603_10%_16V",
-            "R9:1K_0603",
-            "U1:PIC18F26K22-I/SS"
+            "R9:1K_0603"
           ]
         },
         {
@@ -7810,9 +7810,9 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "digital_output",
           detail: "relay_drive",
           connectedParts: [
-            "R6:1K_0603",
+            "U1:PIC18F26K22-I/SS",
             "C8:0.1UF_0603_10%_16V",
-            "U1:PIC18F26K22-I/SS"
+            "R6:1K_0603"
           ]
         },
         {
@@ -7821,11 +7821,11 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "power",
           detail: null,
           connectedParts: [
-            "R8:1.62K_0805_0.1%",
-            "J5:",
-            "C2:100UF_35V_ALE",
+            "J3:615004144021",
+            "Q8:MMBT3906LT1",
+            "Q7:MMBT3906LT1",
             "D4:PMBD7000",
-            "R32:1.2K_0603"
+            "Q6:MMBT3906LT1"
           ]
         },
         {
@@ -7834,8 +7834,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R1:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R1:150^_0603"
           ]
         },
         {
@@ -7844,8 +7844,8 @@ export const picAdDesigns: PicAdDesign[] = [
           function: "communication",
           detail: "uart",
           connectedParts: [
-            "R2:150^_0603",
-            "U1:PIC18F26K22-I/SS"
+            "U1:PIC18F26K22-I/SS",
+            "R2:150^_0603"
           ]
         }
       ]

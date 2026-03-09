@@ -117,7 +117,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "MC7805",
           currentMa: 1000,
           topology: "linear",
-          outputVoltage: "+5V"
+          outputVoltage: "+36V"
         }
       ],
       totalSupplyCapacityMa: 1000,
@@ -224,7 +224,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         },
         {
           name: "PS1",
@@ -261,14 +261,14 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "MC7805",
           currentMa: 1000,
           topology: "linear",
-          outputVoltage: "+5V"
+          outputVoltage: "+24V"
         },
         {
           name: "VR2",
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         },
         {
           name: "U7",
@@ -295,14 +295,14 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "MC7805",
           currentMa: 1000,
           topology: "linear",
-          outputVoltage: "+5V"
+          outputVoltage: "+24V"
         },
         {
           name: "VR2",
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 2000,
@@ -322,14 +322,14 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "MC7805",
           currentMa: 1000,
           topology: "linear",
-          outputVoltage: "+5V"
+          outputVoltage: "+24V"
         },
         {
           name: "VR2",
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 2000,
@@ -349,14 +349,14 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "MC7805",
           currentMa: 1000,
           topology: "linear",
-          outputVoltage: "+5V"
+          outputVoltage: "+24V"
         },
         {
           name: "VR2",
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 2000,
@@ -472,7 +472,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "LM317",
           currentMa: 1500,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1500,
@@ -532,7 +532,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1000,
@@ -609,7 +609,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "LM317",
           currentMa: 1500,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1500,
@@ -628,7 +628,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "LM317",
           currentMa: 1500,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1500,
@@ -677,7 +677,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         },
         {
           name: "U9",
@@ -893,7 +893,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         },
         {
           name: "VR1",
@@ -921,7 +921,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         },
         {
           name: "VR1",
@@ -997,7 +997,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "SPX3819",
           currentMa: 500,
           topology: "ldo",
-          outputVoltage: "+3.3V"
+          outputVoltage: "+5V"
         },
         {
           name: "U3",
@@ -1030,7 +1030,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "SPX3819",
           currentMa: 500,
           topology: "ldo",
-          outputVoltage: "+3.3V"
+          outputVoltage: "+5V"
         },
         {
           name: "U3",
@@ -1063,7 +1063,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "SPX3819",
           currentMa: 500,
           topology: "ldo",
-          outputVoltage: "+3.3V"
+          outputVoltage: "+5V"
         },
         {
           name: "U3",
@@ -1433,7 +1433,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "LM317",
           currentMa: 1500,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1500,
@@ -1452,7 +1452,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "LM317",
           currentMa: 1500,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1500,
@@ -1721,7 +1721,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1000,
@@ -1764,7 +1764,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1000,
@@ -1783,7 +1783,7 @@ export const powerCapacityBoards: PowerCapacityBoard[] = [
           part: "NCP1117",
           currentMa: 1000,
           topology: "ldo",
-          outputVoltage: "+5V"
+          outputVoltage: "+3.3V"
         }
       ],
       totalSupplyCapacityMa: 1000,
@@ -1933,12 +1933,13 @@ export const powerCapacitySummary = {
       "ac-dc": 5
     },
     supply_voltages: {
-      "+5V": 46,
+      "+3.3V": 30,
+      "+5V": 27,
       "3.3V": 22,
-      "+3.3V": 16,
       "5V": 13,
+      "+24V": 7,
       "+12V": 4,
-      "+24V": 3,
-      "12V": 2
+      "12V": 2,
+      "+36V": 1
     }
   };

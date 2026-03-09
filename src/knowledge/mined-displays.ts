@@ -579,13 +579,13 @@ export const displayDesigns: DisplayDesign[] = [
       ],
       backlightComponents: [
         {
-          name: "J4",
+          name: "J8",
           value: "",
           net: "VARIABLE_SOURCE"
         },
         {
-          name: "S2",
-          value: "EG6201",
+          name: "S4",
+          value: "L203011MS02QE",
           net: "VARIABLE_SOURCE"
         },
         {
@@ -594,13 +594,13 @@ export const displayDesigns: DisplayDesign[] = [
           net: "VARIABLE_SOURCE"
         },
         {
-          name: "C23",
-          value: "0.1UF_0603_10%_16V",
+          name: "J4",
+          value: "",
           net: "VARIABLE_SOURCE"
         },
         {
-          name: "J8",
-          value: "",
+          name: "S2",
+          value: "EG6201",
           net: "VARIABLE_SOURCE"
         }
       ],

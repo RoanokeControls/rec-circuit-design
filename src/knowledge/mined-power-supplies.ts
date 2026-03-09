@@ -23,6 +23,72 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
       },
       components: [
         {
+          role: "input_cap",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.022UF_0603",
+            "0.1UF_0603",
+            "0.1UF_0603_10%_16V",
+            "0.1UF_0603_5%_50V",
+            "0.1UF_0805",
+            "0.1UF_50V_0603",
+            "0.33F-5.5V-SUPERCAP",
+            "1.5PF_0402",
+            "1000PF_0402",
+            "1000PF_0603",
+            "100NF_0805",
+            "100UF_1206_6.3V1206",
+            "100UF_25V_ALE",
+            "100UF_35V_ALE",
+            "100UF_35V_RAD",
+            "10NF_0805",
+            "10UF_1206_10%_25V",
+            "12PF_0402",
+            "12PF_0603",
+            "150PF_2KV",
+            "1F_2.7V_RAD",
+            "1PF_0402",
+            "1UF_0603",
+            "2.2UF_0603",
+            "2200PF_0402",
+            "2200PF_0603",
+            "220UF_16V",
+            "22PF_0603",
+            "22UF_10V1206",
+            "22UF_1206_10V",
+            "22UF_1206_10V1206",
+            "22UF_1206_25V",
+            "4.7UF_0805",
+            "47NF_0402",
+            "680UF_35V_ALE"
+          ],
+          count: 1277
+        },
+        {
+          role: "D",
+          preferredValue: "PMBD7000",
+          values: [
+            "1N4007SMT",
+            "1N5819HW-7-F",
+            "BAT54HT1G",
+            "GP_1000V_1A_SMASMA",
+            "GP_1000V_1A_SOD-123F",
+            "GP_200V_3A",
+            "HLMP-3301-F00DD",
+            "LED_RED_0805",
+            "LTST-C193KGKT-5ALITE-ON_LTST-C193KGKT-5A_0_0",
+            "LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
+            "LTST-C193KSKT-5ALITE-ON_LTST-C193KSKT-5A_0_0",
+            "LTST-C193TBKT-5ALITE-ON_LTST-C193TBKT-5A_0_0",
+            "MURA120T3G",
+            "PMBD7000",
+            "SBD_20V_500MA",
+            "ZENER_15V_SMA",
+            "ZENER_22V"
+          ],
+          count: 472
+        },
+        {
           role: "R",
           preferredValue: "10K_0603",
           values: [
@@ -65,30 +131,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
           count: 728
         },
         {
-          role: "D",
-          preferredValue: "PMBD7000",
-          values: [
-            "1N4007SMT",
-            "1N5819HW-7-F",
-            "BAT54HT1G",
-            "GP_1000V_1A_SMASMA",
-            "GP_1000V_1A_SOD-123F",
-            "GP_200V_3A",
-            "HLMP-3301-F00DD",
-            "LED_RED_0805",
-            "LTST-C193KGKT-5ALITE-ON_LTST-C193KGKT-5A_0_0",
-            "LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
-            "LTST-C193KSKT-5ALITE-ON_LTST-C193KSKT-5A_0_0",
-            "LTST-C193TBKT-5ALITE-ON_LTST-C193TBKT-5A_0_0",
-            "MURA120T3G",
-            "PMBD7000",
-            "SBD_20V_500MA",
-            "ZENER_15V_SMA",
-            "ZENER_22V"
-          ],
-          count: 472
-        },
-        {
           role: "output_cap",
           preferredValue: "0.1UF_0603_10%_16V",
           values: [
@@ -107,48 +149,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
             "22UF_1206_25V"
           ],
           count: 152
-        },
-        {
-          role: "input_cap",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.022UF_0603",
-            "0.1UF_0603",
-            "0.1UF_0603_10%_16V",
-            "0.1UF_0603_5%_50V",
-            "0.1UF_0805",
-            "0.1UF_50V_0603",
-            "0.33F-5.5V-SUPERCAP",
-            "1.5PF_0402",
-            "1000PF_0402",
-            "1000PF_0603",
-            "100NF_0805",
-            "100UF_1206_6.3V1206",
-            "100UF_25V_ALE",
-            "100UF_35V_ALE",
-            "100UF_35V_RAD",
-            "10NF_0805",
-            "10UF_1206_10%_25V",
-            "12PF_0402",
-            "12PF_0603",
-            "150PF_2KV",
-            "1F_2.7V_RAD",
-            "1PF_0402",
-            "1UF_0603",
-            "2.2UF_0603",
-            "2200PF_0402",
-            "2200PF_0603",
-            "220UF_16V",
-            "22PF_0603",
-            "22UF_10V1206",
-            "22UF_1206_10V",
-            "22UF_1206_10V1206",
-            "22UF_1206_25V",
-            "4.7UF_0805",
-            "47NF_0402",
-            "680UF_35V_ALE"
-          ],
-          count: 1277
         },
         {
           role: "L",
@@ -283,20 +283,18 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
       },
       components: [
         {
-          role: "R",
-          preferredValue: "10K_0603",
+          role: "input_cap",
+          preferredValue: "0.1UF_50V_0603",
           values: [
-            "1.2K_0603",
-            "1.62K_0805_0.1%",
-            "100^_1210_5%_0.5W",
-            "10K_0603",
-            "150^_0603",
-            "3306F-1-103",
-            "620^_1210",
-            "75^_0805",
-            "JUMPER_0805_2.5A"
+            "0.1UF_0603_10%_16V",
+            "0.1UF_0603_5%_50V",
+            "0.1UF_0805",
+            "0.1UF_50V_0603",
+            "100NF_0805",
+            "100UF_25V_ALE",
+            "100UF_35V_ALE"
           ],
-          count: 115
+          count: 286
         },
         {
           role: "D",
@@ -312,18 +310,20 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
           count: 144
         },
         {
-          role: "input_cap",
-          preferredValue: "0.1UF_50V_0603",
+          role: "R",
+          preferredValue: "10K_0603",
           values: [
-            "0.1UF_0603_10%_16V",
-            "0.1UF_0603_5%_50V",
-            "0.1UF_0805",
-            "0.1UF_50V_0603",
-            "100NF_0805",
-            "100UF_25V_ALE",
-            "100UF_35V_ALE"
+            "1.2K_0603",
+            "1.62K_0805_0.1%",
+            "100^_1210_5%_0.5W",
+            "10K_0603",
+            "150^_0603",
+            "3306F-1-103",
+            "620^_1210",
+            "75^_0805",
+            "JUMPER_0805_2.5A"
           ],
-          count: 286
+          count: 115
         }
       ],
       sourceDesigns: [
@@ -389,17 +389,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
           count: 300
         },
         {
-          role: "output_cap",
-          preferredValue: "0.1UF_0603_5%_50V",
-          values: [
-            "0.1UF_0603_5%_50V",
-            "100UF_35V_ALE",
-            "10UF_1210",
-            "22UF_1206_10V1206"
-          ],
-          count: 21
-        },
-        {
           role: "R",
           preferredValue: "10K_0603",
           values: [
@@ -417,6 +406,17 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
             "SQMR5220RJ"
           ],
           count: 88
+        },
+        {
+          role: "output_cap",
+          preferredValue: "0.1UF_0603_5%_50V",
+          values: [
+            "0.1UF_0603_5%_50V",
+            "100UF_35V_ALE",
+            "10UF_1210",
+            "22UF_1206_10V1206"
+          ],
+          count: 21
         },
         {
           role: "D",
@@ -467,6 +467,33 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
       },
       components: [
         {
+          role: "input_cap",
+          preferredValue: "0.1UF_0805",
+          values: [
+            "0.1UF_0805",
+            "0.1UF_50V_0603",
+            "0.33UF_0805",
+            "100PF_0603",
+            "100UF_25V_ALE",
+            "100UF_35V_ALE",
+            "10NF_0805",
+            "150PF_0805",
+            "18pF",
+            "1UF_0603",
+            "1UF_0805_20%",
+            "2.2UF_0805_10%_50V",
+            "2200PF_0603",
+            "2200UF_50V_RAD",
+            "220UF_50V",
+            "22UF_0805",
+            "22UF_1206_25V",
+            "3300PF_1206",
+            "4.7UF_0805",
+            "470PF_0603"
+          ],
+          count: 331
+        },
+        {
           role: "R",
           preferredValue: "10K_0603",
           values: [
@@ -504,33 +531,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
           count: 61
         },
         {
-          role: "input_cap",
-          preferredValue: "0.1UF_0805",
-          values: [
-            "0.1UF_0805",
-            "0.1UF_50V_0603",
-            "0.33UF_0805",
-            "100PF_0603",
-            "100UF_25V_ALE",
-            "100UF_35V_ALE",
-            "10NF_0805",
-            "150PF_0805",
-            "18pF",
-            "1UF_0603",
-            "1UF_0805_20%",
-            "2.2UF_0805_10%_50V",
-            "2200PF_0603",
-            "2200UF_50V_RAD",
-            "220UF_50V",
-            "22UF_0805",
-            "22UF_1206_25V",
-            "3300PF_1206",
-            "4.7UF_0805",
-            "470PF_0603"
-          ],
-          count: 331
-        },
-        {
           role: "L",
           preferredValue: "22UH_1.9AIND_IHLP-2020CZ-M",
           values: [
@@ -555,13 +555,13 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
       topology: "ldo",
       occurrences: 6,
       inputNets: {
-        "+5V_SUPPLY": 3,
         "+3.3V": 3,
+        "+5V_SUPPLY": 3,
         "+5V": 3
       },
       outputNets: {
-        "+5V_SUPPLY": 3,
         "+3.3V": 3,
+        "+5V_SUPPLY": 3,
         "+5V": 3
       },
       components: [
@@ -599,20 +599,20 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
           count: 57
         },
         {
-          role: "L",
-          preferredValue: "22UH_1.9AIND_IHLP-2020CZ-M",
-          values: [
-            "22UH_1.9AIND_IHLP-2020CZ-M"
-          ],
-          count: 3
-        },
-        {
           role: "D",
           preferredValue: "B140-13-F",
           values: [
             "B140-13-F"
           ],
           count: 6
+        },
+        {
+          role: "L",
+          preferredValue: "22UH_1.9AIND_IHLP-2020CZ-M",
+          values: [
+            "22UH_1.9AIND_IHLP-2020CZ-M"
+          ],
+          count: 3
         }
       ],
       sourceDesigns: [
@@ -723,11 +723,25 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
         "+5V": 1
       },
       outputNets: {
-        "+5V": 1,
+        AC_COMMON: 1,
         AC_HOT_FUSED: 1,
-        AC_COMMON: 1
+        "+5V": 1
       },
       components: [
+        {
+          role: "D",
+          preferredValue: "PMBD7000",
+          values: [
+            "1N5819HW-7-F",
+            "GP_1000V_1A_SMASMA",
+            "HLMP-3301-F00DD",
+            "LTST-C193KGKT-5ALITE-ON_LTST-C193KGKT-5A_0_0",
+            "LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
+            "LTST-C193TBKT-5ALITE-ON_LTST-C193TBKT-5A_0_0",
+            "PMBD7000"
+          ],
+          count: 47
+        },
         {
           role: "input_cap",
           preferredValue: "0.1UF_0603_10%_16V",
@@ -748,20 +762,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
             "22UF_1206_25V"
           ],
           count: 197
-        },
-        {
-          role: "D",
-          preferredValue: "PMBD7000",
-          values: [
-            "1N5819HW-7-F",
-            "GP_1000V_1A_SMASMA",
-            "HLMP-3301-F00DD",
-            "LTST-C193KGKT-5ALITE-ON_LTST-C193KGKT-5A_0_0",
-            "LTST-C193KRKT-5ALITE-ON_LTST-C193KRKT-5A_0_0",
-            "LTST-C193TBKT-5ALITE-ON_LTST-C193TBKT-5A_0_0",
-            "PMBD7000"
-          ],
-          count: 47
         },
         {
           role: "R",
@@ -803,21 +803,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
       },
       components: [
         {
-          role: "R",
-          preferredValue: "10K_0603",
-          values: [
-            "1.2K_0603",
-            "1.62K_0805_0.1%",
-            "100K_0603",
-            "10K_0603",
-            "150^_0603",
-            "620^_1210",
-            "JUMPER_0603_1/10W",
-            "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
-          ],
-          count: 75
-        },
-        {
           role: "D",
           preferredValue: "PMBD7000",
           values: [
@@ -840,6 +825,21 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
             "22UF_1206_10V1206"
           ],
           count: 123
+        },
+        {
+          role: "R",
+          preferredValue: "10K_0603",
+          values: [
+            "1.2K_0603",
+            "1.62K_0805_0.1%",
+            "100K_0603",
+            "10K_0603",
+            "150^_0603",
+            "620^_1210",
+            "JUMPER_0603_1/10W",
+            "NTCS0805E3103JMTVISHAY_BC_COMPONENTS_NTCS0805E3103JMT_0_0"
+          ],
+          count: 75
         }
       ],
       sourceDesigns: [
@@ -860,18 +860,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
       },
       outputNets: {},
       components: [
-        {
-          role: "input_cap",
-          preferredValue: "0.1UF_0603_10%_16V",
-          values: [
-            "0.022UF_0603",
-            "0.1UF_0603_10%_16V",
-            "1000PF_0603",
-            "1UF_0603_10%_25V",
-            "22UF_1206_10V1206"
-          ],
-          count: 81
-        },
         {
           role: "R",
           preferredValue: "30K_0603",
@@ -896,6 +884,18 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
             "3.3UH_3.2ASRN6045"
           ],
           count: 3
+        },
+        {
+          role: "input_cap",
+          preferredValue: "0.1UF_0603_10%_16V",
+          values: [
+            "0.022UF_0603",
+            "0.1UF_0603_10%_16V",
+            "1000PF_0603",
+            "1UF_0603_10%_25V",
+            "22UF_1206_10V1206"
+          ],
+          count: 81
         },
         {
           role: "D",
@@ -939,6 +939,15 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
           count: 8
         },
         {
+          role: "D",
+          preferredValue: "BLUE",
+          values: [
+            "BLUE",
+            "RED"
+          ],
+          count: 2
+        },
+        {
           role: "R",
           preferredValue: "10k",
           values: [
@@ -947,15 +956,6 @@ export const minedPowerSupplies: MinedPowerSupply[] = [
             "2.2k"
           ],
           count: 6
-        },
-        {
-          role: "D",
-          preferredValue: "BLUE",
-          values: [
-            "BLUE",
-            "RED"
-          ],
-          count: 2
         },
         {
           role: "output_cap",
