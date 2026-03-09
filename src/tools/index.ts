@@ -64,6 +64,10 @@ import { registerFlagComponent } from "./flag-component.js";
 import { registerAddSubstitutionRule } from "./add-substitution-rule.js";
 import { registerUpdateInventory } from "./update-inventory.js";
 
+// ── Design Journal Tools ──
+import { registerLogDesignDecision } from "./log-design-decision.js";
+import { registerReviewDesignHistory } from "./review-design-history.js";
+
 export function registerAllTools(server: McpServer) {
   // Lookup & Reference (6)
   registerLookupReferenceCircuit(server);
@@ -128,4 +132,8 @@ export function registerAllTools(server: McpServer) {
   registerFlagComponent(server);
   registerAddSubstitutionRule(server);
   registerUpdateInventory(server);
+
+  // Design Journal (2)
+  registerLogDesignDecision(server);
+  registerReviewDesignHistory(server);
 }
