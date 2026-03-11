@@ -7,10 +7,11 @@ import { generateLayersXml } from "../knowledge/eagle-libraries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// ── Managed 3D URN lookup ──
-// Maps IPC package names (e.g. RESC1608X60, SOT23) to real Autodesk cloud URNs
-// extracted from Fusion 360's managed component libraries. These URNs point to
-// actual 3D assets on Autodesk's servers that Fusion can resolve and render.
+// ── 3D URN lookup ──
+// Maps footprint names to Autodesk cloud URNs from three sources:
+// 1. Fusion 360 managed component libraries (urn:adsk.eagle:package:...)
+// 2. Project-level 3D models from harvested designs (urn:adsk.wipprod:fs.file:...)
+// 3. Original IPC package mappings from Autodesk's bundled libraries
 let managedUrnMap: Record<string, string> | null = null;
 
 function lookupManagedUrn(packageName: string): string | null {
