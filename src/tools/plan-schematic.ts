@@ -213,7 +213,7 @@ function buildMinedPowerSection(supplies: MinedPowerSupply[]) {
 export function registerPlanSchematic(server: McpServer) {
   server.tool(
     "plan-schematic",
-    "Plan a complete schematic from high-level requirements. Matches against 261 real deployed designs to recommend proven MCU support circuits, power supplies, interfaces, and protection. Returns actionable guidance with specific component values from production boards.",
+    "Plan a complete schematic from high-level requirements. Matches against 261 real deployed designs to recommend proven MCU support circuits, power supplies, interfaces, and protection. Returns actionable guidance with specific component values from production boards. IMPORTANT: After planning, the FIRST step is always download-datasheets — do not proceed to library generation or schematic scripting without verified datasheets.",
     {
       mcu: z.string().describe("MCU or module (e.g. 'PIC18F46K22', 'ESP32-S3', 'STM32F411')"),
       powerSource: z.string().describe("Power source (e.g. 'USB 5V', 'LiPo 3.7V', '12V barrel jack', '24V industrial')"),
@@ -293,8 +293,29 @@ export function registerPlanSchematic(server: McpServer) {
 
       // ── Build plan ──
 
+      // ── Collect all unique part numbers for the datasheet reminder ──
+      const allPartNumbers: string[] = [];
+      if (mcuProfile) allPartNumbers.push(mcuProfile.partNumber);
+      curatedPower.forEach(ps => ps.components.forEach(c => { if (c.partNumber) allPartNumbers.push(c.partNumber); }));
+      if (refCircuit) {
+        refCircuit.blocks.forEach(b => b.components.forEach(c => { if (c.partNumber) allPartNumbers.push(c.partNumber); }));
+      }
+      // Deduplicate
+      const uniqueParts = [...new Set(allPartNumbers)].filter(Boolean);
+
       const plan: Record<string, unknown> = {
         summary: `${mcu} board with ${powerSource} power, ${interfaces.length} interfaces, ${features.length} features`,
+
+        // ── CRITICAL: Datasheet prerequisite ──
+        datasheetPrerequisite: {
+          priority: "CRITICAL — DO THIS FIRST",
+          message: "Download and verify datasheets for ALL components BEFORE proceeding to circuit design. "
+            + "Skipping this step has caused incorrect pad dimensions, wrong package types, and board respins on recent projects.",
+          action: `Run download-datasheets with your project path and the full component list. `
+            + `Then use extract-application-circuit to pull verified values from the datasheets. `
+            + `generate-custom-library will BLOCK if datasheets are missing.`,
+          knownParts: uniqueParts.length > 0 ? uniqueParts : undefined,
+        },
 
         // MCU support circuit
         mcuSupport: refCircuit
@@ -477,9 +498,13 @@ export function registerPlanSchematic(server: McpServer) {
         })(),
 
         nextSteps: [
+          "⚠ FIRST: Run download-datasheets for ALL components — do NOT skip this step",
+          "Use extract-application-circuit to pull verified component values from datasheets",
           ...(similarDesigns.length > 0
             ? [`Review similar design "${similarDesigns[0].design}" with lookup-board-design for proven component choices`]
             : []),
+          "Use generate-custom-library (requires datasheets — will block without them)",
+          "Run verify-footprint to cross-check pad dimensions against datasheet specs",
           "Use generate-schematic-script to create the Eagle SCR file",
           "Use lookup-layout-pattern for detailed board layout conventions",
           "Run check-design-rules on the final component list",
